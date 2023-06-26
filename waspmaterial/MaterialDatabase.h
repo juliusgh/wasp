@@ -528,7 +528,6 @@ class Database {
                 if (a == "(") {
                     //cords.push_back(i);
                     stack.push(i);
-                waspmaterial\cmake
                 }
                 else if (a == ")" && i != str.length()-1) {
                     if (isdigit(str[i+1])) {
