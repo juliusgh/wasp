@@ -11,7 +11,8 @@ TRIBITS_PACKAGE_DEFINE_DEPENDENCIES(
      hit wasphit PT OPTIONAL     
      halite wasphalite PT OPTIONAL          
      lsp   wasplsp     PT OPTIONAL
-     dakota waspdakota PT OPTIONAL          
+     dakota waspdakota PT OPTIONAL
+     material waspmaterial PT OPTIONAL
      utils wasputils   PT OPTIONAL
      py wasppy         PT OPTIONAL
 )

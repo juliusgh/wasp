@@ -6,7 +6,7 @@
 
 #
 # Incorporate GitLab CI Traceability 
-# 
+#
 if(DEFINED ENV{CI_PROJECT_URL})
     message(STATUS "GitLab CI Job Info:  $ENV{CI_PROJECT_URL}/-/jobs/$ENV{CI_JOB_ID}")
 endif()
