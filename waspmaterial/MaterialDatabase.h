@@ -127,9 +127,8 @@ class Database {
         vector<string> aliases;
         double density;
         Contact contact;
-
         vector<string> symb;
-        // int amtSum;
+        bool iso;
 
         static const string NAME;
         static const string FORMULA;
@@ -159,7 +158,7 @@ class Database {
                 contains = vector<Component>();
                 density = 0.0;
                 symb = vector<string>();
-                // amtSum = 0;
+                iso = false;
             }
 
             // Set Methods:
@@ -178,7 +177,7 @@ class Database {
             void setSource (string a) {source = a;}
             void setContact (Contact a) {contact = a;}
             void setSymb (vector<string> a) {symb = a;}
-            // void setAmtSum (int a) {amtSum = a;}
+            void setIso (bool a) {iso = a;}
 
             // Get Methods:
             string getName() {return name;}
@@ -196,7 +195,7 @@ class Database {
             string getSource() {return source;}
             Contact getContact() {return contact;}
             vector<string> getSymb() {return symb;}
-            // int getAmts() {return amtSum;}
+            bool getIso() {return iso;}
 
             void convert(string style, bool iso) { // if faster to use switch statement, come back and use enum+map to use on strings
                 if (type != style && (type != "Chemical Formula" || style != "Atom Per Molecule")) {
