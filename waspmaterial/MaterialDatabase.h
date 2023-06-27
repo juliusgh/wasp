@@ -435,6 +435,10 @@ class Database {
                 if (str.find("<sub>") != string::npos) {str.replace(str.find("<sub>"), 5, "");}
                 if (str.find("</sub>") != string::npos) {str.replace(str.find("</sub>"), 6, "");}
             }
+            if (str.find('(') != string::npos) {
+                for (int p=0; p<str.length()-1; p++) {if (str[p]=='(') {stack.push(p);}}
+            //cout << stack.top() << endl;
+            }
 
             for (int i = 0; i < str.length(); i++) {
                 int count = 0;
@@ -456,14 +460,13 @@ class Database {
                 }
                 if (a == ".") {i +=2; a = string(1, str[i]);}
                 
-                if (a == "(" && str.find(')') != str.substr(i, str.length()-2).length()-1) {
+                if (a == "(" && !stack.empty() && str.find(')') != str.substr(i, str.length()-2).length()-1) { // Adjust for nested loops
                     int end = str.find(')');
-                    stack.push(i);
+                    // stack.push(i);
                     if (isdigit(str[end+1])) {
                         int start = stack.top()+1;
-                        stack.pop();
                         mult = int(str[end+1]-48);
-                        // cout << start << " " << mult << endl;
+                        //cout << start << " " << mult << endl;
                         for (int r=start; r<end; r++) {
                             string s = string(1, str[r]);
                             // cout << s << endl;
@@ -505,12 +508,13 @@ class Database {
                             }
                         cut = false;
                         i = end+1;
-                        }
-                        continue;
+                        //str.replace(end, 1, " ");
+                    }
+                    else {i--;}
+                    stack.pop();
+                    continue;
                 }
-                // else if (a == ")" && i != str.length()-1) {
-                    
-                //     }
+                
                 else if (a.find_first_of("ABCDEFGHIJKLMNOPQRSTUVWXYZ") != string::npos) {
                     for (int j = i + 1; j < str.length(); j++) {
                         char d = str.at(j);
@@ -518,7 +522,7 @@ class Database {
                         if (b.find_first_of("abcdefghijklmnopqrstuvwxyz") != string::npos) {
                             a += b;
                             if (mp.find(a) == mp.end()) {mp[a] = 0;}
-                            else {mp[a] += 1*mult;}
+                            else {mp[a] += mult;}
                             count = 1;
                         }
                         else if (b.find_first_of("0123456789") != string::npos) {
@@ -532,15 +536,21 @@ class Database {
                         }
                         else {
                             i = j - 1;
-                            //if (mp[a] == 0) {mp[a] = 1*mult;}
+                            //if (mp[a] == 0) {mp[a] = mult;}
                             isStr = false;
                             break;
                         }
                     }
-                    if (count == 0) {
-                        if (mp.find(a) == mp.end()) {mp[a] = 1*mult;}
+                    if (count == 0 || mp[a] == 0) {
+                        if (mp.find(a) == mp.end()) {mp[a] = mult;}
                         else {mp[a] += 1*mult;}
                     }
+                    else if (i+1 == str.length()) {mp[a] += mult;}
+                    
+                    // if (count == 0) {
+                    //     if (mp.find(a) == mp.end()) {mp[a] = 1*mult;}
+                    //     else {mp[a] += 1*mult;}
+                    // }
                 }
             }
             string f = "";
@@ -571,7 +581,7 @@ class Database {
 
                     if(matches){
                         // cout << "    " << name << "\t" << "Okay with " << imax << " element"; 
-                        // if (imax>1) {cout << "s";} cout << endl;
+                        //if (imax>1) {cout << "s";} cout << endl;
                     }
                     else {
                         //string ref = references[0];
