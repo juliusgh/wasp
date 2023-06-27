@@ -198,7 +198,7 @@ class Database {
             vector<string> getSymb() {return symb;}
             // int getAmts() {return amtSum;}
 
-            void convert(string style) { // if faster to use switch statement, come back and use enum+map to use on strings
+            void convert(string style, bool iso) { // if faster to use switch statement, come back and use enum+map to use on strings
                 if (type != style && (type != "Chemical Formula" || style != "Atom Per Molecule")) {
                     vector<double> atomMasses {};
                     cout << name << "  " << type << " to " << style << endl;
@@ -247,7 +247,6 @@ class Database {
                     
                     // 3) Chem Formula to Weight Fractions
                     else if (type == "Chemical Formula" && style == "Weight Fractions") {
-                        // cout << type << " to " << style << endl;
                         double total = 0;
                         for (int i=0; i<contains.size(); i++) {
                             Component ci = contains.at(i);
@@ -317,8 +316,9 @@ class Database {
             // void getdataStyle() {}
             
             // Add a selection between the 4 code types
-            void getInputFormat(string code, string dataStyle, string dbName) {
-                // convert(dataStyle);
+            // Add native
+            void getInputFormat(string code, string dataStyle, string calcType, string dbName) {
+                convert(dataStyle, calcType == "Isotopic");
                 int aNum = 1;
                 if (code == "MAVRIC/KENO") {
                     // Add index
@@ -329,14 +329,36 @@ class Database {
                     }
                     if (comment != "") {cout << "'    " << comment << endl;}
 
-                    cout << "     atom" << name.substr(0, 12) << "  1  " << density << " " << contains.size();
+                    cout << "     atom" << name.substr(0, 12) << "  1  " << density << "  " << contains.size();
                     for (int i=0; i<contains.size(); i++) {
                         Component c = contains.at(i);
                         for (int m=0; m<mass.getElems(); m++) {
-                            if (c.getElement() == mass.getElem(m).getSymbol()) {aNum = mass.getElem(m).getAtomNum(); break;}
+                            if (c.getElement() == mass.getElem(m).getSymbol()) {
+                                auto e = mass.getElem(m);
+                                aNum = e.getAtomNum();
+                                if (calcType == "Isotopic") {
+                                    if (c.getMassNum() > 0) {cout << endl << "         " << aNum*1000+c.getMassNum() << "   " << c.getAmount();}
+                                    else {
+                                        for (int n=0; n<e.getIsotopes().size(); n++) {
+                                            if (e.getIsotopes().at(n).getAbundance() > 0) {cout << endl << "         " << aNum*1000+e.getIsotopes().at(n).getMassNum() << "   " << c.getAmount() * e.getIsotopes().at(n).getAbundance();}
+                                        }
+                                    }
+                                }
+                                else {cout << endl << "         " << aNum*1000 << "   " << c.getAmount();}
+                                // other 2 numbers stay constant (density && temp)?
+                                break;
+                            }
                         }
-                        cout << endl << "         " << aNum*1000+c.getMassNum() << "   " << c.getAmount();
-                        // other 2 numbers stay constant (density && temp)?
+                        // if (calcType == "Isotopic") {
+                        //     if (c.getMassNum() > 0) {cout << endl << "         " << aNum*1000+c.getMassNum() << "   " << c.getAmount();}
+                        //     else {
+                        //         for (int n=0; n<e.getIsotopes().size(); n++) {
+                        //             cout << endl << "         " << aNum*1000+e.getIsotopes().at(n).getMassNum() << "   " << c.getAmount() * e.getIsotopes().at(n).getAbundance();
+                        //         }
+                        //     }
+                        // }
+                        // else {cout << endl << "         " << aNum*1000 << "   " << c.getAmount();}
+                        // // other 2 numbers stay constant (density && temp)?
                     }
                     cout << "   " << "end" << endl << endl;
 
@@ -460,7 +482,7 @@ class Database {
                 }
                 if (a == ".") {i +=2; a = string(1, str[i]);}
                 
-                if (a == "(" && !stack.empty() && str.find(')') != str.substr(i, str.length()-2).length()-1) { // Adjust for nested loops
+                if (a == "(" && !stack.empty() && str.find(')') != str.substr(i, str.length()-2).length()-1) { // Need a way to find matching ')'
                     int end = str.find(')');
                     // stack.push(i);
                     if (isdigit(str[end+1])) {
@@ -505,10 +527,11 @@ class Database {
                                 }
                                 else if (r+1 == end) {mp[s] += 1*mult;}
                             }
-                            }
+                        }
                         cut = false;
+                        // int segment = end+1-start+str.length()-1; // segment inside parenthesis that has been evaluated
+                        // str.replace(start-1, segment, string(segment, ' '));
                         i = end+1;
-                        //str.replace(end, 1, " ");
                     }
                     else {i--;}
                     stack.pop();
@@ -893,10 +916,9 @@ class Database {
             // m.setAmtSum(apm);
 
             matVec.push_back(m);
-            // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", dbName);
-            // if (m.getType() == "Chemical Formula")
-            // {m.convert("Weight Fractions"); cout << endl; m.checkFractions();}
-            if (m.getType() == "Chemical Formula") {m.checkAtoms();}
+            //if (m.getType() == "Weight Fractions") {m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Isotopic", dbName);}
+            if (m.getType() == "Weight Fractions") {m.convert("Weight Fractions", true);}
+            // if (m.getType() == "Chemical Formula") {m.checkAtoms();}
             return true;
         }
         
