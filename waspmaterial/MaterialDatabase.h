@@ -18,26 +18,26 @@ using namespace std;
 using namespace wasp;
 
 
-int findDeno(double val, int cycles = 10, double precision = 5e-4){
-    int sign = val > 0 ? 1 : -1;
-    val *= sign;
-    double new_val, whole;
-    double decimal_part = val - (int)val;
-    int counter = 0;
-    valarray<double> vec_1{double((int) val), 1}, vec_2{1,0}, temp;
+// int findDeno(double val, int cycles = 10, double precision = 5e-4){
+//     int sign = val > 0 ? 1 : -1;
+//     val *= sign;
+//     double new_val, whole;
+//     double decimal_part = val - (int)val;
+//     int counter = 0;
+//     valarray<double> vec_1{double((int) val), 1}, vec_2{1,0}, temp;
     
-    while(decimal_part > precision & counter < cycles){
-        new_val = 1 / decimal_part;
-        whole = (int) new_val;
-        temp = vec_1;
-        vec_1 = whole * vec_1 + vec_2;
-        vec_2 = temp;
-        decimal_part = new_val - whole;
-        counter += 1;
-    }
-    // cout<<"x: "<< val <<"\tFraction: " << sign * vec_1[0]<<'/'<< vec_1[1]<<endl;
-    return vec_1[1];
-}
+//     while(decimal_part > precision & counter < cycles){
+//         new_val = 1 / decimal_part;
+//         whole = (int) new_val;
+//         temp = vec_1;
+//         vec_1 = whole * vec_1 + vec_2;
+//         vec_2 = temp;
+//         decimal_part = new_val - whole;
+//         counter += 1;
+//     }
+//     // cout<<"x: "<< val <<"\tFraction: " << sign * vec_1[0]<<'/'<< vec_1[1]<<endl;
+//     return vec_1[1];
+// }
 
 Masses mass;
 class Database {
@@ -309,76 +309,6 @@ class Database {
                             cout << ci.getElement() << " " << ci.getAmount() << endl;
                         }
                     }
-                    
-                    // 5) Weight Fractions to Atoms Per Molecule
-                    if (type == "Weight Fractions") { // Switch to WF -> AF
-                        cout << name << "'s " << type << " to " << style << endl;
-                        double min = 99;
-                        double isoCount = 0;
-                        for (int i=0; i<contains.size(); i++) {
-                            Component ci = contains.at(i);
-                            double ma = ci.getAmount();
-                            bool iso = false;
-                            for (int m=0; m<mass.getElems(); m++) {
-                                auto e = mass.getElem(m);
-                                if (ci.getElement() == e.getSymbol()) {
-                                    if (ci.getMassNum()>0){
-                                    for (int p=0; p<e.getIsotopes().size(); p++){
-                                        if (ci.getMassNum() == e.getIsotopes().at(p).getMassNum()) {ma /= e.getIsotopes().at(p).getMass();
-                                        // cout << "Mass Num" << e.getIsotopes().at(p).getMassNum() << " " << e.getIsotopes().at(p).getMass() << endl;
-                                        }
-                                    }
-                                    }
-                                    else {ma /= e.getMass();}
-                                    atomMasses.push_back(ma);
-                                    //}
-                                    break;
-                                }
-                            }
-                            if (min > ma) {min = ma;}
-                        }
-                        vector<int> denoms{};
-                        for (int k=0; k<contains.size(); k++) {
-                            cout << atomMasses.at(k) << endl;
-                            double am = atomMasses.at(k)/min; // What level of precision?
-                            //cout << am << endl;
-                            contains.at(k).setAmount(am);
-                            denoms.push_back(findDeno(contains.at(k).getAmount()));
-                        }
-                        // cout << *max_element(denoms.begin(), denoms.end()) << endl;
-                        int mult = 1;
-                        for (int j=0; j<contains.size(); j++) {
-                            //if (j==0 && formula.find(c.getElement()) != string::npos) {
-                                //if (formula.find(c.getElement())!=-1 && isdigit(formula[formula.find(c.getElement())+1])) {
-                                //     // int digit = int(formula[formula.find(c.getElement()+1]);
-                                //     mult = digit/round(c.getAmount());
-                                //}
-                            //}
-                            contains.at(j).setAmount(mult * *max_element(denoms.begin(), denoms.end()) * contains.at(j).getAmount());
-                            contains.at(j).setAtom(true);
-                            Component c = contains.at(j);
-                            // cout << c.getElement() << " " << c.getAmount() << endl;
-                        }
-                        int len = contains.at(0).getElement().length();
-                        int start = formula.find(contains.at(0).getElement());
-                        if (start != string::npos) {
-                                if (start != -1 && (isdigit(formula[start+len]) && formula[start+len] != char(contains.at(0).getAmount()))) {
-                                    double digit = int(formula[start+len])-48;
-                                    if (isdigit(formula[start+len+1])) {
-                                        digit = 10*digit + int(formula[start+len+1])-48;
-                                        if (isdigit(formula[start+len+2])) {digit = 10*digit + int(formula[start+len+2])-48;}
-                                    }
-                                    //cout << digit << " " << contains.at(0).getAmount() << endl;
-                                    mult = digit/round(contains.at(0).getAmount());
-                                    //cout << mult << endl;
-                                }
-                        }
-                        for (int why=0; why<contains.size(); why++) {
-                            contains.at(why).setAmount(mult*contains.at(why).getAmount());
-                            // cout << contains.at(why).getElement() << " " << contains.at(why).getAmount() << endl;
-                        }
-                    }
-
                 }
                 setType(style);
             }
@@ -501,6 +431,7 @@ class Database {
             // vector<int> cords;
             stack<int> stack;
             while (str.find("sub>") != string::npos) {
+                if (str.find("<sub>x") != string::npos) {str.replace(str.find("<sub>x"), 6, "");}
                 if (str.find("<sub>") != string::npos) {str.replace(str.find("<sub>"), 5, "");}
                 if (str.find("</sub>") != string::npos) {str.replace(str.find("</sub>"), 6, "");}
             }
@@ -524,27 +455,63 @@ class Database {
                     a = string(1, str[i]);
                 }
                 if (a == ".") {i +=2; a = string(1, str[i]);}
-                // '(' or ')'
-                if (a == "(") {
-                    //cords.push_back(i);
+                
+                if (a == "(" && str.find(')') != str.substr(i, str.length()-2).length()-1) {
+                    int end = str.find(')');
                     stack.push(i);
-                }
-                else if (a == ")" && i != str.length()-1) {
-                    if (isdigit(str[i+1])) {
-                        int start = stack.top();
+                    if (isdigit(str[end+1])) {
+                        int start = stack.top()+1;
                         stack.pop();
-                        mult = int(str[i+1]-48);
-                        for (int r=start; r<i; r++) {
+                        mult = int(str[end+1]-48);
+                        // cout << start << " " << mult << endl;
+                        for (int r=start; r<end; r++) {
                             string s = string(1, str[r]);
+                            // cout << s << endl;
                             if (s.find_first_of("ABCDEFGHIJKLMNOPQRSTUVWXYZ") != string::npos) {
-                                mp[s] *= mult;
+                                count = 0;
+                                for (int t = r + 1; t < end; t++) {
+                                    char q = str.at(t);
+                                    string st = string(1, q);
+                                    if (st.find_first_of("abcdefghijklmnopqrstuvwxyz") != string::npos) {
+                                        s += st;
+                                        if (mp.find(s) == mp.end()) {mp[s] = 0;}
+                                        else {mp[s] += 1*mult;}
+                                        count = 1;
+                                    }
+                                    else if (st.find_first_of("0123456789") != string::npos) {
+                                        if (s=="D" || s=="T") {s="H";}
+                                        int k = stoi(st);
+                                        if (mp.find(s) == mp.end()) {mp[s] = k*mult;}
+                                        else if (isStr) {mp[s] = (10*mp[s]/mult + k)*mult;}
+                                        else {mp[s] += k*mult;}
+                                        //cout << s << mp[s] << endl;
+                                        count = 1;
+                                        isStr = true;
+                                    }
+                                    else {
+                                        r = t - 1;
+                                        // if (mp[s] == 0) {mp[s] = 1*mult;}
+                                        isStr = false;
+                                        // cout << s << mp[s] << endl;
+                                        break;
+                                    }
+                                }
+                                if (count == 0 || mp[s] == 0) {
+                                    if (mp.find(s) == mp.end()) {mp[s] = 1*mult;}
+                                    else {mp[s] += 1*mult;}
+                                }
+                                else if (r+1 == end) {mp[s] += 1*mult;}
                             }
-                        }
+                            }
                         cut = false;
-                        i++;
+                        i = end+1;
                         }
-                    }
-                if (a.find_first_of("ABCDEFGHIJKLMNOPQRSTUVWXYZ") != string::npos) {
+                        continue;
+                }
+                // else if (a == ")" && i != str.length()-1) {
+                    
+                //     }
+                else if (a.find_first_of("ABCDEFGHIJKLMNOPQRSTUVWXYZ") != string::npos) {
                     for (int j = i + 1; j < str.length(); j++) {
                         char d = str.at(j);
                         string b = string(1, d);
