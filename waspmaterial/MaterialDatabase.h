@@ -115,6 +115,7 @@ class Database {
     class Material { 
         string name;
         string type;
+        string native;
         string formula;
         string source;
         vector<Component> contains;
@@ -164,6 +165,7 @@ class Database {
             // Set Methods:
             void setName(string a) {name = a;}
             void setType(string a) {type = a;}
+            void setNative(string a) {if (a=="Chemical Formula") {native = "Atoms Per Molecule";} else {native = a;}}
             void setFormula(string a) {formula = a;}
             void setDensity(double a) {density = a;}
             void setComment (string a) {comment = a;}
@@ -182,6 +184,7 @@ class Database {
             // Get Methods:
             string getName() {return name;}
             string getType() {return type;}
+            string getNative() {return native;}
             string getFormula() {return formula;}
             double getDensity() {return density;}
             string getComment() {return comment;}
@@ -198,7 +201,8 @@ class Database {
             bool getIso() {return iso;}
 
             void convert(string style, bool iso) { // if faster to use switch statement, come back and use enum+map to use on strings
-                if (type != style && (type != "Chemical Formula" || style != "Atom Per Molecule")) {
+                if (style == "Native") {style = native;}
+                if (type != style) {
                     vector<double> atomMasses {};
                     cout << name << "  " << type << " to " << style << endl;
 
@@ -219,7 +223,7 @@ class Database {
                         for (int j=0; j<contains.size(); j++) {
                             contains.at(j).setAmount(atomMasses.at(j)/total);
                             Component c = contains.at(j);
-                            cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
+                            //cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
                         }
                     }
 
@@ -231,7 +235,25 @@ class Database {
                             Component ci = contains.at(i);
                             for (int m=0; m<mass.getElems(); m++) {
                                 if (ci.getElement() == mass.getElem(m).getSymbol()) {
-                                    total += ci.getAmount() * mass.getElem(m).getMass(); 
+                                    auto e = mass.getElem(m);
+                                    if (iso && ci.getMassNum() <= 0) {
+                                        int count = 0;
+                                        for (int n=0; n<e.getIsotopes().size(); n++) {
+                                            if (e.getIsotopes().at(n).getAbundance() > 0) {
+                                                count ++;
+                                                Component ciso;
+                                                ciso.setElement(ci.getElement());
+                                                ciso.setAmount(ci.getAmount() * e.getIsotopes().at(n).getAbundance() * e.getIsotopes().at(n).getMass());
+                                                ciso.setMassNum(e.getIsotopes().at(n).getMassNum());
+                                                contains.insert(contains.begin()+i+count, ciso);
+                                                total += ciso.getAmount();
+                                            }
+                                        }
+                                    }
+                                    else {
+                                        // remove isotopes from contains
+                                        total += ci.getAmount() * mass.getElem(m).getMass();
+                                    }
                                     atomMasses.push_back(ci.getAmount() * mass.getElem(m).getMass());
                                     break;
                                 }
@@ -240,12 +262,12 @@ class Database {
                         for (int j=0; j<contains.size(); j++) {
                             contains.at(j).setAmount(atomMasses.at(j)/total);
                             Component c = contains.at(j);
-                            // cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
+                            cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
                         }
                     }
                     
-                    // 3) Chem Formula to Weight Fractions
-                    else if (type == "Chemical Formula" && style == "Weight Fractions") {
+                    // 3) Atoms Per Molecule to Weight Fractions
+                    else if (type == "Atoms Per Molecule" && style == "Weight Fractions") {
                         double total = 0;
                         for (int i=0; i<contains.size(); i++) {
                             Component ci = contains.at(i);
@@ -273,28 +295,35 @@ class Database {
                         }
                     }
                     
-                    // 4) Atom Fractions to APM
-                    else if (type == "Atom Fractions" && style == "Atoms Per Molecule") {
-                        cout << type << " to " << style << endl;
-                        cout << name << endl;
+                    // 4) Atom Fractions to APM (Only for Elemental and clean numbers)
+                    else if (type == "Atom Fractions" && style == "Atoms Per Molecule" && formula != "" && !iso) {
                         cout << formula << endl;
-                        double min = contains.at(0).getAmount();
+                        double min = 1.0;
                         for (int i=0; i<contains.size(); i++) {
-                            double mAtom = contains.at(i).getAmount();
-                            if (min > mAtom) {min = mAtom;}
+                            if (i != 0 && contains.at(i).getElement() == contains.at(i-1).getElement()) {
+                                contains.at(i-1).setAmount(contains.at(i-1).getAmount()+contains.at(i).getAmount());
+                                // cout << i << endl;
+                                contains.erase(contains.begin()+i);
+                                i--;
+                            } 
+                            else if (i != contains.size()-1 && contains.at(i).getElement() != contains.at(i+1).getElement()) {
+                                double mAtom = contains.at(i).getAmount();
+                                if (min > mAtom) {min = mAtom;}
+                            }
                         }
                         for (int j=0; j<contains.size(); j++) {
+                            // cout << contains.at(j).getAmount() << endl;
                             contains.at(j).setAmount(contains.at(j).getAmount()/min);
                         }
-                        int mult = 1;
+                        double mult = 1;
                         int len = contains.at(0).getElement().length();
                         int start = formula.find(contains.at(0).getElement());
                         if (start != string::npos) {
                                 if (start != -1 && (isdigit(formula[start+len]) && formula[start+len] != char(contains.at(0).getAmount()))) {
                                     double digit = stod(string(1, formula[start+len]));
                                     if (isdigit(formula[start+len+1])) {
-                                        digit = 10*digit + int(formula[start+len+1])-48;
-                                        if (isdigit(formula[start+len+2])) {digit = 10*digit + int(formula[start+len+2])-48;}
+                                        digit = 10*digit + stod(string(1, formula[start+len+1]));
+                                        if (isdigit(formula[start+len+2])) {digit = 10*digit + stod(string(1, formula[start+len+2]));}
                                     }
                                     // cout << digit << " " << contains.at(0).getAmount() << endl;
                                     mult = digit/contains.at(0).getAmount();
@@ -302,11 +331,12 @@ class Database {
                                 }
                         }
                         for (int k=0; k<contains.size(); k++) {
-                            contains.at(k).setAmount(mult*contains.at(k).getAmount());
+                            contains.at(k).setAmount(round(mult*contains.at(k).getAmount()));
                             Component ci = contains.at(k);
                             cout << ci.getElement() << " " << ci.getAmount() << endl;
                         }
                     }
+                    else {cout << "This conversion is not supported." << endl;}
                 }
                 setType(style);
             }
@@ -317,6 +347,7 @@ class Database {
             // Add a selection between the 4 code types
             // Add native
             void getInputFormat(string code, string dataStyle, string calcType, string dbName) {
+                iso = calcType == "Isotopic";
                 convert(dataStyle, calcType == "Isotopic");
                 int aNum = 1;
                 if (code == "MAVRIC/KENO") {
@@ -809,6 +840,7 @@ class Database {
             }
             else if (!itr->second.is_string()) {cerr << "Type is not a string." << endl;}
             else {m.setType(itr->second.to_string());
+                m.setNative(m.getType());
                 if (m.getType() != "Weight Fractions") {
                     itr = material->find("Formula");
                     m.setFormula(itr->second.to_string());
@@ -916,7 +948,7 @@ class Database {
 
             matVec.push_back(m);
             //if (m.getType() == "Weight Fractions") {m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Isotopic", dbName);}
-            if (m.getType() == "Weight Fractions") {m.convert("Weight Fractions", true);}
+            if (m.getType() == "Atom Fractions") {m.convert("Atoms Per Molecule", false); cout << endl;}
             // if (m.getType() == "Chemical Formula") {m.checkAtoms();}
             return true;
         }
