@@ -129,7 +129,7 @@ class Database {
         double density;
         Contact contact;
         vector<string> symb;
-        bool iso;
+        bool isIso;
 
         static const string NAME;
         static const string FORMULA;
@@ -159,7 +159,7 @@ class Database {
                 contains = vector<Component>();
                 density = 0.0;
                 symb = vector<string>();
-                iso = false;
+                isIso = false;
             }
 
             // Set Methods:
@@ -179,7 +179,7 @@ class Database {
             void setSource (string a) {source = a;}
             void setContact (Contact a) {contact = a;}
             void setSymb (vector<string> a) {symb = a;}
-            void setIso (bool a) {iso = a;}
+            void setIso (bool a) {isIso = a;}
 
             // Get Methods:
             string getName() {return name;}
@@ -198,7 +198,7 @@ class Database {
             string getSource() {return source;}
             Contact getContact() {return contact;}
             vector<string> getSymb() {return symb;}
-            bool getIso() {return iso;}
+            bool getIso() {return isIso;}
 
             void convert(string style, bool iso) { // if faster to use switch statement, come back and use enum+map to use on strings
                 if (style == "Native") {style = native;}
@@ -206,7 +206,7 @@ class Database {
                     vector<double> atomMasses {};
                     cout << name << "  " << type << " to " << style << endl;
 
-                    // 1) Weight Fractions to Atom Fractions
+                    // 1) Weight Fractions to Atom Fractions [Still need elem->iso]
                     if (type == "Weight Fractions" && style == "Atom Fractions") {
                         // cout << type << " to " << style << endl;
                         double total = 0;
@@ -227,7 +227,7 @@ class Database {
                         }
                     }
 
-                    // 2) Atom Fractions to Weight Fractions
+                    // 2) Atom Fractions to Weight Fractions [Still need iso-> elem]
                     else if (type == "Atom Fractions" && style == "Weight Fractions") {
                         // cout << type << " to " << style << endl;
                         double total = 0;
@@ -237,7 +237,8 @@ class Database {
                                 if (ci.getElement() == mass.getElem(m).getSymbol()) {
                                     auto e = mass.getElem(m);
                                     if (iso && ci.getMassNum() <= 0) {
-                                        int count = 0;
+                                        int count = -1;
+                                        contains.erase(contains.begin()+i);
                                         for (int n=0; n<e.getIsotopes().size(); n++) {
                                             if (e.getIsotopes().at(n).getAbundance() > 0) {
                                                 count ++;
@@ -250,10 +251,23 @@ class Database {
                                             }
                                         }
                                     }
+                                    else if (!iso) {
+                                        if (i != 0 && ci.getElement() == contains.at(i-1).getElement()) {
+                                            contains.at(i-1).setAmount(contains.at(i-1).getAmount()+ci.getAmount());
+                                            contains.erase(contains.begin()+i);
+                                            i--;
+                                        } 
+                                    //     else if (i != contains.size()-1 && contains.at(i).getElement() != contains.at(i+1).getElement()) {
+                                    //         total += ci.getAmount() * mass.getElem(m).getMass();
+                                    //     }
+                                    }
+
                                     else {
                                         // remove isotopes from contains
+                                        // problem due to ci vs. contains
                                         total += ci.getAmount() * mass.getElem(m).getMass();
                                     }
+
                                     atomMasses.push_back(ci.getAmount() * mass.getElem(m).getMass());
                                     break;
                                 }
@@ -262,11 +276,11 @@ class Database {
                         for (int j=0; j<contains.size(); j++) {
                             contains.at(j).setAmount(atomMasses.at(j)/total);
                             Component c = contains.at(j);
-                            cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
+                            // cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
                         }
                     }
                     
-                    // 3) Atoms Per Molecule to Weight Fractions
+                    // 3) Atoms Per Molecule to Weight Fractions [Works]
                     else if (type == "Atoms Per Molecule" && style == "Weight Fractions") {
                         double total = 0;
                         for (int i=0; i<contains.size(); i++) {
@@ -291,11 +305,11 @@ class Database {
                         for (int j=0; j<contains.size(); j++) {
                             contains.at(j).setAmount(atomMasses.at(j) / total);
                             Component c = contains.at(j);
-                            cout << c.getElement() << " " << c.getAmount() << endl;
+                            // cout << c.getElement() << " " << c.getAmount() << endl;
                         }
                     }
                     
-                    // 4) Atom Fractions to APM (Only for Elemental and clean numbers)
+                    // 4) Atom Fractions to APM (Only for Elemental and clean numbers) [Works]
                     else if (type == "Atom Fractions" && style == "Atoms Per Molecule" && formula != "" && !iso) {
                         cout << formula << endl;
                         double min = 1.0;
@@ -333,11 +347,25 @@ class Database {
                         for (int k=0; k<contains.size(); k++) {
                             contains.at(k).setAmount(round(mult*contains.at(k).getAmount()));
                             Component ci = contains.at(k);
-                            cout << ci.getElement() << " " << ci.getAmount() << endl;
+                            // cout << ci.getElement() << " " << ci.getAmount() << endl;
                         }
                     }
+                    
+                    // 5) Atoms Per Molecule to Atom Fractions [Adjust for Native conversion and increase precision to 16- or 32-bit)]
+                    else if (type == "Atoms Per Molecule" && style == "Atom Fractions" && !iso) { // Reverting back elements to certain isotopes?
+                        int total = 0;
+                        for (int i=0; i<contains.size(); i++) {
+                            total += contains.at(i).getAmount();
+                        }
+                        for (int j=0; j<contains.size(); j++) {
+                            contains.at(j).setAmount(contains.at(j).getAmount()/total);
+                            // cout << contains.at(j).getElement() << " " << contains.at(j).getAmount() << endl;
+                        }
+                    }
+
                     else {cout << "This conversion is not supported." << endl;}
                 }
+
                 setType(style);
             }
             
@@ -347,11 +375,14 @@ class Database {
             // Add a selection between the 4 code types
             // Add native
             void getInputFormat(string code, string dataStyle, string calcType, string dbName) {
-                iso = calcType == "Isotopic";
-                convert(dataStyle, calcType == "Isotopic");
+                if (type == dataStyle && dataStyle == "Weight Fractions" && isIso != (calcType=="Isotopic")) {
+                    convert("Atom Fractions", calcType=="Isotopic");
+                    convert("Weight Fractions", calcType=="Isotopic");
+                }
+                else {convert(dataStyle, isIso);}
+                isIso = calcType == "Isotopic";
                 int aNum = 1;
                 if (code == "MAVRIC/KENO") {
-                    // Add index
                     cout << "'    " << dbName << endl;
                     // cout << "'    " << name << ", " << formula << ", " << density << " g/cm^3" << endl;
                     for (int k=0; k<comments.size(); k++) {
@@ -366,15 +397,11 @@ class Database {
                             if (c.getElement() == mass.getElem(m).getSymbol()) {
                                 auto e = mass.getElem(m);
                                 aNum = e.getAtomNum();
-                                if (calcType == "Isotopic") {
-                                    if (c.getMassNum() > 0) {cout << endl << "         " << aNum*1000+c.getMassNum() << "   " << c.getAmount();}
-                                    else {
-                                        for (int n=0; n<e.getIsotopes().size(); n++) {
-                                            if (e.getIsotopes().at(n).getAbundance() > 0) {cout << endl << "         " << aNum*1000+e.getIsotopes().at(n).getMassNum() << "   " << c.getAmount() * e.getIsotopes().at(n).getAbundance();}
-                                        }
-                                    }
-                                }
-                                else {cout << endl << "         " << aNum*1000 << "   " << c.getAmount();}
+                                // if (calcType == "Isotopic") {
+                                // }
+                                //else {cout << endl << "         " << aNum*1000 << "   " << c.getAmount();}
+                                if (c.getMassNum() <= 0 || !isIso) {cout << endl << "         " << aNum*1000 << "   " << c.getAmount();}
+                                else {cout << endl << "         " << aNum*1000+c.getMassNum() << "   " << c.getAmount();}
                                 // other 2 numbers stay constant (density && temp)?
                                 break;
                             }
@@ -947,8 +974,8 @@ class Database {
             // m.setAmtSum(apm);
 
             matVec.push_back(m);
-            //if (m.getType() == "Weight Fractions") {m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Isotopic", dbName);}
-            if (m.getType() == "Atom Fractions") {m.convert("Atoms Per Molecule", false); cout << endl;}
+            if (m.getType() == "Weight Fractions") {m.getInputFormat("MAVRIC/KENO", "Atom Fractions", "Isotopic", dbName); m.checkFractions();}
+            //if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", true); m.convert("Weight Fractions", true); m.convert("Atom Fractions", false); m.convert("Weight Fractions", false); m.checkFractions(); cout << endl;}
             // if (m.getType() == "Chemical Formula") {m.checkAtoms();}
             return true;
         }
