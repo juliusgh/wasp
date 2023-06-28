@@ -75,22 +75,30 @@ class MaterialCompositionLib {
 
 
         int main() {
-            Database db = databases.at(0);
-            vector<string> commands = {"0: display masses", "1: display material", "2: search", "3: change material", "4: check fractional compositions", "5: create a nuclear code"};
+            Database db = databases.at(0); // Make accessible to use multiple databases simultaneously
+            vector<string> commands = {"0: display masses", "1: display material", "2: search", "3: advanced search", "4: change material", "5: check fractional compositions", "6: create a nuclear code"};
+            
             vector <string> searchName{};
-            string code; string type; string search;
+            string search;
+            string name;
+            //int srchidx = -1;
+            double dens = -1.0;
+            
+            string code; string type; string calcType;
             int idx;
+
             cout << "Materials:" << endl;
             for (int m=1; m<db.getMats()+1; m++) {cout << db.getMat(m-1).getName() << "     "; if (m%4==0) {cout << endl << endl;}}
             cout << endl << "(Out of " << db.getMats() << ") " << endl;
-            cin >> idx; idx --; cout << "Material #" << idx+1 << endl;
+            cin >> idx; idx --; cout << "Material #" << idx+1 << ": " << db.getMat(idx).getName() << endl;
             int hello;
             cout << "Enter -1 to exit" << endl << "What do you want to do?" << endl << "Some commands are: ";
             for (int a=0; a<commands.size(); a++) {
-                cout << commands.at(a) << " ";
+                cout << commands.at(a) << "   ";
+                if (a%3 == 0) {cout << endl;}
             }
             cout << endl;
-            //cin >> hello;
+            
             for (;cin >> hello && hello != -1;) {
             switch (hello) {
             case 0:
@@ -101,30 +109,45 @@ class MaterialCompositionLib {
                 db.getMat(idx).display();
                 break;
             
-            case 2:
+            case 2: //Search
                 cin >> search; // if sorted, might be able to use a binary search
                 for (int b=0; b<db.getMats(); b++) {
-                    string name = db.getMat(b).getName();
+                    name = db.getMat(b).getName();
                     if (name.find(search) != string::npos) {
-                        searchName.push_back(name);
+                        //searchName.push_back(name);
                         cout << b << ": " << name << endl;
                     }
-                hello = 3;
                 }
+                hello = 4;
             
-            case 3:
+            case 3: // Advanced Search
+                // Identifiers: Name, Density, Formula
+                // cout << "Material #:"; cin >> srchidx; cout << srchidx << endl;
+                // if (srchidx > 0) {cout << srchidx << ": " << db.getMat(srchidx-1).getName() << endl;}
+                cout << "Name: "; cin >> search; cout << search << endl;
+                cout << "Density: "; cin >> dens; cout << dens << endl;
+                for (int c=0; c<db.getMats(); c++) {
+                    name = db.getMat(c).getName();
+                    double density = db.getMat(c).getDensity();
+                    if (name.find(search) != string::npos || dens == density) {
+                        cout << c << ": " << name << endl;
+                    }
+                }
+                hello = 4;
+
+            case 4: // Change Mat
                 cout << "Change material to: ";
                 cin >> idx;
                 cout << db.getMat(idx).getName() << endl;
                 break;
 
-            case 4:
+            case 5: // checkFracs -> check()
                 db.getMat(idx).checkFractions();
                 break;
             
-            case 5:
-                cin >> code >> type;
-                db.getMat(idx).getInputFormat(code, type, db.getDB());
+            case 6: // Transport code
+                cin >> code >> type >> calcType;
+                db.getMat(idx).getInputFormat(code, type, calcType, db.getDB());
                 
                 break;
 
