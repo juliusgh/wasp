@@ -263,6 +263,7 @@ class Database {
                                 Component c = contains.at(j);
                                 // cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
                         }
+                        // checkFractions();
                     }
 
                     // 1) Weight Fractions to Atom Fractions [Still need elem->iso]
@@ -343,10 +344,9 @@ class Database {
                                 auto e = mass.getElem(m);
                                 if (ci.getElement() == e.getSymbol()) {
                                     if (ci.getMassNum()>0){
-                                    for (int p=0; p<e.getIsotopes().size(); p++){
-                                        if (ci.getMassNum() == e.getIsotopes().at(p).getMassNum()) {total += ci.getAmount() * e.getIsotopes().at(p).getMass();
+                                        for (int p=0; p<e.getIsotopes().size(); p++){
+                                            if (ci.getMassNum() == e.getIsotopes().at(p).getMassNum()) {total += ci.getAmount() * e.getIsotopes().at(p).getMass();}
                                         }
-                                    }
                                     }
                                     else { // Expand elements into isotopes
                                         total += ci.getAmount() * mass.getElem(m).getMass();
@@ -359,12 +359,12 @@ class Database {
                         for (int j=0; j<contains.size(); j++) {
                             contains.at(j).setAmount(atomMasses.at(j) / total);
                             Component c = contains.at(j);
-                            // cout << c.getElement() << " " << c.getAmount() << endl;
+                            cout << c.getElement() << " " << c.getAmount() << endl;
                         }
                     }
                     
                     // 4) Atom Fractions to APM (Only for Elemental and clean numbers) [Works]
-                    else if (type == "Atom Fractions" && style == "Atoms Per Molecule" && formula != "" && !iso) {
+                    else if (type == "Atom Fractions" && style == "Atoms Per Molecule" && formula != "") {
                         cout << formula << endl;
                         double min = 1.0;
                         for (int i=0; i<contains.size(); i++) {
@@ -1023,8 +1023,8 @@ class Database {
             // m.setAmtSum(apm);
 
             matVec.push_back(m);
-            //if (m.getType() == "Atom Fractions") {m.convert("Atom Fractions", true); m.getInputFormat("Generic", "Native", "Elemental", dbName); m.checkFractions(); cout << endl;}
-            // if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", true); m.convert("Weight Fractions", true); m.convert("Atom Fractions", true); m.convert("Weight Fractions", true); m.convert("Native", true); m.checkFractions(); cout << endl;}
+            if (m.getType() == "Weight Fractions") {m.getInputFormat("Generic", "Weight Fractions", "Isotopic", dbName); m.checkFractions(); cout << endl;}
+            // if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", false); m.convert("Atoms Per Molecule", false); m.convert("Weight Fractions", false); m.checkFractions(); cout << endl;}
             // if (m.getType() == "Chemical Formula") {m.checkAtoms();}
             return true;
         }
