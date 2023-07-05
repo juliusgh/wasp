@@ -4,7 +4,8 @@
 #include <vector>
 #include <map>
 #include <stack>
-#include <valarray>
+#include <tuple>
+//#include <valarray>
 #include <cstdlib>
 #include <sstream>
 #include <stdexcept>
@@ -551,25 +552,27 @@ class Database {
                     } } }
 
             string countAtoms(string str) {
-            // Use LinkedHashmap to store elements in insertion order
+            // Using a LinkedHashmap to store elements in insertion order
             map<string, int> mp;
-            bool cut = false; bool isStr = false; bool dec = false;
+            bool cut = false; bool dec = false;
             int mult = 1;
             stack<int> stack;
-            while (str.find("sub>") != string::npos) {
-                if (str.find("<sub>x") != string::npos) {str.replace(str.find("<sub>x"), 6, "");}
-                if (str.find("<sub>") != string::npos) {str.replace(str.find("<sub>"), 5, "");}
-                if (str.find("</sub>") != string::npos) {str.replace(str.find("</sub>"), 6, "·");}
+            vector <tuple<int, int>> nestedVec{};
+            while (str.find("sub>") != string::npos) { //Replacing troublesome chars
+                if (str.find("<sub>x") != string::npos) {str.replace(str.find("<sub>x"), 6, "");} // Unnecessary since this means the amount is proportional
+                if (str.find("<sub>") != string::npos) {str.replace(str.find("<sub>"), 5, "");} // Always followed by </sub>, so this char is also unnecessary
+                if (str.find("</sub>") != string::npos) {str.replace(str.find("</sub>"), 6, " ");} // This can show the difference between a subscript number and a leading coefficient. 
+                if (str.find("·") != string::npos) {str.replace(str.find("·"), 1, "*");} // Could possible just need " " or "" if mult can still be set to 1
             }
-
+            //cout << str << endl;
             for (int i = 0; i < str.length(); i++) {
                 int count = 0;
+                if (str[i] == '*') {cut = false; i++;}
                 char c = str[i];
                 string a = string(1, c);
-                // if (a == "·") {cut = false;}
-                if (!cut || a == "·") {mult = 1;}
+                if (!cut) {mult = 1;}
     
-                if (a.find_first_of("0123456789") != string::npos && stack.empty()) {
+                if (a.find_first_of("0123456789") != string::npos && stack.empty()) { //Leading coefficient
                     cut = true;
                     int z = i;
                     mult = 0; float dec = 0;
@@ -577,119 +580,117 @@ class Database {
                         mult = stoi(to_string(mult)+str[z]);
                         z++;
                     }
-                    // cout << mult;
                     i = z;
                     a = string(1, str[i]);
                 }
-                if (a == ".") {i +=2; a = string(1, str[i]); dec = true;}
+                if (a == ".") {i +=2; a = string(1, str[i]); dec = true;} // Decimals
                 
-                if (a == "(" || a == "[") {stack.push(i); continue;}
+                if (a == "(" || a == "[") {
+                    stack.push(i);  // Pushes an open parethesis or bracket index onto the stack
+                    continue;
+                }
                 else if ((a == ")" || a == "]") && !stack.empty()) {
                     int end = i;
+                    // Deals with trailing multipliers
                     if (i < str.length()-1 && string(1, str[i+1]) >= "0" && string(1, str[i+1]) <= "9") {
-                        // cout << str << "   " << mult << endl;
                         mult *= stoi(string(1, str[i+1]));
                         if (i+2 < str.length() && string(1, str[i+2]) >= "0" && string(1, str[i+2]) <= "9") {
                             // cout << mult << " to ";
                             mult = 10*mult + stoi(string(1, str[i+2]));
-                            // cout << mult << endl;
                         }
                     }
-                    int start = stack.top()+1;
+                    int start = stack.top()+1; // Starting element inside () or [] from the most recent ( or [
                     int len = to_string(mult).length();
-                    // cout << start << " " << mult << endl;
-                    for (int r=start; r<end; r++) {
+                    int stop = -1;
+                    for (int r=start; r<end; r++) { // Handles elements inside of () or []
                         string s = string(1, str[r]);
+                        if ((s == "(" || s == "[") && !nestedVec.empty()) { // Prevents recounting elements inside of nested parentheses
+                            for (int v = 0; v != nestedVec.size(); v++) {
+                                if (std::get<0>(nestedVec.at(v)) == r && mult > 1) {mult--; mult *= stoi(string(1, str[std::get<1>(nestedVec.at(v))+1])); stop = std::get<1>(nestedVec.at(v));}
+                                else if (std::get<0>(nestedVec.at(v)) == r) {r = std::get<1>(nestedVec.at(v));}
+                            }
+                        }
+                        if (r == stop) {mult /= stoi(string(1, str[end+1])); mult++;}
                         if (s.find_first_of("ABCDEFGHIJKLMNOPQRSTUVWXYZ") != string::npos) {
                             count = 0;
-                            isStr = false;
+                            string k = "";
                             for (int t = r + 1; t < end; t++) {
                                 char q = str.at(t);
                                 string st = string(1, q);
                                 if (st.find_first_of("abcdefghijklmnopqrstuvwxyz") != string::npos) {
                                     s += st;
-                                    if (mp.find(s) == mp.end()) {mp[s] = 0;}
-                                    else {mp[s] += mult;}
-                                    count = 1;
+                                    count = 0;
                                 }
                                 else if (st.find_first_of("0123456789") != string::npos) {
-                                    if (a=="D") {a=" H";}
-                                    else if (a=="T") {a="H ";}
-                                    int k = stoi(st);
-                                    if (mp.find(s) == mp.end()) {mp[s] = k*mult;}
-                                    else if (isStr) {mp[s] = mult*(10*(mp[s]/mult) + k);}
-                                    else {mp[s] += k*mult;}
-                                    //cout << s << mp[s] << endl;
+                                    k+=st;
                                     count = 1;
-                                    isStr = true;
                                 }
                                 else {
                                     r = t - 1;
-                                    // cout << s << mp[s] << endl;
                                     break;
                                 }
                             }
-                            // count == 0
-                            if (count == 0 || mp[s] == 0) {
-                                // cout << s << mp[s] << endl;
-                                if (a=="D" || a=="T") {a="H";}
+                            if (count == 0) {
+                                if (s=="D" || s=="T") {s="H";}
                                 if (mp.find(s) == mp.end()) {mp[s] = mult;}
                                 else {mp[s] += mult;}
-                                // cout << s << mp[s] << " " << mult << endl;
+                                // cout << s << mp[s] << " " << mult << "    ";  // cout<< = println() in Java
                             }
-                            // else if (r+1 == end) {mp[s] += mult;}
+                            if (a=="D") {a=" H";}
+                            else if (a=="T") {a="H ";}
+                            if (mp.find(s) == mp.end() && k != "") {if (dec) {mp[s] = stoi(k)*mult+1; dec = false;} else {mp[s] = stoi(k)*mult;}}
+                            else if (k != "") {if (dec) {mp[s] += stoi(k)*mult+1; dec = false;} mp[s] += stoi(k)*mult;}
+                            cout << s << mp[s] << "    ";
                         }
                     }
+
                     cut = false;
+                    i=end;
                     if (mult>1) {i+=len;}
+                    // The tuple stores the startingand ending indices of the () or [].
+                    tuple <int, int> nested = make_tuple(start-1, end); nestedVec.push_back(nested);
                     stack.pop();
                     continue;
                 }
-                else if (stack.empty()) {
-                if (a.find_first_of("ABCDEFGHIJKLMNOPQRSTUVWXYZ") != string::npos) {
-                    isStr = false;
+                else if (stack.empty()) { // Normal iteration
+                if (a.find_first_of("ABCDEFGHIJKLMNOPQRSTUVWXYZ") != string::npos) { //Finds the first letter
+                    string k = "";
                     for (int j = i + 1; j < str.length(); j++) {
                         char d = str.at(j);
                         string b = string(1, d);
-                        if (b.find_first_of("abcdefghijklmnopqrstuvwxyz") != string::npos) {
+                        if (b.find_first_of("abcdefghijklmnopqrstuvwxyz") != string::npos) {// Finds the second letter if there is one
                             a += b;
-                            if (mp.find(a) == mp.end()) {mp[a] = 0;}
-                            else {mp[a] += mult;}
-                            count = 1;
+                            // if (mp.find(a) == mp.end()) {mp[a] = 0;}
+                            // else {mp[a] += mult;}
+                            count = 0;
                         }
-                        else if (b.find_first_of("0123456789") != string::npos) {
-                            if (a=="D") {a=" H";}
-                            else if (a=="T") {a="H ";}
-                            int k = stoi(b);
-                            if (mp.find(a) == mp.end()) {if (dec) {mp[a] = k*mult+1; dec = false;} else {mp[a] = k*mult;}}
-                            else if (isStr) {mp[a] = (mp[a] - stoi(string(1, str[j-1]))) + mult*(10*(stoi(string(1, str[j-1]))/mult) + k);}
-                            // mp[a] = (mp[a] - stoi(string(1, str[j-1]))) + mult*(10*(stoi(string(1, str[j-1]))/mult) + k);
-                            else {if (dec) {mp[a] = k*mult+1; dec = false;} mp[a] += k*mult;}
-                            count = 1;
-                            isStr = true;
+                        else if (b.find_first_of("0123456789") != string::npos) {// Finds the corresponding amount
+                            k += b;
+                            count=1;
                         }
                         else {
                             i = j - 1;
                             break;
                         }
                     }
-                    if (count == 0 || mp[a] == 0) {
+                    if (count == 0) {// No number after the element -->1*mult
                         if (a=="D") {a=" H";}
                         else if (a=="T") {a="H ";}
                         if (mp.find(a) == mp.end()) {if (dec) {mp[a] = mult+1; dec = false;} mp[a] = mult;}
                         else {if (dec) {mp[a] += mult+1; dec = false;} mp[a] += mult;}
                     }
                     else if (i+1 == str.length()) {mp[a] += mult;}
-                    
-                    // if (count == 0) {
-                    //     if (mp.find(a) == mp.end()) {mp[a] = mult;}
-                    //     else {mp[a] += mult;}
-                    // }
+                    else {// There is a number after the element in the formula
+                        if (a=="D") {a=" H";}
+                        else if (a=="T") {a="H ";}
+                        if (mp.find(a) == mp.end() && k != "") {if (dec) {mp[a] = stoi(k)*mult+1; dec = false;} else {mp[a] = stoi(k)*mult;}}
+                        else if (k != "") {if (dec) {mp[a] += stoi(k)*mult+1; dec = false;} else {mp[a] += stoi(k)*mult;}}
+                    }
                 }
                 }
             }
             string f = "";
-            for (auto entry : mp) {
+            for (auto entry : mp) {// Stores the elements with their corresponding amounts into a concatenated string
                 f += entry.first;
                 if (entry.second > 1) {f+= to_string(entry.second);}
             }
@@ -702,26 +703,29 @@ class Database {
                     vector<string> symbols{};
                     for (int i=0; i<imax; i++) {
                         Component c = contains.at(i);
-                        if (c.getAmount()>1) {symbols.push_back(c.getElement()+to_string(int(c.getAmount())));}
-                        else {symbols.push_back(c.getElement());}
+                        if (c.getAmount()>1) {
+                            if (c.getElement() == "D" || c.getElement() == "T") {symbols.push_back("H" + to_string(int(c.getAmount())));}
+                            else {symbols.push_back(c.getElement()+to_string(int(c.getAmount())));}}
+                        else {
+                            if (c.getElement() == "D" || c.getElement() == "T") {symbols.push_back("H");}
+                            else {symbols.push_back(c.getElement());}}
                     }
                     sort(symbols.begin(), symbols.end());
                     string f = countAtoms(formula);
                     while(f.find(" ") != -1) {f.replace(f.find(" "), 1, "");}
                     string lst = "";
                     for (int j=0; j<imax; j++) {
-                        if (symbols.at(j)[0] == 'D' && isdigit(symbols.at(j)[1])) {lst += "H" + symbols.at(j).substr(1, symbols.at(j).length()-1);}
-                        else if (symbols.at(j)[0] == 'T' && isdigit(symbols.at(j)[1])) {lst += "H" + symbols.at(j).substr(1, symbols.at(j).length()-1);}
-                        else {lst += symbols.at(j);}
+                        lst += symbols.at(j);
                     }
                     bool matches = f == lst;
+                    // Weird case where D or T starts first in the formula
+                    if (f.length()>1 && f[0] == 'H' && int(f[1])>=65 && int(f[1])<=71) {string specCase = f.substr(1, f.length()-1) + f[0]; matches = specCase == lst;}
 
                     if(matches){
                         // cout << "    " << name << "\t" << "Okay with " << imax << " element"; 
                         //if (imax>1) {cout << "s";} cout << endl;
                     }
                     else {
-                        //string ref = references[0];
                         cout << "    " << name << " " << formula << "\t" << "formula does not match atom amounts" << endl;
                         cout << f << " " << lst << endl;
                     }
