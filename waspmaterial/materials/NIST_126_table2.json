@@ -1,0 +1,544 @@
+{"MaterialDatabase" : {
+    "Name": "NIST 126",
+    "Reference": "NIST Standard Reference Database 126, X-Ray Mass Attenuation Coefficients",
+    "Materials": [
+      { "Name": "A-150 Tissue-Equivalent Plastic", 
+        "Density": 1.127, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.10133 },
+            {"Element": "C",  "Fraction": 0.775498 },
+            {"Element": "N",  "Fraction": 0.035057 },
+            {"Element": "O",  "Fraction": 0.052315 },
+            {"Element": "F",  "Fraction": 0.017423 },
+            {"Element": "Ca", "Fraction": 0.018377 }
+        ]
+      },
+      { "Name": "Adipose Tissue (ICRU-44)", 
+        "Density": 0.95, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.114 },
+            {"Element": "C",  "Fraction": 0.598 },
+            {"Element": "N",  "Fraction": 0.007 },
+            {"Element": "O",  "Fraction": 0.278 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.001 },
+            {"Element": "Cl", "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Air, Dry (near sea level)", 
+        "Density": 0.001205, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 1.24E-4 },
+            {"Element": "N",  "Fraction": 0.755268 },
+            {"Element": "O",  "Fraction": 0.231781 },
+            {"Element": "Ar", "Fraction": 0.012827 }
+        ]
+      },
+      { "Name": "Alanine", 
+        "Density": 1.424, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.079192 },
+            {"Element": "C",  "Fraction": 0.404437 },
+            {"Element": "N",  "Fraction": 0.157213 },
+            {"Element": "O",  "Fraction": 0.359157 }
+        ]
+      },
+      { "Name": "B-100 Bone-Equivalent Plastic", 
+        "Density": 1.45, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.065473 },
+            {"Element": "C",  "Fraction": 0.536942 },
+            {"Element": "N",  "Fraction": 0.0215 },
+            {"Element": "O",  "Fraction": 0.032084 },
+            {"Element": "F",  "Fraction": 0.167415 },
+            {"Element": "Ca", "Fraction": 0.176585 }
+        ]
+      },
+      { "Name": "Bakelite", 
+        "Density": 1.25, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.057444 },
+            {"Element": "C",  "Fraction": 0.774589 },
+            {"Element": "O",  "Fraction": 0.167968 }
+        ]
+      },
+      { "Name": "Blood, Whole (ICRU-44)", 
+        "Density": 1.06, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.102 },
+            {"Element": "C",  "Fraction": 0.11 },
+            {"Element": "N",  "Fraction": 0.033 },
+            {"Element": "O",  "Fraction": 0.745 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.003 },
+            {"Element": "K",  "Fraction": 0.002 },
+            {"Element": "Fe", "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Bone, Cortical (ICRU-44)", 
+        "Density": 1.92, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.034 },
+            {"Element": "C",  "Fraction": 0.155 },
+            {"Element": "N",  "Fraction": 0.042 },
+            {"Element": "O",  "Fraction": 0.435 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "Mg", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.103 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Ca", "Fraction": 0.225 }
+        ]
+      },
+      { "Name": "Brain, Grey/White Matter (ICRU-44)", 
+        "Density": 1.04, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.107 },
+            {"Element": "C",  "Fraction": 0.145 },
+            {"Element": "N",  "Fraction": 0.022 },
+            {"Element": "O",  "Fraction": 0.712 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.004 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.003 },
+            {"Element": "K",  "Fraction": 0.003 }
+        ]
+      },
+      { "Name": "Breast Tissue (ICRU-44)", 
+        "Density": 1.02, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.106 },
+            {"Element": "C",  "Fraction": 0.332 },
+            {"Element": "N",  "Fraction": 0.03 },
+            {"Element": "O",  "Fraction": 0.527 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "C-552 Air-equivalent Plastic", 
+        "Density": 1.76, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.024681 },
+            {"Element": "C",  "Fraction": 0.50161 },
+            {"Element": "O",  "Fraction": 0.004527 },
+            {"Element": "F",  "Fraction": 0.465209 },
+            {"Element": "Si", "Fraction": 0.003973 }
+        ]
+      },
+      { "Name": "Cadmium Telluride", 
+        "Density": 6.2, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Cd", "Fraction": 0.468358 },
+            {"Element": "Te", "Fraction": 0.531642 }
+        ]
+      },
+      { "Name": "Calcium Fluoride", 
+        "Density": 3.18, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "F",  "Fraction": 0.486672 },
+            {"Element": "Ca", "Fraction": 0.513328 }
+        ]
+      },
+      { "Name": "Calcium Sulfate", 
+        "Density": 2.96, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.470081 },
+            {"Element": "S",  "Fraction": 0.235534 },
+            {"Element": "Ca", "Fraction": 0.294385 }
+        ]
+      },
+      { "Name": "15 mmol L-1 Ceric Ammonium Sulfate Solution", 
+        "Density": 1.03, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.107694 },
+            {"Element": "N",  "Fraction": 8.16E-4 },
+            {"Element": "O",  "Fraction": 0.875172 },
+            {"Element": "S",  "Fraction": 0.014279 },
+            {"Element": "Ce", "Fraction": 0.00204 }
+        ]
+      },
+      { "Name": "Cesium Iodide", 
+        "Density": 4.51, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "I",  "Fraction": 0.488451 },
+            {"Element": "Cs", "Fraction": 0.511549 }
+        ]
+      },
+      { "Name": "Concrete, Ordinary", 
+        "Density": 2.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.0221 },
+            {"Element": "C",  "Fraction": 0.002484 },
+            {"Element": "O",  "Fraction": 0.57493 },
+            {"Element": "Na", "Fraction": 0.015208 },
+            {"Element": "Mg", "Fraction": 0.001266 },
+            {"Element": "Al", "Fraction": 0.019953 },
+            {"Element": "Si", "Fraction": 0.304627 },
+            {"Element": "K",  "Fraction": 0.010045 },
+            {"Element": "Ca", "Fraction": 0.042951 },
+            {"Element": "Fe", "Fraction": 0.006435 }
+        ]
+      },
+      { "Name": "Concrete, Barite (TYPE BA)", 
+        "Density": 3.35, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.003585 },
+            {"Element": "O",  "Fraction": 0.311622 },
+            {"Element": "Mg", "Fraction": 0.001195 },
+            {"Element": "Al", "Fraction": 0.004183 },
+            {"Element": "Si", "Fraction": 0.010457 },
+            {"Element": "S",  "Fraction": 0.107858 },
+            {"Element": "Ca", "Fraction": 0.050194 },
+            {"Element": "Fe", "Fraction": 0.047505 },
+            {"Element": "Ba", "Fraction": 0.4634 }
+        ]
+      },
+      { "Name": "Eye Lens (ICRU-44)", 
+        "Density": 1.07, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.096 },
+            {"Element": "C",  "Fraction": 0.195 },
+            {"Element": "N",  "Fraction": 0.057 },
+            {"Element": "O",  "Fraction": 0.646 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Ferrous Sulfate Standard Fricke", 
+        "Density": 1.024, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.108376 },
+            {"Element": "O",  "Fraction": 0.878959 },
+            {"Element": "Na", "Fraction": 2.2E-5 },
+            {"Element": "S",  "Fraction": 0.012553 },
+            {"Element": "Cl", "Fraction": 3.5E-5 },
+            {"Element": "Fe", "Fraction": 5.5E-5 }
+        ]
+      },
+      { "Name": "Gadolinium Oxysulfide", 
+        "Density": 7.44, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.084527 },
+            {"Element": "S",  "Fraction": 0.084704 },
+            {"Element": "Gd", "Fraction": 0.830769 }
+        ]
+      },
+      { "Name": "Gafchromic Sensor", 
+        "Density": 1.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.0897 },
+            {"Element": "C",  "Fraction": 0.6058 },
+            {"Element": "N",  "Fraction": 0.1122 },
+            {"Element": "O",  "Fraction": 0.1923 }
+        ]
+      },
+      { "Name": "Gallium Arsenide", 
+        "Density": 5.31, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ga", "Fraction": 0.48203 },
+            {"Element": "As", "Fraction": 0.51797 }
+        ]
+      },
+      { "Name": "Glass, Borosilicate (Pyrex)", 
+        "Density": 2.23, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.040066 },
+            {"Element": "O",  "Fraction": 0.539559 },
+            {"Element": "Na", "Fraction": 0.028191 },
+            {"Element": "Al", "Fraction": 0.011644 },
+            {"Element": "Si", "Fraction": 0.37722 },
+            {"Element": "K",  "Fraction": 0.003321 }
+        ]
+      },
+      { "Name": "Glass, Lead", 
+        "Density": 6.22, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.156453 },
+            {"Element": "Si", "Fraction": 0.080866 },
+            {"Element": "Ti", "Fraction": 0.008092 },
+            {"Element": "As", "Fraction": 0.002651 },
+            {"Element": "Pb", "Fraction": 0.751938 }
+        ]
+      },
+      { "Name": "Lithium Fluride", 
+        "Density": 2.635, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Li", "Fraction": 0.267585 },
+            {"Element": "F",  "Fraction": 0.732415 }
+        ]
+      },
+      { "Name": "Lithium Tetraborate", 
+        "Density": 2.44, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Li", "Fraction": 0.082081 },
+            {"Element": "B",  "Fraction": 0.255715 },
+            {"Element": "O",  "Fraction": 0.662204 }
+        ]
+      },
+      { "Name": "Lung Tissue (ICRU-44)", 
+        "Density": 1.05, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.103 },
+            {"Element": "C",  "Fraction": 0.105 },
+            {"Element": "N",  "Fraction": 0.031 },
+            {"Element": "O",  "Fraction": 0.749 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.003 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Magnesium Tetroborate", 
+        "Density": 2.53, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.24087 },
+            {"Element": "O",  "Fraction": 0.623762 },
+            {"Element": "Mg", "Fraction": 0.135367 }
+        ]
+      },
+      { "Name": "Mercuric Iodide", 
+        "Density": 6.36, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "I",  "Fraction": 0.55856 },
+            {"Element": "Hg", "Fraction": 0.44144 }
+        ]
+      },
+      { "Name": "Muscle, Skeletal (ICRU-44)", 
+        "Density": 1.05, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.102 },
+            {"Element": "C",  "Fraction": 0.143 },
+            {"Element": "N",  "Fraction": 0.034 },
+            {"Element": "O",  "Fraction": 0.71 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.001 },
+            {"Element": "K",  "Fraction": 0.004 }
+        ]
+      },
+      { "Name": "Ovary (ICRU-44)", 
+        "Density": 1.05, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.093 },
+            {"Element": "N",  "Fraction": 0.024 },
+            {"Element": "O",  "Fraction": 0.768 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Photographic Emulsion (Kodak Type AA)", 
+        "Density": 2.2, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.0305 },
+            {"Element": "C",  "Fraction": 0.2107 },
+            {"Element": "N",  "Fraction": 0.0721 },
+            {"Element": "O",  "Fraction": 0.1632 },
+            {"Element": "Br", "Fraction": 0.2228 },
+            {"Element": "Ag", "Fraction": 0.3007 }
+        ]
+      },
+      { "Name": "Photographic Emulsion (Standard Nuclear)", 
+        "Density": 3.815, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.0141 },
+            {"Element": "C",  "Fraction": 0.072261 },
+            {"Element": "N",  "Fraction": 0.01932 },
+            {"Element": "O",  "Fraction": 0.066101 },
+            {"Element": "S",  "Fraction": 0.00189 },
+            {"Element": "Br", "Fraction": 0.349104 },
+            {"Element": "Ag", "Fraction": 0.474105 },
+            {"Element": "I",  "Fraction": 0.00312 }
+        ]
+      },
+      { "Name": "Plastic Scintillator, Vinyltoluene", 
+        "Density": 1.032, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.085 },
+            {"Element": "C",  "Fraction": 0.915 }
+        ]
+      },
+      { "Name": "Polyethylene", 
+        "Density": 0.93, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.143716 },
+            {"Element": "C",  "Fraction": 0.856284 }
+        ]
+      },
+      { "Name": "Polyethylene Terephthalate, (Mylar)", 
+        "Density": 1.38, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.04196 },
+            {"Element": "C",  "Fraction": 0.625016 },
+            {"Element": "O",  "Fraction": 0.333024 }
+        ]
+      },
+      { "Name": "Polymethyl Methacrylate", 
+        "Density": 1.19, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.080541 },
+            {"Element": "C",  "Fraction": 0.599846 },
+            {"Element": "O",  "Fraction": 0.319613 }
+        ]
+      },
+      { "Name": "Polystyrene", 
+        "Density": 1.06, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.077421 },
+            {"Element": "C",  "Fraction": 0.922579 }
+        ]
+      },
+      { "Name": "Polytetrafluoroethylene, (Teflon)", 
+        "Density": 2.25, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.240183 },
+            {"Element": "F",  "Fraction": 0.759818 }
+        ]
+      },
+      { "Name": "Polyvinyl Chloride", 
+        "Density": 1.406, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.048382 },
+            {"Element": "C",  "Fraction": 0.384361 },
+            {"Element": "Cl", "Fraction": 0.567257 }
+        ]
+      },
+      { "Name": "Radiochromic Dye Film, Nylon Base", 
+        "Density": 1.08, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.101996 },
+            {"Element": "C",  "Fraction": 0.654396 },
+            {"Element": "N",  "Fraction": 0.098915 },
+            {"Element": "O",  "Fraction": 0.144693 }
+        ]
+      },
+      { "Name": "Testis (ICRU-44)", 
+        "Density": 1.04, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.106 },
+            {"Element": "C",  "Fraction": 0.099 },
+            {"Element": "N",  "Fraction": 0.02 },
+            {"Element": "O",  "Fraction": 0.766 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Tissue, Soft (ICRU-44)", 
+        "Density": 1.06, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.102 },
+            {"Element": "C",  "Fraction": 0.143 },
+            {"Element": "N",  "Fraction": 0.034 },
+            {"Element": "O",  "Fraction": 0.708 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.003 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.003 }
+        ]
+      },
+      { "Name": "Tissue, Soft (ICRU Four-Component)", 
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.101174 },
+            {"Element": "C",  "Fraction": 0.111 },
+            {"Element": "N",  "Fraction": 0.026 },
+            {"Element": "O",  "Fraction": 0.761826 }
+        ]
+      },
+      { "Name": "Tissue-Equivalent Gas, Methane Based", 
+        "Density": 0.001064, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.101873 },
+            {"Element": "C",  "Fraction": 0.456177 },
+            {"Element": "N",  "Fraction": 0.035172 },
+            {"Element": "O",  "Fraction": 0.406778 }
+        ]
+      },
+      { "Name": "Tissue-Equivalent Gas, Propane Based", 
+        "Density": 0.001826, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.102676 },
+            {"Element": "C",  "Fraction": 0.568937 },
+            {"Element": "N",  "Fraction": 0.035022 },
+            {"Element": "O",  "Fraction": 0.293365 }
+        ]
+      },
+      { "Name": "Water, Liquid", 
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.111898 },
+            {"Element": "O",  "Fraction": 0.888102 }
+        ]
+      }
+    ],
+    "Comments" : [
+        "X-Ray Mass Attenuation Coefficients",
+        "NIST Standard Reference Database 126",
+        "Last Update to Data Content: July 2004",
+        "www.nist.gov/pml/x-ray-mass-attenuation-coefficients",
+        "Table 2. Material constants and composition for compounds and mixtures."
+    ]
+  }
+}

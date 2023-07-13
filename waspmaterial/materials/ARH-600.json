@@ -1,0 +1,613 @@
+{"MaterialDatabase" : {
+    "Name": "ARH-600",
+    "Reference": "R. D. Carter, G. R. Kiel, K. R. Ridgway, Criticality Handbook, Volume I, ARH-600, 1960",
+    "Materials": [
+      { "Name": "Aluminum", 
+        "Density": 2.699, 
+        "Type": "Chemical Formula", 
+        "Formula": "Al", 
+        "Contains": [
+            {"Element": "Al", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Beryllia", 
+        "Density": 3.02, 
+        "Type": "Chemical Formula", 
+        "Formula": "BeO", 
+        "Contains": [
+            {"Element": "Be", "Atoms": 1.0 },
+            {"Element": "O",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Beryllium", 
+        "Density": 1.847, 
+        "Type": "Chemical Formula", 
+        "Formula": "Be", 
+        "Contains": [
+            {"Element": "Be", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Bismuth", 
+        "Density": 9.78, 
+        "Type": "Chemical Formula", 
+        "Formula": "Bi", 
+        "Contains": [
+            {"Element": "Bi", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Boral", 
+        "Comment": "(without Al Clad, 65 wt% Al, 35 Wt% B4C)",
+        "Density": 2.53, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.274 },
+            {"Element": "C",  "Fraction": 0.076 },
+            {"Element": "Al", "Fraction": 0.65 }
+        ]
+      },
+      { "Name": "Borax", 
+        "Comment": "(with Al clad, 1/4 inch sheet)",
+        "Density": 1.73, 
+        "Type": "Chemical Formula", 
+        "Formula": "Na2B4O7 · 10H2O", 
+        "Contains": [
+            {"Element": "Na", "Atoms": 2.0 },
+            {"Element": "B",  "Atoms": 4.0 },
+            {"Element": "O",  "Atoms": 17.0 },
+            {"Element": "H",  "Atoms": 20.0 }
+        ]
+      },
+      { "Name": "Boric Acid", 
+        "Density": 1.435, 
+        "Type": "Chemical Formula", 
+        "Formula": "H3BO3", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 3.0 },
+            {"Element": "B",  "Atoms": 1.0 },
+            {"Element": "O",  "Atoms": 3.0 }
+        ]
+      },
+      { "Name": "Boron", 
+        "Density": 2.48, 
+        "Type": "Chemical Formula", 
+        "Formula": "B", 
+        "Contains": [
+            {"Element": "B",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Boron Carbide", 
+        "Density": 2.54, 
+        "Type": "Chemical Formula", 
+        "Formula": "B4C", 
+        "Contains": [
+            {"Element": "B",  "Atoms": 4.0 },
+            {"Element": "C",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Boron Stainless Steel", 
+        "Aliases": "1 Wt% Boron",
+        "Comment": "(1 Wt% Boron in 304 L)",
+        "Density": 7.87, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.01 },
+            {"Element": "Fe", "Fraction": 0.68 },
+            {"Element": "Cr", "Fraction": 0.19 },
+            {"Element": "Ni", "Fraction": 0.12 }
+        ]
+      },
+      { "Name": "Boron Steel (1 Wt%)", 
+        "Density": 7.87, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.01 },
+            {"Element": "Fe", "Fraction": 0.988 },
+            {"Element": "C",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Borated Polyethylene (10 Wt% B as B4C)", 
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.1 },
+            {"Element": "C",  "Fraction": 0.774 },
+            {"Element": "H",  "Fraction": 0.126 }
+        ]
+      },
+      { "Name": "Bricks (common silica)", 
+        "Density": 1.8, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Al", "Fraction": 0.005 },
+            {"Element": "Ca", "Fraction": 0.014 },
+            {"Element": "Fe", "Fraction": 0.007 },
+            {"Element": "O",  "Fraction": 0.525 },
+            {"Element": "Si", "Fraction": 0.449 }
+        ]
+      },
+      { "Name": "Bricks (fire clay)", 
+        "Density": 2.1, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Al", "Fraction": 0.212 },
+            {"Element": "Ca", "Fraction": 0.007 },
+            {"Element": "Fe", "Fraction": 0.014 },
+            {"Element": "O",  "Fraction": 0.497 },
+            {"Element": "Mg", "Fraction": 0.006 },
+            {"Element": "Si", "Fraction": 0.252 },
+            {"Element": "Ti", "Fraction": 0.012 }
+        ]
+      },
+      { "Name": "Cadmium", 
+        "Density": 8.65, 
+        "Type": "Chemical Formula", 
+        "Formula": "Cd", 
+        "Contains": [
+            {"Element": "Cd", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Cadmium Nitrate", 
+        "Density": 2.46, 
+        "Type": "Chemical Formula", 
+        "Formula": "(Cd(NO3)2)(4H2O)", 
+        "Contains": [
+            {"Element": "Cd", "Atoms": 1.0 },
+            {"Element": "H",  "Atoms": 8.0 },
+            {"Element": "N",  "Atoms": 2.0 },
+            {"Element": "O",  "Atoms": 10.0 }
+        ]
+      },
+      { "Name": "Carbon", 
+        "Aliases": "Graphite",
+        "Comment": "(average density of reactor grade)",
+        "Density": 1.71, 
+        "Type": "Chemical Formula", 
+        "Formula": "C", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Carbon Tetrachloride", 
+        "Density": 1.6, 
+        "Type": "Chemical Formula", 
+        "Formula": "CCl4", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 1.0 },
+            {"Element": "Cl", "Atoms": 4.0 }
+        ]
+      },
+      { "Name": "Cellulose", 
+        "Density": 1.45, 
+        "Type": "Chemical Formula", 
+        "Formula": "(C6H10O5)n", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 6.0 },
+            {"Element": "H",  "Atoms": 10.0 },
+            {"Element": "O",  "Atoms": 5.0 }
+        ]
+      },
+      { "Name": "Chromium", 
+        "Density": 7.19, 
+        "Type": "Chemical Formula", 
+        "Formula": "Cr", 
+        "Contains": [
+            {"Element": "Cr", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Concrete (common Portland)", 
+        "Comment": "See Reactor Handbook for other shielding concretes",
+        "Density": 2.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Al", "Fraction": 0.034 },
+            {"Element": "Ca", "Fraction": 0.044 },
+            {"Element": "Fe", "Fraction": 0.014 },
+            {"Element": "H",  "Fraction": 0.01 },
+            {"Element": "O",  "Fraction": 0.532 },
+            {"Element": "Si", "Fraction": 0.337 },
+            {"Element": "Na", "Fraction": 0.029 }
+        ]
+      },
+      { "Name": "Deuterium Oxide", 
+        "Density": 1.1054, 
+        "Type": "Chemical Formula", 
+        "Formula": "D2O", 
+        "Contains": [
+            {"Element": "H",  "MassNumber": 2, "Atoms": 2.0 },
+            {"Element": "O",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Felt", 
+        "Comment": "(in KKD-1 or LLD-1)",
+        "Density": 0.185, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.4346 },
+            {"Element": "H",  "Fraction": 0.0442 },
+            {"Element": "O",  "Fraction": 0.3447 },
+            {"Element": "N",  "Fraction": 0.1765 }
+        ]
+      },
+      { "Name": "Gadolinium", 
+        "Density": 7.868, 
+        "Type": "Chemical Formula", 
+        "Formula": "Gd", 
+        "Contains": [
+            {"Element": "Gd", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Glass, Foam", 
+        "Comment": "(from Y-KC-106)",
+        "Density": 0.128, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.015 },
+            {"Element": "H",  "Fraction": 0.001 },
+            {"Element": "O",  "Fraction": 0.534 },
+            {"Element": "Si", "Fraction": 0.279 },
+            {"Element": "Na", "Fraction": 0.161 },
+            {"Element": "Si", "Fraction": 0.01 }
+        ]
+      },
+      { "Name": "Glass, plate (silica)", 
+        "Density": 2.4, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ca", "Fraction": 0.107 },
+            {"Element": "O",  "Fraction": 0.46 },
+            {"Element": "Si", "Fraction": 0.337 },
+            {"Element": "Na", "Fraction": 0.096 }
+        ]
+      },
+      { "Name": "Glass, Pyrex", 
+        "Aliases": "Pyrex",
+        "Density": 2.23, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Al", "Fraction": 0.01 },
+            {"Element": "B",  "Fraction": 0.037 },
+            {"Element": "O",  "Fraction": 0.535 },
+            {"Element": "Si", "Fraction": 0.377 },
+            {"Element": "Na", "Fraction": 0.041 }
+        ]
+      },
+      { "Name": "Kernite", 
+        "Density": 1.95, 
+        "Type": "Chemical Formula", 
+        "Formula": "(Na2B4O7)(4H2O)", 
+        "Contains": [
+            {"Element": "Na", "Atoms": 2.0 },
+            {"Element": "B",  "Atoms": 4.0 },
+            {"Element": "O",  "Atoms": 11.0 },
+            {"Element": "H",  "Atoms": 8.0 }
+        ]
+      },
+      { "Name": "Kaowool", 
+        "Comment": "density: To 0.192 bulk, temperature is recommended maximum temperature usage",
+        "Density": 2.65, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Al", "Fraction": 0.239 },
+            {"Element": "Fe", "Fraction": 0.009 },
+            {"Element": "O",  "Fraction": 0.499 },
+            {"Element": "Si", "Fraction": 0.243 },
+            {"Element": "Ti", "Fraction": 0.01 }
+        ]
+      },
+      { "Name": "Kynar", 
+        "Density": 1.76, 
+        "Type": "Chemical Formula", 
+        "Formula": "CF2CH2", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 2.0 },
+            {"Element": "H",  "Atoms": 2.0 },
+            {"Element": "F",  "Atoms": 2.0 }
+        ]
+      },
+      { "Name": "Lead", 
+        "Density": 11.34, 
+        "Type": "Chemical Formula", 
+        "Formula": "Pb", 
+        "Contains": [
+            {"Element": "Pb", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Lithium", 
+        "Density": 0.534, 
+        "Type": "Chemical Formula", 
+        "Formula": "Li", 
+        "Contains": [
+            {"Element": "Li", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Lucite", 
+        "Density": 1.2, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.5999 },
+            {"Element": "H",  "Fraction": 0.0805 },
+            {"Element": "O",  "Fraction": 0.3196 }
+        ]
+      },
+      { "Name": "Magnesium", 
+        "Density": 1.74, 
+        "Type": "Chemical Formula", 
+        "Formula": "Mg", 
+        "Contains": [
+            {"Element": "Mg", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Magnesium Oxide", 
+        "Density": 3.22, 
+        "Type": "Chemical Formula", 
+        "Formula": "MgO", 
+        "Contains": [
+            {"Element": "Mg", "Atoms": 1.0 },
+            {"Element": "O",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Masonite", 
+        "Density": 1.3, 
+        "Type": "Chemical Formula", 
+        "Formula": "C6H10O5", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 6.0 },
+            {"Element": "H",  "Atoms": 10.0 },
+            {"Element": "O",  "Atoms": 5.0 }
+        ]
+      },
+      { "Name": "Molydenum", 
+        "Density": 10.22, 
+        "Type": "Chemical Formula", 
+        "Formula": "Mo", 
+        "Contains": [
+            {"Element": "Mo", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Nickel", 
+        "Density": 8.9, 
+        "Type": "Chemical Formula", 
+        "Formula": "Ni", 
+        "Contains": [
+            {"Element": "Ni", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Neoprene", 
+        "Density": 1.23, 
+        "Type": "Chemical Formula", 
+        "Formula": "(C4H5Cl)n", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 4.0 },
+            {"Element": "H",  "Atoms": 5.0 },
+            {"Element": "Cl", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Oil, hydraulic", 
+        "Density": 1.28, 
+        "Type": "Chemical Formula", 
+        "Formula": "C40H33O4Cl6P", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 40.0 },
+            {"Element": "H",  "Atoms": 33.0 },
+            {"Element": "O",  "Atoms": 4.0 },
+            {"Element": "Cl", "Atoms": 6.0 },
+            {"Element": "P",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Lard Oil", 
+        "Density": 0.915, 
+        "Type": "Chemical Formula", 
+        "Formula": "C10H18O", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 10.0 },
+            {"Element": "H",  "Atoms": 18.0 },
+            {"Element": "O",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Paraffin", 
+        "Density": 0.9, 
+        "Type": "Chemical Formula", 
+        "Formula": "C25H52", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 25.0 },
+            {"Element": "H",  "Atoms": 52.0 }
+        ]
+      },
+      { "Name": "Phenolformaldehyde", 
+        "Comment": "(Bakelike, Durez, Resinox - composition depends upon filler used)",
+        "Density": 1.27, 
+        "Type": "Chemical Formula", 
+        "Formula": "(C6H5O)n", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 6.0 },
+            {"Element": "H",  "Atoms": 5.0 },
+            {"Element": "O",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Polymides", 
+        "Aliases": "Nylon",
+        "Comment": "(Nylon)",
+        "Density": 1.14, 
+        "Type": "Chemical Formula", 
+        "Formula": "(C6H11ON)n", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 6.0 },
+            {"Element": "H",  "Atoms": 11.0 },
+            {"Element": "N",  "Atoms": 1.0 },
+            {"Element": "O",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Polyethylene", 
+        "Density": 0.92, 
+        "Type": "Chemical Formula", 
+        "Formula": "(CH2)n", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 1.0 },
+            {"Element": "H",  "Atoms": 2.0 }
+        ]
+      },
+      { "Name": "Polystryrene", 
+        "Density": 1.06, 
+        "Type": "Chemical Formula", 
+        "Formula": "(CH)n", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 1.0 },
+            {"Element": "H",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Polysulfide", 
+        "Density": 1.34, 
+        "Type": "Chemical Formula", 
+        "Formula": "(C2H4S4)n", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 2.0 },
+            {"Element": "H",  "Atoms": 4.0 },
+            {"Element": "S",  "Atoms": 4.0 }
+        ]
+      },
+      { "Name": "Polyvinyl Chloride", 
+        "Density": 1.65, 
+        "Type": "Chemical Formula", 
+        "Formula": "(C2H3Cl)n", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 2.0 },
+            {"Element": "H",  "Atoms": 3.0 },
+            {"Element": "Cl", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Stainless Steel", 
+        "Density": 7.93, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Fe", "Fraction": 0.74 },
+            {"Element": "Cr", "Fraction": 0.18 },
+            {"Element": "Ni", "Fraction": 0.08 }
+        ]
+      },
+      { "Name": "Steel (high Strength)", 
+        "Aliases": "Iron",
+        "Comment": "All other elements were added as nickel which has an average total cross section of these elements listed as C (54-74%), H (6-9%), O (18-40%)",
+        "Density": 7.84, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Fe", "Fraction": 0.98 },
+            {"Element": "Ni", "Fraction": 0.02 }
+        ]
+      },
+      { "Name": "Tantalum", 
+        "Density": 16.6, 
+        "Type": "Chemical Formula", 
+        "Formula": "Ta", 
+        "Contains": [
+            {"Element": "Ta", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Teflon", 
+        "Density": 2.2, 
+        "Type": "Chemical Formula", 
+        "Formula": "C2F4", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 2.0 },
+            {"Element": "F",  "Atoms": 4.0 }
+        ]
+      },
+      { "Name": "Thorium", 
+        "Density": 11.72, 
+        "Type": "Chemical Formula", 
+        "Formula": "Th", 
+        "Contains": [
+            {"Element": "Th", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Thorium Dioxide", 
+        "Density": 10.03, 
+        "Type": "Chemical Formula", 
+        "Formula": "ThO2", 
+        "Contains": [
+            {"Element": "Th", "Atoms": 1.0 },
+            {"Element": "O",  "Atoms": 2.0 }
+        ]
+      },
+      { "Name": "Titanium", 
+        "Density": 4.51, 
+        "Type": "Chemical Formula", 
+        "Formula": "Ti", 
+        "Contains": [
+            {"Element": "Ti", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Titanium Dioxide", 
+        "Density": 4.2, 
+        "Type": "Chemical Formula", 
+        "Formula": "TiO2", 
+        "Contains": [
+            {"Element": "Ti", "Atoms": 1.0 },
+            {"Element": "O",  "Atoms": 2.0 }
+        ]
+      },
+      { "Name": "Tributyl Phosphate", 
+        "Density": 0.973, 
+        "Type": "Chemical Formula", 
+        "Formula": "(C4H9O)3PO", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 12.0 },
+            {"Element": "H",  "Atoms": 27.0 },
+            {"Element": "O",  "Atoms": 4.0 },
+            {"Element": "P",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Vermiculite", 
+        "Comment": "from Y-KC-109 listed as C (54-74%), H (6-9%), O (18-40%)",
+        "Density": 0.134, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Al", "Fraction": 0.078 },
+            {"Element": "Fe", "Fraction": 0.063 },
+            {"Element": "H",  "Fraction": 0.01 },
+            {"Element": "K",  "Fraction": 0.058 },
+            {"Element": "Mg", "Fraction": 0.127 },
+            {"Element": "O",  "Fraction": 0.481 },
+            {"Element": "Si", "Fraction": 0.183 }
+        ]
+      },
+      { "Name": "Water", 
+        "Density": 1.0, 
+        "Type": "Chemical Formula", 
+        "Formula": "H2O", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 2.0 },
+            {"Element": "O",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Zirconium", 
+        "Density": 6.51, 
+        "Type": "Chemical Formula", 
+        "Formula": "Zr", 
+        "Contains": [
+            {"Element": "Zr", "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "Zircaloy-2", 
+        "Density": 6.55, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Zr", "Fraction": 0.9826 },
+            {"Element": "Sn", "Fraction": 0.0145 },
+            {"Element": "Cr", "Fraction": 0.001 },
+            {"Element": "Ni", "Fraction": 5.0E-4 },
+            {"Element": "Fe", "Fraction": 0.0013 },
+            {"Element": "N",  "Fraction": 1.0E-4 }
+        ]
+      }
+    ],
+    "Comments" : [
+        "Criticality Handbook, Volume I, ARH-600",
+        "R. D. Carter, G. R. Kiel, K. R. Ridgway",
+        "Atlantic Richfield Hanford Company, Richland, Washington",
+        "June 30, 1960",
+        "Table II.F.1",
+        "ncsp.llnl.gov/docs/ARH600_Vol_I.pdf",
+        "Note in table says 'C. R. Tipton, et al, Reactor Handbook, Volume I, 1960.  Most material was obtained from this reference.  References for other materials will be listed.'"
+    ]
+  }
+}

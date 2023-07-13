@@ -1,0 +1,2698 @@
+{"MaterialDatabase" : {
+    "Name": "NIST 124",
+    "Reference": "NIST Standard Reference Database 124, Stopping-Power & Range Tables for Electrons, Protons, and Helium Ions, July 2017",
+    "Materials": [
+      { "Name": "Hydrogen", 
+        "MatNum": 1,
+        "Density": 8.3748E-5, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Helium", 
+        "MatNum": 2,
+        "Density": 1.66322E-4, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "He", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Lithium", 
+        "MatNum": 3,
+        "Density": 0.534, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Li", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Beryllium", 
+        "MatNum": 4,
+        "Density": 1.848, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Be", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Boron", 
+        "MatNum": 5,
+        "Density": 2.37, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Carbon, amorphous", 
+        "MatNum": 6,
+        "Density": 2.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Graphite", 
+        "MatNum": 906,
+        "Density": 1.7, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Nitrogen", 
+        "MatNum": 7,
+        "Density": 0.00116528, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "N",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Oxygen", 
+        "MatNum": 8,
+        "Density": 0.00133151, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Fluorine", 
+        "MatNum": 9,
+        "Density": 0.00158029, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "F",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Neon", 
+        "MatNum": 10,
+        "Density": 8.38505E-4, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ne", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Sodium", 
+        "MatNum": 11,
+        "Density": 0.971, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Na", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Magnesium", 
+        "MatNum": 12,
+        "Density": 1.74, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Mg", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Aluminum", 
+        "MatNum": 13,
+        "Density": 2.6989, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Al", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Silicon", 
+        "MatNum": 14,
+        "Density": 2.33, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Si", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Phosphorus", 
+        "MatNum": 15,
+        "Density": 2.2, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "P",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Sulfur", 
+        "MatNum": 16,
+        "Density": 2.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "S",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Chlorine", 
+        "MatNum": 17,
+        "Density": 0.00299473, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Cl", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Argon", 
+        "MatNum": 18,
+        "Density": 0.00166201, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ar", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Potassium", 
+        "MatNum": 19,
+        "Density": 0.862, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "K",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Calcium", 
+        "MatNum": 20,
+        "Density": 1.55, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ca", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Scandium", 
+        "MatNum": 21,
+        "Density": 2.989, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Sc", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Titanium", 
+        "MatNum": 22,
+        "Density": 4.54, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ti", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Vanadium", 
+        "MatNum": 23,
+        "Density": 6.11, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "V",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Chromium", 
+        "MatNum": 24,
+        "Density": 7.18, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Cr", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Manganese", 
+        "MatNum": 25,
+        "Density": 7.44, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Mn", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Iron", 
+        "MatNum": 26,
+        "Density": 7.874, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Fe", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Cobalt", 
+        "MatNum": 27,
+        "Density": 8.9, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Co", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Nickel", 
+        "MatNum": 28,
+        "Density": 8.902, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ni", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Copper", 
+        "MatNum": 29,
+        "Density": 8.96, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Cu", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Zinc", 
+        "MatNum": 30,
+        "Density": 7.133, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Zn", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Gallium", 
+        "MatNum": 31,
+        "Density": 5.904, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ga", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Germanium", 
+        "MatNum": 32,
+        "Density": 5.323, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ge", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Arsenic", 
+        "MatNum": 33,
+        "Density": 5.73, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "As", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Selenium", 
+        "MatNum": 34,
+        "Density": 4.5, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Se", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Bromine", 
+        "MatNum": 35,
+        "Density": 0.00707218, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Br", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Krypton", 
+        "MatNum": 36,
+        "Density": 0.00347832, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Kr", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Rubidium", 
+        "MatNum": 37,
+        "Density": 1.532, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Rb", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Strontium", 
+        "MatNum": 38,
+        "Density": 2.54, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Sr", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Yttrium", 
+        "MatNum": 39,
+        "Density": 4.469, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Y",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Zirconium", 
+        "MatNum": 40,
+        "Density": 6.506, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Zr", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Niobium", 
+        "MatNum": 41,
+        "Density": 8.57, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Nb", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Molybdenum", 
+        "MatNum": 42,
+        "Density": 10.22, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Mo", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Technetium", 
+        "MatNum": 43,
+        "Density": 11.5, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Tc", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Ruthenium", 
+        "MatNum": 44,
+        "Density": 12.41, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ru", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Rhodium", 
+        "MatNum": 45,
+        "Density": 12.41, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Rh", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Palladium", 
+        "MatNum": 46,
+        "Density": 12.02, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pd", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Silver", 
+        "MatNum": 47,
+        "Density": 10.5, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ag", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Cadmium", 
+        "MatNum": 48,
+        "Density": 8.65, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Cd", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Indium", 
+        "MatNum": 49,
+        "Density": 7.31, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "In", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Tin", 
+        "MatNum": 50,
+        "Density": 7.31, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Sn", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Antimony", 
+        "MatNum": 51,
+        "Density": 6.691, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Sb", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Tellurium", 
+        "MatNum": 52,
+        "Density": 6.24, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Te", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Iodine", 
+        "MatNum": 53,
+        "Density": 4.93, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "I",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Xenon", 
+        "MatNum": 54,
+        "Density": 0.00548536, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Xe", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Cesium", 
+        "MatNum": 55,
+        "Density": 1.873, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Cs", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Barium", 
+        "MatNum": 56,
+        "Density": 3.5, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ba", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Lanthanum", 
+        "MatNum": 57,
+        "Density": 6.154, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "La", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Cerium", 
+        "MatNum": 58,
+        "Density": 6.657, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ce", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Praseodymium", 
+        "MatNum": 59,
+        "Density": 6.71, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pr", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Neodymium", 
+        "MatNum": 60,
+        "Density": 6.9, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Nd", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Promethium", 
+        "MatNum": 61,
+        "Density": 7.22, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pm", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Samarium", 
+        "MatNum": 62,
+        "Density": 7.46, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Sm", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Europium", 
+        "MatNum": 63,
+        "Density": 5.243, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Eu", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Gadolinium", 
+        "MatNum": 64,
+        "Density": 7.9004, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Gd", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Terbium", 
+        "MatNum": 65,
+        "Density": 8.229, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Tb", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Dysprosium", 
+        "MatNum": 66,
+        "Density": 8.55, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Dy", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Holmium", 
+        "MatNum": 67,
+        "Density": 8.795, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ho", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Erbium", 
+        "MatNum": 68,
+        "Density": 9.066, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Er", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Thulium", 
+        "MatNum": 69,
+        "Density": 9.321, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Tm", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Ytterbium", 
+        "MatNum": 70,
+        "Density": 6.73, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Yb", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Lutetium", 
+        "MatNum": 71,
+        "Density": 9.84, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Lu", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Hafnium", 
+        "MatNum": 72,
+        "Density": 13.31, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Hf", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Tantalum", 
+        "MatNum": 73,
+        "Density": 16.654, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ta", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Tungsten", 
+        "MatNum": 74,
+        "Density": 19.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "W",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Rhenium", 
+        "MatNum": 75,
+        "Density": 21.02, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Re", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Osmium", 
+        "MatNum": 76,
+        "Density": 22.57, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Os", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Iridium", 
+        "MatNum": 77,
+        "Density": 22.42, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ir", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Platinum", 
+        "MatNum": 78,
+        "Density": 21.45, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pt", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Gold", 
+        "MatNum": 79,
+        "Density": 19.32, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Au", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Mercury", 
+        "MatNum": 80,
+        "Density": 13.546, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Hg", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Thallium", 
+        "MatNum": 81,
+        "Density": 11.72, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Tl", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Lead", 
+        "MatNum": 82,
+        "Density": 11.35, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pb", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Bismuth", 
+        "MatNum": 83,
+        "Density": 9.747, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Bi", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Polonium", 
+        "MatNum": 84,
+        "Density": 9.32, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Po", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Astatine", 
+        "MatNum": 85,
+        "Density": 9.32, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "At", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Radon", 
+        "MatNum": 86,
+        "Density": 0.00906618, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Rn", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Francium", 
+        "MatNum": 87,
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Fr", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Radium", 
+        "MatNum": 88,
+        "Density": 5.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ra", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Actinium", 
+        "MatNum": 89,
+        "Density": 10.07, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ac", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Thorium", 
+        "MatNum": 90,
+        "Density": 11.72, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Th", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Protactinium", 
+        "MatNum": 91,
+        "Density": 15.37, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pa", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Uranium", 
+        "MatNum": 92,
+        "Density": 18.95, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "U",  "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Neptunium", 
+        "MatNum": 93,
+        "Density": 20.25, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Np", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Plutonium", 
+        "MatNum": 94,
+        "Density": 19.84, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pu", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Americium", 
+        "MatNum": 95,
+        "Density": 13.67, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Am", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Curium", 
+        "MatNum": 96,
+        "Density": 13.51, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Cm", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Berkelium", 
+        "MatNum": 97,
+        "Density": 14.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Bk", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "Californium", 
+        "MatNum": 98,
+        "Density": 10.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Cf", "Fraction": 1.0 }
+        ]
+      },
+      { "Name": "A-150 Tissue-Equivalent Plastic", 
+        "MatNum": 99,
+        "Density": 1.127, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.101327 },
+            {"Element": "C",  "Fraction": 0.775501 },
+            {"Element": "N",  "Fraction": 0.035057 },
+            {"Element": "O",  "Fraction": 0.052316 },
+            {"Element": "F",  "Fraction": 0.017422 },
+            {"Element": "Ca", "Fraction": 0.018378 }
+        ]
+      },
+      { "Name": "Acetone", 
+        "MatNum": 100,
+        "Density": 0.7899, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.104122 },
+            {"Element": "C",  "Fraction": 0.620405 },
+            {"Element": "O",  "Fraction": 0.275473 }
+        ]
+      },
+      { "Name": "Acetylene", 
+        "MatNum": 101,
+        "Density": 0.0010967, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.077418 },
+            {"Element": "C",  "Fraction": 0.922582 }
+        ]
+      },
+      { "Name": "Adenine", 
+        "MatNum": 102,
+        "Density": 1.35, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.037294 },
+            {"Element": "C",  "Fraction": 0.44443 },
+            {"Element": "N",  "Fraction": 0.518275 }
+        ]
+      },
+      { "Name": "Adipose Tissue (ICRP)", 
+        "MatNum": 103,
+        "Density": 0.92, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.119477 },
+            {"Element": "C",  "Fraction": 0.63724 },
+            {"Element": "N",  "Fraction": 0.00797 },
+            {"Element": "O",  "Fraction": 0.232333 },
+            {"Element": "Na", "Fraction": 5.0E-4 },
+            {"Element": "Mg", "Fraction": 2.0E-5 },
+            {"Element": "P",  "Fraction": 1.6E-4 },
+            {"Element": "S",  "Fraction": 7.3E-4 },
+            {"Element": "Cl", "Fraction": 0.00119 },
+            {"Element": "K",  "Fraction": 3.2E-4 },
+            {"Element": "Ca", "Fraction": 2.0E-5 },
+            {"Element": "Fe", "Fraction": 2.0E-5 },
+            {"Element": "Zn", "Fraction": 2.0E-5 }
+        ]
+      },
+      { "Name": "Air, Dry (near sea level)", 
+        "MatNum": 104,
+        "Density": 0.00120479, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 1.24E-4 },
+            {"Element": "N",  "Fraction": 0.755267 },
+            {"Element": "O",  "Fraction": 0.231781 },
+            {"Element": "Ar", "Fraction": 0.012827 }
+        ]
+      },
+      { "Name": "Alanine", 
+        "MatNum": 105,
+        "Density": 1.42, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.07919 },
+            {"Element": "C",  "Fraction": 0.404439 },
+            {"Element": "N",  "Fraction": 0.157213 },
+            {"Element": "O",  "Fraction": 0.359159 }
+        ]
+      },
+      { "Name": "Aluminum Oxide", 
+        "MatNum": 106,
+        "Density": 3.97, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.470749 },
+            {"Element": "Al", "Fraction": 0.529251 }
+        ]
+      },
+      { "Name": "Amber", 
+        "MatNum": 107,
+        "Density": 1.1, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.10593 },
+            {"Element": "C",  "Fraction": 0.788973 },
+            {"Element": "O",  "Fraction": 0.105096 }
+        ]
+      },
+      { "Name": "Ammonia", 
+        "MatNum": 108,
+        "Density": 8.26019E-4, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.177547 },
+            {"Element": "N",  "Fraction": 0.822453 }
+        ]
+      },
+      { "Name": "Aniline", 
+        "MatNum": 109,
+        "Density": 1.0235, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.075759 },
+            {"Element": "C",  "Fraction": 0.773838 },
+            {"Element": "N",  "Fraction": 0.150403 }
+        ]
+      },
+      { "Name": "Anthracene", 
+        "MatNum": 110,
+        "Density": 1.283, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.05655 },
+            {"Element": "C",  "Fraction": 0.94345 }
+        ]
+      },
+      { "Name": "B-100 Bone-Equivalent Plastic", 
+        "MatNum": 111,
+        "Density": 1.45, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.065471 },
+            {"Element": "C",  "Fraction": 0.536945 },
+            {"Element": "N",  "Fraction": 0.0215 },
+            {"Element": "O",  "Fraction": 0.032085 },
+            {"Element": "F",  "Fraction": 0.167411 },
+            {"Element": "Ca", "Fraction": 0.176589 }
+        ]
+      },
+      { "Name": "Bakelite", 
+        "MatNum": 112,
+        "Density": 1.25, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.057441 },
+            {"Element": "C",  "Fraction": 0.774591 },
+            {"Element": "O",  "Fraction": 0.167968 }
+        ]
+      },
+      { "Name": "Barium Fluoride", 
+        "MatNum": 113,
+        "Density": 4.89, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "F",  "Fraction": 0.21672 },
+            {"Element": "Ba", "Fraction": 0.78328 }
+        ]
+      },
+      { "Name": "Barium Sulfate", 
+        "MatNum": 114,
+        "Density": 4.5, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.274212 },
+            {"Element": "S",  "Fraction": 0.137368 },
+            {"Element": "Ba", "Fraction": 0.58842 }
+        ]
+      },
+      { "Name": "Benzene", 
+        "MatNum": 115,
+        "Density": 0.87865, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.077418 },
+            {"Element": "C",  "Fraction": 0.922582 }
+        ]
+      },
+      { "Name": "Beryllium oxide", 
+        "MatNum": 116,
+        "Density": 3.01, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Be", "Fraction": 0.36032 },
+            {"Element": "O",  "Fraction": 0.63968 }
+        ]
+      },
+      { "Name": "Bismuth Germanium oxide", 
+        "MatNum": 117,
+        "Density": 7.13, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.154126 },
+            {"Element": "Ge", "Fraction": 0.17482 },
+            {"Element": "Bi", "Fraction": 0.671054 }
+        ]
+      },
+      { "Name": "Blood (ICRP)", 
+        "MatNum": 118,
+        "Density": 1.06, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.101866 },
+            {"Element": "C",  "Fraction": 0.10002 },
+            {"Element": "N",  "Fraction": 0.02964 },
+            {"Element": "O",  "Fraction": 0.759414 },
+            {"Element": "Na", "Fraction": 0.00185 },
+            {"Element": "Mg", "Fraction": 4.0E-5 },
+            {"Element": "Si", "Fraction": 3.0E-5 },
+            {"Element": "P",  "Fraction": 3.5E-4 },
+            {"Element": "S",  "Fraction": 0.00185 },
+            {"Element": "Cl", "Fraction": 0.00278 },
+            {"Element": "K",  "Fraction": 0.00163 },
+            {"Element": "Ca", "Fraction": 6.0E-5 },
+            {"Element": "Fe", "Fraction": 4.6E-4 },
+            {"Element": "Zn", "Fraction": 1.0E-5 }
+        ]
+      },
+      { "Name": "Bone, Compact (ICRU)", 
+        "MatNum": 119,
+        "Density": 1.85, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.063984 },
+            {"Element": "C",  "Fraction": 0.278 },
+            {"Element": "N",  "Fraction": 0.027 },
+            {"Element": "O",  "Fraction": 0.410016 },
+            {"Element": "Mg", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.07 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Ca", "Fraction": 0.147 }
+        ]
+      },
+      { "Name": "Bone, Cortical (ICRP)", 
+        "MatNum": 120,
+        "Density": 1.85, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.047234 },
+            {"Element": "C",  "Fraction": 0.14433 },
+            {"Element": "N",  "Fraction": 0.04199 },
+            {"Element": "O",  "Fraction": 0.446096 },
+            {"Element": "Mg", "Fraction": 0.0022 },
+            {"Element": "P",  "Fraction": 0.10497 },
+            {"Element": "S",  "Fraction": 0.00315 },
+            {"Element": "Ca", "Fraction": 0.20993 },
+            {"Element": "Zn", "Fraction": 1.0E-4 }
+        ]
+      },
+      { "Name": "Boron Carbide", 
+        "MatNum": 121,
+        "Density": 2.52, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.78261 },
+            {"Element": "C",  "Fraction": 0.21739 }
+        ]
+      },
+      { "Name": "Boron Oxide", 
+        "MatNum": 122,
+        "Density": 1.812, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.310551 },
+            {"Element": "O",  "Fraction": 0.689449 }
+        ]
+      },
+      { "Name": "Brain (ICRP)", 
+        "MatNum": 123,
+        "Density": 1.03, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.110667 },
+            {"Element": "C",  "Fraction": 0.12542 },
+            {"Element": "N",  "Fraction": 0.01328 },
+            {"Element": "O",  "Fraction": 0.737723 },
+            {"Element": "Na", "Fraction": 0.00184 },
+            {"Element": "Mg", "Fraction": 1.5E-4 },
+            {"Element": "P",  "Fraction": 0.00354 },
+            {"Element": "S",  "Fraction": 0.00177 },
+            {"Element": "Cl", "Fraction": 0.00236 },
+            {"Element": "K",  "Fraction": 0.0031 },
+            {"Element": "Ca", "Fraction": 9.0E-5 },
+            {"Element": "Fe", "Fraction": 5.0E-5 },
+            {"Element": "Zn", "Fraction": 1.0E-5 }
+        ]
+      },
+      { "Name": "Butane", 
+        "MatNum": 124,
+        "Density": 0.00249343, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.173408 },
+            {"Element": "C",  "Fraction": 0.826592 }
+        ]
+      },
+      { "Name": "N-Butyl Alcohol", 
+        "MatNum": 125,
+        "Density": 0.8098, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.135978 },
+            {"Element": "C",  "Fraction": 0.648171 },
+            {"Element": "O",  "Fraction": 0.215851 }
+        ]
+      },
+      { "Name": "C-552 Air-Equivalent Plastic", 
+        "MatNum": 126,
+        "Density": 1.76, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.02468 },
+            {"Element": "C",  "Fraction": 0.50161 },
+            {"Element": "O",  "Fraction": 0.004527 },
+            {"Element": "F",  "Fraction": 0.465209 },
+            {"Element": "Si", "Fraction": 0.003973 }
+        ]
+      },
+      { "Name": "Cadmium Telluride", 
+        "MatNum": 127,
+        "Density": 6.2, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Cd", "Fraction": 0.468355 },
+            {"Element": "Te", "Fraction": 0.531645 }
+        ]
+      },
+      { "Name": "Cadmium Tungstate", 
+        "MatNum": 128,
+        "Density": 7.9, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.177644 },
+            {"Element": "Cd", "Fraction": 0.312027 },
+            {"Element": "W",  "Fraction": 0.510329 }
+        ]
+      },
+      { "Name": "Calcium Carbonate", 
+        "MatNum": 129,
+        "Density": 2.8, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.120003 },
+            {"Element": "O",  "Fraction": 0.479554 },
+            {"Element": "Ca", "Fraction": 0.400443 }
+        ]
+      },
+      { "Name": "Calcium Fluoride", 
+        "MatNum": 130,
+        "Density": 3.18, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "F",  "Fraction": 0.486659 },
+            {"Element": "Ca", "Fraction": 0.513341 }
+        ]
+      },
+      { "Name": "Calcium Oxide", 
+        "MatNum": 131,
+        "Density": 3.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.285299 },
+            {"Element": "Ca", "Fraction": 0.714701 }
+        ]
+      },
+      { "Name": "Calcium Sulfate", 
+        "MatNum": 132,
+        "Density": 2.96, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.470095 },
+            {"Element": "S",  "Fraction": 0.235497 },
+            {"Element": "Ca", "Fraction": 0.294408 }
+        ]
+      },
+      { "Name": "Calcium Tungstate", 
+        "MatNum": 133,
+        "Density": 6.062, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.22227 },
+            {"Element": "Ca", "Fraction": 0.139202 },
+            {"Element": "W",  "Fraction": 0.638529 }
+        ]
+      },
+      { "Name": "Carbon Dioxide", 
+        "MatNum": 134,
+        "Density": 0.00184212, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.272916 },
+            {"Element": "O",  "Fraction": 0.727084 }
+        ]
+      },
+      { "Name": "Carbon Tetrachloride", 
+        "MatNum": 135,
+        "Density": 1.594, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.078083 },
+            {"Element": "Cl", "Fraction": 0.921917 }
+        ]
+      },
+      { "Name": "Cellulose Acetate, Cellophane", 
+        "MatNum": 136,
+        "Density": 1.42, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.062162 },
+            {"Element": "C",  "Fraction": 0.444462 },
+            {"Element": "O",  "Fraction": 0.493376 }
+        ]
+      },
+      { "Name": "Cellulose Acetate Butyrate", 
+        "MatNum": 137,
+        "Density": 1.2, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.067125 },
+            {"Element": "C",  "Fraction": 0.545403 },
+            {"Element": "O",  "Fraction": 0.387472 }
+        ]
+      },
+      { "Name": "Cellulose Nitrate", 
+        "MatNum": 138,
+        "Density": 1.49, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.029216 },
+            {"Element": "C",  "Fraction": 0.271296 },
+            {"Element": "N",  "Fraction": 0.121276 },
+            {"Element": "O",  "Fraction": 0.578212 }
+        ]
+      },
+      { "Name": "Ceric Sulfate Dosimeter Solution", 
+        "MatNum": 139,
+        "Density": 1.03, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.107596 },
+            {"Element": "N",  "Fraction": 8.0E-4 },
+            {"Element": "O",  "Fraction": 0.874976 },
+            {"Element": "S",  "Fraction": 0.014627 },
+            {"Element": "Ce", "Fraction": 0.002001 }
+        ]
+      },
+      { "Name": "Cesium Fluoride", 
+        "MatNum": 140,
+        "Density": 4.115, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "F",  "Fraction": 0.125069 },
+            {"Element": "Cs", "Fraction": 0.874931 }
+        ]
+      },
+      { "Name": "Cesium Iodide", 
+        "MatNum": 141,
+        "Density": 4.51, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "I",  "Fraction": 0.488451 },
+            {"Element": "Cs", "Fraction": 0.511549 }
+        ]
+      },
+      { "Name": "Chlorobenzene", 
+        "MatNum": 142,
+        "Density": 1.1058, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.044772 },
+            {"Element": "C",  "Fraction": 0.640254 },
+            {"Element": "Cl", "Fraction": 0.314974 }
+        ]
+      },
+      { "Name": "Chloroform", 
+        "MatNum": 143,
+        "Density": 1.4832, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.008443 },
+            {"Element": "C",  "Fraction": 0.100613 },
+            {"Element": "Cl", "Fraction": 0.890944 }
+        ]
+      },
+      { "Name": "Concrete, Portland", 
+        "MatNum": 144,
+        "Density": 2.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.01 },
+            {"Element": "C",  "Fraction": 0.001 },
+            {"Element": "O",  "Fraction": 0.529107 },
+            {"Element": "Na", "Fraction": 0.016 },
+            {"Element": "Mg", "Fraction": 0.002 },
+            {"Element": "Al", "Fraction": 0.033872 },
+            {"Element": "Si", "Fraction": 0.337021 },
+            {"Element": "K",  "Fraction": 0.013 },
+            {"Element": "Ca", "Fraction": 0.044 },
+            {"Element": "Fe", "Fraction": 0.014 }
+        ]
+      },
+      { "Name": "Cyclohexane", 
+        "MatNum": 145,
+        "Density": 0.779, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.143711 },
+            {"Element": "C",  "Fraction": 0.856289 }
+        ]
+      },
+      { "Name": "1,2-Dichlorobenzene", 
+        "MatNum": 146,
+        "Density": 1.3048, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.027425 },
+            {"Element": "C",  "Fraction": 0.490233 },
+            {"Element": "Cl", "Fraction": 0.482342 }
+        ]
+      },
+      { "Name": "Dichlorodiethyl Ether", 
+        "MatNum": 147,
+        "Density": 1.2199, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.056381 },
+            {"Element": "C",  "Fraction": 0.335942 },
+            {"Element": "O",  "Fraction": 0.111874 },
+            {"Element": "Cl", "Fraction": 0.495802 }
+        ]
+      },
+      { "Name": "1,2-Dichloroethane", 
+        "MatNum": 148,
+        "Density": 1.2351, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.04074 },
+            {"Element": "C",  "Fraction": 0.242746 },
+            {"Element": "Cl", "Fraction": 0.716515 }
+        ]
+      },
+      { "Name": "Diethyl Ether", 
+        "MatNum": 149,
+        "Density": 0.71378, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.135978 },
+            {"Element": "C",  "Fraction": 0.648171 },
+            {"Element": "O",  "Fraction": 0.215851 }
+        ]
+      },
+      { "Name": "N,N-Dimethyl Formamide", 
+        "MatNum": 150,
+        "Density": 0.9487, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.096523 },
+            {"Element": "C",  "Fraction": 0.492965 },
+            {"Element": "N",  "Fraction": 0.191625 },
+            {"Element": "O",  "Fraction": 0.218887 }
+        ]
+      },
+      { "Name": "Dimethyl Sulfoxide", 
+        "MatNum": 151,
+        "Density": 1.1014, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.077403 },
+            {"Element": "C",  "Fraction": 0.307467 },
+            {"Element": "O",  "Fraction": 0.204782 },
+            {"Element": "S",  "Fraction": 0.410348 }
+        ]
+      },
+      { "Name": "Ethane", 
+        "MatNum": 152,
+        "Density": 0.00125324, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.201115 },
+            {"Element": "C",  "Fraction": 0.798885 }
+        ]
+      },
+      { "Name": "Ethyl Alcohol", 
+        "MatNum": 153,
+        "Density": 0.7893, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.131269 },
+            {"Element": "C",  "Fraction": 0.521438 },
+            {"Element": "O",  "Fraction": 0.347294 }
+        ]
+      },
+      { "Name": "Ethyl Cellulose", 
+        "MatNum": 154,
+        "Density": 1.13, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.090027 },
+            {"Element": "C",  "Fraction": 0.585182 },
+            {"Element": "O",  "Fraction": 0.324791 }
+        ]
+      },
+      { "Name": "Ethylene", 
+        "MatNum": 155,
+        "Density": 0.00117497, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.143711 },
+            {"Element": "C",  "Fraction": 0.856289 }
+        ]
+      },
+      { "Name": "Eye Lens (ICRP)", 
+        "MatNum": 156,
+        "Density": 1.1, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.099269 },
+            {"Element": "C",  "Fraction": 0.19371 },
+            {"Element": "N",  "Fraction": 0.05327 },
+            {"Element": "O",  "Fraction": 0.653751 }
+        ]
+      },
+      { "Name": "Ferric Oxide", 
+        "MatNum": 157,
+        "Density": 5.2, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.300567 },
+            {"Element": "Fe", "Fraction": 0.699433 }
+        ]
+      },
+      { "Name": "Ferroboride", 
+        "MatNum": 158,
+        "Density": 7.15, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.162174 },
+            {"Element": "Fe", "Fraction": 0.837826 }
+        ]
+      },
+      { "Name": "Ferrous Oxide", 
+        "MatNum": 159,
+        "Density": 5.7, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.222689 },
+            {"Element": "Fe", "Fraction": 0.777311 }
+        ]
+      },
+      { "Name": "Ferrous Sulfate Dosimeter Solution", 
+        "MatNum": 160,
+        "Density": 1.024, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.108259 },
+            {"Element": "N",  "Fraction": 2.7E-5 },
+            {"Element": "O",  "Fraction": 0.878636 },
+            {"Element": "Na", "Fraction": 2.2E-5 },
+            {"Element": "S",  "Fraction": 0.012968 },
+            {"Element": "Cl", "Fraction": 3.4E-5 },
+            {"Element": "Fe", "Fraction": 5.4E-5 }
+        ]
+      },
+      { "Name": "Freon-12", 
+        "MatNum": 161,
+        "Density": 1.12, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.099335 },
+            {"Element": "F",  "Fraction": 0.314247 },
+            {"Element": "Cl", "Fraction": 0.586418 }
+        ]
+      },
+      { "Name": "Freon-12B2", 
+        "MatNum": 162,
+        "Density": 1.8, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.057245 },
+            {"Element": "F",  "Fraction": 0.181096 },
+            {"Element": "Br", "Fraction": 0.761659 }
+        ]
+      },
+      { "Name": "Freon-13", 
+        "MatNum": 163,
+        "Density": 0.95, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.114983 },
+            {"Element": "F",  "Fraction": 0.545622 },
+            {"Element": "Cl", "Fraction": 0.339396 }
+        ]
+      },
+      { "Name": "Freon-13B1", 
+        "MatNum": 164,
+        "Density": 1.5, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.080659 },
+            {"Element": "F",  "Fraction": 0.382749 },
+            {"Element": "Br", "Fraction": 0.536592 }
+        ]
+      },
+      { "Name": "Freon-13I1", 
+        "MatNum": 165,
+        "Density": 1.8, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.061309 },
+            {"Element": "F",  "Fraction": 0.290924 },
+            {"Element": "I",  "Fraction": 0.647767 }
+        ]
+      },
+      { "Name": "Gadolinium Oxysulfide", 
+        "MatNum": 166,
+        "Density": 7.44, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.084528 },
+            {"Element": "S",  "Fraction": 0.08469 },
+            {"Element": "Gd", "Fraction": 0.830782 }
+        ]
+      },
+      { "Name": "Gallium Arsenide", 
+        "MatNum": 167,
+        "Density": 5.31, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ga", "Fraction": 0.482019 },
+            {"Element": "As", "Fraction": 0.517981 }
+        ]
+      },
+      { "Name": "Gel in Photographic Emulsion", 
+        "MatNum": 168,
+        "Density": 1.2914, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.08118 },
+            {"Element": "C",  "Fraction": 0.41606 },
+            {"Element": "N",  "Fraction": 0.11124 },
+            {"Element": "O",  "Fraction": 0.38064 },
+            {"Element": "S",  "Fraction": 0.01088 }
+        ]
+      },
+      { "Name": "Glass, Lead", 
+        "MatNum": 170,
+        "Density": 6.22, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.156453 },
+            {"Element": "Si", "Fraction": 0.080866 },
+            {"Element": "Ti", "Fraction": 0.008092 },
+            {"Element": "As", "Fraction": 0.002651 },
+            {"Element": "Pb", "Fraction": 0.751938 }
+        ]
+      },
+      { "Name": "Glass, Plate", 
+        "MatNum": 171,
+        "Density": 2.4, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.4598 },
+            {"Element": "Na", "Fraction": 0.096441 },
+            {"Element": "Si", "Fraction": 0.336553 },
+            {"Element": "Ca", "Fraction": 0.107205 }
+        ]
+      },
+      { "Name": "Glass, Pyrex", 
+        "MatNum": 169,
+        "Density": 2.23, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.040064 },
+            {"Element": "O",  "Fraction": 0.539562 },
+            {"Element": "Na", "Fraction": 0.028191 },
+            {"Element": "Al", "Fraction": 0.011644 },
+            {"Element": "Si", "Fraction": 0.37722 },
+            {"Element": "K",  "Fraction": 0.003321 }
+        ]
+      },
+      { "Name": "Glucose", 
+        "MatNum": 172,
+        "Density": 1.54, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.071204 },
+            {"Element": "C",  "Fraction": 0.363652 },
+            {"Element": "O",  "Fraction": 0.565144 }
+        ]
+      },
+      { "Name": "Glutamine", 
+        "MatNum": 173,
+        "Density": 1.46, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.068965 },
+            {"Element": "C",  "Fraction": 0.410926 },
+            {"Element": "N",  "Fraction": 0.191681 },
+            {"Element": "O",  "Fraction": 0.328427 }
+        ]
+      },
+      { "Name": "Glycerol", 
+        "MatNum": 174,
+        "Density": 1.2613, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.087554 },
+            {"Element": "C",  "Fraction": 0.391262 },
+            {"Element": "O",  "Fraction": 0.521185 }
+        ]
+      },
+      { "Name": "Guanine", 
+        "MatNum": 175,
+        "Density": 1.58, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.033346 },
+            {"Element": "C",  "Fraction": 0.39738 },
+            {"Element": "N",  "Fraction": 0.463407 },
+            {"Element": "O",  "Fraction": 0.105867 }
+        ]
+      },
+      { "Name": "Gypsum, Plaster of Paris", 
+        "MatNum": 176,
+        "Density": 2.32, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.023416 },
+            {"Element": "O",  "Fraction": 0.557572 },
+            {"Element": "S",  "Fraction": 0.186215 },
+            {"Element": "Ca", "Fraction": 0.232797 }
+        ]
+      },
+      { "Name": "N-Heptane", 
+        "MatNum": 177,
+        "Density": 0.68376, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.160937 },
+            {"Element": "C",  "Fraction": 0.839063 }
+        ]
+      },
+      { "Name": "N-Hexane", 
+        "MatNum": 178,
+        "Density": 0.6603, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.163741 },
+            {"Element": "C",  "Fraction": 0.836259 }
+        ]
+      },
+      { "Name": "Kapton Polyimide Film", 
+        "MatNum": 179,
+        "Density": 1.42, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.026362 },
+            {"Element": "C",  "Fraction": 0.691133 },
+            {"Element": "N",  "Fraction": 0.07327 },
+            {"Element": "O",  "Fraction": 0.209235 }
+        ]
+      },
+      { "Name": "Lanthanum Oxybromide", 
+        "MatNum": 180,
+        "Density": 6.28, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.068138 },
+            {"Element": "Br", "Fraction": 0.340294 },
+            {"Element": "La", "Fraction": 0.591568 }
+        ]
+      },
+      { "Name": "Lanthanum Oxysulfide", 
+        "MatNum": 181,
+        "Density": 5.86, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.0936 },
+            {"Element": "S",  "Fraction": 0.093778 },
+            {"Element": "La", "Fraction": 0.812622 }
+        ]
+      },
+      { "Name": "Lead Oxide", 
+        "MatNum": 182,
+        "Density": 9.53, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.071682 },
+            {"Element": "Pb", "Fraction": 0.928318 }
+        ]
+      },
+      { "Name": "Lithium Amide", 
+        "MatNum": 183,
+        "Density": 1.178, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.087783 },
+            {"Element": "Li", "Fraction": 0.302262 },
+            {"Element": "N",  "Fraction": 0.609955 }
+        ]
+      },
+      { "Name": "Lithium Carbonate", 
+        "MatNum": 184,
+        "Density": 2.11, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Li", "Fraction": 0.187871 },
+            {"Element": "C",  "Fraction": 0.16255 },
+            {"Element": "O",  "Fraction": 0.649579 }
+        ]
+      },
+      { "Name": "Lithium Fluoride", 
+        "MatNum": 185,
+        "Density": 2.635, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Li", "Fraction": 0.267585 },
+            {"Element": "F",  "Fraction": 0.732415 }
+        ]
+      },
+      { "Name": "Lithium Hydride", 
+        "MatNum": 186,
+        "Density": 0.82, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.126797 },
+            {"Element": "Li", "Fraction": 0.873203 }
+        ]
+      },
+      { "Name": "Lithium Iodide", 
+        "MatNum": 187,
+        "Density": 3.494, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Li", "Fraction": 0.051858 },
+            {"Element": "I",  "Fraction": 0.948142 }
+        ]
+      },
+      { "Name": "Lithium Oxide", 
+        "MatNum": 188,
+        "Density": 2.013, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Li", "Fraction": 0.46457 },
+            {"Element": "O",  "Fraction": 0.53543 }
+        ]
+      },
+      { "Name": "Lithium Tetraborate", 
+        "MatNum": 189,
+        "Density": 2.44, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Li", "Fraction": 0.082085 },
+            {"Element": "B",  "Fraction": 0.25568 },
+            {"Element": "O",  "Fraction": 0.662235 }
+        ]
+      },
+      { "Name": "Lung (ICRP)", 
+        "MatNum": 190,
+        "Density": 1.05, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.101278 },
+            {"Element": "C",  "Fraction": 0.10231 },
+            {"Element": "N",  "Fraction": 0.02865 },
+            {"Element": "O",  "Fraction": 0.757072 },
+            {"Element": "Na", "Fraction": 0.00184 },
+            {"Element": "Mg", "Fraction": 7.3E-4 },
+            {"Element": "P",  "Fraction": 8.0E-4 },
+            {"Element": "S",  "Fraction": 0.00225 },
+            {"Element": "Cl", "Fraction": 0.00266 },
+            {"Element": "K",  "Fraction": 0.00194 },
+            {"Element": "Ca", "Fraction": 9.0E-5 },
+            {"Element": "Fe", "Fraction": 3.7E-4 },
+            {"Element": "Zn", "Fraction": 1.0E-5 }
+        ]
+      },
+      { "Name": "M3 Wax", 
+        "MatNum": 191,
+        "Density": 1.05, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.114318 },
+            {"Element": "C",  "Fraction": 0.655823 },
+            {"Element": "O",  "Fraction": 0.092183 },
+            {"Element": "Mg", "Fraction": 0.134792 },
+            {"Element": "Ca", "Fraction": 0.002883 }
+        ]
+      },
+      { "Name": "Magnesium Carbonate", 
+        "MatNum": 192,
+        "Density": 2.958, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.142455 },
+            {"Element": "O",  "Fraction": 0.569278 },
+            {"Element": "Mg", "Fraction": 0.288267 }
+        ]
+      },
+      { "Name": "Magnesium Fluoride", 
+        "MatNum": 193,
+        "Density": 3.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "F",  "Fraction": 0.609883 },
+            {"Element": "Mg", "Fraction": 0.390117 }
+        ]
+      },
+      { "Name": "Magnesium Oxide", 
+        "MatNum": 194,
+        "Density": 3.58, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.396964 },
+            {"Element": "Mg", "Fraction": 0.603036 }
+        ]
+      },
+      { "Name": "Magnesium Tetraborate", 
+        "MatNum": 195,
+        "Density": 2.53, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.240837 },
+            {"Element": "O",  "Fraction": 0.62379 },
+            {"Element": "Mg", "Fraction": 0.135373 }
+        ]
+      },
+      { "Name": "Mercuric Iodide", 
+        "MatNum": 196,
+        "Density": 6.36, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "I",  "Fraction": 0.55856 },
+            {"Element": "Hg", "Fraction": 0.44144 }
+        ]
+      },
+      { "Name": "Methane", 
+        "MatNum": 197,
+        "Density": 6.67151E-4, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.251306 },
+            {"Element": "C",  "Fraction": 0.748694 }
+        ]
+      },
+      { "Name": "Methanol", 
+        "MatNum": 198,
+        "Density": 0.7914, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.125822 },
+            {"Element": "C",  "Fraction": 0.374852 },
+            {"Element": "O",  "Fraction": 0.499326 }
+        ]
+      },
+      { "Name": "Mix D Wax", 
+        "MatNum": 199,
+        "Density": 0.99, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.13404 },
+            {"Element": "C",  "Fraction": 0.77796 },
+            {"Element": "O",  "Fraction": 0.03502 },
+            {"Element": "Mg", "Fraction": 0.038594 },
+            {"Element": "Ti", "Fraction": 0.014386 }
+        ]
+      },
+      { "Name": "MS20 Tissue Substitute", 
+        "MatNum": 200,
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.081192 },
+            {"Element": "C",  "Fraction": 0.583442 },
+            {"Element": "N",  "Fraction": 0.017798 },
+            {"Element": "O",  "Fraction": 0.186381 },
+            {"Element": "Mg", "Fraction": 0.130287 },
+            {"Element": "Cl", "Fraction": 9.0E-4 }
+        ]
+      },
+      { "Name": "Muscle, Skeletal (ICRP)", 
+        "MatNum": 201,
+        "Density": 1.04, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.100637 },
+            {"Element": "C",  "Fraction": 0.10783 },
+            {"Element": "N",  "Fraction": 0.02768 },
+            {"Element": "O",  "Fraction": 0.754773 },
+            {"Element": "Na", "Fraction": 7.5E-4 },
+            {"Element": "Mg", "Fraction": 1.9E-4 },
+            {"Element": "P",  "Fraction": 0.0018 },
+            {"Element": "S",  "Fraction": 0.00241 },
+            {"Element": "Cl", "Fraction": 7.9E-4 },
+            {"Element": "K",  "Fraction": 0.00302 },
+            {"Element": "Ca", "Fraction": 3.0E-5 },
+            {"Element": "Fe", "Fraction": 4.0E-5 },
+            {"Element": "Zn", "Fraction": 5.0E-5 }
+        ]
+      },
+      { "Name": "Muscle, Striated (IRCU)", 
+        "MatNum": 202,
+        "Density": 1.04, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.101997 },
+            {"Element": "C",  "Fraction": 0.123 },
+            {"Element": "N",  "Fraction": 0.035 },
+            {"Element": "O",  "Fraction": 0.729003 },
+            {"Element": "Na", "Fraction": 8.0E-4 },
+            {"Element": "Mg", "Fraction": 2.0E-4 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.005 },
+            {"Element": "K",  "Fraction": 0.003 }
+        ]
+      },
+      { "Name": "Muscle-Equivalent Liquid, with Sucrose", 
+        "MatNum": 203,
+        "Density": 1.11, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.098234 },
+            {"Element": "C",  "Fraction": 0.156214 },
+            {"Element": "N",  "Fraction": 0.035451 },
+            {"Element": "O",  "Fraction": 0.7101 }
+        ]
+      },
+      { "Name": "Muscle-Equivalent Liquid, without Sucrose", 
+        "MatNum": 204,
+        "Density": 1.07, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.101969 },
+            {"Element": "C",  "Fraction": 0.120058 },
+            {"Element": "N",  "Fraction": 0.035451 },
+            {"Element": "O",  "Fraction": 0.742522 }
+        ]
+      },
+      { "Name": "Naphthalene", 
+        "MatNum": 205,
+        "Density": 1.145, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.062909 },
+            {"Element": "C",  "Fraction": 0.937091 }
+        ]
+      },
+      { "Name": "Nitrobenzene", 
+        "MatNum": 206,
+        "Density": 1.19867, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.040935 },
+            {"Element": "C",  "Fraction": 0.585374 },
+            {"Element": "N",  "Fraction": 0.113773 },
+            {"Element": "O",  "Fraction": 0.259918 }
+        ]
+      },
+      { "Name": "Nitrous Oxide", 
+        "MatNum": 207,
+        "Density": 0.00183094, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "N",  "Fraction": 0.636483 },
+            {"Element": "O",  "Fraction": 0.363517 }
+        ]
+      },
+      { "Name": "Nylon, Du Pont ELVAmide 8062", 
+        "MatNum": 208,
+        "Density": 1.08, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.103509 },
+            {"Element": "C",  "Fraction": 0.648415 },
+            {"Element": "N",  "Fraction": 0.099536 },
+            {"Element": "O",  "Fraction": 0.148539 }
+        ]
+      },
+      { "Name": "Nylon, type 6 and type 6/6", 
+        "MatNum": 209,
+        "Density": 1.14, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.097976 },
+            {"Element": "C",  "Fraction": 0.636856 },
+            {"Element": "N",  "Fraction": 0.123779 },
+            {"Element": "O",  "Fraction": 0.141389 }
+        ]
+      },
+      { "Name": "Nylon, type 6/10", 
+        "MatNum": 210,
+        "Density": 1.14, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.107062 },
+            {"Element": "C",  "Fraction": 0.680449 },
+            {"Element": "N",  "Fraction": 0.099189 },
+            {"Element": "O",  "Fraction": 0.1133 }
+        ]
+      },
+      { "Name": "Nylon, type 11 (Rilsan)", 
+        "MatNum": 211,
+        "Density": 1.425, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.115476 },
+            {"Element": "C",  "Fraction": 0.720819 },
+            {"Element": "N",  "Fraction": 0.076417 },
+            {"Element": "O",  "Fraction": 0.087289 }
+        ]
+      },
+      { "Name": "Octane, Liquid", 
+        "MatNum": 212,
+        "Density": 0.7026, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.158821 },
+            {"Element": "C",  "Fraction": 0.841179 }
+        ]
+      },
+      { "Name": "Paraffin Wax", 
+        "MatNum": 213,
+        "Density": 0.93, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.148605 },
+            {"Element": "C",  "Fraction": 0.851395 }
+        ]
+      },
+      { "Name": "N-Pentane", 
+        "MatNum": 214,
+        "Density": 0.6262, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.167635 },
+            {"Element": "C",  "Fraction": 0.832365 }
+        ]
+      },
+      { "Name": "Photographic Emulsion", 
+        "MatNum": 215,
+        "Density": 3.815, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.0141 },
+            {"Element": "C",  "Fraction": 0.072261 },
+            {"Element": "N",  "Fraction": 0.01932 },
+            {"Element": "O",  "Fraction": 0.066101 },
+            {"Element": "S",  "Fraction": 0.00189 },
+            {"Element": "Br", "Fraction": 0.349103 },
+            {"Element": "Ag", "Fraction": 0.474105 },
+            {"Element": "I",  "Fraction": 0.00312 }
+        ]
+      },
+      { "Name": "Plastic Scintillator (Vinyltoluene based)", 
+        "MatNum": 216,
+        "Density": 1.032, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.085 },
+            {"Element": "C",  "Fraction": 0.915 }
+        ]
+      },
+      { "Name": "Plutonium Dioxide", 
+        "MatNum": 217,
+        "Density": 11.46, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.118055 },
+            {"Element": "Pu", "Fraction": 0.881945 }
+        ]
+      },
+      { "Name": "Polyacrylonitrile", 
+        "MatNum": 218,
+        "Density": 1.17, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.056983 },
+            {"Element": "C",  "Fraction": 0.679056 },
+            {"Element": "N",  "Fraction": 0.263962 }
+        ]
+      },
+      { "Name": "Polycarbonate (Makrolon, Lexan)", 
+        "MatNum": 219,
+        "Density": 1.2, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.055491 },
+            {"Element": "C",  "Fraction": 0.755751 },
+            {"Element": "O",  "Fraction": 0.188758 }
+        ]
+      },
+      { "Name": "Polychlorostyrene", 
+        "MatNum": 220,
+        "Density": 1.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.061869 },
+            {"Element": "C",  "Fraction": 0.696325 },
+            {"Element": "Cl", "Fraction": 0.241806 }
+        ]
+      },
+      { "Name": "Polyethylene", 
+        "MatNum": 221,
+        "Density": 0.94, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.143711 },
+            {"Element": "C",  "Fraction": 0.856289 }
+        ]
+      },
+      { "Name": "Polyethylene Terephthalate (Mylar)", 
+        "MatNum": 222,
+        "Density": 1.4, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.041959 },
+            {"Element": "C",  "Fraction": 0.625017 },
+            {"Element": "O",  "Fraction": 0.333025 }
+        ]
+      },
+      { "Name": "Polymethyl Nethacralate (Lucite, Perspex, Plexiglass)", 
+        "MatNum": 223,
+        "Density": 1.19, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.080538 },
+            {"Element": "C",  "Fraction": 0.599848 },
+            {"Element": "O",  "Fraction": 0.319614 }
+        ]
+      },
+      { "Name": "Polyoxymethylene", 
+        "MatNum": 224,
+        "Density": 1.425, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.067135 },
+            {"Element": "C",  "Fraction": 0.400017 },
+            {"Element": "O",  "Fraction": 0.532848 }
+        ]
+      },
+      { "Name": "Polypropylene", 
+        "MatNum": 225,
+        "Density": 0.9, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.143711 },
+            {"Element": "C",  "Fraction": 0.856289 }
+        ]
+      },
+      { "Name": "Polystyrene", 
+        "MatNum": 226,
+        "Density": 1.06, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.077418 },
+            {"Element": "C",  "Fraction": 0.922582 }
+        ]
+      },
+      { "Name": "Polytetrafluoroethylene (Teflon)", 
+        "MatNum": 227,
+        "Density": 2.2, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.240183 },
+            {"Element": "F",  "Fraction": 0.759817 }
+        ]
+      },
+      { "Name": "Polytrifluorochloroethylene", 
+        "MatNum": 228,
+        "Density": 2.1, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.20625 },
+            {"Element": "F",  "Fraction": 0.489354 },
+            {"Element": "Cl", "Fraction": 0.304395 }
+        ]
+      },
+      { "Name": "Polyvinyl Acetate", 
+        "MatNum": 229,
+        "Density": 1.19, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.070245 },
+            {"Element": "C",  "Fraction": 0.558066 },
+            {"Element": "O",  "Fraction": 0.371689 }
+        ]
+      },
+      { "Name": "Polyvinyl Alcohol", 
+        "MatNum": 230,
+        "Density": 1.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.091517 },
+            {"Element": "C",  "Fraction": 0.545298 },
+            {"Element": "O",  "Fraction": 0.363185 }
+        ]
+      },
+      { "Name": "Polyvinyl Butyral", 
+        "MatNum": 231,
+        "Density": 1.12, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.092802 },
+            {"Element": "C",  "Fraction": 0.680561 },
+            {"Element": "O",  "Fraction": 0.226637 }
+        ]
+      },
+      { "Name": "Polyvinyl Chloride", 
+        "MatNum": 232,
+        "Density": 1.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.04838 },
+            {"Element": "C",  "Fraction": 0.38436 },
+            {"Element": "Cl", "Fraction": 0.56726 }
+        ]
+      },
+      { "Name": "Polyvinylidene Chloride, Saran", 
+        "MatNum": 233,
+        "Density": 1.7, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.020793 },
+            {"Element": "C",  "Fraction": 0.247793 },
+            {"Element": "Cl", "Fraction": 0.731413 }
+        ]
+      },
+      { "Name": "Polyvinylidene Fluoride", 
+        "MatNum": 234,
+        "Density": 1.76, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.03148 },
+            {"Element": "C",  "Fraction": 0.375141 },
+            {"Element": "F",  "Fraction": 0.593379 }
+        ]
+      },
+      { "Name": "Polyvinyl Pyrrolidone", 
+        "MatNum": 235,
+        "Density": 1.25, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.081616 },
+            {"Element": "C",  "Fraction": 0.648407 },
+            {"Element": "N",  "Fraction": 0.126024 },
+            {"Element": "O",  "Fraction": 0.143953 }
+        ]
+      },
+      { "Name": "Potassium Iodide", 
+        "MatNum": 236,
+        "Density": 3.13, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "K",  "Fraction": 0.235528 },
+            {"Element": "I",  "Fraction": 0.764472 }
+        ]
+      },
+      { "Name": "Potassium Oxide", 
+        "MatNum": 237,
+        "Density": 2.32, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.169852 },
+            {"Element": "K",  "Fraction": 0.830148 }
+        ]
+      },
+      { "Name": "Propane", 
+        "MatNum": 238,
+        "Density": 0.00187939, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.182855 },
+            {"Element": "C",  "Fraction": 0.817145 }
+        ]
+      },
+      { "Name": "Propane, Liquid", 
+        "MatNum": 239,
+        "Density": 0.43, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.182855 },
+            {"Element": "C",  "Fraction": 0.817145 }
+        ]
+      },
+      { "Name": "N-Propyl Alcohol", 
+        "MatNum": 240,
+        "Density": 0.8035, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.134173 },
+            {"Element": "C",  "Fraction": 0.599595 },
+            {"Element": "O",  "Fraction": 0.266232 }
+        ]
+      },
+      { "Name": "Pyridine", 
+        "MatNum": 241,
+        "Density": 0.9819, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.06371 },
+            {"Element": "C",  "Fraction": 0.759217 },
+            {"Element": "N",  "Fraction": 0.177073 }
+        ]
+      },
+      { "Name": "Rubber, Butyl", 
+        "MatNum": 242,
+        "Density": 0.92, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.143711 },
+            {"Element": "C",  "Fraction": 0.856289 }
+        ]
+      },
+      { "Name": "Rubber, Natural", 
+        "MatNum": 243,
+        "Density": 0.92, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.118371 },
+            {"Element": "C",  "Fraction": 0.881629 }
+        ]
+      },
+      { "Name": "Rubber, Neoprene", 
+        "MatNum": 244,
+        "Density": 1.23, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.05692 },
+            {"Element": "C",  "Fraction": 0.542646 },
+            {"Element": "Cl", "Fraction": 0.400434 }
+        ]
+      },
+      { "Name": "Silicon Dioxide", 
+        "MatNum": 245,
+        "Density": 2.32, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.532565 },
+            {"Element": "Si", "Fraction": 0.467435 }
+        ]
+      },
+      { "Name": "Silver Bromide", 
+        "MatNum": 246,
+        "Density": 6.473, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Br", "Fraction": 0.425537 },
+            {"Element": "Ag", "Fraction": 0.574463 }
+        ]
+      },
+      { "Name": "Silver Chloride", 
+        "MatNum": 247,
+        "Density": 5.56, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Cl", "Fraction": 0.247368 },
+            {"Element": "Ag", "Fraction": 0.752632 }
+        ]
+      },
+      { "Name": "Silver Halides in Photographic Emulsion", 
+        "MatNum": 248,
+        "Density": 6.47, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Br", "Fraction": 0.422895 },
+            {"Element": "Ag", "Fraction": 0.573748 },
+            {"Element": "I",  "Fraction": 0.003357 }
+        ]
+      },
+      { "Name": "Silver Iodide", 
+        "MatNum": 249,
+        "Density": 6.01, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Ag", "Fraction": 0.459458 },
+            {"Element": "I",  "Fraction": 0.540542 }
+        ]
+      },
+      { "Name": "Skin (ICRP)", 
+        "MatNum": 250,
+        "Density": 1.1, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.100588 },
+            {"Element": "C",  "Fraction": 0.22825 },
+            {"Element": "N",  "Fraction": 0.04642 },
+            {"Element": "O",  "Fraction": 0.619002 },
+            {"Element": "Na", "Fraction": 7.0E-5 },
+            {"Element": "Mg", "Fraction": 6.0E-5 },
+            {"Element": "P",  "Fraction": 3.3E-4 },
+            {"Element": "S",  "Fraction": 0.00159 },
+            {"Element": "Cl", "Fraction": 0.00267 },
+            {"Element": "K",  "Fraction": 8.5E-4 },
+            {"Element": "Ca", "Fraction": 1.5E-4 },
+            {"Element": "Fe", "Fraction": 1.0E-5 },
+            {"Element": "Zn", "Fraction": 1.0E-5 }
+        ]
+      },
+      { "Name": "Sodium Carbonate", 
+        "MatNum": 251,
+        "Density": 2.532, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.113323 },
+            {"Element": "O",  "Fraction": 0.452861 },
+            {"Element": "Na", "Fraction": 0.433815 }
+        ]
+      },
+      { "Name": "Sodium Iodide", 
+        "MatNum": 252,
+        "Density": 3.667, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Na", "Fraction": 0.153373 },
+            {"Element": "I",  "Fraction": 0.846627 }
+        ]
+      },
+      { "Name": "Sodium Monoxide", 
+        "MatNum": 253,
+        "Density": 2.27, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.258143 },
+            {"Element": "Na", "Fraction": 0.741857 }
+        ]
+      },
+      { "Name": "Sodium Nitrate", 
+        "MatNum": 254,
+        "Density": 2.261, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "N",  "Fraction": 0.164795 },
+            {"Element": "O",  "Fraction": 0.56472 },
+            {"Element": "Na", "Fraction": 0.270485 }
+        ]
+      },
+      { "Name": "Stilbene", 
+        "MatNum": 255,
+        "Density": 0.9707, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.067101 },
+            {"Element": "C",  "Fraction": 0.932899 }
+        ]
+      },
+      { "Name": "Sucrose", 
+        "MatNum": 256,
+        "Density": 1.5805, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.064779 },
+            {"Element": "C",  "Fraction": 0.42107 },
+            {"Element": "O",  "Fraction": 0.514151 }
+        ]
+      },
+      { "Name": "Terphenyl", 
+        "MatNum": 257,
+        "Density": 1.234, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.044543 },
+            {"Element": "C",  "Fraction": 0.955457 }
+        ]
+      },
+      { "Name": "Testes (ICRP)", 
+        "MatNum": 258,
+        "Density": 1.04, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.104166 },
+            {"Element": "C",  "Fraction": 0.09227 },
+            {"Element": "N",  "Fraction": 0.01994 },
+            {"Element": "O",  "Fraction": 0.773884 },
+            {"Element": "Na", "Fraction": 0.00226 },
+            {"Element": "Mg", "Fraction": 1.1E-4 },
+            {"Element": "P",  "Fraction": 0.00125 },
+            {"Element": "S",  "Fraction": 0.00146 },
+            {"Element": "Cl", "Fraction": 0.00244 },
+            {"Element": "K",  "Fraction": 0.00208 },
+            {"Element": "Ca", "Fraction": 1.0E-4 },
+            {"Element": "Fe", "Fraction": 2.0E-5 },
+            {"Element": "Zn", "Fraction": 2.0E-5 }
+        ]
+      },
+      { "Name": "Tetrachloroethylene", 
+        "MatNum": 259,
+        "Density": 1.625, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.144856 },
+            {"Element": "Cl", "Fraction": 0.855144 }
+        ]
+      },
+      { "Name": "Thallium Chloride", 
+        "MatNum": 260,
+        "Density": 7.004, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Cl", "Fraction": 0.147822 },
+            {"Element": "Tl", "Fraction": 0.852178 }
+        ]
+      },
+      { "Name": "Tissue, Soft (ICRP)", 
+        "MatNum": 261,
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.104472 },
+            {"Element": "C",  "Fraction": 0.23219 },
+            {"Element": "N",  "Fraction": 0.02488 },
+            {"Element": "O",  "Fraction": 0.630238 },
+            {"Element": "Na", "Fraction": 0.00113 },
+            {"Element": "Mg", "Fraction": 1.3E-4 },
+            {"Element": "P",  "Fraction": 0.00133 },
+            {"Element": "S",  "Fraction": 0.00199 },
+            {"Element": "Cl", "Fraction": 0.00134 },
+            {"Element": "K",  "Fraction": 0.00199 },
+            {"Element": "Ca", "Fraction": 2.3E-4 },
+            {"Element": "Fe", "Fraction": 5.0E-5 },
+            {"Element": "Zn", "Fraction": 3.0E-5 }
+        ]
+      },
+      { "Name": "Tissue, Soft (ICRU four-component)", 
+        "MatNum": 262,
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.101172 },
+            {"Element": "C",  "Fraction": 0.111 },
+            {"Element": "N",  "Fraction": 0.026 },
+            {"Element": "O",  "Fraction": 0.761828 }
+        ]
+      },
+      { "Name": "Tissue-Equivalent GAS (Methane based)", 
+        "MatNum": 263,
+        "Density": 0.00106409, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.101869 },
+            {"Element": "C",  "Fraction": 0.456179 },
+            {"Element": "N",  "Fraction": 0.035172 },
+            {"Element": "O",  "Fraction": 0.40678 }
+        ]
+      },
+      { "Name": "Tissue-Equivalent GAS (Propane based)", 
+        "MatNum": 264,
+        "Density": 0.00182628, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.102672 },
+            {"Element": "C",  "Fraction": 0.56894 },
+            {"Element": "N",  "Fraction": 0.035022 },
+            {"Element": "O",  "Fraction": 0.293366 }
+        ]
+      },
+      { "Name": "Titanium Dioxide", 
+        "MatNum": 265,
+        "Density": 4.26, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.400592 },
+            {"Element": "Ti", "Fraction": 0.599408 }
+        ]
+      },
+      { "Name": "Toluene", 
+        "MatNum": 266,
+        "Density": 0.8669, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.08751 },
+            {"Element": "C",  "Fraction": 0.91249 }
+        ]
+      },
+      { "Name": "Trichloroethylene", 
+        "MatNum": 267,
+        "Density": 1.46, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.007671 },
+            {"Element": "C",  "Fraction": 0.182831 },
+            {"Element": "Cl", "Fraction": 0.809498 }
+        ]
+      },
+      { "Name": "Triethyl Phosphate", 
+        "MatNum": 268,
+        "Density": 1.07, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.082998 },
+            {"Element": "C",  "Fraction": 0.395628 },
+            {"Element": "O",  "Fraction": 0.351334 },
+            {"Element": "P",  "Fraction": 0.17004 }
+        ]
+      },
+      { "Name": "Tungsten Hexafluoride", 
+        "MatNum": 269,
+        "Density": 2.4, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "F",  "Fraction": 0.382723 },
+            {"Element": "W",  "Fraction": 0.617277 }
+        ]
+      },
+      { "Name": "Uranium Dicarbide", 
+        "MatNum": 270,
+        "Density": 11.28, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.091669 },
+            {"Element": "U",  "Fraction": 0.908331 }
+        ]
+      },
+      { "Name": "Uranium Monocarbide", 
+        "MatNum": 271,
+        "Density": 13.63, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.048036 },
+            {"Element": "U",  "Fraction": 0.951964 }
+        ]
+      },
+      { "Name": "Uranium Oxide", 
+        "MatNum": 272,
+        "Density": 10.96, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "O",  "Fraction": 0.118502 },
+            {"Element": "U",  "Fraction": 0.881498 }
+        ]
+      },
+      { "Name": "Urea", 
+        "MatNum": 273,
+        "Density": 1.323, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.067131 },
+            {"Element": "C",  "Fraction": 0.199999 },
+            {"Element": "N",  "Fraction": 0.466459 },
+            {"Element": "O",  "Fraction": 0.266411 }
+        ]
+      },
+      { "Name": "Valine", 
+        "MatNum": 274,
+        "Density": 1.23, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.094641 },
+            {"Element": "C",  "Fraction": 0.512645 },
+            {"Element": "N",  "Fraction": 0.119565 },
+            {"Element": "O",  "Fraction": 0.27315 }
+        ]
+      },
+      { "Name": "Viton Fluoroelastomer", 
+        "MatNum": 275,
+        "Density": 1.8, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.009417 },
+            {"Element": "C",  "Fraction": 0.280555 },
+            {"Element": "F",  "Fraction": 0.710028 }
+        ]
+      },
+      { "Name": "Water, Liquid", 
+        "MatNum": 276,
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.111894 },
+            {"Element": "O",  "Fraction": 0.888106 }
+        ]
+      },
+      { "Name": "Water Vapor", 
+        "MatNum": 277,
+        "Density": 7.56182E-4, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.111894 },
+            {"Element": "O",  "Fraction": 0.888106 }
+        ]
+      },
+      { "Name": "Xylene", 
+        "MatNum": 278,
+        "Density": 0.87, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.094935 },
+            {"Element": "C",  "Fraction": 0.905065 }
+        ]
+      }
+    ],
+    "Comments" : [
+        "Stopping-Power & Range Tables for Electrons, Protons, and Helium Ions",
+        "NIST Standard Reference Database 124, Stopping-Power & Range Tables for Electrons, Protons, and Helium Ions, July 2017",
+        "Last Update to Data Content: July 2017",
+        "https://physics.nist.gov/cgi-bin/Star/compos.pl"
+    ]
+  }
+}

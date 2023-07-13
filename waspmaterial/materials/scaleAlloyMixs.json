@@ -1,0 +1,285 @@
+{"MaterialDatabase" : {
+    "Name": "SCALE Alloys/Mixtures",
+    "Reference": "SCALE Code System, Version 6.2.3, Oak Ridge National Laboratory, Oak Ridge, Tennessee (2018)",
+    "Materials": [
+      { "Name": "carbonsteel", 
+        "Comment": "Carbon steel",
+        "Density": 7.8212, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Fe", "Fraction": 0.99 },
+            {"Element": "C",  "Fraction": 0.01 }
+        ]
+      },
+      { "Name": "dry-air", 
+        "Density": 0.0012, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 1.26E-4 },
+            {"Element": "N",  "Fraction": 0.765081 },
+            {"Element": "O",  "Fraction": 0.234793 }
+        ]
+      },
+      { "Name": "granite", 
+        "Density": 2.66, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 3.36E-4 },
+            {"Element": "O",  "Fraction": 0.478286 },
+            {"Element": "F",  "Fraction": 9.01E-4 },
+            {"Element": "Na", "Fraction": 0.022501 },
+            {"Element": "Mg", "Fraction": 0.001449 },
+            {"Element": "Al", "Fraction": 0.074752 },
+            {"Element": "Si", "Fraction": 0.328046 },
+            {"Element": "P",  "Fraction": 3.93E-4 },
+            {"Element": "K",  "Fraction": 0.050108 },
+            {"Element": "Ca", "Fraction": 0.011876 },
+            {"Element": "Ti", "Fraction": 0.00252 },
+            {"Element": "Mn", "Fraction": 4.65E-4 },
+            {"Element": "Fe", "Fraction": 0.028367 }
+        ]
+      },
+      { "Name": "inconel", 
+        "Comment": "Inconel",
+        "Density": 8.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Si", "Fraction": 0.025 },
+            {"Element": "Ti", "Fraction": 0.025 },
+            {"Element": "Cr", "Fraction": 0.15 },
+            {"Element": "Fe", "Fraction": 0.07 },
+            {"Element": "Ni", "Fraction": 0.73 }
+        ]
+      },
+      { "Name": "inconels", 
+        "Comment": "Inconel (maintained for backward compatibility)",
+        "Density": 8.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Si", "Fraction": 0.025 },
+            {"Element": "Ti", "Fraction": 0.025 },
+            {"Element": "Cr", "Fraction": 0.15 },
+            {"Element": "Fe", "Fraction": 0.07 },
+            {"Element": "Ni", "Fraction": 0.73 }
+        ]
+      },
+      { "Name": "kero(h2o)", 
+        "Comment": "Average kerosene (uses hydrogen for  water S(alpha,beta) thermal kernel)",
+        "Density": 0.82, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.84 },
+            {"Element": "H",  "Fraction": 0.16 }
+        ]
+      },
+      { "Name": "kerosene", 
+        "Comment": "Average kerosene (uses hydrogen for polyethylene S(alpha,beta) thermal kernel)",
+        "Density": 0.82, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 0.84 },
+            {"Element": "H",  "Fraction": 0.16 }
+        ]
+      },
+      { "Name": "limestone", 
+        "Density": 2.15, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 8.63E-4 },
+            {"Element": "C",  "Fraction": 0.113548 },
+            {"Element": "O",  "Fraction": 0.496925 },
+            {"Element": "Na", "Fraction": 3.71E-4 },
+            {"Element": "Mg", "Fraction": 0.047656 },
+            {"Element": "Al", "Fraction": 0.004294 },
+            {"Element": "Si", "Fraction": 0.024299 },
+            {"Element": "P",  "Fraction": 1.75E-4 },
+            {"Element": "S",  "Fraction": 2.51E-4 },
+            {"Element": "K",  "Fraction": 0.002744 },
+            {"Element": "Ca", "Fraction": 0.304731 },
+            {"Element": "Ti", "Fraction": 3.6E-4 },
+            {"Element": "Fe", "Fraction": 0.003783 }
+        ]
+      },
+      { "Name": "mgconcrete", 
+        "Comment": "Magnuson's Concrete",
+        "Density": 2.147, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Fe", "Fraction": 0.005595 },
+            {"Element": "H",  "Fraction": 0.003319 },
+            {"Element": "C",  "Fraction": 0.105321 },
+            {"Element": "O",  "Fraction": 0.49943 },
+            {"Element": "Na", "Fraction": 0.001411 },
+            {"Element": "Mg", "Fraction": 0.0942 },
+            {"Element": "Al", "Fraction": 0.007859 },
+            {"Element": "Si", "Fraction": 0.042101 },
+            {"Element": "S",  "Fraction": 0.002483 },
+            {"Element": "Cl", "Fraction": 5.23E-4 },
+            {"Element": "K",  "Fraction": 0.009445 },
+            {"Element": "Ca", "Fraction": 0.226318 },
+            {"Element": "Ti", "Fraction": 0.001488 },
+            {"Element": "Mn", "Fraction": 5.12E-4 }
+        ]
+      },
+      { "Name": "orconcrete", 
+        "Comment": "Oak Ridge Concrete",
+        "Density": 2.2994, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Fe", "Fraction": 0.007784 },
+            {"Element": "H",  "Fraction": 0.006187 },
+            {"Element": "C",  "Fraction": 0.1752 },
+            {"Element": "O",  "Fraction": 0.4102 },
+            {"Element": "Na", "Fraction": 2.71E-4 },
+            {"Element": "Mg", "Fraction": 0.03265 },
+            {"Element": "Al", "Fraction": 0.01083 },
+            {"Element": "Si", "Fraction": 0.03448 },
+            {"Element": "K",  "Fraction": 0.001138 },
+            {"Element": "Ca", "Fraction": 0.3213 }
+        ]
+      },
+      { "Name": "pyrex", 
+        "Comment": "Pyrex",
+        "Density": 2.23, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "B",  "Fraction": 0.037 },
+            {"Element": "Al", "Fraction": 0.01 },
+            {"Element": "O",  "Fraction": 0.535 },
+            {"Element": "Si", "Fraction": 0.377 },
+            {"Element": "Na", "Fraction": 0.041 }
+        ]
+      },
+      { "Name": "reg-concrete", 
+        "Comment": "Regulatory Concrete (developed for U.S. NRC)",
+        "Density": 2.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Fe", "Fraction": 0.014 },
+            {"Element": "H",  "Fraction": 0.01 },
+            {"Element": "Al", "Fraction": 0.034 },
+            {"Element": "Ca", "Fraction": 0.044 },
+            {"Element": "O",  "Fraction": 0.532 },
+            {"Element": "Si", "Fraction": 0.337 },
+            {"Element": "Na", "Fraction": 0.029 }
+        ]
+      },
+      { "Name": "rfconcrete", 
+        "Comment": "Rocky Flats Concrete",
+        "Density": 2.321, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Fe", "Fraction": 0.0101 },
+            {"Element": "H",  "Fraction": 0.0075 },
+            {"Element": "C",  "Fraction": 0.0552 },
+            {"Element": "N",  "Fraction": 2.0E-4 },
+            {"Element": "O",  "Fraction": 0.4849 },
+            {"Element": "Na", "Fraction": 0.0063 },
+            {"Element": "Mg", "Fraction": 0.0125 },
+            {"Element": "Al", "Fraction": 0.0217 },
+            {"Element": "Si", "Fraction": 0.155 },
+            {"Element": "S",  "Fraction": 0.0019 },
+            {"Element": "K",  "Fraction": 0.0137 },
+            {"Element": "Ca", "Fraction": 0.23 },
+            {"Element": "Ti", "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "ss304", 
+        "Comment": "Stainless steel-304 (using nuclide with special weighting for ENDF/B-V data only)",
+        "Density": 7.94, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 8.0E-4 },
+            {"Element": "Si", "Fraction": 0.01 },
+            {"Element": "P",  "Fraction": 4.5E-4 },
+            {"Element": "Cr", "Fraction": 0.19 },
+            {"Element": "Mn", "Fraction": 0.02 },
+            {"Element": "Fe", "Fraction": 0.68375 },
+            {"Element": "Ni", "Fraction": 0.095 }
+        ]
+      },
+      { "Name": "ss304s", 
+        "Comment": "Stainless  steel-304  (using  standard  nuclides instead of special weighted nuclides)",
+        "Density": 7.94, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 8.0E-4 },
+            {"Element": "Si", "Fraction": 0.01 },
+            {"Element": "P",  "Fraction": 4.5E-4 },
+            {"Element": "Cr", "Fraction": 0.19 },
+            {"Element": "Mn", "Fraction": 0.02 },
+            {"Element": "Fe", "Fraction": 0.68375 },
+            {"Element": "Ni", "Fraction": 0.095 }
+        ]
+      },
+      { "Name": "ss316", 
+        "Comment": "Stainless steel-3l6 (using nuclide with special weighting for ENDF/B-V data only)",
+        "Density": 8.03, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 8.0E-4 },
+            {"Element": "Si", "Fraction": 0.01 },
+            {"Element": "P",  "Fraction": 4.5E-4 },
+            {"Element": "Cr", "Fraction": 0.17 },
+            {"Element": "Mn", "Fraction": 0.02 },
+            {"Element": "Fe", "Fraction": 0.65375 },
+            {"Element": "Ni", "Fraction": 0.12 },
+            {"Element": "Mo", "Fraction": 0.025 }
+        ]
+      },
+      { "Name": "ss316s", 
+        "Comment": "Stainless  steel-316  (using  standard  nuclides instead of special weighted nuclides)",
+        "Density": 8.03, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "C",  "Fraction": 8.0E-4 },
+            {"Element": "Si", "Fraction": 0.01 },
+            {"Element": "P",  "Fraction": 4.5E-4 },
+            {"Element": "Cr", "Fraction": 0.17 },
+            {"Element": "Mn", "Fraction": 0.02 },
+            {"Element": "Fe", "Fraction": 0.65375 },
+            {"Element": "Ni", "Fraction": 0.12 },
+            {"Element": "Mo", "Fraction": 0.025 }
+        ]
+      },
+      { "Name": "u(.27)metal", 
+        "Comment": "Depleted uranium metal having a fixed isotope distribution [to specify a different distribution, the user should use URANIUM instead of U(.27)METAL]",
+        "Density": 19.05, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "U",  "MassNumber": 235, "Fraction": 0.0027 },
+            {"Element": "U",  "MassNumber": 238, "Fraction": 0.9973 }
+        ]
+      },
+      { "Name": "zirc2", 
+        "Comment": "Zircaloy-2",
+        "Density": 6.56, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Zr", "Fraction": 0.9825 },
+            {"Element": "Sn", "Fraction": 0.0145 },
+            {"Element": "Fe", "Fraction": 0.00135 },
+            {"Element": "Cr", "Fraction": 0.001 },
+            {"Element": "Ni", "Fraction": 5.5E-4 },
+            {"Element": "Hf", "Fraction": 1.0E-4 }
+        ]
+      },
+      { "Name": "zirc4", 
+        "Comment": "Zircaloy-4",
+        "Density": 6.56, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Zr", "Fraction": 0.9823 },
+            {"Element": "Sn", "Fraction": 0.0145 },
+            {"Element": "Fe", "Fraction": 0.0021 },
+            {"Element": "Cr", "Fraction": 0.001 },
+            {"Element": "Hf", "Fraction": 1.0E-4 }
+        ]
+      }
+    ],
+    "Comments" : [
+        "B. T. Rearden and M. A. Jessee, Eds., SCALE Code System, ORNL/TM-2005/39, Version 6.2.3, Oak Ridge National Laboratory, Oak Ridge, Tennessee (2018). Available from Radiation Safety Information Computational Center as CCC-834.",
+        "Table 7.2.5: Alloys and mixtures"
+    ]
+  }
+}

@@ -1,0 +1,4647 @@
+{"MaterialDatabase" : {
+  "Name": "RxHndbkVol1Ch51",
+  "Reference": "Reactor Handbook, Second Edition - in Four Volumes, Volume 1: Materials, edited by C. R. Tipton, Jr.",
+  "Materials": [
+    { "Name": "Actinium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ac", 
+      "Contains": [
+          {"Element": "Ac", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Aluminum", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 2.699, 
+      "Type": "Chemical Formula", 
+      "Formula": "Al", 
+      "Contains": [
+          {"Element": "Al", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Americium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Am", 
+      "Contains": [
+          {"Element": "Am", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Antimony", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 6.618, 
+      "Type": "Chemical Formula", 
+      "Formula": "Sb", 
+      "Contains": [
+          {"Element": "Sb", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Argon", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 0.0016626, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ar", 
+      "Contains": [
+          {"Element": "Ar", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Arsenic", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 5.73, 
+      "Type": "Chemical Formula", 
+      "Formula": "As", 
+      "Contains": [
+          {"Element": "As", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Astatine", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "At", 
+      "Contains": [
+          {"Element": "At", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Barium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 3.78, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ba", 
+      "Contains": [
+          {"Element": "Ba", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Berkelium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Bk", 
+      "Contains": [
+          {"Element": "Bk", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Beryllium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 1.84, 
+      "Type": "Chemical Formula", 
+      "Formula": "Be", 
+      "Contains": [
+          {"Element": "Be", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Bismuth", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 9.747, 
+      "Type": "Chemical Formula", 
+      "Formula": "Bi", 
+      "Contains": [
+          {"Element": "Bi", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Boron", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 2.54, 
+      "Type": "Chemical Formula", 
+      "Formula": "B", 
+      "Contains": [
+          {"Element": "B",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Bromine", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 3.12, 
+      "Type": "Chemical Formula", 
+      "Formula": "Br", 
+      "Contains": [
+          {"Element": "Br", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Cadmium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 8.648, 
+      "Type": "Chemical Formula", 
+      "Formula": "Cd", 
+      "Contains": [
+          {"Element": "Cd", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Calcium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 1.54, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ca", 
+      "Contains": [
+          {"Element": "Ca", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Californium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Cf", 
+      "Contains": [
+          {"Element": "Cf", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Carbon", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 2.25, 
+      "Type": "Chemical Formula", 
+      "Formula": "C", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Cerium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 6.9, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ce", 
+      "Contains": [
+          {"Element": "Ce", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Cesium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 1.873, 
+      "Type": "Chemical Formula", 
+      "Formula": "Cs", 
+      "Contains": [
+          {"Element": "Cs", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Chlorine", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 0.00324, 
+      "Type": "Chemical Formula", 
+      "Formula": "Cl", 
+      "Contains": [
+          {"Element": "Cl", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Chromium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 6.92, 
+      "Type": "Chemical Formula", 
+      "Formula": "Cr", 
+      "Contains": [
+          {"Element": "Cr", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Cobalt", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 8.92, 
+      "Type": "Chemical Formula", 
+      "Formula": "Co", 
+      "Contains": [
+          {"Element": "Co", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Copper", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 8.9326, 
+      "Type": "Chemical Formula", 
+      "Formula": "Cu", 
+      "Contains": [
+          {"Element": "Cu", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Curium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Cm", 
+      "Contains": [
+          {"Element": "Cm", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Dysprosium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 8.45, 
+      "Type": "Chemical Formula", 
+      "Formula": "Dy", 
+      "Contains": [
+          {"Element": "Dy", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Einsteinium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Es", 
+      "Contains": [
+          {"Element": "Es", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Erbium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 4.77, 
+      "Type": "Chemical Formula", 
+      "Formula": "Er", 
+      "Contains": [
+          {"Element": "Er", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Europium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 5.24, 
+      "Type": "Chemical Formula", 
+      "Formula": "Eu", 
+      "Contains": [
+          {"Element": "Eu", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Fermium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Fm", 
+      "Contains": [
+          {"Element": "Fm", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Fluorine", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 0.00169, 
+      "Type": "Chemical Formula", 
+      "Formula": "F", 
+      "Contains": [
+          {"Element": "F",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Francium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Fr", 
+      "Contains": [
+          {"Element": "Fr", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Gadolinium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 7.95, 
+      "Type": "Chemical Formula", 
+      "Formula": "Gd", 
+      "Contains": [
+          {"Element": "Gd", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Gallium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 5.903, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ga", 
+      "Contains": [
+          {"Element": "Ga", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Germanium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 5.46, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ge", 
+      "Contains": [
+          {"Element": "Ge", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Gold", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 19.296, 
+      "Type": "Chemical Formula", 
+      "Formula": "Au", 
+      "Contains": [
+          {"Element": "Au", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Hafnium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 11.4, 
+      "Type": "Chemical Formula", 
+      "Formula": "Hf", 
+      "Contains": [
+          {"Element": "Hf", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Helium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 1.785E-4, 
+      "Type": "Chemical Formula", 
+      "Formula": "He", 
+      "Contains": [
+          {"Element": "He", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Holmium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 8.76, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ho", 
+      "Contains": [
+          {"Element": "Ho", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Hydrogen", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 8.987E-5, 
+      "Type": "Chemical Formula", 
+      "Formula": "H", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Indium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 7.28, 
+      "Type": "Chemical Formula", 
+      "Formula": "In", 
+      "Contains": [
+          {"Element": "In", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Iodine", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 4.94, 
+      "Type": "Chemical Formula", 
+      "Formula": "I", 
+      "Contains": [
+          {"Element": "I",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Iridium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 22.42, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ir", 
+      "Contains": [
+          {"Element": "Ir", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Iron", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 7.87, 
+      "Type": "Chemical Formula", 
+      "Formula": "Fe", 
+      "Contains": [
+          {"Element": "Fe", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Krypton", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 0.003488, 
+      "Type": "Chemical Formula", 
+      "Formula": "Kr", 
+      "Contains": [
+          {"Element": "Kr", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Lanthanum", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 6.15, 
+      "Type": "Chemical Formula", 
+      "Formula": "La", 
+      "Contains": [
+          {"Element": "La", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Lead", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 11.342, 
+      "Type": "Chemical Formula", 
+      "Formula": "Pb", 
+      "Contains": [
+          {"Element": "Pb", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Lithium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 0.534, 
+      "Type": "Chemical Formula", 
+      "Formula": "Li", 
+      "Contains": [
+          {"Element": "Li", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Lutetium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 9.24, 
+      "Type": "Chemical Formula", 
+      "Formula": "Lu", 
+      "Contains": [
+          {"Element": "Lu", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Magnesium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 1.741, 
+      "Type": "Chemical Formula", 
+      "Formula": "Mg", 
+      "Contains": [
+          {"Element": "Mg", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Manganese", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 7.42, 
+      "Type": "Chemical Formula", 
+      "Formula": "Mn", 
+      "Contains": [
+          {"Element": "Mn", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Mendelevium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Md", 
+      "Contains": [
+          {"Element": "Md", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Mercury", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 13.546, 
+      "Type": "Chemical Formula", 
+      "Formula": "Hg", 
+      "Contains": [
+          {"Element": "Hg", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Molybdenum", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 10.2, 
+      "Type": "Chemical Formula", 
+      "Formula": "Mo", 
+      "Contains": [
+          {"Element": "Mo", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Neodymium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 6.96, 
+      "Type": "Chemical Formula", 
+      "Formula": "Nd", 
+      "Contains": [
+          {"Element": "Nd", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Neon", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 8.387E-4, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ne", 
+      "Contains": [
+          {"Element": "Ne", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Neptunium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 7.05, 
+      "Type": "Chemical Formula", 
+      "Formula": "Np", 
+      "Contains": [
+          {"Element": "Np", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Nickel", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 8.9, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ni", 
+      "Contains": [
+          {"Element": "Ni", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Niobium (Columbium)", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 8.4, 
+      "Type": "Chemical Formula", 
+      "Formula": "Nb", 
+      "Contains": [
+          {"Element": "Nb", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Nitrogen", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 0.0011649, 
+      "Type": "Chemical Formula", 
+      "Formula": "N", 
+      "Contains": [
+          {"Element": "N",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Osmium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 22.5, 
+      "Type": "Chemical Formula", 
+      "Formula": "Os", 
+      "Contains": [
+          {"Element": "Os", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Oxygen", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 0.0013318, 
+      "Type": "Chemical Formula", 
+      "Formula": "O", 
+      "Contains": [
+          {"Element": "O",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Palladium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 12.16, 
+      "Type": "Chemical Formula", 
+      "Formula": "Pd", 
+      "Contains": [
+          {"Element": "Pd", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Phosphorus", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 2.34, 
+      "Type": "Chemical Formula", 
+      "Formula": "P", 
+      "Contains": [
+          {"Element": "P",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Platinum", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 21.37, 
+      "Type": "Chemical Formula", 
+      "Formula": "Pt", 
+      "Contains": [
+          {"Element": "Pt", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Plutonium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 19.7, 
+      "Type": "Chemical Formula", 
+      "Formula": "Pu", 
+      "Contains": [
+          {"Element": "Pu", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Polonium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 9.51, 
+      "Type": "Chemical Formula", 
+      "Formula": "Po", 
+      "Contains": [
+          {"Element": "Po", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Potassium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 0.87, 
+      "Type": "Chemical Formula", 
+      "Formula": "K", 
+      "Contains": [
+          {"Element": "K",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Praseodymium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 6.63, 
+      "Type": "Chemical Formula", 
+      "Formula": "Pr", 
+      "Contains": [
+          {"Element": "Pr", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Promethium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Pm", 
+      "Contains": [
+          {"Element": "Pm", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Protactinium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Pa", 
+      "Contains": [
+          {"Element": "Pa", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Radium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 5.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ra", 
+      "Contains": [
+          {"Element": "Ra", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Radon", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 0.00973, 
+      "Type": "Chemical Formula", 
+      "Formula": "Rn", 
+      "Contains": [
+          {"Element": "Rn", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Rhenium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 20.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Re", 
+      "Contains": [
+          {"Element": "Re", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Rhodium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 12.44, 
+      "Type": "Chemical Formula", 
+      "Formula": "Rh", 
+      "Contains": [
+          {"Element": "Rh", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Rubidium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 1.532, 
+      "Type": "Chemical Formula", 
+      "Formula": "Rb", 
+      "Contains": [
+          {"Element": "Rb", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Ruthenium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 12.06, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ru", 
+      "Contains": [
+          {"Element": "Ru", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Samarium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 7.7, 
+      "Type": "Chemical Formula", 
+      "Formula": "Sm", 
+      "Contains": [
+          {"Element": "Sm", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Scandium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 2.5, 
+      "Type": "Chemical Formula", 
+      "Formula": "Sc", 
+      "Contains": [
+          {"Element": "Sc", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Selenium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 4.81, 
+      "Type": "Chemical Formula", 
+      "Formula": "Se", 
+      "Contains": [
+          {"Element": "Se", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Silicon", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 2.42, 
+      "Type": "Chemical Formula", 
+      "Formula": "Si", 
+      "Contains": [
+          {"Element": "Si", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Silver", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 10.492, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ag", 
+      "Contains": [
+          {"Element": "Ag", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Sodium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 0.9712, 
+      "Type": "Chemical Formula", 
+      "Formula": "Na", 
+      "Contains": [
+          {"Element": "Na", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Strontium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 2.6, 
+      "Type": "Chemical Formula", 
+      "Formula": "Sr", 
+      "Contains": [
+          {"Element": "Sr", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Sulfur", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 2.07, 
+      "Type": "Chemical Formula", 
+      "Formula": "S", 
+      "Contains": [
+          {"Element": "S",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Tantalum", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 16.6, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ta", 
+      "Contains": [
+          {"Element": "Ta", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Technetium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Tc", 
+      "Contains": [
+          {"Element": "Tc", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Tellurium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 6.25, 
+      "Type": "Chemical Formula", 
+      "Formula": "Te", 
+      "Contains": [
+          {"Element": "Te", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Terbium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 8.33, 
+      "Type": "Chemical Formula", 
+      "Formula": "Tb", 
+      "Contains": [
+          {"Element": "Tb", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Thallium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 11.86, 
+      "Type": "Chemical Formula", 
+      "Formula": "Tl", 
+      "Contains": [
+          {"Element": "Tl", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Thorium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 11.5, 
+      "Type": "Chemical Formula", 
+      "Formula": "Th", 
+      "Contains": [
+          {"Element": "Th", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Thulium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 9.35, 
+      "Type": "Chemical Formula", 
+      "Formula": "Tm", 
+      "Contains": [
+          {"Element": "Tm", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Tin", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 7.298, 
+      "Type": "Chemical Formula", 
+      "Formula": "Sn", 
+      "Contains": [
+          {"Element": "Sn", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Titanium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 4.54, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ti", 
+      "Contains": [
+          {"Element": "Ti", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Tungsten (Wolfram)", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 19.3, 
+      "Type": "Chemical Formula", 
+      "Formula": "W", 
+      "Contains": [
+          {"Element": "W",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Uranium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 18.7, 
+      "Type": "Chemical Formula", 
+      "Formula": "U", 
+      "Contains": [
+          {"Element": "U",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Vanadium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 5.96, 
+      "Type": "Chemical Formula", 
+      "Formula": "V", 
+      "Contains": [
+          {"Element": "V",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Xenon", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 0.005495, 
+      "Type": "Chemical Formula", 
+      "Formula": "Xe", 
+      "Contains": [
+          {"Element": "Xe", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Ytterbium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 7.01, 
+      "Type": "Chemical Formula", 
+      "Formula": "Yb", 
+      "Contains": [
+          {"Element": "Yb", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Yttrium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 5.51, 
+      "Type": "Chemical Formula", 
+      "Formula": "Y", 
+      "Contains": [
+          {"Element": "Y",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Zinc", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 7.133, 
+      "Type": "Chemical Formula", 
+      "Formula": "Zn", 
+      "Contains": [
+          {"Element": "Zn", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Zirconium", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.1.",
+      "Density": 6.44, 
+      "Type": "Chemical Formula", 
+      "Formula": "Zr", 
+      "Contains": [
+          {"Element": "Zr", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Balata", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 0.96, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C5H8)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "C",  "Atoms": 5.0 }
+      ]
+    },
+    { "Name": "Butyl rubber", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 0.92, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C4H8)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "C",  "Atoms": 4.0 }
+      ]
+    },
+    { "Name": "Cellophane", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.48, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C12H20O10)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 20.0 },
+          {"Element": "C",  "Atoms": 12.0 },
+          {"Element": "O",  "Atoms": 10.0 }
+      ]
+    },
+    { "Name": "Celluloid", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.42, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C6H8O9N2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "C",  "Atoms": 6.0 },
+          {"Element": "N",  "Atoms": 2.0 },
+          {"Element": "O",  "Atoms": 9.0 }
+      ]
+    },
+    { "Name": "Ethyl cellulose", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.15, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C20H36O10)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 36.0 },
+          {"Element": "C",  "Atoms": 20.0 },
+          {"Element": "O",  "Atoms": 10.0 }
+      ]
+    },
+    { "Name": "GR-8", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 0.94, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C20H26)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 26.0 },
+          {"Element": "C",  "Atoms": 20.0 }
+      ]
+    },
+    { "Name": "Hycar OR-15", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C11H15N)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 15.0 },
+          {"Element": "C",  "Atoms": 11.0 },
+          {"Element": "N",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Hycar PA", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.1, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C5H8O2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "C",  "Atoms": 5.0 },
+          {"Element": "O",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Hypalon S-2", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.08, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C90Cl16H164SO2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 164.0 },
+          {"Element": "C",  "Atoms": 90.0 },
+          {"Element": "O",  "Atoms": 2.0 },
+          {"Element": "S",  "Atoms": 1.0 },
+          {"Element": "Cl", "Atoms": 16.0 }
+      ]
+    },
+    { "Name": "Lucite", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.19, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C5H8O2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "C",  "Atoms": 5.0 },
+          {"Element": "O",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Melamine formaldehyde", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.35, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C5H7N6)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 7.0 },
+          {"Element": "C",  "Atoms": 5.0 },
+          {"Element": "N",  "Atoms": 6.0 }
+      ]
+    },
+    { "Name": "Neoprene", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.23, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C4H5Cl)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 5.0 },
+          {"Element": "C",  "Atoms": 4.0 },
+          {"Element": "Cl", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Nylon", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.11, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C12H22O2N2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 22.0 },
+          {"Element": "C",  "Atoms": 12.0 },
+          {"Element": "N",  "Atoms": 2.0 },
+          {"Element": "O",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Nylon, elastic", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.12, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C12H22O2N2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 22.0 },
+          {"Element": "C",  "Atoms": 12.0 },
+          {"Element": "N",  "Atoms": 2.0 },
+          {"Element": "O",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Orlon", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.17, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C3H3N)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 3.0 },
+          {"Element": "C",  "Atoms": 3.0 },
+          {"Element": "N",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Phenol formaldehyde", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.27, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C7H6O)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 6.0 },
+          {"Element": "C",  "Atoms": 7.0 },
+          {"Element": "O",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Pliofilm", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.11, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C5H9Cl)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 9.0 },
+          {"Element": "C",  "Atoms": 5.0 },
+          {"Element": "Cl", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Polystryene", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.05, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C8H8)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "C",  "Atoms": 8.0 }
+      ]
+    },
+    { "Name": "Polyethene", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 0.93, 
+      "Type": "Chemical Formula", 
+      "Formula": "(CH2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Polyvinyl alcohol", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.25, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C2H4O)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 4.0 },
+          {"Element": "C",  "Atoms": 2.0 },
+          {"Element": "O",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Polyvinyl butryal", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.05, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C8H14O2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 14.0 },
+          {"Element": "C",  "Atoms": 8.0 },
+          {"Element": "O",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Polyvinyl carbazole", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.2, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C14H11N)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 11.0 },
+          {"Element": "C",  "Atoms": 14.0 },
+          {"Element": "N",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Polyvinyl formal", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.25, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C5H8O2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "C",  "Atoms": 5.0 },
+          {"Element": "O",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Rubber, natural", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 0.93, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C5H8)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "C",  "Atoms": 5.0 }
+      ]
+    },
+    { "Name": "Selectron", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.25, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C16H14O7)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 14.0 },
+          {"Element": "C",  "Atoms": 16.0 },
+          {"Element": "O",  "Atoms": 7.0 }
+      ]
+    },
+    { "Name": "Silastic", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.2, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C2H6SiO2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 6.0 },
+          {"Element": "C",  "Atoms": 2.0 },
+          {"Element": "O",  "Atoms": 2.0 },
+          {"Element": "Si", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Teflon", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 2.17, 
+      "Type": "Chemical Formula", 
+      "Formula": "(CF2)n", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 1.0 },
+          {"Element": "F",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Tenite I", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.28, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C10H14O7)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 14.0 },
+          {"Element": "C",  "Atoms": 10.0 },
+          {"Element": "O",  "Atoms": 7.0 }
+      ]
+    },
+    { "Name": "Tenite II", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.2, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C12H18O7)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 18.0 },
+          {"Element": "C",  "Atoms": 12.0 },
+          {"Element": "O",  "Atoms": 7.0 }
+      ]
+    },
+    { "Name": "Thiokol FA", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.34, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C4H8S4O)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "C",  "Atoms": 4.0 },
+          {"Element": "O",  "Atoms": 1.0 },
+          {"Element": "S",  "Atoms": 4.0 }
+      ]
+    },
+    { "Name": "Urea formaldehyde", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.35, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C2H3ON2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 3.0 },
+          {"Element": "C",  "Atoms": 2.0 },
+          {"Element": "N",  "Atoms": 2.0 },
+          {"Element": "O",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Vulcollan", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.2.",
+      "Density": 1.22, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C98H128O44N4)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 128.0 },
+          {"Element": "C",  "Atoms": 98.0 },
+          {"Element": "N",  "Atoms": 4.0 },
+          {"Element": "O",  "Atoms": 44.0 }
+      ]
+    },
+    { "Name": "Boric oxide", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.10.",
+      "Density": 1.85, 
+      "Type": "Chemical Formula", 
+      "Formula": "B2O3", 
+      "Contains": [
+          {"Element": "B",  "Atoms": 2.0 },
+          {"Element": "O",  "Atoms": 3.0 }
+      ]
+    },
+    { "Name": "Boron carbide", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.10.",
+      "Density": 1.81, 
+      "Type": "Chemical Formula", 
+      "Formula": "B4C", 
+      "Contains": [
+          {"Element": "B",  "Atoms": 4.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Flourothene", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.10.",
+      "Density": 2.19, 
+      "Type": "Chemical Formula", 
+      "Formula": "C2F3Cl", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 2.0 },
+          {"Element": "F",  "Atoms": 3.0 },
+          {"Element": "Cl", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Heavy water", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.10.",
+      "Density": 1.1, 
+      "Type": "Chemical Formula", 
+      "Formula": "D2O", 
+      "Contains": [
+          {"Element": "D",  "Atoms": 2.0 },
+          {"Element": "O",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Lithium fluoride", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.10.",
+      "Density": 0.7, 
+      "Type": "Chemical Formula", 
+      "Formula": "LiF", 
+      "Contains": [
+          {"Element": "Li", "Atoms": 1.0 },
+          {"Element": "F",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Oil", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.10.",
+      "Density": 0.876, 
+      "Type": "Chemical Formula", 
+      "Formula": "(CH2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Paraffin", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.10.",
+      "Density": 0.952, 
+      "Type": "Chemical Formula", 
+      "Formula": "C30H62", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 62.0 },
+          {"Element": "C",  "Atoms": 30.0 }
+      ]
+    },
+    { "Name": "Perfluoroheptane", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.10.",
+      "Density": 1.72, 
+      "Type": "Chemical Formula", 
+      "Formula": "C7F16", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 7.0 },
+          {"Element": "F",  "Atoms": 16.0 }
+      ]
+    },
+    { "Name": "Aluminum oxide", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 4.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Al2O3", 
+      "Contains": [
+          {"Element": "O",  "Atoms": 3.0 },
+          {"Element": "Al", "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Ammonia, liquid (-79C)", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 0.771, 
+      "Type": "Chemical Formula", 
+      "Formula": "NH3", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 3.0 },
+          {"Element": "N",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Barium sulfate", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 4.5, 
+      "Type": "Chemical Formula", 
+      "Formula": "BaSO4", 
+      "Contains": [
+          {"Element": "O",  "Atoms": 4.0 },
+          {"Element": "S",  "Atoms": 1.0 },
+          {"Element": "Ba", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Calcium carbonate", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 2.71, 
+      "Type": "Chemical Formula", 
+      "Formula": "CaCO2", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 1.0 },
+          {"Element": "O",  "Atoms": 2.0 },
+          {"Element": "Ca", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Calcium oxide", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 3.32, 
+      "Type": "Chemical Formula", 
+      "Formula": "CaO", 
+      "Contains": [
+          {"Element": "O",  "Atoms": 1.0 },
+          {"Element": "Ca", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Concrete, Barytes", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 3.5
+    },
+    { "Name": "Concrete, Iron-portland", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 6.0
+    },
+    { "Name": "Concrete, Limonite", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 2.96
+    },
+    { "Name": "Concrete, Portland", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 2.2
+    },
+    { "Name": "Ferric oxide", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 5.12, 
+      "Type": "Chemical Formula", 
+      "Formula": "Fe2O3", 
+      "Contains": [
+          {"Element": "O",  "Atoms": 3.0 },
+          {"Element": "Fe", "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Ferro boron", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 6.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "FeB", 
+      "Contains": [
+          {"Element": "B",  "Atoms": 1.0 },
+          {"Element": "Fe", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Gasoline", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 0.739, 
+      "Type": "Chemical Formula", 
+      "Formula": "C8H18", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 18.0 },
+          {"Element": "C",  "Atoms": 8.0 }
+      ]
+    },
+    { "Name": "Lithium amide", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 1.18, 
+      "Type": "Chemical Formula", 
+      "Formula": "LiNH2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "Li", "Atoms": 1.0 },
+          {"Element": "N",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Lithium hydride", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 0.92, 
+      "Type": "Chemical Formula", 
+      "Formula": "LiH", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 1.0 },
+          {"Element": "Li", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Lucite", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 1.18, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C5H8O2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "C",  "Atoms": 5.0 },
+          {"Element": "O",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Magnesium oxide", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 3.65, 
+      "Type": "Chemical Formula", 
+      "Formula": "MgO", 
+      "Contains": [
+          {"Element": "O",  "Atoms": 1.0 },
+          {"Element": "Mg", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Oil", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 0.89, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C7.3H12)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 12.0 },
+          {"Element": "C",  "Atoms": 7.3 }
+      ]
+    },
+    { "Name": "Polyethylene", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 0.92, 
+      "Type": "Chemical Formula", 
+      "Formula": "(CH2)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Potasium oxide", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 2.32, 
+      "Type": "Chemical Formula", 
+      "Formula": "K2O", 
+      "Contains": [
+          {"Element": "O",  "Atoms": 1.0 },
+          {"Element": "K",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Rubber, Natural", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 0.92, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C5H8)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "C",  "Atoms": 5.0 }
+      ]
+    },
+    { "Name": "Rubber, Neoprene", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 1.23, 
+      "Type": "Chemical Formula", 
+      "Formula": "(C4H5Cl)n", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 5.0 },
+          {"Element": "C",  "Atoms": 4.0 },
+          {"Element": "Cl", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Silicon dioxide", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 2.32, 
+      "Type": "Chemical Formula", 
+      "Formula": "SiO2", 
+      "Contains": [
+          {"Element": "O",  "Atoms": 2.0 },
+          {"Element": "Si", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Sodium oxide", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 2.27, 
+      "Type": "Chemical Formula", 
+      "Formula": "Na2O", 
+      "Contains": [
+          {"Element": "O",  "Atoms": 1.0 },
+          {"Element": "Na", "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Steel, 1 % carbon", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 7.83
+    },
+    { "Name": "Steel, 2 % boron stainless", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 7.83
+    },
+    { "Name": "Steel, Type 303 stainless", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 7.93
+    },
+    { "Name": "Teflon", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 2.2, 
+      "Type": "Chemical Formula", 
+      "Formula": "(CF2)n", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 1.0 },
+          {"Element": "F",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Water", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.11.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "H2O", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "O",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Air", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 0.001294
+    },
+    { "Name": "Aluminum", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.7
+    },
+    { "Name": "Ammonia (liquid)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 0.771
+    },
+    { "Name": "Beryllium", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 1.85
+    },
+    { "Name": "Beryllium carbide", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 1.9
+    },
+    { "Name": "Beryllium oxide (hot-pressed blocks)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.3
+    },
+    { "Name": "Bismuth", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 9.8
+    },
+    { "Name": "Boral", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.53
+    },
+    { "Name": "Boron (amorphous)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.45
+    },
+    { "Name": "Boron carbide (hot pressed)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.5
+    },
+    { "Name": "Brick, Fire clay", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.05
+    },
+    { "Name": "Brick, Kaolin", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.1
+    },
+    { "Name": "Brick, Silica", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 1.78
+    },
+    { "Name": "Carbon", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.  Graphite theoretical density",
+      "Density": 2.25
+    },
+    { "Name": "Clay", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.2
+    },
+    { "Name": "Cements, Colemanite borated", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 1.95
+    },
+    { "Name": "Cements, Plain (1 Portlands cement: 3 sand mixtures)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.07
+    },
+    { "Name": "Concrete, Barytes", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 3.5
+    },
+    { "Name": "Concrete, Barytes-boron frits", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 3.25
+    },
+    { "Name": "Concrete, Barytes-limonite", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 3.25
+    },
+    { "Name": "Concrete, Barytes-lumnite-colemanite", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 3.1
+    },
+    { "Name": "Concrete, Iron-Portland", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 6.0
+    },
+    { "Name": "Concrete, MO (ORNL mixture)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 5.8
+    },
+    { "Name": "Concrete, Portland (1 cement: 2 sand: 4 gravel mixture)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.  Elemental composition, wt %: H 1.0; O 52.0; Si 33.7; aluminum 3.4; Fe 1.4; Ca 4.4; Mg 0.2; C 0.1; Na 1.6; K 1.3",
+      "Density": 2.2
+    },
+    { "Name": "Fuel oil (medium weight)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 0.89
+    },
+    { "Name": "Gasoline", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 0.739
+    },
+    { "Name": "Glass, Borosilicate", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.23
+    },
+    { "Name": "Glass, Lead (Hi-D)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 6.4
+    },
+    { "Name": "Glass, Plate (avg)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.4
+    },
+    { "Name": "Iron", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 7.86
+    },
+    { "Name": "Lead", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 11.34
+    },
+    { "Name": "Lithium hydride (pressed powder)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 0.7
+    },
+    { "Name": "Lucite (polymethyl methacrylate)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 1.19
+    },
+    { "Name": "Paraffin", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 0.89
+    },
+    { "Name": "Rock, Granite", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.45
+    },
+    { "Name": "Rock, Limestone", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.91
+    },
+    { "Name": "Rock, Sandstone", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.4
+    },
+    { "Name": "Rubber, Butadiene copolymer", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 0.915
+    },
+    { "Name": "Rubber, Natural", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 0.92
+    },
+    { "Name": "Rubber, Neoprene", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 1.23
+    },
+    { "Name": "Sand", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 2.2
+    },
+    { "Name": "Type 347 stainless steel", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 7.8
+    },
+    { "Name": "Steel (1% carbon)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 7.83
+    },
+    { "Name": "Uranium", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 18.7
+    },
+    { "Name": "Uranium hydride", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 11.5
+    },
+    { "Name": "Water", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 1.0
+    },
+    { "Name": "Wood, Ash", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 0.51
+    },
+    { "Name": "Wood, Oak", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 0.77
+    },
+    { "Name": "Wood, White pine", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.14.",
+      "Density": 0.67
+    },
+    { "Name": "Concrete, Portland (1 cement: 2 sand: 4 gravel mixture)", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.14.",
+      "Density": 2.2, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.01 },
+          {"Element": "C",  "Fraction": 0.001 },
+          {"Element": "N",  "Fraction": 0.0 },
+          {"Element": "O",  "Fraction": 0.529 },
+          {"Element": "Na", "Fraction": 0.016 },
+          {"Element": "Mg", "Fraction": 0.002 },
+          {"Element": "Al", "Fraction": 0.034 },
+          {"Element": "Si", "Fraction": 0.337 },
+          {"Element": "P",  "Fraction": 0.0 },
+          {"Element": "K",  "Fraction": 0.013 },
+          {"Element": "Ca", "Fraction": 0.044 },
+          {"Element": "Fe", "Fraction": 0.014 }
+      ]
+    },
+    { "Name": "Flesh", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.14.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.1015 },
+          {"Element": "C",  "Fraction": 0.1827 },
+          {"Element": "N",  "Fraction": 0.0305 },
+          {"Element": "O",  "Fraction": 0.6599 },
+          {"Element": "Na", "Fraction": 0.0 },
+          {"Element": "Mg", "Fraction": 0.0 },
+          {"Element": "Al", "Fraction": 0.0 },
+          {"Element": "Si", "Fraction": 0.0 },
+          {"Element": "P",  "Fraction": 0.0102 },
+          {"Element": "K",  "Fraction": 0.0 },
+          {"Element": "Ca", "Fraction": 0.0152 },
+          {"Element": "Fe", "Fraction": 0.0 }
+      ]
+    },
+    { "Name": "Portland concrete", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.26.",
+      "Density": 2.3
+    },
+    { "Name": "Boron cement", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.26.",
+      "Density": 2.0
+    },
+    { "Name": "Brookhaven concrete", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.26.",
+      "Density": 4.3
+    },
+    { "Name": "W-1 concrete", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.26.",
+      "Density": 3.6
+    },
+    { "Name": "Barytes concrete", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.26.",
+      "Density": 3.5
+    },
+    { "Name": "Boral (without aluminum cladding)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.28 and density from Table 51.29.  Boral is a mixture of B4C and aluminum; alloy is held in aluminum cladding 0.020 in thick, with which the material is brittle and difficult to handle; the B4C conent in the alloy can be as high as 50%; imputiries less than 1%; major impurity is iron.",
+      "Density": 2.53, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Al", "Fraction": 0.65 },
+          {"Element": "B",  "Fraction": 0.275 },
+          {"Element": "C",  "Fraction": 0.075 }
+      ]
+    },
+    { "Name": "Boral (with aluminum cladding, 1/4 in. sheet)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.28 and density from Table 51.29.  Elemental composition summed to 100.2% and was renormalized.  Boral is a mixture of B4C and aluminum; alloy is held in aluminum cladding 0.020 in thick, with which the material is brittle and difficult to handle; the B4C conent in the alloy can be as high as 50%; imputiries less than 1%; major impurity is iron.",
+      "Density": 2.53, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Al", "Fraction": 0.798403 },
+          {"Element": "B",  "Fraction": 0.156687 },
+          {"Element": "C",  "Fraction": 0.0449102 }
+      ]
+    },
+    { "Name": "Carbon boride (B4C)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.",
+      "Density": 2.51, 
+      "Type": "Chemical Formula", 
+      "Formula": "B4C", 
+      "Contains": [
+          {"Element": "B",  "Atoms": 4.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Calcium boride (CaB6)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.",
+      "Density": 2.45, 
+      "Type": "Chemical Formula", 
+      "Formula": "CaB6", 
+      "Contains": [
+          {"Element": "Ca", "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 6.0 }
+      ]
+    },
+    { "Name": "Zirconium boride (ZrB12)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "ZrB12", 
+      "Contains": [
+          {"Element": "Zr", "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 12.0 }
+      ]
+    },
+    { "Name": "Uranium boride (UB12)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "UB12", 
+      "Contains": [
+          {"Element": "U",  "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 12.0 }
+      ]
+    },
+    { "Name": "Titanium boride (TiB2)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.",
+      "Density": 4.5, 
+      "Type": "Chemical Formula", 
+      "Formula": "TiB2", 
+      "Contains": [
+          {"Element": "Ti", "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Vanadium boride (VB2)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.",
+      "Density": 5.1, 
+      "Type": "Chemical Formula", 
+      "Formula": "VB2", 
+      "Contains": [
+          {"Element": "V",  "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Chromium boride (CrB2)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.",
+      "Density": 5.15, 
+      "Type": "Chemical Formula", 
+      "Formula": "CrB2", 
+      "Contains": [
+          {"Element": "Cr", "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Zirconium boride (ZrB2)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.",
+      "Density": 6.08, 
+      "Type": "Chemical Formula", 
+      "Formula": "ZrB2", 
+      "Contains": [
+          {"Element": "Zr", "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Molybdenum boride (MoB2)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.",
+      "Density": 7.12, 
+      "Type": "Chemical Formula", 
+      "Formula": "MoB2", 
+      "Contains": [
+          {"Element": "Mo", "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Thorium boride (ThB4)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.",
+      "Density": 8.45, 
+      "Type": "Chemical Formula", 
+      "Formula": "ThB4", 
+      "Contains": [
+          {"Element": "Th", "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 4.0 }
+      ]
+    },
+    { "Name": "Uranium boride (UB4)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.",
+      "Density": 9.32, 
+      "Type": "Chemical Formula", 
+      "Formula": "UB4", 
+      "Contains": [
+          {"Element": "U",  "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 4.0 }
+      ]
+    },
+    { "Name": "Tantalum boride (TaB2)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.",
+      "Density": 12.38, 
+      "Type": "Chemical Formula", 
+      "Formula": "TaB2", 
+      "Contains": [
+          {"Element": "Ta", "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Uranium boride (UB2)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.31.",
+      "Density": 12.7, 
+      "Type": "Chemical Formula", 
+      "Formula": "UB2", 
+      "Contains": [
+          {"Element": "U",  "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Aluminum Carbide (Al4C3)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 2.99, 
+      "Type": "Chemical Formula", 
+      "Formula": "Al4C3", 
+      "Contains": [
+          {"Element": "Al", "Atoms": 4.0 },
+          {"Element": "C",  "Atoms": 3.0 }
+      ]
+    },
+    { "Name": "Beryllium carbide (Be2C)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 2.44, 
+      "Type": "Chemical Formula", 
+      "Formula": "Be2C", 
+      "Contains": [
+          {"Element": "Be", "Atoms": 2.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Boron carbide (B4C)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 2.519, 
+      "Type": "Chemical Formula", 
+      "Formula": "B4C", 
+      "Contains": [
+          {"Element": "B",  "Atoms": 4.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Calcium carbide (CaC2)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 2.22, 
+      "Type": "Chemical Formula", 
+      "Formula": "CaC2", 
+      "Contains": [
+          {"Element": "Ca", "Atoms": 1.0 },
+          {"Element": "C",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Chrohmium carbide (Cr3C2)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 6.68, 
+      "Type": "Chemical Formula", 
+      "Formula": "Cr3C2", 
+      "Contains": [
+          {"Element": "Cr", "Atoms": 3.0 },
+          {"Element": "C",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Hafnium carbide (HfC)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 12.2, 
+      "Type": "Chemical Formula", 
+      "Formula": "HfC", 
+      "Contains": [
+          {"Element": "Hf", "Atoms": 1.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Iron carbide (Fe3C)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 7.67, 
+      "Type": "Chemical Formula", 
+      "Formula": "Fe3C", 
+      "Contains": [
+          {"Element": "Fe", "Atoms": 3.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Manganese carbide (Mn3C)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 6.89, 
+      "Type": "Chemical Formula", 
+      "Formula": "Mn3C", 
+      "Contains": [
+          {"Element": "Mn", "Atoms": 3.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Manganese carbide (Mn7C)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 7.35, 
+      "Type": "Chemical Formula", 
+      "Formula": "Mn7C", 
+      "Contains": [
+          {"Element": "Mn", "Atoms": 7.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Manganese carbide (Mn23C6)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 7.49, 
+      "Type": "Chemical Formula", 
+      "Formula": "Mn23C6", 
+      "Contains": [
+          {"Element": "Mn", "Atoms": 23.0 },
+          {"Element": "C",  "Atoms": 6.0 }
+      ]
+    },
+    { "Name": "Tantalum carbide (TaC)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 14.48, 
+      "Type": "Chemical Formula", 
+      "Formula": "TaC", 
+      "Contains": [
+          {"Element": "Ta", "Atoms": 1.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Tantalum carbide (Ta2C)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 15.1, 
+      "Type": "Chemical Formula", 
+      "Formula": "Ta2C", 
+      "Contains": [
+          {"Element": "Ta", "Atoms": 2.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Thorium carbide (ThC2)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 9.6, 
+      "Type": "Chemical Formula", 
+      "Formula": "ThC2", 
+      "Contains": [
+          {"Element": "Th", "Atoms": 1.0 },
+          {"Element": "C",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Thorium carbide (ThC)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 10.65, 
+      "Type": "Chemical Formula", 
+      "Formula": "ThC", 
+      "Contains": [
+          {"Element": "Th", "Atoms": 1.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Titanium carbide (TiC)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 4.25, 
+      "Type": "Chemical Formula", 
+      "Formula": "TiC", 
+      "Contains": [
+          {"Element": "Ti", "Atoms": 1.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Tungsten carbide (WC)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 15.5, 
+      "Type": "Chemical Formula", 
+      "Formula": "WC", 
+      "Contains": [
+          {"Element": "W",  "Atoms": 1.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Tungsten carbide (W2C)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 17.2, 
+      "Type": "Chemical Formula", 
+      "Formula": "W2C", 
+      "Contains": [
+          {"Element": "W",  "Atoms": 2.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Uranium carbide (UC)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 13.63, 
+      "Type": "Chemical Formula", 
+      "Formula": "UC", 
+      "Contains": [
+          {"Element": "U",  "Atoms": 1.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Uranium carbide (UC2)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 11.28, 
+      "Type": "Chemical Formula", 
+      "Formula": "UC2", 
+      "Contains": [
+          {"Element": "U",  "Atoms": 1.0 },
+          {"Element": "C",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Uranium carbide (U2C2)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 12.88, 
+      "Type": "Chemical Formula", 
+      "Formula": "U2C2", 
+      "Contains": [
+          {"Element": "U",  "Atoms": 2.0 },
+          {"Element": "C",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Zirconium carbide (ZrC)", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.32.",
+      "Density": 6.7, 
+      "Type": "Chemical Formula", 
+      "Formula": "ZrC", 
+      "Contains": [
+          {"Element": "Zr", "Atoms": 1.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Yellow brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.36.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.47, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.657829 },
+          {"Element": "Zn", "Fraction": 0.338669 },
+          {"Element": "Pb", "Fraction": 0.0030015 },
+          {"Element": "Fe", "Fraction": 5.0025E-4 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Wrought brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  No density given.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.95019 },
+          {"Element": "Zn", "Fraction": 0.0490098 },
+          {"Element": "Pb", "Fraction": 3.0006E-4 },
+          {"Element": "Fe", "Fraction": 5.001E-4 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Red brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.36.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.75, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.85 },
+          {"Element": "Zn", "Fraction": 0.149 },
+          {"Element": "Pb", "Fraction": 5.0E-4 },
+          {"Element": "Fe", "Fraction": 5.0E-4 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Low brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.36.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.67, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.8 },
+          {"Element": "Zn", "Fraction": 0.199 },
+          {"Element": "Pb", "Fraction": 5.0E-4 },
+          {"Element": "Fe", "Fraction": 5.0E-4 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Low leaded brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.36.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.48, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.645 },
+          {"Element": "Zn", "Fraction": 0.349 },
+          {"Element": "Pb", "Fraction": 0.005 },
+          {"Element": "Fe", "Fraction": 0.001 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (High leaded brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.36.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.48, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.637755 },
+          {"Element": "Zn", "Fraction": 0.344388 },
+          {"Element": "Pb", "Fraction": 0.0178571 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Free-cutting brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.36.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.5, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.615 },
+          {"Element": "Zn", "Fraction": 0.355 },
+          {"Element": "Pb", "Fraction": 0.03 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Cartridge brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.36.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.53, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.69986 },
+          {"Element": "Zn", "Fraction": 0.29894 },
+          {"Element": "Pb", "Fraction": 6.9986E-4 },
+          {"Element": "Fe", "Fraction": 4.999E-4 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Naval brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.36.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.41, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.605 },
+          {"Element": "Zn", "Fraction": 0.3845 },
+          {"Element": "Pb", "Fraction": 0.002 },
+          {"Element": "Fe", "Fraction": 0.001 },
+          {"Element": "Sm", "Fraction": 0.0075 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Aluminum brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  No density given.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.760875 },
+          {"Element": "Zn", "Fraction": 0.215248 },
+          {"Element": "Pb", "Fraction": 7.50863E-4 },
+          {"Element": "Fe", "Fraction": 6.00691E-4 },
+          {"Element": "Al", "Fraction": 0.0225259 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Commercial bronze)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.37.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.8, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.9 },
+          {"Element": "Zn", "Fraction": 0.099 },
+          {"Element": "Pb", "Fraction": 5.0E-4 },
+          {"Element": "Fe", "Fraction": 5.0E-4 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Commercial leaded bronze)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.37.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.83, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.89 },
+          {"Element": "Zn", "Fraction": 0.0915 },
+          {"Element": "Pb", "Fraction": 0.0175 },
+          {"Element": "Fe", "Fraction": 0.001 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Phosphor bronze, Grade A)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.37.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.86, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.947 },
+          {"Element": "Zn", "Fraction": 0.003 },
+          {"Element": "Pb", "Fraction": 5.0E-4 },
+          {"Element": "Fe", "Fraction": 0.001 },
+          {"Element": "Sn", "Fraction": 0.0465 },
+          {"Element": "P",  "Fraction": 0.0019 },
+          {"Element": "Sb", "Fraction": 1.0E-4 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Manganese bronze)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.37.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.53, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.585 },
+          {"Element": "Zn", "Fraction": 0.384 },
+          {"Element": "Pb", "Fraction": 0.002 },
+          {"Element": "Fe", "Fraction": 0.014 },
+          {"Element": "Mn", "Fraction": 0.005 },
+          {"Element": "Sn", "Fraction": 0.01 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (5% aluminum bronze)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.37.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.17, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.94 },
+          {"Element": "Fe", "Fraction": 0.005 },
+          {"Element": "Al", "Fraction": 0.055 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Silicon bronze, Type A)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  No density given.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.926369 },
+          {"Element": "Zn", "Fraction": 0.0146577 },
+          {"Element": "Pb", "Fraction": 4.88591E-4 },
+          {"Element": "Fe", "Fraction": 0.0156349 },
+          {"Element": "Ni", "Fraction": 0.0058631 },
+          {"Element": "Sn", "Fraction": 0.00732887 },
+          {"Element": "Si", "Fraction": 0.0296575 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Muntz metal)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.37.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.39, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.609695 },
+          {"Element": "Zn", "Fraction": 0.386807 },
+          {"Element": "Pb", "Fraction": 0.001999 },
+          {"Element": "Fe", "Fraction": 0.00149925 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Admiralty metal)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.37.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.53, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.713537 },
+          {"Element": "Zn", "Fraction": 0.271643 },
+          {"Element": "Pb", "Fraction": 7.48466E-4 },
+          {"Element": "Fe", "Fraction": 5.98773E-4 },
+          {"Element": "Sn", "Fraction": 0.0104785 },
+          {"Element": "P",  "Fraction": 9.97954E-4 },
+          {"Element": "Sb", "Fraction": 9.97954E-4 },
+          {"Element": "As", "Fraction": 9.97954E-4 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (30% Cupro-nickel)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  No density given.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.677659 },
+          {"Element": "Fe", "Fraction": 6.03258E-4 },
+          {"Element": "Mn", "Fraction": 0.0100543 },
+          {"Element": "Ni", "Fraction": 0.311683 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (18% Nickel-silver, Alloy A)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  Density from Table 51.37.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.73, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.6475 },
+          {"Element": "Zn", "Fraction": 0.17 },
+          {"Element": "Ni", "Fraction": 0.1825 }
+      ]
+    },
+    { "Name": "Copper Alloy, wrought (Beryllium copper)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.35.  No density given.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.970194 },
+          {"Element": "Fe", "Fraction": 0.00322901 },
+          {"Element": "Ni", "Fraction": 0.00322901 },
+          {"Element": "Be", "Fraction": 0.0201192 },
+          {"Element": "Co", "Fraction": 0.00322901 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (Leaded yellow brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   Density from Table 51.39.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.45, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.675 },
+          {"Element": "Sn", "Fraction": 0.015 },
+          {"Element": "Pb", "Fraction": 0.02625 },
+          {"Element": "Zn", "Fraction": 0.27625 },
+          {"Element": "Fe", "Fraction": 0.0075 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (Leaded semired brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   No density given.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.801643 },
+          {"Element": "Sn", "Fraction": 0.0288091 },
+          {"Element": "Pb", "Fraction": 0.0701438 },
+          {"Element": "Zn", "Fraction": 0.0851746 },
+          {"Element": "Ni", "Fraction": 0.0100205 },
+          {"Element": "Fe", "Fraction": 0.00400822 },
+          {"Element": "P",  "Fraction": 2.00411E-4 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (Leaded red brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   Density from Table 51.39.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.6, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.825243 },
+          {"Element": "Sn", "Fraction": 0.0373413 },
+          {"Element": "Pb", "Fraction": 0.0597461 },
+          {"Element": "Zn", "Fraction": 0.0647249 },
+          {"Element": "Ni", "Fraction": 0.00995768 },
+          {"Element": "Fe", "Fraction": 0.0029873 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (Silicon brass)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   No density given.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.8075 },
+          {"Element": "Zn", "Fraction": 0.1525 },
+          {"Element": "Si", "Fraction": 0.04 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (Leaded tin bronze)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   Density from Table 51.39.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.7, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.873016 },
+          {"Element": "Sn", "Fraction": 0.0595238 },
+          {"Element": "Pb", "Fraction": 0.014881 },
+          {"Element": "Zn", "Fraction": 0.0396825 },
+          {"Element": "Ni", "Fraction": 0.00992063 },
+          {"Element": "Fe", "Fraction": 0.00248016 },
+          {"Element": "P",  "Fraction": 4.96032E-4 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (Leaded tin bearing bronze)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   Density from Table 51.39.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.8, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.856721 },
+          {"Element": "Sn", "Fraction": 0.0812408 },
+          {"Element": "Pb", "Fraction": 0.00984737 },
+          {"Element": "Zn", "Fraction": 0.0393895 },
+          {"Element": "Ni", "Fraction": 0.00984737 },
+          {"Element": "Fe", "Fraction": 0.00246184 },
+          {"Element": "P",  "Fraction": 4.92368E-4 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (High-leaded tin bronze)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   Density from Table 51.39.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 9.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.822393 },
+          {"Element": "Sn", "Fraction": 0.0681199 },
+          {"Element": "Pb", "Fraction": 0.0693584 },
+          {"Element": "Zn", "Fraction": 0.029725 },
+          {"Element": "Ni", "Fraction": 0.00495417 },
+          {"Element": "Fe", "Fraction": 0.00198167 },
+          {"Element": "Sb", "Fraction": 0.00346792 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (Manganese bronze)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   Density from Table 51.39.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.575 },
+          {"Element": "Sn", "Fraction": 0.01 },
+          {"Element": "Pb", "Fraction": 0.004 },
+          {"Element": "Zn", "Fraction": 0.369 },
+          {"Element": "Ni", "Fraction": 0.005 },
+          {"Element": "Fe", "Fraction": 0.012 },
+          {"Element": "Mn", "Fraction": 0.015 },
+          {"Element": "Al", "Fraction": 0.01 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (Leaded manganese bronze)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   No density given.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.59 },
+          {"Element": "Sn", "Fraction": 0.015 },
+          {"Element": "Pb", "Fraction": 0.01 },
+          {"Element": "Zn", "Fraction": 0.335 },
+          {"Element": "Fe", "Fraction": 0.02 },
+          {"Element": "Mn", "Fraction": 0.015 },
+          {"Element": "Al", "Fraction": 0.015 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (Nickel silver (25 wt% Ni))", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   Density from Table 51.39.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.85, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.640587 },
+          {"Element": "Sn", "Fraction": 0.0464548 },
+          {"Element": "Pb", "Fraction": 0.0171149 },
+          {"Element": "Zn", "Fraction": 0.0220049 },
+          {"Element": "Ni", "Fraction": 0.249389 },
+          {"Element": "Fe", "Fraction": 0.0146699 },
+          {"Element": "Mn", "Fraction": 0.00977995 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (Leaded nickel silver (12 wt% Ni))", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   No density given.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.555 },
+          {"Element": "Sn", "Fraction": 0.0225 },
+          {"Element": "Pb", "Fraction": 0.095 },
+          {"Element": "Zn", "Fraction": 0.1825 },
+          {"Element": "Ni", "Fraction": 0.125 },
+          {"Element": "Fe", "Fraction": 0.015 },
+          {"Element": "Mn", "Fraction": 0.005 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (Aluminum bronze)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   Density from Table 51.39.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 7.45, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.886509 },
+          {"Element": "Fe", "Fraction": 0.0114767 },
+          {"Element": "Al", "Fraction": 0.102015 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (Nickel aluminum bronze)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   No density given.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.771895 },
+          {"Element": "Ni", "Fraction": 0.0475012 },
+          {"Element": "Fe", "Fraction": 0.0395844 },
+          {"Element": "Mn", "Fraction": 0.0346363 },
+          {"Element": "Al", "Fraction": 0.106383 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (ASTM Alloy A)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   No density given.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.626374 },
+          {"Element": "Sn", "Fraction": 0.0164835 },
+          {"Element": "Pb", "Fraction": 0.0164835 },
+          {"Element": "Zn", "Fraction": 0.32967 },
+          {"Element": "Fe", "Fraction": 0.00274725 },
+          {"Element": "Mn", "Fraction": 0.00274725 },
+          {"Element": "Si", "Fraction": 0.00274725 },
+          {"Element": "Al", "Fraction": 0.00274725 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (ASTM Alloy B)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   No density given.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.659686 },
+          {"Element": "Sn", "Fraction": 0.0026178 },
+          {"Element": "Pb", "Fraction": 0.0026178 },
+          {"Element": "Zn", "Fraction": 0.319895 },
+          {"Element": "Fe", "Fraction": 0.00157068 },
+          {"Element": "Mn", "Fraction": 0.00157068 },
+          {"Element": "Si", "Fraction": 0.0104712 },
+          {"Element": "Al", "Fraction": 0.00157068 }
+      ]
+    },
+    { "Name": "Copper Alloy, casting (85-5-5-5 Alloy)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.38.   Density from Table 51.39.  Elements used average value of stated range.  Impurities used their maximum values.  Composition was then renormalized.",
+      "Density": 8.8, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Cu", "Fraction": 0.838678 },
+          {"Element": "Sn", "Fraction": 0.049334 },
+          {"Element": "Pb", "Fraction": 0.049334 },
+          {"Element": "Zn", "Fraction": 0.049334 },
+          {"Element": "Ni", "Fraction": 0.0098668 },
+          {"Element": "Fe", "Fraction": 0.00296004 },
+          {"Element": "P",  "Fraction": 4.9334E-4 }
+      ]
+    },
+    { "Name": "Iron, Armco ignot iron", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.40.  Density from table Table 51.41.  Iron content increased by 0.001% to balance.",
+      "Density": 7.866, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.99831 },
+          {"Element": "O",  "Fraction": 0.0011 },
+          {"Element": "S",  "Fraction": 2.5E-4 },
+          {"Element": "Mn", "Fraction": 1.7E-4 },
+          {"Element": "C",  "Fraction": 1.2E-4 },
+          {"Element": "P",  "Fraction": 5.0E-5 }
+      ]
+    },
+    { "Name": "Iron, Wrought Iron (Byers No. 1)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.40.  Density from table Table 51.41.  1.20% of original specification was 'slag', which included oxygen but no other named elements.  Weight fractions were renormalized without slag or oxygen.",
+      "Density": 7.7, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.996711 },
+          {"Element": "S",  "Fraction": 1.01215E-4 },
+          {"Element": "Mn", "Fraction": 1.51822E-4 },
+          {"Element": "C",  "Fraction": 8.09717E-4 },
+          {"Element": "P",  "Fraction": 6.2753E-4 },
+          {"Element": "Si", "Fraction": 0.00159919 }
+      ]
+    },
+    { "Name": "Iron, Cast Iron (gray)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.40.  Density from table Table 51.41.",
+      "Density": 7.15, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.9295 },
+          {"Element": "S",  "Fraction": 0.001 },
+          {"Element": "Mn", "Fraction": 0.0065 },
+          {"Element": "C",  "Fraction": 0.034 },
+          {"Element": "P",  "Fraction": 0.003 },
+          {"Element": "Si", "Fraction": 0.026 }
+      ]
+    },
+    { "Name": "Lead, Corroding lead", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.42.  Table 51.43 lists densities (g/cm3) of lead at 20C as: 11.340 (comercially pure lead), 11.36 (rolled chemical lead), and 11.34 (cast chemical lead).",
+      "Density": 11.34, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.99942 },
+          {"Element": "Ag", "Fraction": 1.50003E-5 },
+          {"Element": "Cu", "Fraction": 1.50003E-5 },
+          {"Element": "Fe", "Fraction": 2.00004E-5 },
+          {"Element": "Zn", "Fraction": 1.50003E-5 },
+          {"Element": "Bi", "Fraction": 5.0001E-4 },
+          {"Element": "As", "Fraction": 1.50003E-5 }
+      ]
+    },
+    { "Name": "Lead, Chemical lead", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.42.  Table 51.43 lists densities (g/cm3) of lead at 20C as: 11.340 (comercially pure lead), 11.36 (rolled chemical lead), and 11.34 (cast chemical lead).",
+      "Density": 11.34, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.99921 },
+          {"Element": "Ag", "Fraction": 1.10023E-4 },
+          {"Element": "Cu", "Fraction": 6.00126E-4 },
+          {"Element": "Fe", "Fraction": 2.00042E-5 },
+          {"Element": "Zn", "Fraction": 1.00021E-5 },
+          {"Element": "Bi", "Fraction": 5.00105E-5 }
+      ]
+    },
+    { "Name": "Lead, Acid lead", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.42.  Table 51.43 lists densities (g/cm3) of lead at 20C as: 11.340 (comercially pure lead), 11.36 (rolled chemical lead), and 11.34 (cast chemical lead).",
+      "Density": 11.34, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.9991 },
+          {"Element": "Ag", "Fraction": 2.0002E-5 },
+          {"Element": "Cu", "Fraction": 6.0006E-4 },
+          {"Element": "Fe", "Fraction": 2.0002E-5 },
+          {"Element": "Zn", "Fraction": 1.0001E-5 },
+          {"Element": "Bi", "Fraction": 2.50025E-4 }
+      ]
+    },
+    { "Name": "Lead, Copper lead", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.42.  Table 51.43 lists densities (g/cm3) of lead at 20C as: 11.340 (comercially pure lead), 11.36 (rolled chemical lead), and 11.34 (cast chemical lead).",
+      "Density": 11.34, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.998161 },
+          {"Element": "Ag", "Fraction": 1.99932E-4 },
+          {"Element": "Cu", "Fraction": 5.99796E-4 },
+          {"Element": "Fe", "Fraction": 1.99932E-5 },
+          {"Element": "Zn", "Fraction": 1.99932E-5 },
+          {"Element": "Bi", "Fraction": 9.9966E-4 }
+      ]
+    },
+    { "Name": "Lead, Desilvered lead A", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.42.  Table 51.43 lists densities (g/cm3) of lead at 20C as: 11.340 (comercially pure lead), 11.36 (rolled chemical lead), and 11.34 (cast chemical lead).",
+      "Density": 11.34, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.998415 },
+          {"Element": "Ag", "Fraction": 1.99983E-5 },
+          {"Element": "Cu", "Fraction": 2.49979E-5 },
+          {"Element": "Fe", "Fraction": 1.99983E-5 },
+          {"Element": "Zn", "Fraction": 1.99983E-5 },
+          {"Element": "Bi", "Fraction": 0.00149987 }
+      ]
+    },
+    { "Name": "Lead, Desilvered lead B", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.42.  Table 51.43 lists densities (g/cm3) of lead at 20C as: 11.340 (comercially pure lead), 11.36 (rolled chemical lead), and 11.34 (cast chemical lead).",
+      "Density": 11.34, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.997415 },
+          {"Element": "Ag", "Fraction": 2.00023E-5 },
+          {"Element": "Cu", "Fraction": 2.50029E-5 },
+          {"Element": "Fe", "Fraction": 2.00023E-5 },
+          {"Element": "Zn", "Fraction": 2.00023E-5 },
+          {"Element": "Bi", "Fraction": 0.00250029 }
+      ]
+    },
+    { "Name": "Lead, Undesilvered lead", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.42.  Table 51.43 lists densities (g/cm3) of lead at 20C as: 11.340 (comercially pure lead), 11.36 (rolled chemical lead), and 11.34 (cast chemical lead).",
+      "Density": 11.34, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.99949 },
+          {"Element": "Ag", "Fraction": 2.00038E-5 },
+          {"Element": "Cu", "Fraction": 4.00076E-4 },
+          {"Element": "Fe", "Fraction": 2.00038E-5 },
+          {"Element": "Zn", "Fraction": 2.00038E-5 },
+          {"Element": "Bi", "Fraction": 5.00095E-5 }
+      ]
+    },
+    { "Name": "Lead, Calcium lead", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.42.  Table 51.43 lists densities (g/cm3) of lead at 20C as: 11.340 (comercially pure lead), 11.36 (rolled chemical lead), and 11.34 (cast chemical lead).",
+      "Density": 11.34, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.99796 },
+          {"Element": "Ag", "Fraction": 1.09996E-4 },
+          {"Element": "Cu", "Fraction": 5.99976E-4 },
+          {"Element": "Sn", "Fraction": 9.9996E-4 },
+          {"Element": "Bi", "Fraction": 4.9998E-5 },
+          {"Element": "Co", "Fraction": 2.79989E-4 }
+      ]
+    },
+    { "Name": "Lead, Tellurium lead", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.42.  Table 51.43 lists densities (g/cm3) of lead at 20C as: 11.340 (comercially pure lead), 11.36 (rolled chemical lead), and 11.34 (cast chemical lead).",
+      "Density": 11.34, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.998899 },
+          {"Element": "Cu", "Fraction": 6.0054E-4 },
+          {"Element": "Te", "Fraction": 5.0045E-4 }
+      ]
+    },
+    { "Name": "Lead alloy, Wiping solder", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  No density given.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.59 },
+          {"Element": "Sn", "Fraction": 0.4 },
+          {"Element": "Sb", "Fraction": 0.01 }
+      ]
+    },
+    { "Name": "Lead alloy, Antimonial leads (4 wt% Sb)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  Density from Table 51.45.",
+      "Density": 11.04, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.96 },
+          {"Element": "Sb", "Fraction": 0.04 }
+      ]
+    },
+    { "Name": "Lead alloy, Antimonial leads (6 wt% Sb)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  No density given.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.94 },
+          {"Element": "Sb", "Fraction": 0.06 }
+      ]
+    },
+    { "Name": "Lead alloy, Antimonial leads (8 wt% Sb)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  Density from Table 51.45.",
+      "Density": 10.75, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.92 },
+          {"Element": "Sb", "Fraction": 0.08 }
+      ]
+    },
+    { "Name": "Lead alloy, Grid metal", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  Density from Table 51.45.  Averages were used for elements with ranges, maximums were used when stated, then compositions were renormalized.",
+      "Density": 10.66, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.922197 },
+          {"Element": "Sn", "Fraction": 0.00307399 },
+          {"Element": "Ag", "Fraction": 2.04933E-5 },
+          {"Element": "Sb", "Fraction": 0.0729561 },
+          {"Element": "Bi", "Fraction": 5.12332E-4 },
+          {"Element": "Cu", "Fraction": 5.12332E-4 },
+          {"Element": "Fe", "Fraction": 1.02466E-4 },
+          {"Element": "Zn", "Fraction": 5.12332E-5 },
+          {"Element": "As", "Fraction": 5.12332E-4 },
+          {"Element": "Ni", "Fraction": 5.12332E-5 },
+          {"Element": "Mn", "Fraction": 1.02466E-5 }
+      ]
+    },
+    { "Name": "Lead alloy, Soft solders (5-95 solder)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  No density given.  Averages were used for elements with ranges, maximums were used when stated, then compositions were renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.9419 },
+          {"Element": "Sn", "Fraction": 0.0495737 },
+          {"Element": "Sb", "Fraction": 0.00495737 },
+          {"Element": "Bi", "Fraction": 0.00247868 },
+          {"Element": "Cu", "Fraction": 7.93179E-4 },
+          {"Element": "Fe", "Fraction": 1.98295E-4 },
+          {"Element": "Zn", "Fraction": 4.95737E-5 },
+          {"Element": "Al", "Fraction": 4.95737E-5 }
+      ]
+    },
+    { "Name": "Lead alloy, Soft solders (20-80 solder)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  No density given.  Averages were used for elements with ranges, maximums were used when stated, then compositions were renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.793179 },
+          {"Element": "Sn", "Fraction": 0.198295 },
+          {"Element": "Sb", "Fraction": 0.00495737 },
+          {"Element": "Bi", "Fraction": 0.00247868 },
+          {"Element": "Cu", "Fraction": 7.93179E-4 },
+          {"Element": "Fe", "Fraction": 1.98295E-4 },
+          {"Element": "Zn", "Fraction": 4.95737E-5 },
+          {"Element": "Al", "Fraction": 4.95737E-5 }
+      ]
+    },
+    { "Name": "Lead alloy, Soft solders (50-50 solder (Grade 50A))", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  Density from Table 51.45.  Averages were used for elements with ranges, maximums were used when stated, then compositions were renormalized.",
+      "Density": 8.89, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.497636 },
+          {"Element": "Sn", "Fraction": 0.497636 },
+          {"Element": "Sb", "Fraction": 0.00119433 },
+          {"Element": "Bi", "Fraction": 0.00248818 },
+          {"Element": "Cu", "Fraction": 7.96218E-4 },
+          {"Element": "Fe", "Fraction": 1.99054E-4 },
+          {"Element": "Al", "Fraction": 4.97636E-5 }
+      ]
+    },
+    { "Name": "Lead alloy, Soft solders (Silver-lead solder)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  No density given.  Averages were used for elements with ranges, maximums were used when stated, then compositions were renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.967646 },
+          {"Element": "Sn", "Fraction": 0.00992457 },
+          {"Element": "Ag", "Fraction": 0.0148869 },
+          {"Element": "Sb", "Fraction": 0.00396983 },
+          {"Element": "Bi", "Fraction": 0.00248114 },
+          {"Element": "Cu", "Fraction": 7.93966E-4 },
+          {"Element": "Fe", "Fraction": 1.98491E-4 },
+          {"Element": "Zn", "Fraction": 4.96229E-5 },
+          {"Element": "Al", "Fraction": 4.96229E-5 }
+      ]
+    },
+    { "Name": "Lead alloy, Babbitt metals (Lead (1))", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  Density from Table 51.45.  Averages were used for elements with ranges, maximums were used when stated.",
+      "Density": 10.04, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.793 },
+          {"Element": "Sn", "Fraction": 0.05 },
+          {"Element": "Sb", "Fraction": 0.15 },
+          {"Element": "Cu", "Fraction": 0.005 },
+          {"Element": "As", "Fraction": 0.002 }
+      ]
+    },
+    { "Name": "Lead alloy, Babbitt metals (Lead (2))", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  Density from Table 51.45.  Averages were used for elements with ranges, maximums were used when stated.",
+      "Density": 10.04, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.839 },
+          {"Element": "Sn", "Fraction": 0.05 },
+          {"Element": "Sb", "Fraction": 0.1 },
+          {"Element": "Cu", "Fraction": 0.005 },
+          {"Element": "As", "Fraction": 0.006 }
+      ]
+    },
+    { "Name": "Lead alloy, Babbitt metals (Lead (3))", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  Density from Table 51.45.  Averages were used for elements with ranges, maximums were used when stated.",
+      "Density": 10.04, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.738 },
+          {"Element": "Sn", "Fraction": 0.1 },
+          {"Element": "Sb", "Fraction": 0.15 },
+          {"Element": "Cu", "Fraction": 0.005 },
+          {"Element": "Fe", "Fraction": 0.001 },
+          {"Element": "As", "Fraction": 0.006 }
+      ]
+    },
+    { "Name": "Lead alloy, Babbitt metals (Lead arsenic (1))", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  Density from Table 51.45.  Averages were used for elements with ranges, maximums were used when stated.",
+      "Density": 10.1, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.813 },
+          {"Element": "Sn", "Fraction": 0.01 },
+          {"Element": "Sb", "Fraction": 0.16 },
+          {"Element": "Cu", "Fraction": 0.006 },
+          {"Element": "As", "Fraction": 0.011 }
+      ]
+    },
+    { "Name": "Lead alloy, Babbitt metals (Lead arsenic (2))", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.44.  Density from Table 51.45.  Averages were used for elements with ranges, maximums were used when stated.",
+      "Density": 10.1, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Pb", "Fraction": 0.841 },
+          {"Element": "Sn", "Fraction": 0.008 },
+          {"Element": "Sb", "Fraction": 0.1275 },
+          {"Element": "Cu", "Fraction": 0.001 },
+          {"Element": "As", "Fraction": 0.0225 }
+      ]
+    },
+    { "Name": "Lithium, high-purity", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.46 and density from Table 51.47.  Average values were used for elements with ranges and lithium was decrease 0.001% to balance.",
+      "Density": 0.534, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Li", "Fraction": 0.99359 },
+          {"Element": "Na", "Fraction": 0.0055 },
+          {"Element": "N",  "Fraction": 6.0E-4 },
+          {"Element": "Ca", "Fraction": 2.0E-4 },
+          {"Element": "K",  "Fraction": 1.0E-4 },
+          {"Element": "Fe", "Fraction": 1.0E-5 }
+      ]
+    },
+    { "Name": "Lead lithium alloy", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.48.  Unnamed impurities were listed as 0.11%, lead and lithium renormalized.",
+      "Density": 9.97, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Li", "Fraction": 0.00650716 },
+          {"Element": "Pb", "Fraction": 0.993493 }
+      ]
+    },
+    { "Name": "Lithium hydride (LiH)", 
+      "References": "Reactor Handbook, Vol. 1, 51.49.  Theoretical density is 0.82 g/cm3, commericial pressed powder is 0.7 g/cm3, commericial loose powder is 0.3 g/cm3.",
+      "Density": 0.82, 
+      "Type": "Chemical Formula", 
+      "Formula": "LiH", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 1.0 },
+          {"Element": "Li", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Beryllium  hydride (BeH2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.49.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "BeH2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "Be", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Sodium hydride (NaH)", 
+      "References": "Reactor Handbook, Vol. 1, 51.49.  Density range listed as 1.36-1.40 g/cm3.",
+      "Density": 1.38, 
+      "Type": "Chemical Formula", 
+      "Formula": "NaH", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 1.0 },
+          {"Element": "Na", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Magnesium hydride (MgH2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.49.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "MgH2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "Mg", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Calcium hydride (CaH2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.49.",
+      "Density": 1.9, 
+      "Type": "Chemical Formula", 
+      "Formula": "CaH2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "Ca", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Potassium hydride (KH)", 
+      "References": "Reactor Handbook, Vol. 1, 51.49.  Density range listed as 1.43-1.47 g/cm3.",
+      "Density": 1.45, 
+      "Type": "Chemical Formula", 
+      "Formula": "KH", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 1.0 },
+          {"Element": "K",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Strontium hydride (SrH2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.49.",
+      "Density": 3.27, 
+      "Type": "Chemical Formula", 
+      "Formula": "SrH2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "Sr", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Barium hydride (BaH2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.49.",
+      "Density": 4.21, 
+      "Type": "Chemical Formula", 
+      "Formula": "BaH2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "Ba", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Hafnium  hydride (HfH2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.50.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "HfH2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "Hf", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Plutonium hydride (PuH3)", 
+      "References": "Reactor Handbook, Vol. 1, 51.50.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "PuH3", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 3.0 },
+          {"Element": "Pu", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Tantalum hydride (TaH)", 
+      "References": "Reactor Handbook, Vol. 1, 51.50.",
+      "Density": 15.25, 
+      "Type": "Chemical Formula", 
+      "Formula": "TaH", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 1.0 },
+          {"Element": "Ta", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Thorium hydride (ThH4)", 
+      "References": "Reactor Handbook, Vol. 1, 51.50.",
+      "Density": 8.25, 
+      "Type": "Chemical Formula", 
+      "Formula": "ThH4", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 4.0 },
+          {"Element": "Th", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Titanium hydride (TiH2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.50.",
+      "Density": 3.912, 
+      "Type": "Chemical Formula", 
+      "Formula": "TiH2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "Ti", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Uranium hydride (UH3)", 
+      "References": "Reactor Handbook, Vol. 1, 51.50.",
+      "Density": 10.92, 
+      "Type": "Chemical Formula", 
+      "Formula": "UH3", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 3.0 },
+          {"Element": "U",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Zinc hydride (ZnH2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.50.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "ZnH2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "Zn", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Zirconium hydride (ZrH2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.50.",
+      "Density": 5.625, 
+      "Type": "Chemical Formula", 
+      "Formula": "ZrH2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "Zr", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Aluminum borohydride (Al(BH4)3)", 
+      "References": "Reactor Handbook, Vol. 1, 51.51.",
+      "Density": 0.544, 
+      "Type": "Chemical Formula", 
+      "Formula": "Al(BH4)3", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 12.0 },
+          {"Element": "Al", "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 3.0 }
+      ]
+    },
+    { "Name": "Beryllium  borohydride (Be(BH4)2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.51.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Be(BH4)2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "Be", "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Boron hydride (B10H14)", 
+      "References": "Reactor Handbook, Vol. 1, 51.51.  Density range listed as 0.94-0.96 g/cm3.",
+      "Density": 0.95, 
+      "Type": "Chemical Formula", 
+      "Formula": "B10H14", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 14.0 },
+          {"Element": "B",  "Atoms": 10.0 }
+      ]
+    },
+    { "Name": "Lithium borohydride (LiBH4)", 
+      "References": "Reactor Handbook, Vol. 1, 51.51.",
+      "Density": 0.681, 
+      "Type": "Chemical Formula", 
+      "Formula": "LiBH4", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 4.0 },
+          {"Element": "Li", "Atoms": 1.0 },
+          {"Element": "B",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Magnesium borohydride (Mg(BH4)2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.51.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "Mg(BH4)2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "B",  "Atoms": 2.0 },
+          {"Element": "Mg", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Sodium borohydride (NaBH4)", 
+      "References": "Reactor Handbook, Vol. 1, 51.51.",
+      "Density": 1.074, 
+      "Type": "Chemical Formula", 
+      "Formula": "NaBH4", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 4.0 },
+          {"Element": "B",  "Atoms": 1.0 },
+          {"Element": "Na", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Thorium borohydride (Th(BH4)4)", 
+      "References": "Reactor Handbook, Vol. 1, 51.51.",
+      "Density": 2.59, 
+      "Type": "Chemical Formula", 
+      "Formula": "Th(BH4)4", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 16.0 },
+          {"Element": "B",  "Atoms": 4.0 },
+          {"Element": "Th", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Zirconium borohydride (Zr(BH4)4)", 
+      "References": "Reactor Handbook, Vol. 1, 51.51.",
+      "Density": 1.185, 
+      "Type": "Chemical Formula", 
+      "Formula": "Zr(BH4)4", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 16.0 },
+          {"Element": "B",  "Atoms": 4.0 },
+          {"Element": "Zr", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Borohydride  ((CH3)4NBH4)", 
+      "References": "Reactor Handbook, Vol. 1, 51.51.",
+      "Density": 0.813, 
+      "Type": "Chemical Formula", 
+      "Formula": "(CH3)4NBH4", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 16.0 },
+          {"Element": "B",  "Atoms": 1.0 },
+          {"Element": "N",  "Atoms": 1.0 },
+          {"Element": "C",  "Atoms": 4.0 }
+      ]
+    },
+    { "Name": "Lithium Amide  (LiNH2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.52.  Density at 17.5C.",
+      "Density": 1.178, 
+      "Type": "Chemical Formula", 
+      "Formula": "LiNH2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "Li", "Atoms": 1.0 },
+          {"Element": "N",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Lithium hydride theoretical (LiH - theoretical)", 
+      "References": "Reactor Handbook, Vol. 1, 51.53.",
+      "Density": 0.82, 
+      "Type": "Chemical Formula", 
+      "Formula": "LiH", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 1.0 },
+          {"Element": "Li", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Lithium hydride pressed powder (LiH - pressed powder)", 
+      "References": "Reactor Handbook, Vol. 1, 51.53.",
+      "Density": 0.7, 
+      "Type": "Chemical Formula", 
+      "Formula": "LiH", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 1.0 },
+          {"Element": "Li", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Lithium hydride loose powder (LiH - loose powder)", 
+      "References": "Reactor Handbook, Vol. 1, 51.53.",
+      "Density": 0.3, 
+      "Type": "Chemical Formula", 
+      "Formula": "LiH", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 1.0 },
+          {"Element": "Li", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Cerium hydride (CeH3)", 
+      "References": "Reactor Handbook, Vol. 1, 51.54.",
+      "Density": 5.5, 
+      "Type": "Chemical Formula", 
+      "Formula": "CeH3", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 3.0 },
+          {"Element": "Ce", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Lanthanum hydride (LaH3)", 
+      "References": "Reactor Handbook, Vol. 1, 51.54.",
+      "Density": 5.26, 
+      "Type": "Chemical Formula", 
+      "Formula": "LaH3", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 3.0 },
+          {"Element": "La", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Neodymium hydride (NdH2)", 
+      "References": "Reactor Handbook, Vol. 1, 51.54.  No density given.",
+      "Density": 1.0, 
+      "Type": "Chemical Formula", 
+      "Formula": "NdH2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "Nd", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Promethium hydride (PrH3)", 
+      "References": "Reactor Handbook, Vol. 1, 51.54.",
+      "Density": 5.5, 
+      "Type": "Chemical Formula", 
+      "Formula": "PrH3", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 3.0 },
+          {"Element": "Pr", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Glass, lead glass", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.57 and density from Table 51.58.",
+      "Density": 6.22, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "O",  "Fraction": 0.156455 },
+          {"Element": "Pb", "Fraction": 0.751938 },
+          {"Element": "Si", "Fraction": 0.0808655 },
+          {"Element": "Ti", "Fraction": 0.00809113 },
+          {"Element": "As", "Fraction": 0.00265087 }
+      ]
+    },
+    { "Name": "Glass, silica plate glass", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.57 and density from Table 51.58.",
+      "Density": 2.4, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "O",  "Fraction": 0.459805 },
+          {"Element": "Si", "Fraction": 0.33655 },
+          {"Element": "Ca", "Fraction": 0.107204 },
+          {"Element": "Na", "Fraction": 0.0964415 }
+      ]
+    },
+    { "Name": "Glass, borosilicate glass", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.57 and density from Table 51.58.",
+      "Density": 2.23, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "O",  "Fraction": 0.536892 },
+          {"Element": "Si", "Fraction": 0.379405 },
+          {"Element": "Ca", "Fraction": 0.00575783 },
+          {"Element": "Na", "Fraction": 0.0283893 },
+          {"Element": "K",  "Fraction": 0.001672 },
+          {"Element": "Al", "Fraction": 0.0106596 },
+          {"Element": "B",  "Fraction": 0.0372244 }
+      ]
+    },
+    { "Name": "Clay, Ordinary moist clay", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.59.  Density listed as 1.66-2.64 g/cm3.  Clay is composed chiefly of silicates of alumina.",
+      "Density": 2.15
+    },
+    { "Name": "Clay, Dry clay in loose lump", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.59.  Density listed as ~1.0 g/cm3.  Clay is composed chiefly of silicates of alumina.",
+      "Density": 1.0
+    },
+    { "Name": "Clay, Clay with some gravel", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.59.  Density listed as 2.48 g/cm3.  Clay is composed chiefly of silicates of alumina.",
+      "Density": 2.48
+    },
+    { "Name": "Clay, Potter's clay", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.59.  Density listed as 1.8-2.1 g/cm3.  Clay is composed chiefly of silicates of alumina.",
+      "Density": 1.95
+    },
+    { "Name": "Clay, Solid portion of clay", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.59.  Density listed as 2.3-2.9 g/cm3.  Clay is composed chiefly of silicates of alumina.",
+      "Density": 2.6
+    },
+    { "Name": "Loam earth, Perfectly dry, loose", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.60.  Density listed as 1.15-1.28 g/cm3.",
+      "Density": 1.215
+    },
+    { "Name": "Loam earth, Perfectly dry, shaken", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.60.  Density listed as 1.31-1.47 g/cm3.",
+      "Density": 1.39
+    },
+    { "Name": "Loam earth, Perfectly dry, moderately rammed", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.60.  Density listed as 1.44-1.6 g/cm3.",
+      "Density": 1.52
+    },
+    { "Name": "Loam earth, Slightly moist, loose", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.60.  Density listed as 1.12-1.22 g/cm3.",
+      "Density": 1.17
+    },
+    { "Name": "Loam earth, Moist, loose", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.60.  Density listed as 1.06-1.09 g/cm3.",
+      "Density": 1.075
+    },
+    { "Name": "Loam earth, Moist, shaken", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.60.  Density listed as 1.2-1.44 g/cm3.",
+      "Density": 1.32
+    },
+    { "Name": "Loam earth, Moist, moderately packed", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.60.  Density listed as 1.44-1.6 g/cm3.",
+      "Density": 1.52
+    },
+    { "Name": "Loam earth, As a mud, dried", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.60.  Density listed as 1.28-1.76 g/cm3.",
+      "Density": 1.52
+    },
+    { "Name": "Loam earth, As a mud, soft flowing", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.60.  Density listed as 1.67-1.79 g/cm3.",
+      "Density": 1.73
+    },
+    { "Name": "Loam earth, As a mud, moderately pressed", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.60.  Density listed as 1.76-2.08 g/cm3.",
+      "Density": 1.92
+    },
+    { "Name": "Loam earth, As a mud, wet, fluid", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.60.  Density listed as 1.67-1.92 g/cm3.",
+      "Density": 1.795
+    },
+    { "Name": "Sand, Pure quartz, dry, loose", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.61.  Density listed as 1.44-1.7 g/cm3.",
+      "Density": 1.57
+    },
+    { "Name": "Sand, Pure quartz, dry, shaken", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.61.  Density listed as 1.47-1.76 g/cm3.",
+      "Density": 1.615
+    },
+    { "Name": "Sand, Pure quartz, dry, rammed", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.61.  Density listed as 1.6-1.92 g/cm3.",
+      "Density": 1.76
+    },
+    { "Name": "Sand, Natural, with average water conent", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.61.  Density listed as 'As high as 1.87' g/cm3.  Sand with a nonuniform grain size will weigh more than sand sifted to a uniform grain size; loss of water from a large bulk of sand may change its density 5 to 10 per cent.",
+      "Density": 1.87
+    },
+    { "Name": "Sand, Perfectly moist, voids full of water", 
+      "References": "Reactor Handbook, Vol. 1: Table 51.61.  Density listed as 1.89-1.92 g/cm3.",
+      "Density": 1.905
+    },
+    { "Name": "Sand", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.62.  Density from Tables 51.11 and 51.14.",
+      "Density": 2.2, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.00783288 },
+          {"Element": "C",  "Fraction": 0.00336008 },
+          {"Element": "O",  "Fraction": 0.536153 },
+          {"Element": "Na", "Fraction": 0.0170627 },
+          {"Element": "Al", "Fraction": 0.0344013 },
+          {"Element": "Si", "Fraction": 0.365067 },
+          {"Element": "K",  "Fraction": 0.0116221 },
+          {"Element": "Ca", "Fraction": 0.0112121 },
+          {"Element": "Fe", "Fraction": 0.0132891 }
+      ]
+    },
+    { "Name": "Granite", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.63.  Density range from Table 51.64 is 2.5-3.1 g/cm3.  Weight fraction renormalized, sum in table was 101%",
+      "Density": 2.65, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "O",  "Fraction": 0.485465 },
+          {"Element": "Si", "Fraction": 0.323962 },
+          {"Element": "Al", "Fraction": 0.0733615 },
+          {"Element": "Fe", "Fraction": 0.01385 },
+          {"Element": "Fe", "Fraction": 0.00769609 },
+          {"Element": "Mg", "Fraction": 0.0059707 },
+          {"Element": "Ca", "Fraction": 0.0212284 },
+          {"Element": "Na", "Fraction": 0.0257079 },
+          {"Element": "K",  "Fraction": 0.0410964 },
+          {"Element": "H",  "Fraction": 0.00166191 }
+      ]
+    },
+    { "Name": "Sandstone", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.63.  Density range from Table 51.64 is 2.24-2.4 g/cm3.  Weight fraction renormalized, sum in table was 110%",
+      "Density": 2.4, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "O",  "Fraction": 0.505334 },
+          {"Element": "Si", "Fraction": 0.361196 },
+          {"Element": "Al", "Fraction": 0.0817933 },
+          {"Element": "Fe", "Fraction": 0.0127168 },
+          {"Element": "Ca", "Fraction": 0.00649719 },
+          {"Element": "Na", "Fraction": 0.0168604 },
+          {"Element": "K",  "Fraction": 0.0150936 },
+          {"Element": "H",  "Fraction": 5.08645E-4 }
+      ]
+    },
+    { "Name": "Limestone", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.63.  Density range from Table 51.64 is  2.3-2.9 g/cm3.  ",
+      "Density": 2.7, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "O",  "Fraction": 0.394066 },
+          {"Element": "C",  "Fraction": 0.0552008 },
+          {"Element": "Si", "Fraction": 0.00934861 },
+          {"Element": "Al", "Fraction": 0.0010585 },
+          {"Element": "Fe", "Fraction": 0.0027977 },
+          {"Element": "Mg", "Fraction": 0.030152 },
+          {"Element": "Ca", "Fraction": 0.50580976 },
+          {"Element": "H",  "Fraction": 0.00156663 }
+      ]
+    },
+    { "Name": "Coal, anthracite", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 1.3-1.7 g/cm3.",
+      "Density": 1.5
+    },
+    { "Name": "Coal, anthracite, In loose piles", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 0.75-0.93 g/cm3.",
+      "Density": 0.84
+    },
+    { "Name": "Coal, bituminous", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 1.2-1.4 g/cm3.",
+      "Density": 1.3
+    },
+    { "Name": "Coal, bituminous, In loose piles", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 0.7-0.86 g/cm3.",
+      "Density": 0.78
+    },
+    { "Name": "Coke", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density listed as '~1.0'.",
+      "Density": 1.0
+    },
+    { "Name": "Coke, In loose piles", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 0.37-0.51 g/cm3.",
+      "Density": 0.44
+    },
+    { "Name": "Granite", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 2.56-2.88 g/cm3.",
+      "Density": 2.72
+    },
+    { "Name": "Gneiss, common", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.",
+      "Density": 2.69
+    },
+    { "Name": "Gneiss, common, In loose piles", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.",
+      "Density": 1.54
+    },
+    { "Name": "Gypsum, lumps", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.",
+      "Density": 2.27
+    },
+    { "Name": "Gypsum, lumps, Average of irregular lumps", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.",
+      "Density": 1.31
+    },
+    { "Name": "Gypsum, lumps, Ground, loose", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.",
+      "Density": 0.9
+    },
+    { "Name": "Gypsum, lumps, Ground, well shaken", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.",
+      "Density": 1.03
+    },
+    { "Name": "Gravel", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 1.44-1.92 g/cm3.",
+      "Density": 1.68
+    },
+    { "Name": "Greenstone, trap", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 2.8-3.2 g/cm3.",
+      "Density": 3.0
+    },
+    { "Name": "Greenstone, trap, In loose piles", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.",
+      "Density": 1.71
+    },
+    { "Name": "Limestone", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 2.4-2.86 g/cm3.  Valid for marble as well.",
+      "Density": 2.7
+    },
+    { "Name": "Limestone, In loose piles", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Valid for marble as well.",
+      "Density": 1.54
+    },
+    { "Name": "Sandstone, building material", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 2.1-2.73 g/cm3.",
+      "Density": 2.41
+    },
+    { "Name": "Sandstone, building material, In loose piles", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.",
+      "Density": 1.38
+    },
+    { "Name": "Shales, red or black", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 2.4-2.8 g/cm3.",
+      "Density": 2.6
+    },
+    { "Name": "Shales, red or black, In loose piles", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.",
+      "Density": 1.47
+    },
+    { "Name": "Slate", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 2.7-2.9 g/cm3.",
+      "Density": 2.8
+    },
+    { "Name": "Soapstone", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 2.65-2.8 g/cm3.",
+      "Density": 2.73
+    },
+    { "Name": "Trap rocks, compact", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.  Density range is 2.8-3.2 g/cm3.",
+      "Density": 3.0
+    },
+    { "Name": "Trap rocks, compact, In loose piles", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.65.",
+      "Density": 1.71
+    },
+    { "Name": "Brick, Fire clay (high-heat duty)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.67 and density from Table 51.68.  Compositions were renormalized.",
+      "Density": 2.1, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "O",  "Fraction": 0.460233 },
+          {"Element": "Si", "Fraction": 0.259145 },
+          {"Element": "Al", "Fraction": 0.253704 },
+          {"Element": "Fe", "Fraction": 0.0144959 },
+          {"Element": "Ti", "Fraction": 0.0124216 }
+      ]
+    },
+    { "Name": "Brick, Kaolin (white)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.67 and density from Table 51.68.  Compositions were renormalized.",
+      "Density": 2.1, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "O",  "Fraction": 0.455546 },
+          {"Element": "Si", "Fraction": 0.242821 },
+          {"Element": "Al", "Fraction": 0.285344 },
+          {"Element": "Fe", "Fraction": 0.00419236 },
+          {"Element": "Ti", "Fraction": 0.0101787 },
+          {"Element": "Mg", "Fraction": 0.00120488 },
+          {"Element": "Ca", "Fraction": 7.13977E-4 }
+      ]
+    },
+    { "Name": "Brick, Silica", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.67 and density from Table 51.68.",
+      "Density": 1.8, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "O",  "Fraction": 0.523701 },
+          {"Element": "Si", "Fraction": 0.448733 },
+          {"Element": "Al", "Fraction": 0.00627756 },
+          {"Element": "Fe", "Fraction": 0.00699426 },
+          {"Element": "Ca", "Fraction": 0.0142938 }
+      ]
+    },
+    { "Name": "Portland Cement", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.71.  Table 51.69 footnote says density is 3.15 g/cm3 for solid material; 1.5 g/cm3 for loose powder.",
+      "Density": 1.5, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Mg", "Fraction": 0.457445 },
+          {"Element": "O",  "Fraction": 0.00793918 },
+          {"Element": "Si", "Fraction": 0.0842228 },
+          {"Element": "Al", "Fraction": 0.0340248 },
+          {"Element": "Fe", "Fraction": 0.0242007 },
+          {"Element": "Ca", "Fraction": 0.392168 }
+      ]
+    },
+    { "Name": "Colemanite borated cement", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.71.  Density from Table 51.69.",
+      "Density": 1.95, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.0409079 },
+          {"Element": "B",  "Fraction": 0.0443475 },
+          {"Element": "O",  "Fraction": 0.556502 },
+          {"Element": "Ca", "Fraction": 0.0547882 },
+          {"Element": "Mg", "Fraction": 0.203663 },
+          {"Element": "Cl", "Fraction": 0.0997915 }
+      ]
+    },
+    { "Name": "Lumnite", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.73 but no density given.  Lumnite is a calcium aluminte hydraulic cement .  Weight fractions renormalized to account of 0.70% of 'insoluble residue.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "O",  "Fraction": 0.371448 },
+          {"Element": "Mg", "Fraction": 0.00607475 },
+          {"Element": "Al", "Fraction": 0.124369 },
+          {"Element": "Si", "Fraction": 0.042849 },
+          {"Element": "S",  "Fraction": 6.85882E-4 },
+          {"Element": "Ca", "Fraction": 0.26494 },
+          {"Element": "Ti", "Fraction": 0.11032 },
+          {"Element": "Fe", "Fraction": 0.079313 }
+      ]
+    },
+    { "Name": "Boron Frits", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.74 but no density given.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "B",  "Fraction": 0.0936085 },
+          {"Element": "O",  "Fraction": 0.527476 },
+          {"Element": "F",  "Fraction": 0.019 },
+          {"Element": "Al", "Fraction": 0.00899726 },
+          {"Element": "Si", "Fraction": 0.144903 },
+          {"Element": "K",  "Fraction": 0.00709618 },
+          {"Element": "Ca", "Fraction": 0.0371639 },
+          {"Element": "Zn", "Fraction": 0.0538276 },
+          {"Element": "Ba", "Fraction": 0.107927 }
+      ]
+    },
+    { "Name": "Barytes Aggregate, Coarse (1 in)", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.77.  Weight fractions renormalized.",
+      "Density": 4.2, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "O",  "Fraction": 0.279599 },
+          {"Element": "S",  "Fraction": 0.1335 },
+          {"Element": "Ca", "Fraction": 0.00506586 },
+          {"Element": "Fe", "Fraction": 0.0101317 },
+          {"Element": "Ba", "Fraction": 0.571704 }
+      ]
+    },
+    { "Name": "Barytes Aggregate, Coarse (3/8 in)", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.77.  Weight fractions renormalized.",
+      "Density": 4.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "O",  "Fraction": 0.290104 },
+          {"Element": "S",  "Fraction": 0.113824 },
+          {"Element": "Ca", "Fraction": 0.00913706 },
+          {"Element": "Fe", "Fraction": 0.0994924 },
+          {"Element": "Ba", "Fraction": 0.487443 }
+      ]
+    },
+    { "Name": "High-density concrete (MO, density 5.2 g/cm3)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.92 and density from Table 51.93.  Steel punchings and shot assumed to be 100% iron.",
+      "Density": 5.2, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.00671411 },
+          {"Element": "O",  "Fraction": 0.0842487 },
+          {"Element": "Mg", "Fraction": 0.0531641 },
+          {"Element": "Cl", "Fraction": 0.0178731 },
+          {"Element": "Fe", "Fraction": 0.838 }
+      ]
+    },
+    { "Name": "High-density concrete (MO, density 5.8 g/cm3)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.92 and density from Table 51.93.  Steel punchings and shot assumed to be 100% iron.",
+      "Density": 5.8, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.00414037 },
+          {"Element": "O",  "Fraction": 0.0527076 },
+          {"Element": "Mg", "Fraction": 0.0337261 },
+          {"Element": "Cl", "Fraction": 0.010426 },
+          {"Element": "Fe", "Fraction": 0.899 }
+      ]
+    },
+    { "Name": "High-density concrete (M-1, density 4.5 g/cm3)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.92 and density from Table 51.93.  Steel punchings and shot assumed to be 100% iron.",
+      "Density": 4.5, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.00942683 },
+          {"Element": "B",  "Fraction": 0.0102583 },
+          {"Element": "O",  "Fraction": 0.128444 },
+          {"Element": "Mg", "Fraction": 0.0468563 },
+          {"Element": "Cl", "Fraction": 0.0223414 },
+          {"Element": "Ca", "Fraction": 0.0126734 },
+          {"Element": "Fe", "Fraction": 0.77 }
+      ]
+    },
+    { "Name": "Concrete, Portland", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.95 and density from Table 51.81.",
+      "Density": 2.3, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.014 },
+          {"Element": "H",  "Fraction": 0.01 },
+          {"Element": "O",  "Fraction": 0.529 },
+          {"Element": "Mg", "Fraction": 0.002 },
+          {"Element": "Ca", "Fraction": 0.044 },
+          {"Element": "Si", "Fraction": 0.337 },
+          {"Element": "Na", "Fraction": 0.016 },
+          {"Element": "K",  "Fraction": 0.013 },
+          {"Element": "Al", "Fraction": 0.034 },
+          {"Element": "C",  "Fraction": 0.001 }
+      ]
+    },
+    { "Name": "Concrete, High-density (MO, 5.8)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.95 and density from Table 51.92.",
+      "Density": 5.8, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.881 },
+          {"Element": "H",  "Fraction": 0.005 },
+          {"Element": "O",  "Fraction": 0.06 },
+          {"Element": "Mg", "Fraction": 0.037 },
+          {"Element": "Mn", "Fraction": 0.004 },
+          {"Element": "Cl", "Fraction": 0.013 }
+      ]
+    },
+    { "Name": "Concrete, High-density (M-1)", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.95 and density from Table 51.92.",
+      "Density": 4.5, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.798 },
+          {"Element": "H",  "Fraction": 0.008 },
+          {"Element": "B",  "Fraction": 0.009 },
+          {"Element": "O",  "Fraction": 0.107 },
+          {"Element": "Mg", "Fraction": 0.043 },
+          {"Element": "Ca", "Fraction": 0.011 },
+          {"Element": "Mn", "Fraction": 0.003 },
+          {"Element": "Cl", "Fraction": 0.021 }
+      ]
+    },
+    { "Name": "Concrete, Ferrophosphorus", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.95 and density from Table 51.88.",
+      "Density": 4.8, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.612 },
+          {"Element": "H",  "Fraction": 0.005 },
+          {"Element": "O",  "Fraction": 0.104 },
+          {"Element": "Mg", "Fraction": 0.002 },
+          {"Element": "Ca", "Fraction": 0.042 },
+          {"Element": "Si", "Fraction": 0.034 },
+          {"Element": "Al", "Fraction": 0.004 },
+          {"Element": "P",  "Fraction": 0.197 }
+      ]
+    },
+    { "Name": "Concrete, Iron-limonite", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.95 and density from Table 51.91.  Weight fractions renormalized.",
+      "Density": 4.27, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.72064 },
+          {"Element": "H",  "Fraction": 4.9975E-4 },
+          {"Element": "O",  "Fraction": 0.17991 },
+          {"Element": "Mg", "Fraction": 0.001999 },
+          {"Element": "Ca", "Fraction": 0.0609695 },
+          {"Element": "Si", "Fraction": 0.013993 },
+          {"Element": "Al", "Fraction": 0.0049975 },
+          {"Element": "Mn", "Fraction": 0.015992 },
+          {"Element": "C",  "Fraction": 0.0 },
+          {"Element": "S",  "Fraction": 9.995E-4 }
+      ]
+    },
+    { "Name": "Concrete, Iron-portland", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.95 and density from Table 51.84.  Density range listed as 5.8-6.0 g/cm3.  Weight fractions renormalized.",
+      "Density": 5.9, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.880459 },
+          {"Element": "H",  "Fraction": 0.00332059 },
+          {"Element": "O",  "Fraction": 0.0585631 },
+          {"Element": "Mg", "Fraction": 0.00130811 },
+          {"Element": "Ca", "Fraction": 0.0398471 },
+          {"Element": "Si", "Fraction": 0.00915677 },
+          {"Element": "Al", "Fraction": 0.00332059 },
+          {"Element": "Mn", "Fraction": 0.00352184 },
+          {"Element": "C",  "Fraction": 0.0 },
+          {"Element": "S",  "Fraction": 5.03119E-4 }
+      ]
+    },
+    { "Name": "Concrete, Colemanite-barytes", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.95 and density from Table 51.84.  Density range listed as 3.1-3.2 g/cm3.  Weight fractions renormalized.",
+      "Density": 3.15, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.0103778 },
+          {"Element": "H",  "Fraction": 0.00856423 },
+          {"Element": "B",  "Fraction": 0.00987406 },
+          {"Element": "O",  "Fraction": 0.351537 },
+          {"Element": "Mg", "Fraction": 0.00221662 },
+          {"Element": "Ca", "Fraction": 0.0852393 },
+          {"Element": "Ba", "Fraction": 0.410076 },
+          {"Element": "Si", "Fraction": 0.017733 },
+          {"Element": "Na", "Fraction": 0.00110831 },
+          {"Element": "Al", "Fraction": 0.0061461 },
+          {"Element": "Mn", "Fraction": 1.00756E-4 },
+          {"Element": "C",  "Fraction": 0.0 },
+          {"Element": "S",  "Fraction": 0.0970277 }
+      ]
+    },
+    { "Name": "Concrete, Boron frits-barytes", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.95 and density from Table 51.84.  Weight fractions renormalized.",
+      "Density": 3.1, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.0220034 },
+          {"Element": "H",  "Fraction": 0.00562644 },
+          {"Element": "B",  "Fraction": 0.0104491 },
+          {"Element": "O",  "Fraction": 0.339596 },
+          {"Element": "Mg", "Fraction": 0.00231086 },
+          {"Element": "Ca", "Fraction": 0.0628956 },
+          {"Element": "Ba", "Fraction": 0.403195 },
+          {"Element": "Si", "Fraction": 0.0332563 },
+          {"Element": "Na", "Fraction": 0.0121571 },
+          {"Element": "K",  "Fraction": 0.00100472 },
+          {"Element": "Al", "Fraction": 0.00643022 },
+          {"Element": "Mn", "Fraction": 2.00944E-4 },
+          {"Element": "C",  "Fraction": 0.0 },
+          {"Element": "S",  "Fraction": 0.0919321 },
+          {"Element": "Zn", "Fraction": 0.00663117 },
+          {"Element": "F",  "Fraction": 0.00231086 }
+      ]
+    },
+    { "Name": "Concrete, Lumnite-colemanite-barytes", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.95 and density from Table 51.84.  Weight fractions renormalized.",
+      "Density": 3.1, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.0308605 },
+          {"Element": "H",  "Fraction": 0.010957 },
+          {"Element": "B",  "Fraction": 0.008846 },
+          {"Element": "O",  "Fraction": 0.371431 },
+          {"Element": "Mg", "Fraction": 0.00140732 },
+          {"Element": "Ca", "Fraction": 0.0550864 },
+          {"Element": "Ba", "Fraction": 0.387917 },
+          {"Element": "Si", "Fraction": 0.00965018 },
+          {"Element": "Na", "Fraction": 0.00110575 },
+          {"Element": "Al", "Fraction": 0.017692 },
+          {"Element": "Mn", "Fraction": 0.00120627 },
+          {"Element": "C",  "Fraction": 0.0 },
+          {"Element": "S",  "Fraction": 0.0910736 },
+          {"Element": "Ti", "Fraction": 0.0127664 }
+      ]
+    },
+    { "Name": "Concrete, Lumnite-portland-colemanite-barytes", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.95 and density from Table 51.84.  Weight fractions renormalized.",
+      "Density": 3.1, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.0189135 },
+          {"Element": "H",  "Fraction": 0.0111256 },
+          {"Element": "B",  "Fraction": 0.0103165 },
+          {"Element": "O",  "Fraction": 0.374023 },
+          {"Element": "Mg", "Fraction": 0.00202284 },
+          {"Element": "Ca", "Fraction": 0.0775758 },
+          {"Element": "Ba", "Fraction": 0.384643 },
+          {"Element": "Si", "Fraction": 0.0150701 },
+          {"Element": "Na", "Fraction": 0.00111256 },
+          {"Element": "Al", "Fraction": 0.0133507 },
+          {"Element": "Mn", "Fraction": 4.04568E-4 },
+          {"Element": "C",  "Fraction": 0.0 },
+          {"Element": "S",  "Fraction": 0.0907243 },
+          {"Element": "Ti", "Fraction": 7.18107E-4 }
+      ]
+    },
+    { "Name": "Crude oil, California", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.97.   Weight fractions renormalized.  Table 51.98 lists an average density of crude oil as 0.89 g/cm3 with a range of 0.81-0.98 g/cm3.",
+      "Density": 0.917, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.83707 },
+          {"Element": "H",  "Fraction": 0.126557 },
+          {"Element": "S",  "Fraction": 0.00747384 },
+          {"Element": "N",  "Fraction": 0.0169407 },
+          {"Element": "O",  "Fraction": 0.0119581 }
+      ]
+    },
+    { "Name": "Crude oil, Kansas", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.97.   Weight fractions renormalized.  Table 51.98 lists an average density of crude oil as 0.89 g/cm3 with a range of 0.81-0.98 g/cm3.",
+      "Density": 0.921, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.845729 },
+          {"Element": "H",  "Fraction": 0.130653 },
+          {"Element": "S",  "Fraction": 0.0190955 },
+          {"Element": "N",  "Fraction": 0.00452261 }
+      ]
+    },
+    { "Name": "Crude oil, Mexico", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.97.   Weight fractions renormalized.  Table 51.98 lists an average density of crude oil as 0.89 g/cm3 with a range of 0.81-0.98 g/cm3.",
+      "Density": 0.975, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.853646 },
+          {"Element": "H",  "Fraction": 0.104029 },
+          {"Element": "S",  "Fraction": 0.0423253 }
+      ]
+    },
+    { "Name": "Crude oil, Oklahoma", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.97.   Weight fractions renormalized.  Table 51.98 lists an average density of crude oil as 0.89 g/cm3 with a range of 0.81-0.98 g/cm3.",
+      "Density": 0.87, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.861338 },
+          {"Element": "H",  "Fraction": 0.131295 },
+          {"Element": "S",  "Fraction": 0.00585326 },
+          {"Element": "N",  "Fraction": 0.00151378 }
+      ]
+    },
+    { "Name": "Crude oil, Pennsylvania", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.97.   Weight fractions renormalized.  Table 51.98 lists an average density of crude oil as 0.89 g/cm3 with a range of 0.81-0.98 g/cm3.",
+      "Density": 0.813, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.8606 },
+          {"Element": "H",  "Fraction": 0.1388 },
+          {"Element": "S",  "Fraction": 6.0E-4 }
+      ]
+    },
+    { "Name": "Crude oil, Texas", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.97.   Weight fractions renormalized.  Table 51.98 lists an average density of crude oil as 0.89 g/cm3 with a range of 0.81-0.98 g/cm3.",
+      "Density": 0.875, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.852204 },
+          {"Element": "H",  "Fraction": 0.123246 },
+          {"Element": "S",  "Fraction": 0.0175351 },
+          {"Element": "N",  "Fraction": 0.00701403 }
+      ]
+    },
+    { "Name": "Fuel oil, California", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.99.   Weight fractions renormalized.  Table 51.100 lists an average density of fuel oil as 0.89 g/cm3.",
+      "Density": 0.955, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.862308 },
+          {"Element": "H",  "Fraction": 0.125878 },
+          {"Element": "S",  "Fraction": 0.0118138 }
+      ]
+    },
+    { "Name": "Fuel oil, Mid-continent", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.99.   Weight fractions renormalized.  Table 51.100 lists an average density of fuel oil as 0.89 g/cm3.",
+      "Density": 0.892, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.864412 },
+          {"Element": "H",  "Fraction": 0.120949 },
+          {"Element": "S",  "Fraction": 0.00353357 },
+          {"Element": "N",  "Fraction": 0.00504796 },
+          {"Element": "O",  "Fraction": 0.00605755 }
+      ]
+    },
+    { "Name": "Fuel oil, Mexico", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.99.   Weight fractions renormalized.  Table 51.100 lists an average density of fuel oil as 0.89 g/cm3.",
+      "Density": 0.987, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.848601 },
+          {"Element": "H",  "Fraction": 0.101606 },
+          {"Element": "S",  "Fraction": 0.049793 }
+      ]
+    },
+    { "Name": "Gasoline (no sulfur)", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.101.  Density listed for 60F.  Table 51.102 lists a denstiy range for gasoline as 0.70-0.74 g/cm3.  The composition of gasoline varies with the method of production and the type of crude oil from which it ws obtained; in general it is made up of saturated aliphatic compounds ranging from C5H12 to C12H26, with an average composition corresponding to C8H18 (octane).",
+      "Density": 0.713, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.843 },
+          {"Element": "H",  "Fraction": 0.157 }
+      ]
+    },
+    { "Name": "Gasoline (with sulfur)", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.101.  Weight fractions renormalized.  Density listed for 60F.  Table 51.102 lists a denstiy range for gasoline as 0.70-0.74 g/cm3.  The composition of gasoline varies with the method of production and the type of crude oil from which it ws obtained; in general it is made up of saturated aliphatic compounds ranging from C5H12 to C12H26, with an average composition corresponding to C8H18 (octane).",
+      "Density": 0.739, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.851213 },
+          {"Element": "H",  "Fraction": 0.147985 },
+          {"Element": "S",  "Fraction": 8.02085E-4 }
+      ]
+    },
+    { "Name": "Kerosene", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.104.    Sulfur content taken at maximum.  Weight fraction renormalized.  Density range listed as 0.797-0.825 g/cm3.",
+      "Density": 0.819, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.838951 },
+          {"Element": "H",  "Fraction": 0.1598 },
+          {"Element": "S",  "Fraction": 0.00124844 }
+      ]
+    },
+    { "Name": "Plastic, Acrylates", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  No density given.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.6 },
+          {"Element": "H",  "Fraction": 0.081 },
+          {"Element": "O",  "Fraction": 0.319 }
+      ]
+    },
+    { "Name": "Plastic, Cellulose acetate", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.110.  Density range listed as 1.27-1.37 g/cm3.",
+      "Density": 0.635, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.488 },
+          {"Element": "H",  "Fraction": 0.057 },
+          {"Element": "O",  "Fraction": 0.455 }
+      ]
+    },
+    { "Name": "Plastic, Cellulose acetate-butyrate", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.110.  Density range listed as 1.15-1.24 g/cm3.",
+      "Density": 0.575, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.528 },
+          {"Element": "H",  "Fraction": 0.067 },
+          {"Element": "O",  "Fraction": 0.405 }
+      ]
+    },
+    { "Name": "Plastic, Cellulose nitrate", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.110.  Density range listed as 1.35-1.4 g/cm3.",
+      "Density": 0.675, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.286 },
+          {"Element": "H",  "Fraction": 0.032 },
+          {"Element": "O",  "Fraction": 0.571 },
+          {"Element": "N",  "Fraction": 0.111 }
+      ]
+    },
+    { "Name": "Plastic, Ethylcellulose", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.110.  Density range listed as 1.09-1.17 g/cm3.",
+      "Density": 0.545, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.585 },
+          {"Element": "H",  "Fraction": 0.09 },
+          {"Element": "O",  "Fraction": 0.325 }
+      ]
+    },
+    { "Name": "Plastic, Melamin formaldehyde", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.109.  Density range listed as 1.47-1.52 g/cm3.  Average values for element weight fractions were used.  Weight fractions were renormalized.This composition given for pure plastic; the type of filler used with this material will have an important bearing upon the composition of the material.  ",
+      "Density": 0.735, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.353234 },
+          {"Element": "H",  "Fraction": 0.0248756 },
+          {"Element": "O",  "Fraction": 0.278607 },
+          {"Element": "N",  "Fraction": 0.343284 }
+      ]
+    },
+    { "Name": "Plastic, Phenol formaldehyde", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.109.  Density range listed as 1.25-2.09 g/cm3.  Weight fractions were renormalized.This composition given for pure plastic; the type of filler used with this material will have an important bearing upon the composition of the material.  ",
+      "Density": 0.625, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.582353 },
+          {"Element": "H",  "Fraction": 0.0419118 },
+          {"Element": "O",  "Fraction": 0.375735 }
+      ]
+    },
+    { "Name": "Plastic, Phenol furfural", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.109.  Density range listed as 1.3-2 g/cm3.This composition given for pure plastic; the type of filler used with this material will have an important bearing upon the composition of the material.  ",
+      "Density": 0.65, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.763 },
+          {"Element": "H",  "Fraction": 0.052 },
+          {"Element": "O",  "Fraction": 0.185 }
+      ]
+    },
+    { "Name": "Plastic, Polyamides", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  No density given.  Average values for element weight fractions were used.  Weight fractions were renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.60199 },
+          {"Element": "H",  "Fraction": 0.119403 },
+          {"Element": "O",  "Fraction": 0.278607 }
+      ]
+    },
+    { "Name": "Plastic, Polyesters", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  No density given.  Average values for element weight fractions were used.  Weight fractions were renormalized.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.636816 },
+          {"Element": "H",  "Fraction": 0.0746269 },
+          {"Element": "O",  "Fraction": 0.288557 }
+      ]
+    },
+    { "Name": "Plastic, Polyethylene", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.107.",
+      "Density": 0.92, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.856 },
+          {"Element": "H",  "Fraction": 0.144 }
+      ]
+    },
+    { "Name": "Plastic, Polystryrene", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.107.  Density range listed as 1.05-1.07 g/cm3.",
+      "Density": 0.525, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.903 },
+          {"Element": "H",  "Fraction": 0.097 }
+      ]
+    },
+    { "Name": "Plastic, Polytetrafluoroethylene", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  No density given.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.24 },
+          {"Element": "F",  "Fraction": 0.76 }
+      ]
+    },
+    { "Name": "Plastic, Polytrifuorinchloroethylene", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  No density given.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.206 },
+          {"Element": "F",  "Fraction": 0.489 },
+          {"Element": "Cl", "Fraction": 0.305 }
+      ]
+    },
+    { "Name": "Plastic, Polyvinyl acetal", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  No density given.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.676 },
+          {"Element": "H",  "Fraction": 0.099 },
+          {"Element": "O",  "Fraction": 0.225 }
+      ]
+    },
+    { "Name": "Plastic, Polyvinyl acetate", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.106.",
+      "Density": 1.19, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.558 },
+          {"Element": "H",  "Fraction": 0.07 },
+          {"Element": "O",  "Fraction": 0.372 }
+      ]
+    },
+    { "Name": "Plastic, Polyvinyl alcohol", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  No density given.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.545 },
+          {"Element": "H",  "Fraction": 0.092 },
+          {"Element": "O",  "Fraction": 0.363 }
+      ]
+    },
+    { "Name": "Plastic, Polyvinyl formal", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  No density given.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.631 },
+          {"Element": "H",  "Fraction": 0.088 },
+          {"Element": "O",  "Fraction": 0.281 }
+      ]
+    },
+    { "Name": "Plastic, Polyvinyl butyral", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  No density given.",
+      "Density": 1.0, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.727 },
+          {"Element": "H",  "Fraction": 0.112 },
+          {"Element": "O",  "Fraction": 0.161 }
+      ]
+    },
+    { "Name": "Plastic, Polyvinyl chloride", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.106.  Density range listed as 1.2-1.6 g/cm3.",
+      "Density": 0.6, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.385 },
+          {"Element": "H",  "Fraction": 0.048 },
+          {"Element": "O",  "Fraction": 0.567 }
+      ]
+    },
+    { "Name": "Plastic, Polyvinylidene chloride", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.106.  Density range listed as 1.65-1.75 g/cm3.",
+      "Density": 0.825, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.248 },
+          {"Element": "H",  "Fraction": 0.021 },
+          {"Element": "Cl", "Fraction": 0.731 }
+      ]
+    },
+    { "Name": "Plastic, Urea formaldehyde", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.109.  Density range listed as 1.47-1.52 g/cm3.  Average values for element weight fractions were used.This composition given for pure plastic; the type of filler used with this material will have an important bearing upon the composition of the material.  Organic fillings such as wood flour or cotton may change the hydrogen content by as much as 80 per cent.",
+      "Density": 0.735, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.33 },
+          {"Element": "H",  "Fraction": 0.03 },
+          {"Element": "O",  "Fraction": 0.44 },
+          {"Element": "N",  "Fraction": 0.2 }
+      ]
+    },
+    { "Name": "Plastic, Vinyl chloride-acetate-copolymer", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.105.  Density from Table 51.106.  Density range listed as 1.35-1.46 g/cm3.  Average values for element weight fractions were used.",
+      "Density": 0.675, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.405 },
+          {"Element": "H",  "Fraction": 0.05 },
+          {"Element": "O",  "Fraction": 0.545 }
+      ]
+    },
+    { "Name": "Plastic, Phenol-Formaldehyde, Molded compositions - Wood-flour filled", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.108.  Density range is 1.25-1.52 g/cm3.",
+      "Density": 1.385
+    },
+    { "Name": "Plastic, Phenol-Formaldehyde, Molded compositions - Asbestos filled", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.108.  Density range is 1.59-2.09 g/cm3.",
+      "Density": 1.84
+    },
+    { "Name": "Plastic, Phenol-Formaldehyde, Molded compositions - Fabric filled", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.108.  Density range is 1.36-1.47 g/cm3.",
+      "Density": 1.415
+    },
+    { "Name": "Plastic, Phenol-Formaldehyde, Laminated compositions - Paper base", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.108.",
+      "Density": 1.35
+    },
+    { "Name": "Plastic, Phenol-Formaldehyde, Laminated compositions - Fabric base", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.108.  Density range is 1.35-1.36 g/cm3.",
+      "Density": 1.355
+    },
+    { "Name": "Plastic, Phenol-Formaldehyde, Laminated compositions - Asbestos fabric base", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.108.",
+      "Density": 1.79
+    },
+    { "Name": "Plastic, Phenol-Formaldehyde, Laminated compositions - Cast filled", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.108.  Density range is 1.20-1.70 g/cm3.",
+      "Density": 1.45
+    },
+    { "Name": "Silicone, Silicon Rubber", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.111.  Weight fractions renormalized.  Composition varies with degress and type of polymerization of silicone groups;  composition, wt%, of methyl silicone [Si(CH3O)n] is 32 C, 8 H, 22 O 38 Si.",
+      "Density": 1.75, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.437186 },
+          {"Element": "H",  "Fraction": 0.0954774 },
+          {"Element": "O",  "Fraction": 0.170854 },
+          {"Element": "Si", "Fraction": 0.296482 }
+      ]
+    },
+    { "Name": "Rubber, Natural", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.112 and density from Table 51.113.  Density given as 0.92 g/cm3 for soft rubber and 1.2-1.65 g/cm3 for hard rubber (Lower densities for general-purpose materials, higher densities for molded or heat-resistant materials).",
+      "Density": 0.92, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.882 },
+          {"Element": "H",  "Fraction": 0.118 }
+      ]
+    },
+    { "Name": "Rubber, Butadiene copolymer, GR-S", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.112 and density from Table 51.113.  Average values for element weight fractions used.",
+      "Density": 0.94, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.905 },
+          {"Element": "H",  "Fraction": 0.095 }
+      ]
+    },
+    { "Name": "Rubber, Nitrile, GR-A", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.112 and density from Table 51.113.  Average values for element weight fractions used.  Weight fractions renormalized.",
+      "Density": 1.02, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.821608 },
+          {"Element": "H",  "Fraction": 0.0929648 },
+          {"Element": "N",  "Fraction": 0.0854271 }
+      ]
+    },
+    { "Name": "Rubber, Butyl, GR-I", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.112 and density from Table 51.113.",
+      "Density": 0.91, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.856 },
+          {"Element": "H",  "Fraction": 0.144 }
+      ]
+    },
+    { "Name": "Rubber, Neoprene, GR-M", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.112 and density from Table 51.113.  Density range given as 1.25-1.3 g/cm3.",
+      "Density": 1.275, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.543 },
+          {"Element": "H",  "Fraction": 0.057 },
+          {"Element": "Cl", "Fraction": 0.4 }
+      ]
+    },
+    { "Name": "Rubber, Polysulfide", 
+      "References": "Reactor Handbook, Vol. 1: composition from Table 51.112 and density from Table 51.113.",
+      "Density": 1.34, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.154 },
+          {"Element": "H",  "Fraction": 0.026 },
+          {"Element": "S",  "Fraction": 0.82 }
+      ]
+    },
+    { "Name": "Rubber, Isobutene copolymer", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.113.",
+      "Density": 0.91
+    },
+    { "Name": "Masonite", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.114.",
+      "Density": 1.3
+    },
+    { "Name": "Plywood, White Ash", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.115.",
+      "Density": 0.6
+    },
+    { "Name": "Plywood, Yellow Birch", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.115.",
+      "Density": 0.67
+    },
+    { "Name": "Plywood, Douglas Fir", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.115.",
+      "Density": 0.48
+    },
+    { "Name": "Plywood, Western Hemlock", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.115.",
+      "Density": 0.48
+    },
+    { "Name": "Plywood, Hard Maple", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.115.",
+      "Density": 0.68
+    },
+    { "Name": "Plywood, White Oak", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.115.",
+      "Density": 0.64
+    },
+    { "Name": "Plywood, White Pine", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.115.",
+      "Density": 0.42
+    },
+    { "Name": "Plywood, Sugar Pine", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.115.",
+      "Density": 0.42
+    },
+    { "Name": "Plywood: Tupelo", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.115.",
+      "Density": 0.5
+    },
+    { "Name": "Wood, Balsa", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.117.",
+      "Density": 0.16
+    },
+    { "Name": "Wood, Hickory", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.117.",
+      "Density": 0.81
+    },
+    { "Name": "Wood, Spruce", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.117.",
+      "Density": 0.47
+    },
+    { "Name": "Wood, White ash", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.117.",
+      "Density": 0.64
+    },
+    { "Name": "Wood, White oak", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.117.",
+      "Density": 0.71
+    },
+    { "Name": "Wood, White pine", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.117.",
+      "Density": 0.67
+    },
+    { "Name": "Saturated zinc bromide solution", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.118.  Density at 20C",
+      "Density": 2.38
+    },
+    { "Name": "Saturated sugar sollution", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.118.  Density at 20C",
+      "Density": 1.33
+    },
+    { "Name": "Transformer oil", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.118.  Density at 15.5C",
+      "Density": 0.898
+    },
+    { "Name": "Borazole", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.118.  Density at 55C.",
+      "Density": 0.81, 
+      "Type": "Chemical Formula", 
+      "Formula": "B3(NH2)3", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 6.0 },
+          {"Element": "B",  "Atoms": 3.0 },
+          {"Element": "N",  "Atoms": 3.0 }
+      ]
+    },
+    { "Name": "Terphenyl", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.118.  Density at 0C.",
+      "Density": 1.234, 
+      "Type": "Chemical Formula", 
+      "Formula": "C6H4(C6H5)2", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 14.0 },
+          {"Element": "C",  "Atoms": 18.0 }
+      ]
+    },
+    { "Name": "Trimethylamine borane", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.118.  Density of solid at 0C listed as 0.80 g/cm3.  Density of liquid at 101C listed as 0.666 g/cm3.",
+      "Density": 0.8, 
+      "Type": "Chemical Formula", 
+      "Formula": "(CH3)3NBH3", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 12.0 },
+          {"Element": "B",  "Atoms": 1.0 },
+          {"Element": "N",  "Atoms": 1.0 },
+          {"Element": "C",  "Atoms": 3.0 }
+      ]
+    },
+    { "Name": "Methyl alcholol", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.120.  Density at 20C, g/cm3.",
+      "Density": 0.792, 
+      "Type": "Chemical Formula", 
+      "Formula": "CH3OH", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 1.0 },
+          {"Element": "H",  "Atoms": 4.0 },
+          {"Element": "O",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Ethyl alcohol", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.120.  Density at 20C, g/cm3.",
+      "Density": 0.789, 
+      "Type": "Chemical Formula", 
+      "Formula": "C2H5OH", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 2.0 },
+          {"Element": "H",  "Atoms": 6.0 },
+          {"Element": "O",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Acetone", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.120.  Density at 20C, g/cm3.",
+      "Density": 0.792, 
+      "Type": "Chemical Formula", 
+      "Formula": "(CH3)2CO", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 3.0 },
+          {"Element": "H",  "Atoms": 6.0 },
+          {"Element": "O",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Ethyl acetate", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.120.  Density at 20C, g/cm3.",
+      "Density": 0.901, 
+      "Type": "Chemical Formula", 
+      "Formula": "CH3COOC2H5", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 4.0 },
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "O",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Benzene", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.120.  Density at 20C, g/cm3.",
+      "Density": 0.879, 
+      "Type": "Chemical Formula", 
+      "Formula": "C6H6", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 6.0 },
+          {"Element": "H",  "Atoms": 6.0 }
+      ]
+    },
+    { "Name": "Carbon tetrachloride", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.120.  Density at 20C, g/cm3.",
+      "Density": 1.595, 
+      "Type": "Chemical Formula", 
+      "Formula": "CCl4", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 1.0 },
+          {"Element": "Cl", "Atoms": 4.0 }
+      ]
+    },
+    { "Name": "Glycerin", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.120.  Density at 20C, g/cm3.",
+      "Density": 1.26, 
+      "Type": "Chemical Formula", 
+      "Formula": "CHOH(CH2OH)2", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 3.0 },
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "O",  "Atoms": 3.0 }
+      ]
+    },
+    { "Name": "Ethylene glycol", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.120.  Density at 20C, g/cm3.",
+      "Density": 1.113, 
+      "Type": "Chemical Formula", 
+      "Formula": "(CH2OH)2", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 2.0 },
+          {"Element": "H",  "Atoms": 6.0 },
+          {"Element": "O",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Tributyl borate", 
+      "References": "Reactor Handbook, Vol. 1, Table 51.120.  Density at 20C, g/cm3.",
+      "Density": 0.864, 
+      "Type": "Chemical Formula", 
+      "Formula": "B(OC4H9)3", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 12.0 },
+          {"Element": "H",  "Atoms": 27.0 },
+          {"Element": "O",  "Atoms": 3.0 },
+          {"Element": "B",  "Atoms": 1.0 }
+      ]
+    }
+  ],
+  "Comments" : [
+      "Reactor Handbook, Second Edition - in Four Volumes, Volume 1: Materials, edited by C. R. Tipton, Jr., Copyright 1960 by Interscience Publishers, Inc., New York, NY, Library of Congress Catalog Card Number 60-11027",
+      "Chapter 51 The Nuclear, Physical, and Mechanical Properties of Shielding Materials by H. E. Hungerford"
+  ]
+}
+}

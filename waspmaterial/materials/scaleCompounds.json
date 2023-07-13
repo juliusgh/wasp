@@ -1,0 +1,480 @@
+{"MaterialDatabase" : {
+    "Name": "SCALE Compounds",
+    "Reference": "SCALE Code System, Version 6.2.3, Oak Ridge National Laboratory, Oak Ridge, Tennessee (2018)",
+    "Materials": [
+      { "Name": "al2o3", 
+        "Density": 3.97, 
+        "Type": "Chemical Formula", 
+        "Formula": "Al2O3", 
+        "Contains": [
+            {"Element": "Al", "Atoms": 2.0 },
+            {"Element": "O",  "Atoms": 3.0 }
+        ]
+      },
+      { "Name": "b4c", 
+        "Comment": "Boron carbide: natural isotopic distribution obtained by default",
+        "Density": 2.52, 
+        "Type": "Chemical Formula", 
+        "Formula": "B4C", 
+        "Contains": [
+            {"Element": "B",  "Atoms": 4.0 },
+            {"Element": "C",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "balsa", 
+        "Comment": "Balsa wood",
+        "Density": 0.125, 
+        "Type": "Chemical Formula", 
+        "Formula": "C6H10O5", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 6.0 },
+            {"Element": "H",  "Atoms": 10.0 },
+            {"Element": "O",  "Atoms": 5.0 }
+        ]
+      },
+      { "Name": "benzene", 
+        "Comment": "Benzene with a S(alpha,beta) thermal kernel",
+        "Density": 0.8765, 
+        "Type": "Chemical Formula", 
+        "Formula": "C6H6", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 6.0 },
+            {"Element": "H",  "Atoms": 6.0 }
+        ]
+      },
+      { "Name": "beo", 
+        "Comment": "Beryllium oxide with a S(alpha,beta) thermal kernel",
+        "Density": 3.0, 
+        "Type": "Chemical Formula", 
+        "Formula": "BeO", 
+        "Contains": [
+            {"Element": "Be", "Atoms": 1.0 },
+            {"Element": "O",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "d2o", 
+        "Comment": "Heavy water: D2O",
+        "Density": 1.1054, 
+        "Type": "Chemical Formula", 
+        "Formula": "D2O", 
+        "Contains": [
+            {"Element": "H",  "MassNumber": 2, "Atoms": 2.0 },
+            {"Element": "O",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "gd2o3", 
+        "Density": 7.07, 
+        "Type": "Chemical Formula", 
+        "Formula": "Gd2O3", 
+        "Contains": [
+            {"Element": "Gd", "Atoms": 2.0 },
+            {"Element": "O",  "Atoms": 3.0 }
+        ]
+      },
+      { "Name": "graphite", 
+        "Comment": "Graphite carbon",
+        "Density": 2.3, 
+        "Type": "Chemical Formula", 
+        "Formula": "C", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "h2o", 
+        "Comment": "Water with only 1H and 16O with  S(alpha,beta) thermal kernels",
+        "Density": 0.9982, 
+        "Type": "Chemical Formula", 
+        "Formula": "H2O", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 2.0 },
+            {"Element": "O",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "h2o-x(e)-hr", 
+        "Density": 0.9982, 
+        "Type": "Chemical Formula", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 2.0 },
+            {"Element": "O",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "hfacid", 
+        "Comment": "Hydrafluoric acid",
+        "Density": 1.0, 
+        "Type": "Chemical Formula", 
+        "Formula": "HF", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 1.0 },
+            {"Element": "F",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "hno3", 
+        "Comment": "Nitric acid",
+        "Density": 1.0, 
+        "Type": "Chemical Formula", 
+        "Formula": "HNO3", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 1.0 },
+            {"Element": "N",  "Atoms": 1.0 },
+            {"Element": "O",  "Atoms": 3.0 }
+        ]
+      },
+      { "Name": "norpar(h2o)", 
+        "Comment": "Normal Paraffin 13: uses hydrogen in water thermal kernel",
+        "Density": 0.76, 
+        "Type": "Chemical Formula", 
+        "Formula": "C13H28", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 28.0 },
+            {"Element": "C",  "Atoms": 13.0 }
+        ]
+      },
+      { "Name": "norpar13", 
+        "Comment": "Normal paraffin 13",
+        "Density": 0.76, 
+        "Type": "Chemical Formula", 
+        "Formula": "C13H28", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 28.0 },
+            {"Element": "C",  "Atoms": 13.0 }
+        ]
+      },
+      { "Name": "oak", 
+        "Comment": "Oak wood",
+        "Density": 0.7, 
+        "Type": "Chemical Formula", 
+        "Formula": "C6H10O5", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 6.0 },
+            {"Element": "H",  "Atoms": 10.0 },
+            {"Element": "O",  "Atoms": 5.0 }
+        ]
+      },
+      { "Name": "para(h2o)", 
+        "Comment": "Paraffin: uses hydrogen in water S(alpha,beta) thermal kernel",
+        "Density": 0.9, 
+        "Type": "Chemical Formula", 
+        "Formula": "C25H52", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 52.0 },
+            {"Element": "C",  "Atoms": 25.0 }
+        ]
+      },
+      { "Name": "paraffin", 
+        "Comment": "Paraffin: uses hydrogen in polyethylene S(alpha,beta) thermal kernel",
+        "Density": 0.9, 
+        "Type": "Chemical Formula", 
+        "Formula": "C25H52", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 52.0 },
+            {"Element": "C",  "Atoms": 25.0 }
+        ]
+      },
+      { "Name": "plexiglas", 
+        "Comment": "Plexiglas",
+        "Density": 1.18, 
+        "Type": "Chemical Formula", 
+        "Formula": "C5H8O2", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 8.0 },
+            {"Element": "C",  "Atoms": 5.0 },
+            {"Element": "O",  "Atoms": 2.0 }
+        ]
+      },
+      { "Name": "plexiglass", 
+        "Comment": "Plexiglas: C5H8O2  Maintained for backward compatibility",
+        "Density": 1.18, 
+        "Type": "Chemical Formula", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 8.0 },
+            {"Element": "C",  "Atoms": 5.0 },
+            {"Element": "O",  "Atoms": 2.0 }
+        ]
+      },
+      { "Name": "poly(h2o)", 
+        "Comment": "Polyethylene:  uses  hydrogen  in  water S(alpha,beta) thermal kernel",
+        "Density": 0.92, 
+        "Type": "Chemical Formula", 
+        "Formula": "CH2", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 2.0 },
+            {"Element": "C",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "polyethylene", 
+        "Comment": "Polyethylene:  uses hydrogen in polyethylene S(alpha,beta) thermal kernel",
+        "Density": 0.92, 
+        "Type": "Chemical Formula", 
+        "Formula": "CH2", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 2.0 },
+            {"Element": "C",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "polyvinylcl", 
+        "Comment": "Polyvinyl  chloride:   uses  hydrogen in polyethylene S(alpha,beta) thermal kernel",
+        "Density": 1.6, 
+        "Type": "Chemical Formula", 
+        "Formula": "C2H3Cl", 
+        "Contains": [
+            {"Element": "Cl", "Atoms": 1.0 },
+            {"Element": "H",  "Atoms": 3.0 },
+            {"Element": "C",  "Atoms": 2.0 }
+        ]
+      },
+      { "Name": "pu(no3)4", 
+        "Comment": "Plutonium nitrate",
+        "Density": 2.447, 
+        "Type": "Chemical Formula", 
+        "Formula": "Pu(NO3)4", 
+        "Contains": [
+            {"Element": "Pu", "Atoms": 1.0 },
+            {"Element": "N",  "Atoms": 4.0 },
+            {"Element": "O",  "Atoms": 12.0 }
+        ]
+      },
+      { "Name": "puc", 
+        "Comment": "Plutonium carbide",
+        "Density": 13.6, 
+        "Type": "Chemical Formula", 
+        "Formula": "PuC", 
+        "Contains": [
+            {"Element": "Pu", "Atoms": 1.0 },
+            {"Element": "C",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "puf4", 
+        "Comment": "Plutonium tetrafluoride",
+        "Density": 7.0, 
+        "Type": "Chemical Formula", 
+        "Formula": "PuF4", 
+        "Contains": [
+            {"Element": "Pu", "Atoms": 1.0 },
+            {"Element": "F",  "Atoms": 4.0 }
+        ]
+      },
+      { "Name": "pun", 
+        "Comment": "Plutonium nitride",
+        "Density": 14.25, 
+        "Type": "Chemical Formula", 
+        "Formula": "PuN", 
+        "Contains": [
+            {"Element": "Pu", "Atoms": 1.0 },
+            {"Element": "N",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "puo2", 
+        "Comment": "Plutonium oxide",
+        "Density": 11.46, 
+        "Type": "Chemical Formula", 
+        "Formula": "PuO2", 
+        "Contains": [
+            {"Element": "Pu", "Atoms": 1.0 },
+            {"Element": "O",  "Atoms": 2.0 }
+        ]
+      },
+      { "Name": "pvc", 
+        "Comment": "Polyvinyl  chloride:  uses  hydrogen in polyethylene S(alpha,beta) thermal kernel",
+        "Density": 1.6, 
+        "Type": "Chemical Formula", 
+        "Formula": " C2H3Cl", 
+        "Contains": [
+            {"Element": "Cl", "Atoms": 1.0 },
+            {"Element": "H",  "Atoms": 3.0 },
+            {"Element": "C",  "Atoms": 2.0 }
+        ]
+      },
+      { "Name": "pvc(h2o)", 
+        "Comment": "Polyvinyl chloride: uses hydrogen in water S(alpha,beta)  thermal kernel",
+        "Density": 1.6, 
+        "Type": "Chemical Formula", 
+        "Formula": "C2H3Cl", 
+        "Contains": [
+            {"Element": "Cl", "Atoms": 1.0 },
+            {"Element": "H",  "Atoms": 3.0 },
+            {"Element": "C",  "Atoms": 2.0 }
+        ]
+      },
+      { "Name": "redwood", 
+        "Comment": "Redwood",
+        "Density": 0.387, 
+        "Type": "Chemical Formula", 
+        "Formula": "C6H10O5", 
+        "Contains": [
+            {"Element": "C",  "Atoms": 6.0 },
+            {"Element": "H",  "Atoms": 10.0 },
+            {"Element": "O",  "Atoms": 5.0 }
+        ]
+      },
+      { "Name": "tbp", 
+        "Comment": "Tributyl phosphate: uses hydrogen in polyethylene S(alpha,beta) thermal kernel",
+        "Density": 0.9724, 
+        "Type": "Chemical Formula", 
+        "Formula": "(C4H9)3PO4", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 27.0 },
+            {"Element": "C",  "Atoms": 12.0 },
+            {"Element": "O",  "Atoms": 4.0 },
+            {"Element": "P",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "tbp(h2o)", 
+        "Comment": "Tributyl phosphate: uses hydrogen in water S(alpha,beta) thermal kernel",
+        "Density": 0.9724, 
+        "Type": "Chemical Formula", 
+        "Formula": "(C4H9)3PO4", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 27.0 },
+            {"Element": "C",  "Atoms": 12.0 },
+            {"Element": "O",  "Atoms": 4.0 },
+            {"Element": "P",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "th(no3)4", 
+        "Density": 2.3752, 
+        "Type": "Chemical Formula", 
+        "Formula": "Th(NO3)4", 
+        "Contains": [
+            {"Element": "Th", "Atoms": 1.0 },
+            {"Element": "N",  "Atoms": 4.0 },
+            {"Element": "O",  "Atoms": 12.0 }
+        ]
+      },
+      { "Name": "thf4", 
+        "Density": 6.1, 
+        "Type": "Chemical Formula", 
+        "Formula": "ThF4", 
+        "Contains": [
+            {"Element": "Th", "Atoms": 1.0 },
+            {"Element": "F",  "Atoms": 4.0 }
+        ]
+      },
+      { "Name": "u3o8", 
+        "Comment": "Uranium oxide (yellowcake)",
+        "Density": 8.3, 
+        "Type": "Chemical Formula", 
+        "Formula": "U3O8", 
+        "Contains": [
+            {"Element": "U",  "Atoms": 3.0 },
+            {"Element": "O",  "Atoms": 8.0 }
+        ]
+      },
+      { "Name": "uc", 
+        "Comment": "Uranium carbide",
+        "Density": 13.63, 
+        "Type": "Chemical Formula", 
+        "Formula": "UC", 
+        "Contains": [
+            {"Element": "U",  "Atoms": 1.0 },
+            {"Element": "C",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "uf4", 
+        "Comment": "Uranium tetrafluoride",
+        "Density": 6.7, 
+        "Type": "Chemical Formula", 
+        "Formula": "UF4", 
+        "Contains": [
+            {"Element": "U",  "Atoms": 1.0 },
+            {"Element": "F",  "Atoms": 4.0 }
+        ]
+      },
+      { "Name": "uf6", 
+        "Comment": "Uranium hexafluoride",
+        "Density": 4.68, 
+        "Type": "Chemical Formula", 
+        "Formula": " UF6", 
+        "Contains": [
+            {"Element": "U",  "Atoms": 1.0 },
+            {"Element": "F",  "Atoms": 6.0 }
+        ]
+      },
+      { "Name": "un", 
+        "Comment": "Uranium nitride",
+        "Density": 14.31, 
+        "Type": "Chemical Formula", 
+        "Formula": "UN", 
+        "Contains": [
+            {"Element": "U",  "Atoms": 1.0 },
+            {"Element": "N",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "uo2", 
+        "Comment": "Uranium dioxide",
+        "Density": 10.96, 
+        "Type": "Chemical Formula", 
+        "Formula": "UO2", 
+        "Contains": [
+            {"Element": "U",  "Atoms": 1.0 },
+            {"Element": "O",  "Atoms": 2.0 }
+        ]
+      },
+      { "Name": "uo2(no3)2", 
+        "Comment": "Uranyl nitrate",
+        "Density": 2.203, 
+        "Type": "Chemical Formula", 
+        "Formula": "UO2(NO3)2", 
+        "Contains": [
+            {"Element": "U",  "Atoms": 1.0 },
+            {"Element": "N",  "Atoms": 2.0 },
+            {"Element": "O",  "Atoms": 8.0 }
+        ]
+      },
+      { "Name": "uo2f2", 
+        "Comment": "Uranyl fluoride",
+        "Density": 6.37, 
+        "Type": "Chemical Formula", 
+        "Formula": "UO2F2", 
+        "Contains": [
+            {"Element": "U",  "Atoms": 1.0 },
+            {"Element": "O",  "Atoms": 2.0 },
+            {"Element": "F",  "Atoms": 2.0 }
+        ]
+      },
+      { "Name": "uo3", 
+        "Comment": "Uranium trioxide",
+        "Density": 7.29, 
+        "Type": "Chemical Formula", 
+        "Formula": "UO3", 
+        "Contains": [
+            {"Element": "U",  "Atoms": 1.0 },
+            {"Element": "O",  "Atoms": 3.0 }
+        ]
+      },
+      { "Name": "water", 
+        "Comment": "H2O, with natural abundance hydrogen and oxygen and the S(alpha,beta) thermal kernel for hydrogen in water",
+        "Density": 0.9982, 
+        "Type": "Chemical Formula", 
+        "Formula": "H2O", 
+        "Contains": [
+            {"Element": "H",  "Atoms": 2.0 },
+            {"Element": "O",  "Atoms": 1.0 }
+        ]
+      },
+      { "Name": "zr5h8", 
+        "Comment": "Zirconium hydride as a mixture of ZrH and ZrH2, with an effective composition of Zr5H8",
+        "Density": 5.61, 
+        "Type": "Chemical Formula", 
+        "Formula": "Zr5H8", 
+        "Contains": [
+            {"Element": "Zr", "Atoms": 5.0 },
+            {"Element": "H",  "Atoms": 8.0 }
+        ]
+      },
+      { "Name": "zrh2", 
+        "Comment": "Zirconium hydride",
+        "Density": 5.61, 
+        "Type": "Chemical Formula", 
+        "Formula": "ZrH2", 
+        "Contains": [
+            {"Element": "Zr", "Atoms": 1.0 },
+            {"Element": "H",  "Atoms": 2.0 }
+        ]
+      }
+    ],
+    "Comments" : [
+        "B. T. Rearden and M. A. Jessee, Eds., SCALE Code System, ORNL/TM-2005/39, Version 6.2.3, Oak Ridge National Laboratory, Oak Ridge, Tennessee (2018). Available from Radiation Safety Information Computational Center as CCC-834.",
+        "Table 7.2.4: Compounds"
+    ]
+  }
+}

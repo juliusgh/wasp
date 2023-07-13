@@ -1,0 +1,881 @@
+{"MaterialDatabase" : {
+    "Name": "Marks' Table 6.1.5",
+    "Reference": "Marks' Standard Handbook for Mechanical Engineers, Eleventh Edition, 2007",
+    "Materials": [
+      { "Name": "Aluminum, cast-hammered", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 2.55 to 2.8.",
+        "Density": 2.643
+      },
+      { "Name": "Brass, cast-rolled", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 8.4 to 8.7.",
+        "Density": 8.553
+      },
+      { "Name": "Bronze, aluminum", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 7.702
+      },
+      { "Name": "Bronze, 7.9-14% Sn", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 7.4 to 8.9.",
+        "Density": 8.153
+      },
+      { "Name": "Bronze, phosphor", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 8.874
+      },
+      { "Name": "Copper, cast-rolled", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 8.8 to 8.95.",
+        "Density": 8.906
+      },
+      { "Name": "Copper ore, pyrites", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 4.1 to 4.3.",
+        "Density": 4.197
+      },
+      { "Name": "German silver", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 8.586
+      },
+      { "Name": "Gold, cast-hammered", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 19.25 to 19.35.",
+        "Density": 19.3
+      },
+      { "Name": "Gold coin (U.S.)", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 17.18 to 17.2.",
+        "Density": 17.19
+      },
+      { "Name": "Iridium", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 21.78 to 22.42.",
+        "Density": 22.16
+      },
+      { "Name": "Iron, gray cast", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 7.03 to 7.13.",
+        "Density": 7.079
+      },
+      { "Name": "Iron, cast, pig", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 7.207
+      },
+      { "Name": "Iron, wrought", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 7.6 to 7.9.",
+        "Density": 7.658
+      },
+      { "Name": "Iron, spiegeleisen", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 7.496
+      },
+      { "Name": "Iron, ferrosilicon", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 6.7 to 7.3.",
+        "Density": 6.984
+      },
+      { "Name": "Iron ore, hematite", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 5.206
+      },
+      { "Name": "Iron ore, limonite", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 3.6 to 4.",
+        "Density": 3.796
+      },
+      { "Name": "Iron ore, magnetite", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 4.9 to 5.2.",
+        "Density": 5.046
+      },
+      { "Name": "Iron slag", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 2.5 to 3.",
+        "Density": 2.755
+      },
+      { "Name": "Lead", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 11.37
+      },
+      { "Name": "Lead ore, galena", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 7.3 to 7.6.",
+        "Density": 7.449
+      },
+      { "Name": "Manganese", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 7.608
+      },
+      { "Name": "Manganese ore, pyrolusite", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 3.7 to 4.6.",
+        "Density": 4.149
+      },
+      { "Name": "Mercury", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 13.57
+      },
+      { "Name": "Monel metal, rolled", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 8.688
+      },
+      { "Name": "Nickel", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 8.602
+      },
+      { "Name": "Platinum, cast-hammered", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 21.3
+      },
+      { "Name": "Silver, cast-hammered", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 10.4 to 10.6.",
+        "Density": 10.51
+      },
+      { "Name": "Steel, cold-drawn", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 7.832
+      },
+      { "Name": "Steel, machine", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 7.8
+      },
+      { "Name": "Steel, tool", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 7.7 to 7.73.",
+        "Density": 7.703
+      },
+      { "Name": "Tin, cast-hammered", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 7.2 to 7.5.",
+        "Density": 7.352
+      },
+      { "Name": "Tin ore, cassiterite", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 6.4 to 7.",
+        "Density": 6.695
+      },
+      { "Name": "Tungsten", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 18.82
+      },
+      { "Name": "Uranium", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.",
+        "Density": 18.74
+      },
+      { "Name": "Zinc, cast-rolled", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 6.9 to 7.2.",
+        "Density": 7.049
+      },
+      { "Name": "Zinc, ore, blende", 
+        "Comment": "Table 6.1.5, Metals, alloys, ores.  Density range is 3.9 to 4.2.",
+        "Density": 4.052
+      },
+      { "Name": "Cereals, oats, bulk", 
+        "Comment": "Table 6.1.5, Various solids.",
+        "Density": 0.417
+      },
+      { "Name": "Cereals, barley, bulk", 
+        "Comment": "Table 6.1.5, Various solids.",
+        "Density": 0.625
+      },
+      { "Name": "Cereals, corn, rye, bulk", 
+        "Comment": "Table 6.1.5, Various solids.",
+        "Density": 0.721
+      },
+      { "Name": "Cereals, wheat, bulk", 
+        "Comment": "Table 6.1.5, Various solids.",
+        "Density": 0.769
+      },
+      { "Name": "Cordage (natural fiber)", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 1.2 to 1.5.",
+        "Density": 1.36
+      },
+      { "Name": "Cordage (plastic)", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 0.9 to 1.3.",
+        "Density": 1.104
+      },
+      { "Name": "Cork", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 0.22 to 0.26.",
+        "Density": 0.24
+      },
+      { "Name": "Cotton, flax, hemp", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 1.47 to 1.5.",
+        "Density": 1.491
+      },
+      { "Name": "Fats", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 0.9 to 0.97.",
+        "Density": 0.925
+      },
+      { "Name": "Flour, loose", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 0.4 to 0.5.",
+        "Density": 0.448
+      },
+      { "Name": "Flour, pressed", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 0.7 to 0.8.",
+        "Density": 0.753
+      },
+      { "Name": "Glass, common", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 2.4 to 2.8.",
+        "Density": 2.595
+      },
+      { "Name": "Glass, plate or crown", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 2.45 to 2.72.",
+        "Density": 2.58
+      },
+      { "Name": "Glass, crystal", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 2.9 to 3.",
+        "Density": 1.95
+      },
+      { "Name": "Glass, flint", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 3.2 to 4.7.",
+        "Density": 3.96
+      },
+      { "Name": "Hay and straw, bales", 
+        "Comment": "Table 6.1.5, Various solids.",
+        "Density": 0.32
+      },
+      { "Name": "Leather", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 0.86 to 1.02.",
+        "Density": 0.945
+      },
+      { "Name": "Paper", 
+        "Comment": "Table 6.1.5, Various solids.  Density range is 0.7 to 1.15.",
+        "Density": 0.929
+      },
+      { "Name": "Potatoes, piled", 
+        "Comment": "Table 6.1.5, Plastics (see Sec. 6.12).",
+        "Density": 0.705
+      },
+      { "Name": "Rubber, caoutchouc", 
+        "Comment": "Table 6.1.5, Plastics (see Sec. 6.12).  Density range is 0.92 to 0.96.",
+        "Density": 0.946
+      },
+      { "Name": "Rubber goods", 
+        "Comment": "Table 6.1.5, Plastics (see Sec. 6.12).  Density range is 1 to 2.",
+        "Density": 1.506
+      },
+      { "Name": "Salt, granulated, piled", 
+        "Comment": "Table 6.1.5, Plastics (see Sec. 6.12).",
+        "Density": 0.769
+      },
+      { "Name": "Saltpeter", 
+        "Comment": "Table 6.1.5, Plastics (see Sec. 6.12).",
+        "Density": 2.115
+      },
+      { "Name": "Starch", 
+        "Comment": "Table 6.1.5, Plastics (see Sec. 6.12).",
+        "Density": 1.539
+      },
+      { "Name": "Sulfur", 
+        "Comment": "Table 6.1.5, Plastics (see Sec. 6.12).  Density range is 1.93 to 2.07.",
+        "Density": 2.001
+      },
+      { "Name": "Wool", 
+        "Comment": "Table 6.1.5, Plastics (see Sec. 6.12).",
+        "Density": 1.315
+      },
+      { "Name": "Apple", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.66 to 0.74.",
+        "Density": 0.705
+      },
+      { "Name": "Ash, black", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.545
+      },
+      { "Name": "Ash, white", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.64 to 0.71.",
+        "Density": 0.973
+      },
+      { "Name": "Birch, sweet, yellow", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.71 to 0.72.",
+        "Density": 0.705
+      },
+      { "Name": "Cedar, white, red", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.352
+      },
+      { "Name": "Cherry, wild red", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.433
+      },
+      { "Name": "Chestnut", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.481
+      },
+      { "Name": "Cypress", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.45 to 0.48.",
+        "Density": 0.465
+      },
+      { "Name": "Fir, Douglas", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.48 to 0.55.",
+        "Density": 0.513
+      },
+      { "Name": "Fir, balsam", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.401
+      },
+      { "Name": "Elm, white", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.561
+      },
+      { "Name": "Hemlock", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.45 to 0.5.",
+        "Density": 0.465
+      },
+      { "Name": "Hickory", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.74 to 0.8.",
+        "Density": 0.769
+      },
+      { "Name": "Locust", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.67 to 0.77.",
+        "Density": 0.722
+      },
+      { "Name": "Mahogany", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.56 to 0.85.",
+        "Density": 0.705
+      },
+      { "Name": "Maple, sugar", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.689
+      },
+      { "Name": "Maple, white", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.529
+      },
+      { "Name": "Oak, chestnut", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.737
+      },
+      { "Name": "Oak, live", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.866
+      },
+      { "Name": "Oak, red, black", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.64 to 0.71.",
+        "Density": 0.673
+      },
+      { "Name": "Oak, white", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.77
+      },
+      { "Name": "Pine, Oregon", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.513
+      },
+      { "Name": "Pine, red", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.481
+      },
+      { "Name": "Pine, white", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.433
+      },
+      { "Name": "Pine, Southern", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.61 to 0.673.",
+        "Density": 0.6415
+      },
+      { "Name": "Pine, Norway", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.541
+      },
+      { "Name": "Poplar", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.433
+      },
+      { "Name": "Redwood, California", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.417
+      },
+      { "Name": "Spruce, white, red", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.449
+      },
+      { "Name": "Teak, African", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.994
+      },
+      { "Name": "Teak, Indian", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.66 to 0.88.",
+        "Density": 0.769
+      },
+      { "Name": "Walnut, black", 
+        "Comment": "Table 6.1.5, Timber, air-dry.",
+        "Density": 0.593
+      },
+      { "Name": "Willow", 
+        "Comment": "Table 6.1.5, Timber, air-dry.  Density range is 0.42 to 0.5.",
+        "Density": 0.449
+      },
+      { "Name": "Alcohol, ethyl (100%)", 
+        "Comment": "Table 6.1.5, Various liquids.",
+        "Density": 0.802
+      },
+      { "Name": "Alcohol, methyl (100%)", 
+        "Comment": "Table 6.1.5, Various liquids.",
+        "Density": 0.809
+      },
+      { "Name": "Acid, muriatic,", 
+        "Comment": "Table 6.1.5, Various liquids.  Density range is 0.4 to 1.2.",
+        "Density": 1.201
+      },
+      { "Name": "Acid, nitric,", 
+        "Comment": "Table 6.1.5, Various liquids.  Density range is 0.91 to 1.5.",
+        "Density": 1.506
+      },
+      { "Name": "Acid, sulfuric,", 
+        "Comment": "Table 6.1.5, Various liquids.  Density range is 0.87 to 1.8.",
+        "Density": 1.795
+      },
+      { "Name": "Chloroform", 
+        "Comment": "Table 6.1.5, Various liquids.",
+        "Density": 1.532
+      },
+      { "Name": "Ether", 
+        "Comment": "Table 6.1.5, Various liquids.",
+        "Density": 0.738
+      },
+      { "Name": "Lye, soda, 66%", 
+        "Comment": "Table 6.1.5, Various liquids.",
+        "Density": 1.699
+      },
+      { "Name": "Oils, vegetable", 
+        "Comment": "Table 6.1.5, Various liquids.  Density range is 0.91 to 0.94.",
+        "Density": 0.93
+      },
+      { "Name": "Oils, mineral, lubricants", 
+        "Comment": "Table 6.1.5, Various liquids.  Density range is 0.88 to 0.94.",
+        "Density": 0.914
+      },
+      { "Name": "Turpentine", 
+        "Comment": "Table 6.1.5, Various liquids.  Density range is 0.861 to 0.867.",
+        "Density": 0.866
+      },
+      { "Name": "Water, 48C, max density", 
+        "Comment": "Table 6.1.5, Water.",
+        "Density": 0.99997
+      },
+      { "Name": "Water, 1008C", 
+        "Comment": "Table 6.1.5, Water.",
+        "Density": 0.9581
+      },
+      { "Name": "Water, ice", 
+        "Comment": "Table 6.1.5, Water.  Density range is 0.88 to 0.92.",
+        "Density": 0.897
+      },
+      { "Name": "Water, snow, fresh fallen", 
+        "Comment": "Table 6.1.5, Water.",
+        "Density": 0.128
+      },
+      { "Name": "Water, seawater", 
+        "Comment": "Table 6.1.5, Water.  Density range is 1.02 to 1.03.",
+        "Density": 1.025
+      },
+      { "Name": "Granite, syenite, gneiss", 
+        "Comment": "Table 6.1.5, Ashlar masonry.  Density range is 2.4 to 2.7.",
+        "Density": 2.549
+      },
+      { "Name": "Limestone", 
+        "Comment": "Table 6.1.5, Ashlar masonry.  Density range is 2.1 to 2.8.",
+        "Density": 2.45
+      },
+      { "Name": "Marble", 
+        "Comment": "Table 6.1.5, Ashlar masonry.  Density range is 2.4 to 2.8.",
+        "Density": 2.597
+      },
+      { "Name": "Sandstone", 
+        "Comment": "Table 6.1.5, Ashlar masonry.  Density range is 2 to 2.6.",
+        "Density": 2.29
+      },
+      { "Name": "Bluestone", 
+        "Comment": "Table 6.1.5, Ashlar masonry.  Density range is 2.3 to 2.6.",
+        "Density": 2.451
+      },
+      { "Name": "Granite, syenite, gneiss", 
+        "Comment": "Table 6.1.5, Rubble masonry.  Density range is 2.3 to 2.6.",
+        "Density": 2.451
+      },
+      { "Name": "Limestone", 
+        "Comment": "Table 6.1.5, Rubble masonry.  Density range is 2 to 2.7.",
+        "Density": 2.355
+      },
+      { "Name": "Sandstone", 
+        "Comment": "Table 6.1.5, Rubble masonry.  Density range is 1.9 to 2.5.",
+        "Density": 2.194
+      },
+      { "Name": "Bluestone", 
+        "Comment": "Table 6.1.5, Rubble masonry.  Density range is 2.2 to 2.5.",
+        "Density": 2.355
+      },
+      { "Name": "Marble", 
+        "Comment": "Table 6.1.5, Rubble masonry.  Density range is 2.3 to 2.7.",
+        "Density": 2.5
+      },
+      { "Name": "Granite, syenite, gneiss", 
+        "Comment": "Table 6.1.5, Dry rubble masonry.  Density range is 1.9 to 2.3.",
+        "Density": 2.082
+      },
+      { "Name": "Limestone, marble", 
+        "Comment": "Table 6.1.5, Dry rubble masonry.  Density range is 1.9 to 2.1.",
+        "Density": 2.001
+      },
+      { "Name": "Sandstone, bluestone", 
+        "Comment": "Table 6.1.5, Dry rubble masonry.  Density range is 1.8 to 1.9.",
+        "Density": 1.762
+      },
+      { "Name": "Hard brick", 
+        "Comment": "Table 6.1.5, Brick masonry.  Density range is 1.8 to 2.3.",
+        "Density": 2.051
+      },
+      { "Name": "Medium brick", 
+        "Comment": "Table 6.1.5, Brick masonry.  Density range is 1.6 to 2.",
+        "Density": 1.794
+      },
+      { "Name": "Soft brick", 
+        "Comment": "Table 6.1.5, Brick masonry.  Density range is 1.4 to 1.9.",
+        "Density": 1.65
+      },
+      { "Name": "Sand-lime brick", 
+        "Comment": "Table 6.1.5, Brick masonry.  Density range is 1.4 to 2.2.",
+        "Density": 1.794
+      },
+      { "Name": "Cement, stone, sand", 
+        "Comment": "Table 6.1.5, Concrete masonry.  Density range is 2.2 to 2.4.",
+        "Density": 2.309
+      },
+      { "Name": "Cement, slag, etc.", 
+        "Comment": "Table 6.1.5, Concrete masonry.  Density range is 1.9 to 2.3.",
+        "Density": 2.082
+      },
+      { "Name": "Cement, cinder, etc.", 
+        "Comment": "Table 6.1.5, Concrete masonry.  Density range is 1.5 to 1.7.",
+        "Density": 1.602
+      },
+      { "Name": "Ashes, cinders", 
+        "Comment": "Table 6.1.5, Various building materials.  Density range is 0.64 to 0.721.",
+        "Density": 0.6805
+      },
+      { "Name": "Cement, portland, loose", 
+        "Comment": "Table 6.1.5, Various building materials.",
+        "Density": 1.505
+      },
+      { "Name": "Portland cement", 
+        "Comment": "Table 6.1.5, Various building materials.  Density range is 3.1 to 3.2.",
+        "Density": 3.14
+      },
+      { "Name": "Lime, gypsum, loose", 
+        "Comment": "Table 6.1.5, Various building materials.  Density range is 0.849 to 1.025.",
+        "Density": 0.937
+      },
+      { "Name": "Mortar, lime, set", 
+        "Comment": "Table 6.1.5, Various building materials.  Density range is 1.4 to 1.9.",
+        "Density": 1.65
+      },
+      { "Name": "Mortar, portland cement", 
+        "Comment": "Table 6.1.5, Various building materials.  Density range is 2.08 to 2.25.",
+        "Density": 2.163
+      },
+      { "Name": "Slags, bank slag", 
+        "Comment": "Table 6.1.5, Various building materials.  Density range is 1.074 to 1.153.",
+        "Density": 1.1135
+      },
+      { "Name": "Slags, bank screenings", 
+        "Comment": "Table 6.1.5, Various building materials.  Density range is 1.57 to 1.874.",
+        "Density": 1.722
+      },
+      { "Name": "Slags, machine slag", 
+        "Comment": "Table 6.1.5, Various building materials.",
+        "Density": 1.538
+      },
+      { "Name": "Slags, slag sand", 
+        "Comment": "Table 6.1.5, Various building materials.  Density range is 0.785 to 0.849.",
+        "Density": 0.817
+      },
+      { "Name": "Clay, dry", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.",
+        "Density": 1.009
+      },
+      { "Name": "Clay, damp, plastic", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.",
+        "Density": 1.761
+      },
+      { "Name": "Clay and gravel, dry", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.",
+        "Density": 1.602
+      },
+      { "Name": "Earth, dry, loose", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.",
+        "Density": 1.217
+      },
+      { "Name": "Earth, dry, packed", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.",
+        "Density": 1.521
+      },
+      { "Name": "Earth, moist, loose", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.",
+        "Density": 1.25
+      },
+      { "Name": "Earth, moist, packed", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.",
+        "Density": 1.538
+      },
+      { "Name": "Earth, mud, flowing", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.",
+        "Density": 1.73
+      },
+      { "Name": "Earth, mud, packed", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.",
+        "Density": 1.841
+      },
+      { "Name": "Riprap, limestone", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.  Density range is 1.282 to 1.361.",
+        "Density": 1.3215
+      },
+      { "Name": "Riprap, sandstone", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.",
+        "Density": 1.441
+      },
+      { "Name": "Riprap, shale", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.",
+        "Density": 1.681
+      },
+      { "Name": "Sand, gravel, dry, loose", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.  Density range is 1.441 to 1.681.",
+        "Density": 1.561
+      },
+      { "Name": "Sand, gravel, dry, packed", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.  Density range is 1.602 to 1.922.",
+        "Density": 1.762
+      },
+      { "Name": "Sand, gravel, wet", 
+        "Comment": "Table 6.1.5, Earth, etc., excavated.  Density range is 1.89 to 2.16.",
+        "Density": 2.019
+      },
+      { "Name": "Sand or gravel", 
+        "Comment": "Table 6.1.5, Excavations in water.",
+        "Density": 0.951
+      },
+      { "Name": "Sand or gravel and clay", 
+        "Comment": "Table 6.1.5, Excavations in water.",
+        "Density": 1.041
+      },
+      { "Name": "Clay", 
+        "Comment": "Table 6.1.5, Excavations in water.",
+        "Density": 1.281
+      },
+      { "Name": "River mud", 
+        "Comment": "Table 6.1.5, Excavations in water.",
+        "Density": 1.432
+      },
+      { "Name": "Soil", 
+        "Comment": "Table 6.1.5, Excavations in water.",
+        "Density": 1.122
+      },
+      { "Name": "Stone riprap", 
+        "Comment": "Table 6.1.5, Excavations in water.",
+        "Density": 1.041
+      },
+      { "Name": "Asbestos", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.1 to 2.8.",
+        "Density": 2.451
+      },
+      { "Name": "Barytes", 
+        "Comment": "Table 6.1.5, Minerals.",
+        "Density": 4.504
+      },
+      { "Name": "Basalt", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.7 to 3.2.",
+        "Density": 2.95
+      },
+      { "Name": "Bauxite", 
+        "Comment": "Table 6.1.5, Minerals.",
+        "Density": 2.549
+      },
+      { "Name": "Bluestone", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.5 to 2.6.",
+        "Density": 2.549
+      },
+      { "Name": "Borax", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 1.7 to 1.8.",
+        "Density": 1.746
+      },
+      { "Name": "Chalk", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 1.8 to 2.8.",
+        "Density": 2.291
+      },
+      { "Name": "Clay, marl", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 1.8 to 2.6.",
+        "Density": 2.196
+      },
+      { "Name": "Dolomite", 
+        "Comment": "Table 6.1.5, Minerals.",
+        "Density": 2.901
+      },
+      { "Name": "Feldspar, orthoclase", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.5 to 2.7.",
+        "Density": 2.596
+      },
+      { "Name": "Gneiss", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.7 to 2.9.",
+        "Density": 2.805
+      },
+      { "Name": "Granite", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.6 to 2.7.",
+        "Density": 2.644
+      },
+      { "Name": "Greenstone, trap", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.8 to 3.2.",
+        "Density": 2.998
+      },
+      { "Name": "Gypsum, alabaster", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.3 to 2.8.",
+        "Density": 2.549
+      },
+      { "Name": "Hornblende", 
+        "Comment": "Table 6.1.5, Minerals.",
+        "Density": 2.998
+      },
+      { "Name": "Limestone", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.1 to 2.86.",
+        "Density": 2.484
+      },
+      { "Name": "Marble", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.6 to 2.86.",
+        "Density": 2.725
+      },
+      { "Name": "Magnesite", 
+        "Comment": "Table 6.1.5, Minerals.",
+        "Density": 2.998
+      },
+      { "Name": "Phosphate rock, apatite", 
+        "Comment": "Table 6.1.5, Minerals.",
+        "Density": 3.204
+      },
+      { "Name": "Porphyry", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.6 to 2.9.",
+        "Density": 2.758
+      },
+      { "Name": "Pumice, natural", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 0.37 to 0.9.",
+        "Density": 0.641
+      },
+      { "Name": "Quartz, flint", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.5 to 2.8.",
+        "Density": 2.645
+      },
+      { "Name": "Sandstone", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2 to 2.6.",
+        "Density": 2.291
+      },
+      { "Name": "Serpentine", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.7 to 2.8.",
+        "Density": 2.74
+      },
+      { "Name": "Shale, slate", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.6 to 2.9.",
+        "Density": 2.758
+      },
+      { "Name": "Soapstone, talc", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.6 to 2.8.",
+        "Density": 2.709
+      },
+      { "Name": "Syenite", 
+        "Comment": "Table 6.1.5, Minerals.  Density range is 2.6 to 2.7.",
+        "Density": 2.645
+      },
+      { "Name": "Basalt, granite, gneiss", 
+        "Comment": "Table 6.1.5, Stone, quarried, piled.",
+        "Density": 1.579
+      },
+      { "Name": "Limestone, marble, quartz", 
+        "Comment": "Table 6.1.5, Stone, quarried, piled.",
+        "Density": 1.572
+      },
+      { "Name": "Sandstone", 
+        "Comment": "Table 6.1.5, Stone, quarried, piled.",
+        "Density": 1.314
+      },
+      { "Name": "Shale", 
+        "Comment": "Table 6.1.5, Stone, quarried, piled.",
+        "Density": 1.474
+      },
+      { "Name": "Greenstone, hornblend", 
+        "Comment": "Table 6.1.5, Stone, quarried, piled.",
+        "Density": 1.715
+      },
+      { "Name": "Asphaltum", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 1.1 to 1.5.",
+        "Density": 1.298
+      },
+      { "Name": "Coal, anthracite", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 1.4 to 1.8.",
+        "Density": 1.554
+      },
+      { "Name": "Coal, bituminous", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 1.2 to 1.5.",
+        "Density": 1.346
+      },
+      { "Name": "Coal, lignite", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 1.1 to 1.4.",
+        "Density": 1.25
+      },
+      { "Name": "Coal, peat, turf, dry", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 0.65 to 0.85.",
+        "Density": 0.753
+      },
+      { "Name": "Coal, charcoal, pine", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 0.28 to 0.44.",
+        "Density": 0.369
+      },
+      { "Name": "Coal, charcoal, oak", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 0.47 to 0.57.",
+        "Density": 0.481
+      },
+      { "Name": "Coal, coke", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 1 to 1.4.",
+        "Density": 1.201
+      },
+      { "Name": "Graphite", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 1.64 to 2.7.",
+        "Density": 2.163
+      },
+      { "Name": "Paraffin", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 0.87 to 0.91.",
+        "Density": 0.898
+      },
+      { "Name": "Petroleum", 
+        "Comment": "Table 6.1.5, Bituminous substances.",
+        "Density": 0.856
+      },
+      { "Name": "Petroleum, refined (kerosene)", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 0.78 to 0.82.",
+        "Density": 0.801
+      },
+      { "Name": "Petroleum, benzine", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 0.73 to 0.75.",
+        "Density": 0.737
+      },
+      { "Name": "Petroleum, gasoline", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 0.7 to 0.75.",
+        "Density": 0.721
+      },
+      { "Name": "Pitch", 
+        "Comment": "Table 6.1.5, Bituminous substances.  Density range is 1.07 to 1.15.",
+        "Density": 1.105
+      },
+      { "Name": "Tar, bituminous", 
+        "Comment": "Table 6.1.5, Bituminous substances.",
+        "Density": 1.201
+      },
+      { "Name": "Coal, anthracite", 
+        "Comment": "Table 6.1.5, Coal and coke, piled.  Density range is 0.753 to 0.93.",
+        "Density": 0.8415
+      },
+      { "Name": "Coal, bituminous, lignite", 
+        "Comment": "Table 6.1.5, Coal and coke, piled.  Density range is 0.641 to 0.866.",
+        "Density": 0.7535
+      },
+      { "Name": "Coal, peat, turf", 
+        "Comment": "Table 6.1.5, Coal and coke, piled.  Density range is 0.32 to 0.417.",
+        "Density": 0.3685
+      },
+      { "Name": "Coal, charcoal", 
+        "Comment": "Table 6.1.5, Coal and coke, piled.  Density range is 0.16 to 0.224.",
+        "Density": 0.192
+      },
+      { "Name": "Coal, coke", 
+        "Comment": "Table 6.1.5, Coal and coke, piled.  Density range is 0.369 to 0.513.",
+        "Density": 0.441
+      }
+    ],
+    "Comments" : [
+        "Marks' Standard Handbook for Mechanical Engineers",
+        "Editors Eugene A. Avallone, Theodore Baumeister III, Ali M. Sadegh",
+        "Eleventh Edition, 2007",
+        "Table 6.1.5 Approximate Specific Gravities and Densities"
+    ]
+  }
+}

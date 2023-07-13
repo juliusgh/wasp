@@ -1,0 +1,102 @@
+{"MaterialDatabase" : {
+    "Name": "DOE-STD-3013-2018",
+    "Reference": "DOE-STD-3013-2018, DOE Standard: Stabilization, Packaging, and Storage of Plutonium-Bearing Materials.",
+    "Materials": [
+      { "Name": "Pure 239Pu", 
+        "Comment": "Normalized to a total Pu mass of 1",
+        "Density": 0.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pu", "MassNumber": 238, "Fraction": 0.0 },
+            {"Element": "Pu", "MassNumber": 239, "Fraction": 1.0 },
+            {"Element": "Pu", "MassNumber": 240, "Fraction": 0.0 },
+            {"Element": "Pu", "MassNumber": 241, "Fraction": 0.0 },
+            {"Element": "Pu", "MassNumber": 242, "Fraction": 0.0 },
+            {"Element": "Am", "MassNumber": 241, "Fraction": 0.0 }
+        ]
+      },
+      { "Name": "Weapons Grade", 
+        "Comment": "Normalized to a total Pu mass of 1",
+        "Density": 0.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pu", "MassNumber": 238, "Fraction": 5.0E-4 },
+            {"Element": "Pu", "MassNumber": 239, "Fraction": 0.935 },
+            {"Element": "Pu", "MassNumber": 240, "Fraction": 0.06 },
+            {"Element": "Pu", "MassNumber": 241, "Fraction": 0.004 },
+            {"Element": "Pu", "MassNumber": 242, "Fraction": 5.0E-4 },
+            {"Element": "Am", "MassNumber": 241, "Fraction": 0.0 }
+        ]
+      },
+      { "Name": "Fuel Grade", 
+        "Comment": "Normalized to a total Pu mass of 1",
+        "Density": 0.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pu", "MassNumber": 238, "Fraction": 0.001 },
+            {"Element": "Pu", "MassNumber": 239, "Fraction": 0.861 },
+            {"Element": "Pu", "MassNumber": 240, "Fraction": 0.12 },
+            {"Element": "Pu", "MassNumber": 241, "Fraction": 0.016 },
+            {"Element": "Pu", "MassNumber": 242, "Fraction": 0.002 },
+            {"Element": "Am", "MassNumber": 241, "Fraction": 0.0 }
+        ]
+      },
+      { "Name": "Power Grade", 
+        "Comment": "Normalized to a total Pu mass of 1",
+        "Density": 0.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pu", "MassNumber": 238, "Fraction": 0.0099 },
+            {"Element": "Pu", "MassNumber": 239, "Fraction": 0.6238 },
+            {"Element": "Pu", "MassNumber": 240, "Fraction": 0.2178 },
+            {"Element": "Pu", "MassNumber": 241, "Fraction": 0.1188 },
+            {"Element": "Pu", "MassNumber": 242, "Fraction": 0.0297 },
+            {"Element": "Am", "MassNumber": 241, "Fraction": 0.0 }
+        ]
+      },
+      { "Name": "Hanford 4-7%", 
+        "Comment": "Normalized to a total Pu mass of 1",
+        "Density": 0.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pu", "MassNumber": 238, "Fraction": 1.0E-4 },
+            {"Element": "Pu", "MassNumber": 239, "Fraction": 0.9377 },
+            {"Element": "Pu", "MassNumber": 240, "Fraction": 0.06 },
+            {"Element": "Pu", "MassNumber": 241, "Fraction": 0.002 },
+            {"Element": "Pu", "MassNumber": 242, "Fraction": 3.0E-4 },
+            {"Element": "Am", "MassNumber": 241, "Fraction": 0.0014 }
+        ]
+      },
+      { "Name": "Hanford 10-13%", 
+        "Comment": "Normalized to a total Pu mass of 1",
+        "Density": 0.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pu", "MassNumber": 238, "Fraction": 9.0E-4 },
+            {"Element": "Pu", "MassNumber": 239, "Fraction": 0.8694 },
+            {"Element": "Pu", "MassNumber": 240, "Fraction": 0.1181 },
+            {"Element": "Pu", "MassNumber": 241, "Fraction": 0.01 },
+            {"Element": "Pu", "MassNumber": 242, "Fraction": 0.0017 },
+            {"Element": "Am", "MassNumber": 241, "Fraction": 0.0086 }
+        ]
+      },
+      { "Name": "Hanford 16-19%", 
+        "Comment": "Normalized to a total Pu mass of 1",
+        "Density": 0.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "Pu", "MassNumber": 238, "Fraction": 0.0024 },
+            {"Element": "Pu", "MassNumber": 239, "Fraction": 0.8066 },
+            {"Element": "Pu", "MassNumber": 240, "Fraction": 0.1698 },
+            {"Element": "Pu", "MassNumber": 241, "Fraction": 0.0144 },
+            {"Element": "Pu", "MassNumber": 242, "Fraction": 0.0069 },
+            {"Element": "Am", "MassNumber": 241, "Fraction": 0.028 }
+        ]
+      }
+    ],
+    "Comments" : [
+        "DOE-STD-3013-2018, DOE Standard: Stabilization, Packaging, and Storage of Plutonium-Bearing Materials.",
+        "Table B-10: Isotopic mix and specific thermal power for various grades of plutonium oxide."
+    ]
+  }
+}

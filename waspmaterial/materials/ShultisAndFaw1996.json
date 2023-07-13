@@ -1,0 +1,126 @@
+{"MaterialDatabase" : {
+    "Name": "Shultis & Faw, 1996",
+    "Reference": "J. Kenneth Shultis and Richard E. Faw, Radiation Shielding, Prentice-Hall, Upper Saddle River, NJ, 1996.",
+    "Materials": [
+      { "Name": "Ordinary (NBS 03)", 
+        "Density": 2.35, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.008485 },
+            {"Element": "O",  "Fraction": 0.473483 },
+            {"Element": "Si", "Fraction": 0.1451 },
+            {"Element": "Ca", "Fraction": 0.246924 },
+            {"Element": "C",  "Fraction": 0.050064 },
+            {"Element": "Mg", "Fraction": 0.024183 },
+            {"Element": "Al", "Fraction": 0.036063 },
+            {"Element": "Si", "Fraction": 0.00297 },
+            {"Element": "K",  "Fraction": 0.001697 },
+            {"Element": "Fe", "Fraction": 0.011031 }
+        ]
+      },
+      { "Name": "Ordinary (NBS 04)", 
+        "Density": 2.35, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.005558 },
+            {"Element": "O",  "Fraction": 0.498077 },
+            {"Element": "Si", "Fraction": 0.315092 },
+            {"Element": "Ca", "Fraction": 0.082941 },
+            {"Element": "Na", "Fraction": 0.017101 },
+            {"Element": "Mg", "Fraction": 0.002565 },
+            {"Element": "Al", "Fraction": 0.045746 },
+            {"Element": "Si", "Fraction": 0.001283 },
+            {"Element": "K",  "Fraction": 0.019239 },
+            {"Element": "Fe", "Fraction": 0.012398 }
+        ]
+      },
+      { "Name": "Magnetite", 
+        "Comment": "a  Magnetite (FeO?Fe2O3) as aggegate.",
+        "Density": 3.53, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.003113 },
+            {"Element": "O",  "Fraction": 0.330504 },
+            {"Element": "Si", "Fraction": 0.02575 },
+            {"Element": "Ca", "Fraction": 0.071024 },
+            {"Element": "Mg", "Fraction": 0.009338 },
+            {"Element": "Al", "Fraction": 0.023486 },
+            {"Element": "Si", "Fraction": 0.001415 },
+            {"Element": "Fe", "Fraction": 0.474249 },
+            {"Element": "Ti", "Fraction": 0.054329 },
+            {"Element": "Cr", "Fraction": 0.001698 },
+            {"Element": "Mn", "Fraction": 0.001981 },
+            {"Element": "V",  "Fraction": 0.003113 }
+        ]
+      },
+      { "Name": "Barytes", 
+        "Comment": "b  Barytes, a BaSO4 ore, as aggregate.",
+        "Density": 3.35, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.003585 },
+            {"Element": "O",  "Fraction": 0.311622 },
+            {"Element": "Si", "Fraction": 0.010457 },
+            {"Element": "Ca", "Fraction": 0.050194 },
+            {"Element": "Mg", "Fraction": 0.001195 },
+            {"Element": "Al", "Fraction": 0.004183 },
+            {"Element": "Si", "Fraction": 0.107858 },
+            {"Element": "K",  "Fraction": 0.047505 },
+            {"Element": "Ba", "Fraction": 0.463401 }
+        ]
+      },
+      { "Name": "Magnetite and steel", 
+        "Density": 4.64, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.002374 },
+            {"Element": "O",  "Fraction": 0.137678 },
+            {"Element": "Si", "Fraction": 0.015753 },
+            {"Element": "Ca", "Fraction": 0.055675 },
+            {"Element": "Mg", "Fraction": 0.003669 },
+            {"Element": "Al", "Fraction": 0.010358 },
+            {"Element": "Fe", "Fraction": 0.757877 },
+            {"Element": "Ti", "Fraction": 0.015969 },
+            {"Element": "V",  "Fraction": 6.47E-4 }
+        ]
+      },
+      { "Name": "Limonite and steel", 
+        "Comment": "c  Limonite, a hydrated FeO2 ore, plus steel punchings, as aggregate.",
+        "Density": 4.54, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.00684 },
+            {"Element": "O",  "Fraction": 0.156222 },
+            {"Element": "Si", "Fraction": 0.014784 },
+            {"Element": "Ca", "Fraction": 0.05759 },
+            {"Element": "Mg", "Fraction": 0.001545 },
+            {"Element": "Al", "Fraction": 0.006399 },
+            {"Element": "K",  "Fraction": 8.83E-4 },
+            {"Element": "Fe", "Fraction": 0.754854 },
+            {"Element": "V",  "Fraction": 8.83E-4 }
+        ]
+      },
+      { "Name": "Serpentine", 
+        "Comment": "d  Serpentine (3MgO?2SiO2?2H2O) as aggregate; a concrete usable at high temperatures with minimal water loss.",
+        "Density": 2.1, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.015909 },
+            {"Element": "O",  "Fraction": 0.511818 },
+            {"Element": "Si", "Fraction": 0.209091 },
+            {"Element": "Ca", "Fraction": 0.068182 },
+            {"Element": "C",  "Fraction": 9.09E-4 },
+            {"Element": "Na", "Fraction": 0.004091 },
+            {"Element": "Mg", "Fraction": 0.135 },
+            {"Element": "Al", "Fraction": 0.019091 },
+            {"Element": "K",  "Fraction": 0.004091 },
+            {"Element": "Fe", "Fraction": 0.030909 },
+            {"Element": "Cr", "Fraction": 9.09E-4 }
+        ]
+      }
+    ],
+    "Comments" : [
+        "Table 8.8.  Typical compositions of representative concretes after curing.  (Extracted from American National Standards ANSI/ANS-6.4-1985.)"
+    ]
+  }
+}

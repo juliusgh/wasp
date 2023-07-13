@@ -1,4 +1,4 @@
-#include <iostream>
+ad#include <iostream>
 #include <fstream>
 #include <string>
 #include <vector>
@@ -205,8 +205,10 @@ class Database {
             bool getIso() {return isIso;}
 
             void convert(string style, bool iso) { // if faster to use switch statement, come back and use enum+map to use on strings
-                cout << name << "  " << type << " to " << style << endl;
-                if (style == "Native") {contains = nativeComps; type = native; for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}}
+                // cout << name << "  " << type << " to " << style << endl;
+                if (style == "Native") {contains = nativeComps; type = native; 
+                //for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}
+                }
                 else if (type != style) {
                     vector<double> atomMasses {};
 
@@ -228,7 +230,7 @@ class Database {
                                                 
                                                 if (type == "Atom Fractions" && style == "Weight Fractions") {ciso.setAmount(ci.getAmount() * e.getIsotopes().at(n).getAbundance() * e.getIsotopes().at(n).getMass());}
                                                 else if (type == "Weight Fractions" && style == "Atom Fractions") {ciso.setAmount(ci.getAmount() * e.getIsotopes().at(n).getAbundance() / e.getIsotopes().at(n).getMass());}
-                                                ciso.setMassNum(e.getIsotopes().at(n).getMassNum()); // Use negative MassNums for expanded isotopes
+                                                ciso.setMassNum(e.getIsotopes().at(n).getMassNum()); // Use negative MassNums for expanded isotopes?
                                                 contains.insert(contains.begin()+i+count, ciso);
                                                 total += ciso.getAmount();
                                             }
@@ -237,15 +239,23 @@ class Database {
                                     else if (!iso) {
                                         for (int n=0; n<contains.size()-1; n++) {
                                             if (contains.at(n).getElement() == contains.at(n+1).getElement()) {
+                                                // if (contains.at(n).getMassNum() > 0) {contains.at(n).setMassNum(0);}
+                                                // contains.at(n).setMassNum(0);
                                                 contains.at(n).setAmount(contains.at(n).getAmount()+contains.at(n+1).getAmount());
                                                 contains.erase(contains.begin()+n+1);
                                                 n--;
-                                            } 
+                                            }
                                             else {
-                                                if (type == "Atom Fractions" && style == "Weight Fractions") {total += ci.getAmount() * e.getMass();}
-                                                if (type == "Weight Fractions" && style == "Atom Fractions") {total += ci.getAmount() / e.getMass();}
+                                                //cout << contains.at(n).getElement() << endl;
+                                                // break;
+                                                // if (type == "Atom Fractions" && style == "Weight Fractions") {cout << n << contains.at(n).getElement() << " "; total += ci.getAmount() * e.getMass(); cout << total << endl;}
+                                                // if (type == "Weight Fractions" && style == "Atom Fractions") {total += ci.getAmount() / e.getMass();}
                                             }
                                         }
+                                        // if (contains.size() == 1) {
+                                        if (type == "Atom Fractions" && style == "Weight Fractions") {total += ci.getAmount() * e.getMass();}
+                                        if (type == "Weight Fractions" && style == "Atom Fractions") {total += ci.getAmount() / e.getMass();}
+                                        //}
                                     }
 
                                     else {
@@ -264,7 +274,6 @@ class Database {
                                 Component c = contains.at(j);
                                 // cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
                         }
-                        // checkFractions();
                     }
 
                     // 1) Weight Fractions to Atom Fractions [Still need elem->iso]
@@ -425,27 +434,31 @@ class Database {
                 isIso = iso;
             }
             
-            // Either weight fractions or apm
-            // void getdataStyle() {}
-            
-            // Add a selection between the 4 code types
-            // Add native
             void getInputFormat(string code, string dataStyle, string calcType, string dbName) {
                 if (type == dataStyle && dataStyle == "Weight Fractions" && isIso != (calcType=="Isotopic")) {
                     convert("Atom Fractions", !isIso);
                     convert("Weight Fractions", isIso);
                 }
+                else if (type == dataStyle && dataStyle == "Atom Fractions" && isIso != (calcType=="Isotopic")) {
+                    convert("Weight Fractions", !isIso);
+                    convert("Atom Fractions", isIso);
+                }
                 else {convert(dataStyle, calcType == "Isotopic");}
                 int aNum = 1;
                 if (code == "MAVRIC/KENO") {
-                    cout << "'    " << dbName << endl;
-                    // cout << "'    " << name << ", " << formula << ", " << density << " g/cm^3" << endl;
+                    cout << "'  " << dbName << endl;
+                    cout << "'  " << name << ", " << formula << ", " << density << " g/cm^3" << endl;
                     for (int k=0; k<comments.size(); k++) {
-                        cout << "'    " << comments.at(k) << endl;
+                        cout << "'  " << comments.at(k) << endl;
                     }
-                    if (comment != "") {cout << "'    " << comment << endl;}
+                    if (comment != "") {cout << "'  " << comment << endl;}
 
-                    cout << "     atom" << name.substr(0, 12) << "  1  " << density << "  " << contains.size();
+
+                    // Find a way to add index in Materials vector here
+                    if (type == "Atoms Per Molecule") {cout << "     atom";}
+                    else if (type == "Weight Fractions") {cout << "     wtpt";}
+                    else {cout << "     atpt";}
+                    cout << name.substr(0, 12) << "  " << 1 << "  " << density << "  " << contains.size();
                     for (int i=0; i<contains.size(); i++) {
                         Component c = contains.at(i);
                         for (int m=0; m<mass.getElems(); m++) {
@@ -487,7 +500,9 @@ class Database {
                     // Convert to atoms per molecule?
                     for (int i=0; i<contains.size(); i++) {
                         Component c = contains.at(i);
+                        if (i != 0) {cout << "\t       ";}
                         cout << c.getElement() << "=" << c.getAmount() << " ";
+                        if (i != contains.size()-1) {cout << endl;}
                     }
                     cout << "]" << endl << "\t" << "units=";
                     
@@ -495,13 +510,13 @@ class Database {
                 }
                 else if (code == "MCNP") {
                     int id = 1;
-                    cin >> id;  // Should this be index #, or is this determined by the user?
-                    cout << "c    " << dbName << endl;
-                    cout << "c    " << name << ", " << density << " g/cm^3" << endl;
+                    cout << "Enter an ID number: " << endl; cin >> id;  // Should this be index #, or is this determined by the user?
+                    cout << "c  " << dbName << endl;
+                    cout << "c  " << name << ", " << density << " g/cm^3" << endl;
                     for (int k=0; k<comments.size(); k++) {
-                        cout << "c    " << comments.at(k) << endl;
+                        cout << "c  " << comments.at(k) << endl;
                     }
-                    if (comment != "") {cout << "c    " << comment << endl;}
+                    if (comment != "") {cout << "c  " << comment << endl;}
                     for (int i=0; i<contains.size(); i++) {
                         Component c = contains.at(i);
                         if (i==0) {cout << "  m" << id << " ";}
@@ -511,26 +526,25 @@ class Database {
                         for (int m=0; m<mass.getElems(); m++) {
                             if (c.getElement() == mass.getElem(m).getSymbol()) {aNum = mass.getElem(m).getAtomNum(); break;}
                         }
-                        cout << aNum*1000+c.getMassNum() << "    ";
+                        cout << aNum*1000+c.getMassNum() << "  ";
                         if (type == "Weight Fractions") {cout << '-';}
                         cout << c.getAmount() << endl;
                     }
-                    cout << "c "; check(); cout << endl << endl;
+                    // cout << "c "; check(); cout << endl << endl;
                 }
                 else { // Generic
-                    cout << "#     " << dbName << endl;
-                    cout << "#     " << name << ", " << density << " g/cm^3" << endl;
+                    cout << "#  " << dbName << endl;
+                    cout << "#  " << name << ", " << density << " g/cm^3" << endl;
                     for (int i=0; i<contains.size(); i++) {
                         Component c = contains.at(i);
                         for (int m=0; m<mass.getElems(); m++) {
                             if (c.getElement() == mass.getElem(m).getSymbol()) {aNum = mass.getElem(m).getAtomNum(); break;}
                         }
-                        cout << "       " << aNum << "   " << c.getElement() << "   " << c.getMassNum() << "\t";
-                        if (type == "Weight Fractions") {cout << '-';}
+                        cout << "       " << aNum << "\t" << c.getElement() << "\t" << c.getMassNum() << "  \t";
                         cout << c.getAmount() << endl;
                     }
                     // if (type == "Weight Fractions") {cout << "c "; check();}
-                    cout << "c     Generic " << type << endl << endl;
+                    cout << "c  Generic " << type << endl << endl;
                 }
             }
 
@@ -555,7 +569,7 @@ class Database {
             // Using a LinkedHashmap to store elements in insertion order
             map<string, int> mp;
             bool cut = false; bool dec = false;
-            int mult = 1;
+            int mult = 1; int coeff = 1;
             stack<int> stack;
             vector <tuple<int, int>> nestedVec{};
             while (str.find("sub>") != string::npos) { //Replacing troublesome chars
@@ -564,6 +578,7 @@ class Database {
                 if (str.find("</sub>") != string::npos) {str.replace(str.find("</sub>"), 6, " ");} // This can show the difference between a subscript number and a leading coefficient. 
                 if (str.find("·") != string::npos) {str.replace(str.find("·"), 1, "*");} // Could possible just need " " or "" if mult can still be set to 1
             }
+            // 2CH<sub>3</sub>·CH<sub>4</sub> works
             //cout << str << endl;
             for (int i = 0; i < str.length(); i++) {
                 int count = 0;
@@ -583,7 +598,7 @@ class Database {
                     i = z;
                     a = string(1, str[i]);
                 }
-                if (a == ".") {i +=2; a = string(1, str[i]); dec = true;} // Decimals
+                if (a == ".") {i++; if (int(str[i])-48 >= 5) {dec = true;} a = string(1, str[i+1]); i++;} // Decimals
                 
                 if (a == "(" || a == "[") {
                     stack.push(i);  // Pushes an open parethesis or bracket index onto the stack
@@ -602,15 +617,20 @@ class Database {
                     int start = stack.top()+1; // Starting element inside () or [] from the most recent ( or [
                     int len = to_string(mult).length();
                     int stop = -1;
+                    // cout << str << endl;
                     for (int r=start; r<end; r++) { // Handles elements inside of () or []
                         string s = string(1, str[r]);
                         if ((s == "(" || s == "[") && !nestedVec.empty()) { // Prevents recounting elements inside of nested parentheses
-                            for (int v = 0; v != nestedVec.size(); v++) {
+                            for (int v = 0; v < nestedVec.size(); v++) {
+                                // **Careful; the following line assumes the nested () will have a trailing multiplier.
                                 if (std::get<0>(nestedVec.at(v)) == r && mult > 1) {mult--; mult *= stoi(string(1, str[std::get<1>(nestedVec.at(v))+1])); stop = std::get<1>(nestedVec.at(v));}
                                 else if (std::get<0>(nestedVec.at(v)) == r) {r = std::get<1>(nestedVec.at(v));}
                             }
                         }
                         if (r == stop) {mult /= stoi(string(1, str[end+1])); mult++;}
+                        // cout << str[r] << endl;
+                        if (str[r] >= '0' && str[r] <= '9' && (str[r-1] == '(' || str[r-1] == '*')) {coeff = stoi(string(1, str[r])); mult *= coeff; continue;}
+                        else if (str[r] == '*') {mult /= coeff; coeff = 1;}
                         if (s.find_first_of("ABCDEFGHIJKLMNOPQRSTUVWXYZ") != string::npos) {
                             count = 0;
                             string k = "";
@@ -640,7 +660,7 @@ class Database {
                             else if (a=="T") {a="H ";}
                             if (mp.find(s) == mp.end() && k != "") {if (dec) {mp[s] = stoi(k)*mult+1; dec = false;} else {mp[s] = stoi(k)*mult;}}
                             else if (k != "") {if (dec) {mp[s] += stoi(k)*mult+1; dec = false;} mp[s] += stoi(k)*mult;}
-                            cout << s << mp[s] << "    ";
+                            // cout << s << mp[s] << "    ";
                         }
                     }
 
@@ -831,7 +851,7 @@ class Database {
         }
 
         bool build(const std::string& path, std::ostream& cerr){
-            mass.build("C:/Users/k12jsti/source/repos/materialsdatabase/NISTmasses.json", cerr);
+            mass.build("C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials/NISTmasses.json", cerr);
             std::ifstream input(path);
             DataObject::SP json_ptr;
             {
@@ -1003,7 +1023,6 @@ class Database {
                 itr = contact->find("Phone");
                 if (itr != contact->end()) {con.setPhone(itr->second.to_string());}
                 m.setContact(con);
-                //build_contact(contact, m, cerr);
             }
             
 
@@ -1036,9 +1055,15 @@ class Database {
             // m.setAmtSum(apm);
 
             matVec.push_back(m);
-            // if (m.getType() == "Weight Fractions") {m.getInputFormat("Generic", "Weight Fractions", "Isotopic", dbName); m.checkFractions(); cout << endl;}
-            // if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", false); m.convert("Atoms Per Molecule", false); m.convert("Weight Fractions", false); m.checkFractions(); cout << endl;}
-            if (m.getType() == "Chemical Formula") {m.checkAtoms();}
+            // if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.convert("Atom Fractions", true); m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName); m.checkFractions(); cout << endl;}
+            //if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.convert("Atom Fractions", true); m.convert("Weight Fractions", false); m.convert("Atom Fractions", false); m.checkFractions(); cout << endl;}
+            // if (m.getType() == "Chemical Formula") {m.checkAtoms();}
+            if (m.getName() == "Acetone") {
+                // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName); m.convert("Native", false);
+                // m.getInputFormat("ORIGEN", "Weight Fractions", "Elemental", dbName); m.convert("Native", false);
+                // m.getInputFormat("MCNP", "Weight Fractions", "Elemental", dbName); m.convert("Native", false);
+                m.getInputFormat("Generic", "Weight Fractions", "Elemental", dbName);
+            }
             return true;
         }
         
