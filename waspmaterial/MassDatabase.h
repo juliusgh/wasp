@@ -1,12 +1,21 @@
+#ifndef WASP_MASSDATABASE_H
+#define WASP_MASSDATABASE_H
+
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <vector>
 #include <cstdlib>
+
 #include "waspjson\JSONObjectParser.hpp"
 #include "waspcore\Object.h"
 using namespace std;
 using namespace wasp;
+
+/** The Isotope class defines the isotopes of a given element inside a material masses file.
+ * It creates members to store an isotope's mass number, atomic mass, and abundance.
+ * The class serves as a subclass to the later-defined Element class.
+*/
 
 class Isotope {
     int massNum;
@@ -32,21 +41,23 @@ class Isotope {
         double getAbundance() {return abundance;}
 };
 
-
+/** The Masses class defines the various components found within a masses database.
+ * It includes methods to build private members and the members of its subclasses.
+*/
 class Masses {
+    /** The Element class decribes the components found within each element in a masses database.
+    */
     class Element{
         int atomNum;
         string symbol;
         double mass;
         string notes;
-        // vector<string> comments;
         vector<Isotope> isotopes;
 
         static const string ATOMNUM;
         static const string SYMBOL;
         static const string MASS;
         static const string NOTES;
-        // static const string COMMENTS;
         static const string ISOTOPES;
 
         public:
@@ -55,7 +66,6 @@ class Masses {
                 symbol = string();
                 mass = 0.0;
                 notes = string();
-                // comments = vector<string>();
                 isotopes = vector<Isotope>();
             }
 
@@ -63,14 +73,12 @@ class Masses {
             void setSymbol(string a) {symbol=a;}
             void setMass(double a) {mass=a;}
             void setNotes(string a) {notes=a;}
-            // void setComments(vector<string> a) {comments=a;}
             void setIsotopes(vector<Isotope> a) {isotopes=a;}
 
             int getAtomNum() {return atomNum;}
             string getSymbol() {return symbol;}
             double getMass() {return mass;}
             string getNotes() {return notes;}
-            // vector<string> getComments() {return comments;}
             vector<Isotope> getIsotopes() {return isotopes;}
 
             void checkAbundances() {
@@ -88,7 +96,7 @@ class Masses {
                     cout << "Natural abundances do not add to 0 or 1" << sum << endl;
                 }
             }
-
+            // Displays the members of Element
             void display() {
                 cout << "\t" << "Element" << endl;
                 cout << "\t\t" << "Atomic Number:  " << atomNum << endl;
@@ -139,6 +147,11 @@ class Masses {
         Element getElem(int i) {return elements[i];}
         vector<string> getNotes() {return notes;}
 
+        /** Invoke the parser to build members of the entire file.
+         * @param path      path to masses json database
+         * @param cerr      stream name for error messages
+         * @return          true if successfully built
+         */
         bool build(const std::string& path, std::ostream& cerr){
             std::ifstream input(path);
             DataObject::SP json_ptr;
@@ -152,10 +165,15 @@ class Masses {
             return build_masses(json, cerr);
         }
 
-        bool build_masses(DataObject* nistM, std::ostream& cerr) {
-            wasp_require(nistM != nullptr);
-            auto itr = nistM->find("Masses");
-            if (itr == nistM->end()) {
+        /** Builds members of the Masses class.
+         * @param masses    head data object of the masses database file
+         * @param cerr      stream name for error messages
+         * @return          true if successfully built
+         */
+        bool build_masses(DataObject* masses, std::ostream& cerr) {
+            wasp_require(masses != nullptr);
+            auto itr = masses->find("Masses");
+            if (itr == masses->end()) {
                 cerr << "Unable to find Masses database!" << endl;
                 return false;
             }
@@ -194,6 +212,11 @@ class Masses {
             return build_elements(elements, cerr);
         }
 
+        /** Builds the data objects inside the "Element" data array into Element objects.
+         * @param elemArray    data array of element data objects
+         * @param cerr         stream name for error messages
+         * @return             true if successfully built
+         */
         bool build_elements(DataArray* elemArray, std::ostream& cerr){
             wasp_require(elemArray != nullptr);
             elemVec = {};
@@ -212,6 +235,11 @@ class Masses {
             return success;
         }
 
+        /** Builds each data object inside the "Element" data array
+         * @param element   data object representing an element
+         * @param cerr      stream name for error messages
+         * @return          true if successfully built
+         */
         bool build_element(DataObject* element, std::ostream& cerr){
             wasp_require(element != nullptr);
             Element e;
@@ -237,17 +265,6 @@ class Masses {
             itr = element->find("Notes");
             if (itr != element->end() && itr->second.is_string()) {e.setNotes(itr->second.to_string());}
 
-            // itr = element->find("Comments");
-            // if (itr != element->end() && itr->second.is_array()) {
-            //     DataArray* coms = itr->second.to_array();
-            //     vector<string> comVec{};
-            //     for (auto citr = coms->begin(); citr != coms->end(); citr++) {
-            //          auto co = *citr;
-            //          comVec.push_back(co.to_string());
-            //     }
-            //     e.setComments(comVec);
-            // }
-
             itr = element->find("Isotopes");
             if (itr == element->end()) {
                 cerr << "Unable to find element isotopes!" << endl;
@@ -265,6 +282,11 @@ class Masses {
             return true;
         }
 
+        /** Builds the data objects inside the "Isotopes" data array
+         * @param isotopes   data array of isotope data objects
+         * @param cerr       stream name for error messages
+         * @return           true if successfully built
+         */
         bool build_element_isotopes(DataArray* isotopes, Element e, std::ostream& cerr) {
             isoVec = {};
             for (auto itr = isotopes->begin(); itr != isotopes->end(); itr++) {
@@ -277,11 +299,14 @@ class Masses {
                     success &= build_isotope(iso.to_object(), cerr);
                 }
             }
-            // e.display();
-            //e.checkAbundances();
             return true;
         }
 
+        /** Builds each data object inside the "Isotopes" data array
+         * @param iso     data object representing an isotope
+         * @param cerr    stream name for error messages
+         * @return        true if successfully built
+         */
         bool build_isotope(DataObject* iso, std::ostream& cerr) {
             wasp_require(comp != nullptr);
             Isotope i;
@@ -301,6 +326,7 @@ class Masses {
             return true;
         }
 
+        // Displays the members of Masses
         void display(bool verbose) {
             int eNum = getElems();
             cout << "Mass Database " << getName() << " with " << eNum << " elements" << endl;
@@ -330,9 +356,9 @@ const string Masses::Element::ATOMNUM = "AtomicNumber";
 const string Masses::Element::SYMBOL = "Symbol";
 const string Masses::Element::MASS = "Mass";
 const string Masses::Element::NOTES = "Notes";
-// const string Masses::Element::COMMENTS = "Comments";
 const string Masses::Element::ISOTOPES = "Isotopes";
 
 const string Isotope::MASSNUMBER = "MassNumber";
 const string Isotope::MASS = "Mass";
 const string Isotope::ABUNDANCE = "Abundance";
+#endif // WASP_MASSDATABASE_H
