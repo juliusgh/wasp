@@ -850,7 +850,7 @@ class Database {
         }
 
         bool build(const std::string& path, std::ostream& cerr){
-            mass.build("C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials/NISTmasses.json", cerr);
+            mass.build("../materials/NISTmasses.json", cerr);
             std::ifstream input(path);
             DataObject::SP json_ptr;
             {
