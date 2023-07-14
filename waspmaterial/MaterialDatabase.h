@@ -1,11 +1,10 @@
-ad#include <iostream>
+#include <iostream>
 #include <fstream>
 #include <string>
 #include <vector>
 #include <map>
 #include <stack>
 #include <tuple>
-//#include <valarray>
 #include <cstdlib>
 #include <sstream>
 #include <stdexcept>
