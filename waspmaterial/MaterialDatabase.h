@@ -10,34 +10,13 @@
 #include <stdexcept>
 #include <functional>
 #include <algorithm>
-#include "ctype.h"
+
 #include "waspjson\JSONObjectParser.hpp"
 #include "waspcore\Object.h"
 #include "waspmaterial/MassDatabase.h"
 using namespace std;
 using namespace wasp;
 
-
-// int findDeno(double val, int cycles = 10, double precision = 5e-4){
-//     int sign = val > 0 ? 1 : -1;
-//     val *= sign;
-//     double new_val, whole;
-//     double decimal_part = val - (int)val;
-//     int counter = 0;
-//     valarray<double> vec_1{double((int) val), 1}, vec_2{1,0}, temp;
-    
-//     while(decimal_part > precision & counter < cycles){
-//         new_val = 1 / decimal_part;
-//         whole = (int) new_val;
-//         temp = vec_1;
-//         vec_1 = whole * vec_1 + vec_2;
-//         vec_2 = temp;
-//         decimal_part = new_val - whole;
-//         counter += 1;
-//     }
-//     // cout<<"x: "<< val <<"\tFraction: " << sign * vec_1[0]<<'/'<< vec_1[1]<<endl;
-//     return vec_1[1];
-// }
 
 Masses mass;
 class Database {
@@ -206,7 +185,15 @@ class Database {
             void convert(string style, bool iso) { // if faster to use switch statement, come back and use enum+map to use on strings
                 // cout << name << "  " << type << " to " << style << endl;
                 if (style == "Native") {contains = nativeComps; type = native; 
-                //for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}
+                for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}
+                }
+                else if (type == style && style == "Weight Fractions" && isIso != iso) {
+                    convert("Atom Fractions", !isIso);
+                    convert("Weight Fractions", isIso);
+                }
+                else if (type == style && style == "Atom Fractions" && isIso != iso) {
+                    convert("Weight Fractions", !isIso);
+                    convert("Atom Fractions", isIso);
                 }
                 else if (type != style) {
                     vector<double> atomMasses {};
@@ -434,15 +421,7 @@ class Database {
             }
             
             void getInputFormat(string code, string dataStyle, string calcType, string dbName) {
-                if (type == dataStyle && dataStyle == "Weight Fractions" && isIso != (calcType=="Isotopic")) {
-                    convert("Atom Fractions", !isIso);
-                    convert("Weight Fractions", isIso);
-                }
-                else if (type == dataStyle && dataStyle == "Atom Fractions" && isIso != (calcType=="Isotopic")) {
-                    convert("Weight Fractions", !isIso);
-                    convert("Atom Fractions", isIso);
-                }
-                else {convert(dataStyle, calcType == "Isotopic");}
+                if (type != dataStyle || isIso != (calcType=="Isotopic")) {convert(dataStyle, calcType == "Isotopic");}
                 int aNum = 1;
                 if (code == "MAVRIC/KENO") {
                     cout << "'  " << dbName << endl;
@@ -464,7 +443,7 @@ class Database {
                             if (c.getElement() == mass.getElem(m).getSymbol()) {
                                 auto e = mass.getElem(m);
                                 aNum = e.getAtomNum();
-                                cout << endl << "         " << aNum*1000+c.getMassNum() << "   " << c.getAmount();
+                                cout << endl << "         " << aNum*1000+c.getMassNum() << "   " << 100*c.getAmount();
                                 // other 2 numbers stay constant (density && temp)?
                                 break;
                             }
@@ -831,8 +810,6 @@ class Database {
         }
 
         // Set Methods:
-    //        void setPath(string a) {path = a;}
-    //        void setName(string a) {name = a;}
            void setDB(string a) {dbName = a;}
            void setMats(vector<Material> a) {materials = a;}
            void setRef(string a) {reference = a;}
@@ -850,7 +827,7 @@ class Database {
         }
 
         bool build(const std::string& path, std::ostream& cerr){
-            mass.build("../materials/NISTmasses.json", cerr);
+            mass.build("C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials/NISTmasses.json", cerr);
             std::ifstream input(path);
             DataObject::SP json_ptr;
             {
@@ -1054,15 +1031,16 @@ class Database {
             // m.setAmtSum(apm);
 
             matVec.push_back(m);
-            // if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.convert("Atom Fractions", true); m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName); m.checkFractions(); cout << endl;}
+            // if (m.getType() == "Weight Fractions") {m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName); m.checkFractions(); cout << endl;}
+            // if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", true); m.checkFractions(); cout << "New" << endl; m.convert("Weight Fractions", true); m.checkFractions(); cout << "Native" << endl; m.convert("Native", false); cout << endl;}
             //if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.convert("Atom Fractions", true); m.convert("Weight Fractions", false); m.convert("Atom Fractions", false); m.checkFractions(); cout << endl;}
             // if (m.getType() == "Chemical Formula") {m.checkAtoms();}
-            if (m.getName() == "Acetone") {
+            // if (m.getName() == "Acetone") {
                 // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName); m.convert("Native", false);
                 // m.getInputFormat("ORIGEN", "Weight Fractions", "Elemental", dbName); m.convert("Native", false);
                 // m.getInputFormat("MCNP", "Weight Fractions", "Elemental", dbName); m.convert("Native", false);
-                m.getInputFormat("Generic", "Weight Fractions", "Elemental", dbName);
-            }
+                // m.getInputFormat("Generic", "Weight Fractions", "Elemental", dbName);
+            //}
             return true;
         }
         
@@ -1174,59 +1152,3 @@ const string Database::Component::ATOMFRACTION = "AtomFraction";
 const string Database::Contact::NAME = "Name";
 const string Database::Contact::PHONE = "Phone";
 const string Database::Contact::EMAIL = "Email";
-
-
- // string makeFormMap(map<string, int> form){
-            //     string result = "";
-            //     for (auto& it : form) {
-            //         if (it.first != "n") {result += it.first;}
-            //         if (it.second > 1) {
-            //             result += to_string(it.second);
-            //         }
-            //     }
-            //     return result;
-            // }
-            // string countAtoms(string s){
-            //     map<string, int> m;
-            //     stack<map<string, int> > st;
-            //     int i = 0;
-            //     int n = s.size();
-            //     while (i < n) {
-            //         char c = s[i];
-            //         i++;
-            //         if (c == '(') {
-            //             st.push(m);
-            //             m = map<string, int>();
-            //         }
-            //         else if (c == ')') {
-            //             int val = 0;
-            //             while (i < n && s[i] >= '0' && s[i] <= '9') {
-            //                 val = val * 10 + (s[i] - '0');
-            //                 i++;
-            //             }
-            //             map<string, int> temp = st.top();
-            //             st.pop();
-            //             for (auto& it : m) {
-            //                 it.second *= val;
-            //                 temp[it.first] += it.second;
-            //             }
-            //             m = temp;
-            //         }  
-            //         else {
-            //             string name = "";
-            //             int val = 0;
-            //             name += c;
-            //             while (i < n && s[i] >= 'a' && s[i] <= 'z') {
-            //                 name += s[i];
-            //                 i++;
-            //             }
-            //             while (i < n && s[i] >= '0' && s[i] <= '9') {
-            //                 val = val * 10 + (s[i] - '0');
-            //                 i++;
-            //             }
-            //             val = val == 0 ? 1 : val;
-            //             m[name] += val;
-            //         }
-            //     }
-            //     return makeFormMap(m);
-            // }
