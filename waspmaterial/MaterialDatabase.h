@@ -238,6 +238,7 @@ class Database {
                         }
                         return;
                     }
+                    vector<Component> newComps {};
                     double total = 0;
                     for (int i=0; i<contains.size(); i++) {
                         Component ci = contains.at(i);
@@ -248,7 +249,7 @@ class Database {
                                     int count = -1;
                                     // while (i>0 && ci.getElement()==contains.at(i-1).getElement()) {i++; ci = contains.at(i);}
                                     // cout << ci.getElement() << contains.size() << endl;
-                                    contains.erase(contains.begin()+i);
+                                    // contains.erase(contains.begin()+i);
                                     for (int n=0; n<e.getIsotopes().size(); n++) {
                                         if (e.getIsotopes().at(n).getAbundance() > 0) { //Renormalizing into isotopes
                                             if (ci.getMassNum() <= 0) {
@@ -257,13 +258,12 @@ class Database {
                                                 Component ciso;
                                                 ciso.setElement(ci.getElement());
                                                 
-                                                cout << "here" << endl;
                                                 if (type == "Atom Fractions" && style == "Atom Fractions") {ciso.setAmount(ci.getAmount() * e.getIsotopes().at(n).getAbundance());}
                                                 else if (type == "Atom Fractions" && style == "Weight Fractions") {ciso.setAmount(ci.getAmount() * e.getIsotopes().at(n).getAbundance() * e.getIsotopes().at(n).getMass());}
                                                 else if (type == "Weight Fractions" && style == "Atom Fractions") {ciso.setAmount(ci.getAmount() * e.getIsotopes().at(n).getAbundance() / e.getIsotopes().at(n).getMass());}
                                                 ciso.setMassNum(e.getIsotopes().at(n).getMassNum()); // Use negative MassNums for expanded isotopes?
-                                                cout << ciso.getMassNum() << " " << ciso.getAmount() << endl;
-                                                contains.insert(contains.begin()+i+count, ciso);
+                                                // cout << ciso.getMassNum() << " " << ciso.getAmount() << endl;
+                                                newComps.push_back(ciso);
                                                 total += ciso.getAmount();
                                             }
                                         }
@@ -280,22 +280,25 @@ class Database {
                                 else if (!iso) { //Splitting into elements
                                 // Modify to accomodate both for WF and AF
                                     // cout << "Elemental" << endl;
+                                    
                                     for (int n=0; n<contains.size()-1; n++) {
-                                        if (contains.at(n).getElement() == contains.at(n+1).getElement()) {
+                                        if (contains.at(n).getElement() == contains.at(n+1).getElement() && !contains.at(n).getIso()) {
                                             // if (contains.at(n).getMassNum() > 0) {contains.at(n).setMassNum(0);}
                                             contains.at(n).setMassNum(0);
                                             contains.at(n).setAmount(contains.at(n).getAmount()+contains.at(n+1).getAmount());
+                                            // cout << contains.at(n+1).getElement() << contains.at(n+1).getAmount() << endl;
                                             contains.erase(contains.begin()+n+1);
                                             n--;
                                         }
-                                        // else {
-                                            //cout << contains.at(n).getElement() << endl;
-                                            // break;
+                                        else {
+                                        //     cout << contains.at(n).getElement() << " " << contains.at(n).getAmount()<< endl;
                                             // if (type == "Atom Fractions" && style == "Weight Fractions") {cout << n << contains.at(n).getElement() << " "; total += ci.getAmount() * e.getMass(); cout << total << endl;}
                                             // if (type == "Weight Fractions" && style == "Atom Fractions") {total += ci.getAmount() / e.getMass();}
-                                        // }
+                                        }
                                     }
+                                    for (auto comp: contains) {newComps.push_back(comp);}
                                     total += ci.getAmount();
+                                    i = contains.size()-1;
                                     // if (type == "Atom Fractions" && style == "Weight Fractions") {total += ci.getAmount() * e.getMass();}
                                     // if (type == "Weight Fractions" && style == "Atom Fractions") {total += ci.getAmount() / e.getMass();}
                                 }
@@ -304,6 +307,7 @@ class Database {
                                 //     if (type == "Atom Fractions" && style == "Weight Fractions") {total += ci.getAmount() * mass.getElem(m).getMass();}
                                 //     else if (type == "Weight Fractions" && style == "Atom Fractions") {total += ci.getAmount() / mass.getElem(m).getMass();}
                                 // }
+                                // cout << "newComps " << newComps.size() << endl;
                                 if (type == "Atom Fractions" && style == "Atom Fractions") {atomMasses.push_back(ci.getAmount());}
                                 else if (type == "Weight Fractions" && style == "Atom Fractions") {atomMasses.push_back(ci.getAmount() / mass.getElem(m).getMass());} 
                                 // else {atomMasses.push_back(ci.getAmount() / mass.getElem(m).getMass());}
@@ -312,9 +316,12 @@ class Database {
                             }
                         }
                     }
+                    contains.clear();
+                    contains = newComps;
+                    // cout << contains.size() << " " << atomMasses.size() << endl;
                     // cout << total << endl;
                     for (int j=0; j<contains.size(); j++) {
-                            if (type == "Atom Fractions" && style == "Atom Fractions") {contains.at(j).setAmount(atomMasses.at(j));}
+                            if (type == "Atom Fractions" && style == "Atom Fractions") {}
                             else {contains.at(j).setAmount(atomMasses.at(j)/total);}
                             Component c = contains.at(j);
                             cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
@@ -808,7 +815,7 @@ class Database {
                 
                 bool good = sum>0.99999 && sum<1.00001;
                 if(good) {
-                    cout << "\t" << "Weights add to 1" << endl;
+                    cout << "\t" << "Fracs add to 1" << endl;
                 }
                 else {
                     // string ref = references.at(0);
