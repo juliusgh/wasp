@@ -186,7 +186,7 @@ class Database {
             bool getIso() {return isIso;}
 
             void convert(string style, bool iso) { // if faster to use switch statement, come back and use enum+map to use on strings
-                cout << name << "  " << type << "_" << isIso << " to " << style << "_" << iso<< endl;
+                // cout << name << "  " << type << "_" << isIso << " to " << style << "_" << iso<< endl;
                 if (style == "Native") {contains = nativeComps; type = native; 
                 for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}
                 return;
@@ -247,14 +247,20 @@ class Database {
                                 auto e = mass.getElem(m);
                                 if (iso) { // Do comps need to be AF to add/delete iso or can conversions be stacked?
                                     int count = -1;
-                                    // while (i>0 && ci.getElement()==contains.at(i-1).getElement()) {i++; ci = contains.at(i);}
-                                    // cout << ci.getElement() << contains.size() << endl;
-                                    // contains.erase(contains.begin()+i);
                                     for (int n=0; n<e.getIsotopes().size(); n++) {
-                                        if (e.getIsotopes().at(n).getAbundance() > 0) { //Renormalizing into isotopes
+                                        if (e.getIsotopes().at(n).getMassNum() == ci.getMassNum()) { //Matching isotopes specified in JSON
+                                            cout << "Specified Iso" << endl;
+                                            // ci.setAmount(ci.getAmount());
+                                            newComps.push_back(ci);
+                                            // if (type == "Atom Fractions" && style == "Atom Fractions") {ci.setAmount(ci.getAmount());}
+                                            // else if (type == "Atom Fractions" && style == "Weight Fractions") {ci.setAmount(ci.getAmount() * e.getIsotopes().at(n).getMass());}
+                                            // else if (type == "Weight Fractions" && style == "Atom Fractions") {ci.setAmount(ci.getAmount() / e.getIsotopes().at(n).getMass());}
+                                            total += ci.getAmount();
+                                        }
+                                        else if (e.getIsotopes().at(n).getAbundance() > 0) { //Renormalizing into isotopes
                                             if (ci.getMassNum() <= 0) {
-                                                // cout << "Renorm Iso" << endl;
-                                                count ++;
+                                                // cout << "Renorm Iso " << ci.getElement() << endl;
+                                                // count ++;
                                                 Component ciso;
                                                 ciso.setElement(ci.getElement());
                                                 
@@ -267,19 +273,12 @@ class Database {
                                                 total += ciso.getAmount();
                                             }
                                         }
-                                        else if (e.getIsotopes().at(n).getMassNum() == ci.getMassNum()) { //Matching isotopes specified in JSON
-                                            cout << "Specified Iso" << endl;
-                                            if (type == "Atom Fractions" && style == "Atom Fractions") {ci.setAmount(ci.getAmount());}
-                                            else if (type == "Atom Fractions" && style == "Weight Fractions") {ci.setAmount(ci.getAmount() * e.getIsotopes().at(n).getMass());}
-                                            else if (type == "Weight Fractions" && style == "Atom Fractions") {ci.setAmount(ci.getAmount() / e.getIsotopes().at(n).getMass());}
-                                            total += ci.getAmount();
-                                        }
                                     }
                                 }
                                 
                                 else if (!iso) { //Splitting into elements
                                 // Modify to accomodate both for WF and AF
-                                    // cout << "Elemental" << endl;
+                                    //cout << "Elemental" << endl;
                                     
                                     for (int n=0; n<contains.size()-1; n++) {
                                         if (contains.at(n).getElement() == contains.at(n+1).getElement() && !contains.at(n).getIso()) {
@@ -324,7 +323,7 @@ class Database {
                             if (type == "Atom Fractions" && style == "Atom Fractions") {}
                             else {contains.at(j).setAmount(atomMasses.at(j)/total);}
                             Component c = contains.at(j);
-                            cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
+                            // cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
                     }
                 }
 

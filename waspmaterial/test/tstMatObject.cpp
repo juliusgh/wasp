@@ -36,7 +36,7 @@ ASSERT_TRUE(mcl.build("../materials/PNNL-15870r2_eff.json", massPath, std::cerr)
 // ASSERT_TRUE(mcl.build("../materials/RxHndbkVol1Ch19-Ch48.json", massPath, std::cerr));
 // ASSERT_TRUE(mcl.build("../materials/RxHndbkVol1Ch51.json", massPath, std::cerr));
 // ASSERT_TRUE(mcl.build("../materials/scaleAlloyMixs.json", massPath, std::cerr));
-// Not working    ASSERT_TRUE(mcl.build("../materials/scaleCompounds.json", massPath, std::cerr));
+// ASSERT_TRUE(mcl.build("../materials/scaleCompounds.json", massPath, std::cerr));
 // ASSERT_TRUE(mcl.build("../materials/ShultisAndFaw1996.json", massPath, std::cerr));
 
 // ASSERT_TRUE(db.build("PNNL-15870r2_eff.json", std::cerr));
