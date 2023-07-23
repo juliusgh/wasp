@@ -193,53 +193,64 @@ class Database {
                 }
                 vector<double> atomMasses {};
                 
-                // if (type == "Weight Fractions" && style == "Atom Fractions" && isIso) { // Iso to Elem
-                //     for (int i=0; i<contains.size()-1; i++) {
-                //         Component ci = contains.at(i);
-                //         for (int m=0; m<mass.getElems(); m++) {
-                //             if (ci.getElement() == mass.getElem(m).getSymbol()) {
-                //                 auto e = mass.getElem(m);
-                //                 if (ci.getElement() == contains.at(i+1).getElement()) {
-                //                     for (int n=0; n<e.getIsotopes().size(); n++) {
-                //                         if (ci.getMassNum() == e.getIsotopes().at(n).getMassNum()) {
-                //                             contains.at(i).setAmount(ci.getAmount() / e.getIsotopes().at(n).getMass());
-                //                             contains.at(i).setMassNum(0);
-                //                             // cout << "here" << endl;
-                //                             if (i>0 && contains.at(i-1).getElement() == ci.getElement()) {
-                //                                 contains.at(i).setAmount(contains.at(i-1).getAmount()+contains.at(i).getAmount());
-                //                                 contains.erase(contains.begin()+i); cout << "no" << endl;
-                //                                 i--;
-                //                                 ci = contains.at(i);
-                //                             }
-                //                         }
-                //                     }
-                //                 // cout << contains.at(i).getAmount() << endl;
-                //                 contains.at(i).setAmount(contains.at(i).getAmount()*e.getMass());
-                //                 }
-                //             }
-                //             break;
-                //         }
-                //     }
-                // }
-                // for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}
-                // else if (type == style && style == "Atom Fractions" && isIso != iso) {
-                //     if (!isIso) {
-                //         convert("Weight Fractions", !isIso);
-                //         convert("Atom Fractions", isIso);
-                //     }
-                // }
-                
                 // 1-4) Combos between Weight and Atom Fractions
                 if ((type == "Weight Fractions" || type == "Atom Fractions") && (style == "Weight Fractions" || style == "Atom Fractions")) {
+                    double total = 0;
+                    vector<Component> newComps {};
                     if (type == style && style == "Weight Fractions" && isIso != iso) { //WF Elem to Iso
-                        if (!isIso) { //Elem to Iso
-                            convert("Atom Fractions", !isIso);
-                            convert("Weight Fractions", isIso);
+                        if (!isIso) {//Elem to Iso
+                            convert("Atom Fractions", true);
+                            convert("Weight Fractions", true);
+                        }
+                        else {// Only for this conversion, convert back to native -> WF iso --> here
+                            // bool hasDups = false;
+                            for (int i=0; i<contains.size(); i++) {
+                                total = 0;
+                                Component ci = contains.at(i);
+                                for (int m=0; m<mass.getElems(); m++) {
+                                    if (ci.getElement() == mass.getElem(m).getSymbol()) {
+                                        auto e = mass.getElem(m);
+                                        if (!ci.getIso()) {
+                                            // cout << "her" << endl;
+                                            for (int n=0; n<e.getIsotopes().size(); n++) {
+                                                ci = contains.at(i);
+                                                if (ci.getMassNum() == e.getIsotopes().at(n).getMassNum()) {
+                                                    contains.at(i).setAmount(ci.getAmount() / e.getIsotopes().at(n).getMass());
+                                                    contains.at(i).setMassNum(0);
+                                                    // cout << contains.at(i).getElement() << " " << contains.at(i).getAmount() << endl;
+                                                    total += contains.at(i).getAmount();
+                                                    if (i>0 && contains.at(i-1).getElement() != contains.at(i).getElement()) {
+                                                        break;
+                                                        // cout << i << " " << contains.at(i-1).getAmount() << "  " << contains.at(i).getAmount() << endl;
+                                                    }
+                                                    if (i<contains.size()-1 && contains.at(i).getElement() == contains.at(i+1).getElement()) {i++;}
+                                                }
+                                            }
+                                            // cout << "end" << endl;
+                                            if (i>0 || (i<contains.size()-1 && contains.at(i).getElement()!=contains.at(i+1).getElement())) {
+                                                Component c;
+                                                c.setAmount(total*e.getMass());
+                                                c.setElement(contains.at(i).getElement());
+                                                c.setMassNum(contains.at(i).getMassNum());
+                                                // cout << total << " * "  << e.getMass()<< endl;
+                                                newComps.push_back(c);
+                                            }
+                                        }
+                                        else {
+                                            newComps.push_back(ci);
+                                        }
+                                    // type = "Weight Fractions";
+                                    isIso = false;
+                                    break;
+                                    }
+                                }
+                            }
+                            contains = newComps;
+                            // for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}
                         }
                         return;
                     }
-                    vector<Component> newComps {};
-                    double total = 0;
+
                     for (int i=0; i<contains.size(); i++) {
                         Component ci = contains.at(i);
                         for (int m=0; m<mass.getElems(); m++) {
@@ -249,15 +260,15 @@ class Database {
                                     int count = -1;
                                     for (int n=0; n<e.getIsotopes().size(); n++) {
                                         if (e.getIsotopes().at(n).getMassNum() == ci.getMassNum()) { //Matching isotopes specified in JSON
-                                            cout << "Specified Iso" << endl;
-                                            // ci.setAmount(ci.getAmount());
+                                            // cout << "Specified Iso" << endl;
+                                            ci.setAmount(ci.getAmount());
+                                            if (type == "Atom Fractions" && style == "Atom Fractions") {ci.setAmount(ci.getAmount());}
+                                            else if (type == "Atom Fractions" && style == "Weight Fractions") {ci.setAmount(ci.getAmount() * e.getIsotopes().at(n).getMass());}
+                                            else if (type == "Weight Fractions" && style == "Atom Fractions") {ci.setAmount(ci.getAmount() / e.getIsotopes().at(n).getMass());}
                                             newComps.push_back(ci);
-                                            // if (type == "Atom Fractions" && style == "Atom Fractions") {ci.setAmount(ci.getAmount());}
-                                            // else if (type == "Atom Fractions" && style == "Weight Fractions") {ci.setAmount(ci.getAmount() * e.getIsotopes().at(n).getMass());}
-                                            // else if (type == "Weight Fractions" && style == "Atom Fractions") {ci.setAmount(ci.getAmount() / e.getIsotopes().at(n).getMass());}
                                             total += ci.getAmount();
                                         }
-                                        else if (e.getIsotopes().at(n).getAbundance() > 0) { //Renormalizing into isotopes
+                                        else if (!ci.getIso() && e.getIsotopes().at(n).getAbundance() > 0) { //Splitting into isotopes
                                             if (ci.getMassNum() <= 0) {
                                                 // cout << "Renorm Iso " << ci.getElement() << endl;
                                                 // count ++;
@@ -276,41 +287,29 @@ class Database {
                                     }
                                 }
                                 
-                                else if (!iso) { //Splitting into elements
-                                // Modify to accomodate both for WF and AF
-                                    //cout << "Elemental" << endl;
+                                else if (!iso) { //Renormalizing into elements or 
+                                    // cout << "Elemental" << endl;
                                     
-                                    for (int n=0; n<contains.size()-1; n++) {
-                                        if (contains.at(n).getElement() == contains.at(n+1).getElement() && !contains.at(n).getIso()) {
-                                            // if (contains.at(n).getMassNum() > 0) {contains.at(n).setMassNum(0);}
+                                    int n = i;
+                                    while (n < contains.size()-1 && contains.at(n).getElement() == contains.at(n+1).getElement() && !contains.at(n).getIso()) {
                                             contains.at(n).setMassNum(0);
                                             contains.at(n).setAmount(contains.at(n).getAmount()+contains.at(n+1).getAmount());
                                             // cout << contains.at(n+1).getElement() << contains.at(n+1).getAmount() << endl;
                                             contains.erase(contains.begin()+n+1);
-                                            n--;
-                                        }
-                                        else {
-                                        //     cout << contains.at(n).getElement() << " " << contains.at(n).getAmount()<< endl;
-                                            // if (type == "Atom Fractions" && style == "Weight Fractions") {cout << n << contains.at(n).getElement() << " "; total += ci.getAmount() * e.getMass(); cout << total << endl;}
-                                            // if (type == "Weight Fractions" && style == "Atom Fractions") {total += ci.getAmount() / e.getMass();}
-                                        }
                                     }
-                                    for (auto comp: contains) {newComps.push_back(comp);}
-                                    total += ci.getAmount();
-                                    i = contains.size()-1;
-                                    // if (type == "Atom Fractions" && style == "Weight Fractions") {total += ci.getAmount() * e.getMass();}
-                                    // if (type == "Weight Fractions" && style == "Atom Fractions") {total += ci.getAmount() / e.getMass();}
+                                    // cout << contains.at(n).getElement() << contains.at(n).getAmount()<< endl;
+                                    if (type == "Atom Fractions" && style == "Weight Fractions") {contains.at(i).setAmount(contains.at(i).getAmount() * e.getMass());}
+                                    if (type == "Weight Fractions" && style == "Atom Fractions") {contains.at(i).setAmount(contains.at(i).getAmount() / e.getMass());}
+                                    
+                                    // for (auto comp: contains) {
+                                    //     // if (type == "Atom Fractions" && style == "Weight Fractions") {comp.setAmount(comp.getAmount()*e.getMass());}
+                                    //     // else if (type == "Weight Fractions" && style == "Atom Fractions") {comp.setAmount(comp.getAmount()/e.getMass());}
+                                    //     total += comp.getAmount();
+                                    //     newComps.push_back(comp);}
+                                    total += contains.at(i).getAmount();
+                                    newComps.push_back(contains.at(i));
+                                    // i = contains.size()-1;
                                 }
-
-                                // else {
-                                //     if (type == "Atom Fractions" && style == "Weight Fractions") {total += ci.getAmount() * mass.getElem(m).getMass();}
-                                //     else if (type == "Weight Fractions" && style == "Atom Fractions") {total += ci.getAmount() / mass.getElem(m).getMass();}
-                                // }
-                                // cout << "newComps " << newComps.size() << endl;
-                                if (type == "Atom Fractions" && style == "Atom Fractions") {atomMasses.push_back(ci.getAmount());}
-                                else if (type == "Weight Fractions" && style == "Atom Fractions") {atomMasses.push_back(ci.getAmount() / mass.getElem(m).getMass());} 
-                                // else {atomMasses.push_back(ci.getAmount() / mass.getElem(m).getMass());}
-                                else if (type == "Atom Fractions" && style == "Weight Fractions") {atomMasses.push_back(ci.getAmount() * mass.getElem(m).getMass());}
                                 break;
                             }
                         }
@@ -318,89 +317,15 @@ class Database {
                     contains.clear();
                     contains = newComps;
                     // cout << contains.size() << " " << atomMasses.size() << endl;
-                    // cout << total << endl;
                     for (int j=0; j<contains.size(); j++) {
-                            if (type == "Atom Fractions" && style == "Atom Fractions") {}
-                            else {contains.at(j).setAmount(atomMasses.at(j)/total);}
-                            Component c = contains.at(j);
-                            // cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
+                        Component c = contains.at(j);
+                        if (type == "Atom Fractions" && style == "Atom Fractions") {}
+                        else {contains.at(j).setAmount(c.getAmount()/total);}
+                        cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
                     }
                 }
 
                 else if (type != style) {
-
-
-                    
-
-                    // 1) Weight Fractions to Atom Fractions [Still need elem->iso]
-                    // if (type == "Weight Fractions" && style == "Atom Fractions") {
-                    //     // cout << type << " to " << style << endl;
-                    //     double total = 0;
-                    //     for (int i=0; i<contains.size(); i++) {
-                    //         Component ci = contains.at(i);
-                    //         for (int m=0; m<mass.getElems(); m++) {
-                    //             if (ci.getElement() == mass.getElem(m).getSymbol()) {
-                    //                 total += ci.getAmount() / mass.getElem(m).getMass(); 
-                    //                 atomMasses.push_back(ci.getAmount() / mass.getElem(m).getMass());
-                    //                 break;
-                    //             }
-                    //         }
-                    //     }
-                    //     for (int j=0; j<contains.size(); j++) {
-                    //         contains.at(j).setAmount(atomMasses.at(j)/total);
-                    //         Component c = contains.at(j);
-                    //         cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
-                    //     }
-                    // }
-
-                    // 2) Atom Fractions to Weight Fractions [Still need iso-> elem]
-                    // else if (type == "Atom Fractions" && style == "Weight Fractions") {
-                        // cout << type << " to " << style << endl;
-                        // double total = 0;
-                        // for (int i=0; i<contains.size(); i++) {
-                        //     Component ci = contains.at(i);
-                        //     for (int m=0; m<mass.getElems(); m++) {
-                        //         if (ci.getElement() == mass.getElem(m).getSymbol()) {
-                        //             auto e = mass.getElem(m);
-                        //             if (iso && ci.getMassNum() <= 0) {
-                        //                 int count = -1;
-                        //                 contains.erase(contains.begin()+i);
-                        //                 for (int n=0; n<e.getIsotopes().size(); n++) {
-                        //                     if (e.getIsotopes().at(n).getAbundance() > 0) {
-                        //                         count ++;
-                        //                         Component ciso;
-                        //                         ciso.setElement(ci.getElement());
-                        //                         ciso.setAmount(ci.getAmount() * e.getIsotopes().at(n).getAbundance() * e.getIsotopes().at(n).getMass());
-                        //                         ciso.setMassNum(e.getIsotopes().at(n).getMassNum());
-                        //                         contains.insert(contains.begin()+i+count, ciso);
-                        //                         total += ciso.getAmount();
-                        //                     }
-                        //                 }
-                        //             }
-                        //             else if (isIso && !iso) {
-                        //                 for (int n=0; n<contains.size()-1; n++) {
-                        //                     if (contains.at(n).getElement() == contains.at(n+1).getElement()) {
-                        //                         contains.at(n).setAmount(contains.at(n).getAmount()+contains.at(n+1).getAmount());
-                        //                         contains.erase(contains.begin()+n);
-                        //                         n--;
-                        //                     } 
-                        //                     else {total += ci.getAmount() * e.getMass();}
-                        //                 }
-                        //             }
-
-                        //             else {total += ci.getAmount() * mass.getElem(m).getMass();}
-                        //             atomMasses.push_back(ci.getAmount() * mass.getElem(m).getMass());
-                        //             break;
-                        //         }
-                        //     }
-                        // }
-                    //     for (int j=0; j<contains.size(); j++) {
-                    //         contains.at(j).setAmount(atomMasses.at(j)/total);
-                    //         Component c = contains.at(j);
-                    //         cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
-                    //     }
-                    // }
-                    
                     // 5) Atoms Per Molecule to Weight Fractions [Works]
                     if (type == "Atoms Per Molecule" && style == "Weight Fractions") {
                         double total = 0;
@@ -1101,14 +1026,31 @@ class Database {
             // m.setAmtSum(apm);
 
             matVec.push_back(m);
+            
+            
+            // Test 1: Diff WF- Success with 3-4 decimals of precision
+            // if (m.getType() == "Weight Fractions") {m.convert("Weight Fractions", true); m.convert("Weight Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
+
+            // Test 2: Diff AF- Success
+            // if (m.getType() == "Atom Fractions") {
+            //     for (int i=0; i<20; i++) {
+            //         m.convert("Atom Fractions", true); m.convert("Atom Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;
+            //     }
+            // }
+            
+            // Test 3: Elem WF <-> Iso AF- Success
+            // if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", true); m.checkFractions(); m.convert("Native", false); cout << endl;}
+            // if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.checkFractions(); m.convert("Native", false); cout << endl;}
+            
+
+            // Test 4: Elem WF <-> Elem AF- Success
+            // if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", true); m.convert("Atom Fractions", false); m.convert("Weight Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
+            
+            
             // if (m.getType() == "Weight Fractions") {m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName); m.checkFractions(); cout << endl;}
-            //if (m.getType() == "Weight Fractions") {m.convert("Weight Fractions", true); m.checkFractions(); m.convert("Native", false); cout << endl;}
-            // if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", true); m.checkFractions(); m.convert("Weight Fractions", false); m.checkFractions(); cout << "Native" << endl; m.convert("Native", false); cout << endl;}
-            // if (m.getType() == "Atom Fractions") {m.convert("Atom Fractions", true); m.checkFractions(); m.convert("Weight Fractions", true); m.checkFractions(); m.convert("Weight Fractions", false); m.convert("Atom Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
-            if (m.getType() == "Atom Fractions") {m.convert("Atom Fractions", true); m.checkFractions(); m.convert("Atom Fractions", false); m.checkFractions(); m.convert("Native", false);
-            //m.convert("Weight Fractions", true); m.checkFractions(); m.convert("Weight Fractions", false); m.checkFractions(); m.convert("Native", false); 
-            cout << endl;}
+            // if (m.getType() == "Weight Fractions") {m.convert("Weight Fractions", true); m.checkFractions(); m.convert("Weight Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
             // if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.convert("Atom Fractions", true); m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName); m.checkFractions(); cout << endl;}
+            
             // if (m.getType() == "Chemical Formula") {m.checkAtoms();}
             // if (m.getName() == "Acetone") {
                 // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName); m.convert("Native", false);
