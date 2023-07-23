@@ -148,8 +148,8 @@ class Database {
 
             // Set Methods:
             void setName (string a) {name = a;}
-            void setType (string a) {type = a;}
-            void setNative (string a) {if (a=="Chemical Formula") {native = "Atoms Per Molecule";} else {native = a;}}
+            void setType (string a) {if (a=="Chemical Formula") {native = "Atoms Per Molecule";} else {type = a;}}
+            void setNative (string a) {native = a;}
             void setFormula (string a) {formula = a;}
             void setDensity (double a) {density = a;}
             void setComment (string a) {comment = a;}
@@ -186,7 +186,7 @@ class Database {
             bool getIso() {return isIso;}
 
             void convert(string style, bool iso) { // if faster to use switch statement, come back and use enum+map to use on strings
-                // cout << name << "  " << type << "_" << isIso << " to " << style << "_" << iso<< endl;
+                cout << name << "  " << type << "_" << isIso << " to " << style << "_" << iso<< endl;
                 if (style == "Native") {contains = nativeComps; type = native; 
                 for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}
                 return;
@@ -203,7 +203,6 @@ class Database {
                             convert("Weight Fractions", true);
                         }
                         else {// Only for this conversion, convert back to native -> WF iso --> here
-                            // bool hasDups = false;
                             for (int i=0; i<contains.size(); i++) {
                                 total = 0;
                                 Component ci = contains.at(i);
@@ -219,10 +218,7 @@ class Database {
                                                     contains.at(i).setMassNum(0);
                                                     // cout << contains.at(i).getElement() << " " << contains.at(i).getAmount() << endl;
                                                     total += contains.at(i).getAmount();
-                                                    if (i>0 && contains.at(i-1).getElement() != contains.at(i).getElement()) {
-                                                        break;
-                                                        // cout << i << " " << contains.at(i-1).getAmount() << "  " << contains.at(i).getAmount() << endl;
-                                                    }
+                                                    // if (i>0 && contains.at(i-1).getElement() == contains.at(i).getElement()) {cout << i << " " << contains.at(i-1).getAmount() << "  " << contains.at(i).getAmount() << endl;}
                                                     if (i<contains.size()-1 && contains.at(i).getElement() == contains.at(i+1).getElement()) {i++;}
                                                 }
                                             }
@@ -235,18 +231,18 @@ class Database {
                                                 // cout << total << " * "  << e.getMass()<< endl;
                                                 newComps.push_back(c);
                                             }
+                                            else if (contains.size() == 1) {newComps.push_back(ci);}
                                         }
                                         else {
                                             newComps.push_back(ci);
                                         }
-                                    // type = "Weight Fractions";
                                     isIso = false;
                                     break;
                                     }
                                 }
                             }
                             contains = newComps;
-                            // for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}
+                            for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}
                         }
                         return;
                     }
@@ -356,7 +352,7 @@ class Database {
                     
                     // 6) Atom Fractions to APM (Only for Elemental and clean numbers) [Works]
                     else if (type == "Atom Fractions" && style == "Atoms Per Molecule" && formula != "") {
-                        cout << formula << endl;
+                        // cout << formula << endl;
                         double min = 1.0;
                         for (int i=0; i<contains.size(); i++) {
                             if (i != 0 && contains.at(i).getElement() == contains.at(i-1).getElement()) {
@@ -392,7 +388,7 @@ class Database {
                         for (int k=0; k<contains.size(); k++) {
                             contains.at(k).setAmount(round(mult*contains.at(k).getAmount()));
                             Component ci = contains.at(k);
-                            // cout << ci.getElement() << " " << ci.getAmount() << endl;
+                            cout << ci.getElement() << " " << ci.getAmount() << endl;
                         }
                     }
                     
@@ -1045,8 +1041,27 @@ class Database {
 
             // Test 4: Elem WF <-> Elem AF- Success
             // if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", true); m.convert("Atom Fractions", false); m.convert("Weight Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
+            // if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.convert("Weight Fractions", false); m.convert("Atom Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
+
+
+
+            // Test 5: APM -> Elem WF [One-way conversion]
+            // if (m.getType() == "Atom Fractions") {m.convert("Atom Per Molecule", false); m.convert("Weight Fractions", false); m.convert("Native", false); cout << endl;}
+            // if (m.getType() == "Atoms Per Molecule") {m.convert("Weight Fractions", false); m.convert("Native", false); cout << endl;}
+
+            // Test 6: APM -> Iso WF [Only one-way conversion] (Use elem then iso)
+            // if (m.getType() == "Atom Fractions") {m.convert("Atom Per Molecule", false); m.convert("Weight Fractions", false); m.convert("Weight Fractions", true); m.convert("Native", false); cout << endl;}
+            // if (m.getType() == "Atoms Per Molecule") {m.convert("Weight Fractions", false); m.convert("Weight Fractions", true);}
+
+            // Test 7: Elem AF <-> APM- Partial Success
+            // if (m.getType() == "Atom Fractions") {m.convert("Atoms Per Molecule", false);}
+            // if (m.getType() == "Atoms Per Molecule") {m.convert("Weight Fractions", false); m.convert("Weight Fractions", true);}
             
+            // Test 8: Iso AF <-> APM
+            // if (m.getType() == "Atom Fractions") {m.convert("Atom Fractions", true); m.convert("Atoms Per Molecule", true);}
+            // if (m.getType() == "Atoms Per Molecule") {m.convert("Atom Fractions", false); m.convert("Atom Fractions", true);}
             
+
             // if (m.getType() == "Weight Fractions") {m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName); m.checkFractions(); cout << endl;}
             // if (m.getType() == "Weight Fractions") {m.convert("Weight Fractions", true); m.checkFractions(); m.convert("Weight Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
             // if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.convert("Atom Fractions", true); m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName); m.checkFractions(); cout << endl;}
