@@ -22,7 +22,7 @@ class MaterialCompositionLib {
 
     public:
         MaterialCompositionLib() {
-            path = "wasp/waspmaterial/materials";
+            path = "C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials";
             databases = vector<Database>();
             Masses *p = &nistMasses; p = nullptr;
             for (int i=0; i<databases.size(); i++) {
@@ -78,8 +78,8 @@ class MaterialCompositionLib {
 
             if (!nistMasses.build(massPath, cerr)) {return false;}
             vector <string> paths = {
-                "../materials/NIST_126_table2.json",
-                "../materials/PNNL-15870r2_eff.json"
+                "C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials/NIST_126_table2.json",
+                "C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials/PNNL-15870r2_eff.json"
             };
             for (int i=0; i<paths.size(); i++) { // replace filespaths w/ paths
             //     Database db = databases.at(i);
