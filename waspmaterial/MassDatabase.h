@@ -81,44 +81,42 @@ class Masses {
             string getNotes() {return notes;}
             vector<Isotope> getIsotopes() {return isotopes;}
 
-            void checkAbundances();
-            // {
-            //     int imax = isotopes.size();
-            //     double sum = 0.0;
-            //     for (int i=0; i<imax; i++) {
-            //         Isotope c = isotopes.at(i);
-            //         sum += c.getAbundance();
-            //     }
-            //     bool good = sum == 1;
-            //     if(good) {
-            //         cout << "Natural abundances add to " << 1 << endl;
-            //     }
-            //     else if (sum != 0) {
-            //         cout << "Natural abundances do not add to 0 or 1" << sum << endl;
-            //     }
-            // }
+            bool checkAbundances()
+            {
+                int imax = isotopes.size();
+                double sum = 0.0;
+                for (int i=0; i<imax; i++) {
+                    Isotope c = isotopes.at(i);
+                    sum += c.getAbundance();
+                }
+                bool good = (0.99999 < sum < 1.00001 || sum == 0);
+                if(good) {
+                    cout << "Natural abundances add to " << sum << endl;
+                    return true;
+                }
+                else if (sum != 0) {
+                    cout << symbol << " Natural abundances do not add to 0 or 1  " << sum << endl;
+                    return false;
+                }
+            }
             // Displays the members of Element
-            void display();
-            // {
-            //     cout << "\t" << "Element" << endl;
-            //     cout << "\t\t" << "Atomic Number:  " << atomNum << endl;
-            //     cout << "\t\t" << "Symbol:  " << symbol << endl;
-            //     if (mass>0) {cout << "\t\t" << "Mass:  " << mass << endl;}
-            //     if (notes != "") {cout << "\t\t" << "Notes:  " << notes << endl;}
-            //     // if (comments.size() > 0) {
-            //     //     cout << "\t\t" << "Comments:  ";
-            //     //     for (int i=0; i<comments.size(); i++) {cout << comments.at(i) << "  " << endl;}
-            //     // }
-            //     if (isotopes.size()>0) {
-            //         cout << "\t\t" << "Isotopes:" << endl;
-            //         for (int i=0; i<isotopes.size(); i++) {
-            //             Isotope it = isotopes.at(i);
-            //             cout << "\t\t   " << it.getMassNum() << "     " << it.getMass();
-            //             if (it.getAbundance()>0) {cout << " \t" << it.getAbundance();} 
-            //             cout << endl;
-            //         }
-            //     }
-            // }
+            void display()
+            {
+                cout << "\t" << "Element" << endl;
+                cout << "\t\t" << "Atomic Number:  " << atomNum << endl;
+                cout << "\t\t" << "Symbol:  " << symbol << endl;
+                if (mass>0) {cout << "\t\t" << "Mass:  " << mass << endl;}
+                if (notes != "") {cout << "\t\t" << "Notes:  " << notes << endl;}
+                if (isotopes.size()>0) {
+                    cout << "\t\t" << "Isotopes:" << endl;
+                    for (int i=0; i<isotopes.size(); i++) {
+                        Isotope it = isotopes.at(i);
+                        cout << "\t\t   " << it.getMassNum() << "     " << it.getMass();
+                        if (it.getAbundance()>0) {cout << " \t" << it.getAbundance();} 
+                        cout << endl;
+                    }
+                }
+            }
     };
 
     string name;
@@ -149,12 +147,13 @@ class Masses {
         vector<string> getNotes() {return notes;}
 
         /** Invoke the parser to build members of the entire file.
-         * @param path      path to masses json database
+         * @param path      relative path to masses json database
          * @param cerr      stream name for error messages
          * @return          true if successfully built
          */
         bool build(const std::string& path, std::ostream& cerr){
-            std::ifstream input(path);
+            string massPath = wasp::dir_name(__FILE__) + path;
+            std::ifstream input(massPath);
             DataObject::SP json_ptr;
             {
                 JSONObjectParser generator(json_ptr, input, std::cerr, nullptr);
@@ -328,30 +327,30 @@ class Masses {
         }
 
         // Displays the members of Masses
-        void display(bool verbose);
-        // {
-        //     int eNum = getElems();
-        //     cout << "Mass Database " << getName() << " with " << eNum << " elements" << endl;
-        //     cout << "    Notes:";
-        //     for (int n=0; n<notes.size(); n++) {cout << "     " << notes.at(n) << endl;}
-        //     if(eNum>0){
-        //         if(verbose){
-        //             for(int i=0; i<eNum; i++){
-        //                 Element element = elements.at(i);
-        //                 element.display();
-        //             }
-        //         }
-        //         else {
-        //         Element element = elements.at(0);
-        //         element.display();
-        //         cout << endl << "     ..." << endl << endl;
-        //         element = elements.at(eNum-1);
-        //         element.display();
-        //         }
-        //     }
-        //     cout << endl;
-        //     cout << "    Reference:  " << endl << "        " << reference << endl;
-        // }
+        void display(bool verbose)
+        {
+            int eNum = getElems();
+            cout << "Mass Database " << getName() << " with " << eNum << " elements" << endl;
+            cout << "    Notes:";
+            for (int n=0; n<notes.size(); n++) {cout << "     " << notes.at(n) << endl;}
+            if(eNum>0){
+                if(verbose){
+                    for(int i=0; i<eNum; i++){
+                        Element element = elements.at(i);
+                        element.display();
+                    }
+                }
+                else {
+                Element element = elements.at(0);
+                element.display();
+                cout << endl << "     ..." << endl << endl;
+                element = elements.at(eNum-1);
+                element.display();
+                }
+            }
+            cout << endl;
+            cout << "    Reference:  " << endl << "        " << reference << endl;
+        }
 };
 
 const string Masses::Element::ATOMNUM = "AtomicNumber";

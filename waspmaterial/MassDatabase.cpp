@@ -10,70 +10,65 @@
 using namespace std;
 using namespace wasp;
 
-class Isotope {
-    int massNum;
-    double mass;
-    double abundance;
-    static const string MASSNUMBER;
-    static const string MASS;
-    static const string ABUNDANCE;
+// class Isotope {
+//     int massNum;
+//     double mass;
+//     double abundance;
+//     static const string MASSNUMBER;
+//     static const string MASS;
+//     static const string ABUNDANCE;
 
-    public:
-        Isotope() {
-            massNum = 0;
-            mass = 0.0;
-            abundance = 0.0;
-        }
+//     public:
+//         Isotope() {
+//             massNum = 0;
+//             mass = 0.0;
+//             abundance = 0.0;
+//         }
 
-        void setMassNum(int a) {massNum=a;}
-        void setMass(double a) {mass=a;}
-        void setAbundance(double a) {abundance=a;}
+//         void setMassNum(int a) {massNum=a;}
+//         void setMass(double a) {mass=a;}
+//         void setAbundance(double a) {abundance=a;}
 
-        int getMassNum() {return massNum;}
-        double getMass() {return mass;}
-        double getAbundance() {return abundance;}
-};
+//         int getMassNum() {return massNum;}
+//         double getMass() {return mass;}
+//         double getAbundance() {return abundance;}
+// };
 
 
 class Masses {
     class Element{
-        int atomNum;
-        string symbol;
-        double mass;
-        string notes;
-        // vector<string> comments;
-        vector<Isotope> isotopes;
+        // int atomNum;
+        // string symbol;
+        // double mass;
+        // string notes;
+        // vector<Isotope> isotopes;
 
-        static const string ATOMNUM;
-        static const string SYMBOL;
-        static const string MASS;
-        static const string NOTES;
-        // static const string COMMENTS;
-        static const string ISOTOPES;
+        // static const string ATOMNUM;
+        // static const string SYMBOL;
+        // static const string MASS;
+        // static const string NOTES;
+        // static const string ISOTOPES;
 
-        public:
-            Element() {
-                atomNum = 0;
-                symbol = string();
-                mass = 0.0;
-                notes = string();
-                // comments = vector<string>();
-                isotopes = vector<Isotope>();
-            }
+        // public:
+        //     Element() {
+        //         atomNum = 0;
+        //         symbol = string();
+        //         mass = 0.0;
+        //         notes = string();
+        //         isotopes = vector<Isotope>();
+        //     }
 
-            void setAtomNum(int a) {atomNum=a;}
-            void setSymbol(string a) {symbol=a;}
-            void setMass(double a) {mass=a;}
-            void setNotes(string a) {notes=a;}
-            // void setComments(vector<string> a) {comments=a;}
-            void setIsotopes(vector<Isotope> a) {isotopes=a;}
+        //     void setAtomNum(int a) {atomNum=a;}
+        //     void setSymbol(string a) {symbol=a;}
+        //     void setMass(double a) {mass=a;}
+        //     void setNotes(string a) {notes=a;}
+        //     void setIsotopes(vector<Isotope> a) {isotopes=a;}
 
-            int getAtomNum() {return atomNum;}
-            string getSymbol() {return symbol;}
-            double getMass() {return mass;}
-            string getNotes() {return notes;}
-            // vector<string> getComments() {return comments;}
-            vector<Isotope> getIsotopes() {return isotopes;}
+        //     int getAtomNum() {return atomNum;}
+        //     string getSymbol() {return symbol;}
+        //     double getMass() {return mass;}
+        //     string getNotes() {return notes;}
+        //     vector<Isotope> getIsotopes() {return isotopes;}
 
             void checkAbundances() {
                 int imax = isotopes.size();
@@ -97,10 +92,6 @@ class Masses {
                 cout << "\t\t" << "Symbol:  " << symbol << endl;
                 if (mass>0) {cout << "\t\t" << "Mass:  " << mass << endl;}
                 if (notes != "") {cout << "\t\t" << "Notes:  " << notes << endl;}
-                // if (comments.size() > 0) {
-                //     cout << "\t\t" << "Comments:  ";
-                //     for (int i=0; i<comments.size(); i++) {cout << comments.at(i) << "  " << endl;}
-                // }
                 if (isotopes.size()>0) {
                     cout << "\t\t" << "Isotopes:" << endl;
                     for (int i=0; i<isotopes.size(); i++) {
@@ -114,32 +105,32 @@ class Masses {
             }
     };
 
-    string name;
-    string reference;
-    vector<Element> elements;
-    vector<string> notes;
+    // string name;
+    // string reference;
+    // vector<Element> elements;
+    // vector<string> notes;
 
-    vector<Element> elemVec{};
-    vector<Isotope> isoVec{};
+    // vector<Element> elemVec{};
+    // vector<Isotope> isoVec{};
 
-    public:
-        Masses() {
-            name = string();
-            reference = string();
-            elements = vector<Element>();
-            notes = vector<string>();
-        }
+    // public:
+    //     Masses() {
+    //         name = string();
+    //         reference = string();
+    //         elements = vector<Element>();
+    //         notes = vector<string>();
+    //     }
 
-        void setName(string a) {name=a;}
-        void setRef(string a) {reference=a;}
-        void setElements(vector<Element> a) {elements=a;}
-        void setNotes(vector<string> a) {notes=a;}
+    //     void setName(string a) {name=a;}
+    //     void setRef(string a) {reference=a;}
+    //     void setElements(vector<Element> a) {elements=a;}
+    //     void setNotes(vector<string> a) {notes=a;}
 
-        string getName() {return name;}
-        string getRef() {return reference;}
-        int getElems() {return elements.size();}
-        Element getElem(int i) {return elements[i];}
-        vector<string> getNotes() {return notes;}
+    //     string getName() {return name;}
+    //     string getRef() {return reference;}
+    //     int getElems() {return elements.size();}
+    //     Element getElem(int i) {return elements[i];}
+    //     vector<string> getNotes() {return notes;}
 
         bool build(const std::string& path, std::ostream& cerr){
             std::ifstream input(path);
@@ -239,17 +230,6 @@ class Masses {
             itr = element->find("Notes");
             if (itr != element->end() && itr->second.is_string()) {e.setNotes(itr->second.to_string());}
 
-            // itr = element->find("Comments");
-            // if (itr != element->end() && itr->second.is_array()) {
-            //     DataArray* coms = itr->second.to_array();
-            //     vector<string> comVec{};
-            //     for (auto citr = coms->begin(); citr != coms->end(); citr++) {
-            //          auto co = *citr;
-            //          comVec.push_back(co.to_string());
-            //     }
-            //     e.setComments(comVec);
-            // }
-
             itr = element->find("Isotopes");
             if (itr == element->end()) {
                 cerr << "Unable to find element isotopes!" << endl;
@@ -279,8 +259,6 @@ class Masses {
                     success &= build_isotope(iso.to_object(), cerr);
                 }
             }
-            // e.display();
-            //e.checkAbundances();
             return true;
         }
 
@@ -328,13 +306,13 @@ class Masses {
         }
 };
 
-const string Masses::Element::ATOMNUM = "AtomicNumber";
-const string Masses::Element::SYMBOL = "Symbol";
-const string Masses::Element::MASS = "Mass";
-const string Masses::Element::NOTES = "Notes";
-// const string Masses::Element::COMMENTS = "Comments";
-const string Masses::Element::ISOTOPES = "Isotopes";
+// const string Masses::Element::ATOMNUM = "AtomicNumber";
+// const string Masses::Element::SYMBOL = "Symbol";
+// const string Masses::Element::MASS = "Mass";
+// const string Masses::Element::NOTES = "Notes";
+// // const string Masses::Element::COMMENTS = "Comments";
+// const string Masses::Element::ISOTOPES = "Isotopes";
 
-const string Isotope::MASSNUMBER = "MassNumber";
-const string Isotope::MASS = "Mass";
-const string Isotope::ABUNDANCE = "Abundance";
+// const string Isotope::MASSNUMBER = "MassNumber";
+// const string Isotope::MASS = "Mass";
+// const string Isotope::ABUNDANCE = "Abundance";
