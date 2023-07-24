@@ -188,7 +188,7 @@ class Database {
             void convert(string style, bool iso) { // if faster to use switch statement, come back and use enum+map to use on strings
                 // cout << name << "  " << type << "_" << isIso << " to " << style << "_" << iso<< endl;
                 if (style == "Native") {contains = nativeComps; type = native; 
-                // for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}
+                for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}
                 return;
                 }
                 vector<double> atomMasses {};
@@ -202,48 +202,6 @@ class Database {
                             convert("Atom Fractions", true);
                             convert("Weight Fractions", true);
                         }
-                        // else {// Only for this conversion, convert back to native -> WF iso --> here
-                        //     for (int i=0; i<contains.size(); i++) {
-                        //         total = 0;
-                        //         Component ci = contains.at(i);
-                        //         for (int m=0; m<mass.getElems(); m++) {
-                        //             if (ci.getElement() == mass.getElem(m).getSymbol()) {
-                        //                 auto e = mass.getElem(m);
-                        //                 if (!ci.getIso()) {
-                        //                     // cout << "her" << endl;
-                        //                     for (int n=0; n<e.getIsotopes().size(); n++) {
-                        //                         ci = contains.at(i);
-                        //                         if (ci.getMassNum() == e.getIsotopes().at(n).getMassNum()) {
-                        //                             contains.at(i).setAmount(ci.getAmount() / e.getIsotopes().at(n).getMass());
-                        //                             contains.at(i).setMassNum(0);
-                        //                             // cout << contains.at(i).getElement() << " " << contains.at(i).getAmount() << endl;
-                        //                             total += contains.at(i).getAmount();
-                        //                             // if (i>0 && contains.at(i-1).getElement() == contains.at(i).getElement()) {cout << i << " " << contains.at(i-1).getAmount() << "  " << contains.at(i).getAmount() << endl;}
-                        //                             if (i<contains.size()-1 && contains.at(i).getElement() == contains.at(i+1).getElement()) {i++;}
-                        //                         }
-                        //                     }
-                        //                     // cout << "end" << endl;
-                        //                     if (i>0 || (i<contains.size()-1 && contains.at(i).getElement()!=contains.at(i+1).getElement())) {
-                        //                         Component c;
-                        //                         c.setAmount(total*e.getMass());
-                        //                         c.setElement(contains.at(i).getElement());
-                        //                         c.setMassNum(contains.at(i).getMassNum());
-                        //                         // cout << total << " * "  << e.getMass()<< endl;
-                        //                         newComps.push_back(c);
-                        //                     }
-                        //                     else if (contains.size() == 1) {newComps.push_back(ci);}
-                        //                 }
-                        //                 else {
-                        //                     newComps.push_back(ci);
-                        //                 }
-                        //             isIso = false;
-                        //             break;
-                        //             }
-                        //         }
-                        //     }
-                        //     contains = newComps;
-                        //     for (auto mat: contains) {cout << mat.getElement() << " " << mat.getAmount() << endl;}
-                        // }
                         return;
                     }
 
@@ -287,8 +245,9 @@ class Database {
                                     // cout << "Elemental" << endl;
                                     
                                     int n = i;
+                                    if (!contains.at(i).getIso()) {contains.at(i).setMassNum(0);}
                                     while (n < contains.size()-1 && contains.at(n).getElement() == contains.at(n+1).getElement() && !contains.at(n).getIso()) {
-                                            contains.at(n).setMassNum(0);
+                                            // contains.at(n).setMassNum(0);
                                             contains.at(n).setAmount(contains.at(n).getAmount()+contains.at(n+1).getAmount());
                                             // cout << contains.at(n+1).getElement() << contains.at(n+1).getAmount() << endl;
                                             contains.erase(contains.begin()+n+1);
@@ -317,7 +276,7 @@ class Database {
                         Component c = contains.at(j);
                         if (type == "Atom Fractions" && style == "Atom Fractions") {}
                         else {contains.at(j).setAmount(c.getAmount()/total);}
-                        cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
+                        // cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
                     }
                 }
 
@@ -423,7 +382,7 @@ class Database {
                 int aNum = 1;
                 if (code == "MAVRIC/KENO") {
                     cout << "'  " << dbName << endl;
-                    cout << "'  " << name << ", " << formula << ", " << density << " g/cm^3" << endl;
+                    cout << "'  " << name << ", "; if (formula != "") {cout << formula << ", ";} cout << density << " g/cm^3" << endl;
                     for (int k=0; k<comments.size(); k++) {
                         cout << "'  " << comments.at(k) << endl;
                     }
@@ -446,28 +405,17 @@ class Database {
                                 break;
                             }
                         }
-                        // if (calcType == "Isotopic") {
-                        //     if (c.getMassNum() > 0) {cout << endl << "         " << aNum*1000+c.getMassNum() << "   " << c.getAmount();}
-                        //     else {
-                        //         for (int n=0; n<e.getIsotopes().size(); n++) {
-                        //             cout << endl << "         " << aNum*1000+e.getIsotopes().at(n).getMassNum() << "   " << c.getAmount() * e.getIsotopes().at(n).getAbundance();
-                        //         }
-                        //     }
-                        // }
-                        // else {cout << endl << "         " << aNum*1000 << "   " << c.getAmount();}
-                        // // other 2 numbers stay constant (density && temp)?
                     }
                     cout << "   " << "end" << endl << endl;
 
                     // standard comp (mass density)
                     // standard comp (atom density)
-                    
                 }
                 else if (code == "ORIGEN") {
                     string unit;
                     if (type == "Weight Fractions") {unit="gram";}
                     else {unit="mole";}
-                    cout << "% 1 " << unit << " of " << name << " using " << type << endl;
+                    cout << "% 1 " << unit << " of " << name << " using " << calcType << " " << type << endl;
 
                     unit += "s";
                     cout << "mat {" << endl;
@@ -485,7 +433,8 @@ class Database {
                     cout << unit << endl << "}" << endl << endl;
                 }
                 else if (code == "MCNP") {
-                    int id = 1;
+                    int id;
+                    if (!isIso) {convert(type, true);}
                     cout << "Enter an ID number: " << endl; cin >> id;  // Should this be index #, or is this determined by the user?
                     cout << "c  " << dbName << endl;
                     cout << "c  " << name << ", " << density << " g/cm^3" << endl;
@@ -524,22 +473,21 @@ class Database {
                 }
             }
 
-            void check() {
+            bool check() {
                 int cmax = contains.size();
                 if (cmax>0) {
                     Component c = contains.at(0);
                     bool atom = c.getAtom();
-                    if(atom){checkAtoms();}
+                    if(atom){return checkAtoms();}
                     else {checkFractions();}
                 }
                 else {
-                    if(density>0.0){
-                        cout << "    " << name << "\t" << "density only" << endl;
-                    }
-                    else {
-                        // auto ref = references[0];
+                    // if(density>0.0){
+                    //     cout << "    " << name << "\t" << "density only" << endl;
+                    // }
+                    if (density <= 0.0) {
                         cout << "    " << name << "\t" << "no comp, no density" << endl;
-                    } } }
+                    } } return true;}
 
             string countAtoms(string str) {
             // Using a LinkedHashmap to store elements in insertion order
@@ -693,7 +641,7 @@ class Database {
             return f;
             }
             
-            void checkAtoms() {
+            bool checkAtoms() {
                 if (formula.length()>0) {
                     int imax = contains.size();
                     vector<string> symbols{};
@@ -724,11 +672,13 @@ class Database {
                     else {
                         cout << "    " << name << " " << formula << "\t" << "formula does not match atom amounts" << endl;
                         cout << f << " " << lst << endl;
+                        return false;
                     }
                 }
                 else {
                     cout << "    " << name << "\t" << "No formula given" << endl;
                 }
+                return true;
             }
             double checkFractions() {
                 int imax = contains.size();
@@ -826,7 +776,7 @@ class Database {
         }
 
         bool build(const std::string& path, std::ostream& cerr){
-            mass.build("C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials/NISTmasses.json", cerr);
+            mass.build("/materials/NISTmasses.json", cerr);
             std::ifstream input(path);
             DataObject::SP json_ptr;
             {
@@ -1033,14 +983,19 @@ class Database {
             
             
             // Test 1: Diff WF- Success
-            if (m.getType() == "Weight Fractions") {m.convert("Weight Fractions", true); m.convert("Weight Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
+            // m.convert("Weight Fractions", true); m.convert("Weight Fractions", false); m.checkFractions();
+            // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Isotopic", dbName); m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName);
+            // m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName); m.getInputFormat("ORIGEN", "Weight Fractions", "Elemental", dbName);
+            // m.getInputFormat("MCNP", "Weight Fractions", "Isotopic", dbName);
+            // m.getInputFormat("Generic", "Weight Fractions", "Isotopic", dbName); m.getInputFormat("Generic", "Weight Fractions", "Elemental", dbName);
+            // m.convert("Native", false); cout << endl;
 
             // Test 2: Diff AF- Success
-            // if (m.getType() == "Atom Fractions") {
-            //     for (int i=0; i<20; i++) {
-            //         m.convert("Atom Fractions", true); m.convert("Atom Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;
-            //     }
-            // }
+            // m.getInputFormat("MAVRIC/KENO", "Atom Fractions", "Isotopic", dbName); m.getInputFormat("MAVRIC/KENO", "Atom Fractions", "Elemental", dbName);
+            // m.getInputFormat("ORIGEN", "Atom Fractions", "Isotopic", dbName); m.getInputFormat("ORIGEN", "Atom Fractions", "Elemental", dbName);
+            // m.getInputFormat("MCNP", "Atom Fractions", "Isotopic", dbName);
+            // m.getInputFormat("Generic", "Atom Fractions", "Isotopic", dbName); m.getInputFormat("Generic", "Atom Fractions", "Elemental", dbName);
+            // m.checkFractions(); m.convert("Native", false); cout << endl;
             
             // Test 3: Elem WF <-> Iso AF- Success
             // if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", true); m.checkFractions(); m.convert("Native", false); cout << endl;}

@@ -62,7 +62,7 @@ class MaterialCompositionLib {
             // }
         }
         
-        bool build(const std::string& matPath, const std::string& massRelPath, std::ostream& cerr){
+        bool build(const std::string& matRelPath, const std::string& massRelPath, std::ostream& cerr){
             string optfileName ="";        
             string inputFolderPath =""; 
             string extension = "*.json*";
@@ -75,22 +75,24 @@ class MaterialCompositionLib {
                 // sprintf(buf, "%s/Out/%d.jpg", optfileName.c_str(),it->c_str());
                 // imwrite(buf,frame);
             }
-            string massPath = wasp::dir_name(__FILE__) + massRelPath;
-            std::cout <<"Data path is: " << massPath << std::endl;
-            if (!nistMasses.build(massPath, cerr)) {return false;}
+            std::cout <<"Data path is: " << massRelPath << std::endl;
+            if (!nistMasses.build(massRelPath, cerr)) {return false;}
             vector <string> paths = {
                 "C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials/NIST_126_table2.json",
                 "C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials/PNNL-15870r2_eff.json"
             };
-            for (int i=0; i<paths.size(); i++) { // replace filespaths w/ paths
-            //     Database db = databases.at(i);
-                // cout << i << endl;
-                if (paths.at(i).find(".json") == -1) {continue;}
-                Database db;
-                if (!db.build(paths.at(i), cerr) || paths.at(i).find("masses") != -1) {continue;}
-                // else if (!db.build(paths.at(i), cerr)) {return false;}  // Should only need to return false if there's no mat comp jsons and no masses json
-                databases.push_back(db);
-            }
+            // for (int i=0; i<paths.size(); i++) { // replace filespaths w/ paths
+            // //     Database db = databases.at(i);
+            //     // cout << i << endl;
+            //     if (paths.at(i).find(".json") == -1) {continue;}
+            //     Database db;
+            //     if (!db.build(paths.at(i), cerr) || paths.at(i).find("masses") != -1) {continue;}
+            //     // else if (!db.build(paths.at(i), cerr)) {return false;}  // Should only need to return false if there's no mat comp jsons and no masses json
+            //     databases.push_back(db);
+            // }
+            Database db;
+            string matPath = wasp::dir_name(__FILE__) + matRelPath;
+            if (!db.build(matPath, cerr)) {return false;}
             
             // db.display(true);
             // Database::Material mat = db.getMats().at(0);
