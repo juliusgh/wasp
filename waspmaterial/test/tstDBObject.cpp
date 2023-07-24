@@ -18,5 +18,6 @@ Database db;
 // ASSERT_TRUE(db.build("../materials/ARH-600.json", std::cerr));
 
     // Internal Checks
-// for (auto mat: db.getMats()) {ASSERT_TRUE(mat.checkFractions());}
+db.build("C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials/PNNL-15870r2_eff.json", std::cerr);
+for (int i=0; i<db.getMats(); i++) {ASSERT_NEAR(0, db.getMat(i).checkFractions(), 0.00001);}
 }
