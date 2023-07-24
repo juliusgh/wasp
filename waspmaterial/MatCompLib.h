@@ -62,7 +62,7 @@ class MaterialCompositionLib {
             // }
         }
         
-        bool build(const std::string& matPath, const std::string& massPath, std::ostream& cerr){
+        bool build(const std::string& matPath, const std::string& massRelPath, std::ostream& cerr){
             string optfileName ="";        
             string inputFolderPath =""; 
             string extension = "*.json*";
@@ -75,7 +75,8 @@ class MaterialCompositionLib {
                 // sprintf(buf, "%s/Out/%d.jpg", optfileName.c_str(),it->c_str());
                 // imwrite(buf,frame);
             }
-
+            string massPath = wasp::dir_name(__FILE__) + massRelPath;
+            std::cout <<"Data path is: " << massPath << std::endl;
             if (!nistMasses.build(massPath, cerr)) {return false;}
             vector <string> paths = {
                 "C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials/NIST_126_table2.json",
