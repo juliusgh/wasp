@@ -34,6 +34,11 @@ Wasp Material, which contains the Materials Composition Database project, was de
 # Materials
 Material contains 18 different JSON files.
 
+|------------ | Materials Used ---------------------|
+| Description | Composition | Composition | Density |
+|------------ | and Density | Only -------| Only ---|
+| PNNL Compendium | 411 ----| ------------| --------|
+
 # Mass Database
 
 # Material Database
