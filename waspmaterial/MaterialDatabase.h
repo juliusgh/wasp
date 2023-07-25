@@ -1,3 +1,6 @@
+#ifndef WASP_MATERIALDATABASE_H
+#define WASP_MATERIALDATABASE_H
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -17,9 +20,16 @@
 using namespace std;
 using namespace wasp;
 
-
+// Uses the mass information for conversions in Material
 Masses mass;
+
+/** The Database class defines a material composition database that includes a list of materials.
+ * It includes methods to build private members and members of its subclasses.
+*/
 class Database {
+    /** The Component class defines a compositional component of a material.
+     * The three specified types of components are "Weight Fractions", "Atom Fractions", and "Chemical Formula"/"Atoms Per Molecule."
+     */
     class Component {
         string elem;
         double amount;
@@ -54,6 +64,9 @@ class Database {
             bool getAtom() {return atom;}
             bool getIso() {return iso;}
     };
+    /** The Contact class descibes the relevant contact information.
+     * Note the Contact field is exclusive to the PNNL database.
+    */
     class Contact {
         string name;
         string phone;
@@ -85,6 +98,7 @@ class Database {
             string getPhone() {return phone;}
             string getEmail() {return email;}
 
+            // Displays the contents of Contact
             void display() {
                 if (name != "" && phone != "" && email != "") {
                     cout << "\t\t" << "Contact" << endl;
@@ -94,6 +108,10 @@ class Database {
                 }
             }
     };
+    /** The Material class defines a material with atomic and compositional information.
+     * Certain fields are exclusive to specific database.
+     * The basic criteria for a Material object is a name, type, density, and "contains" (array of components).
+    */
     class Material { 
         string name;
         string type;
@@ -185,6 +203,9 @@ class Database {
             vector<string> getSymb() {return symb;}
             bool getIso() {return isIso;}
 
+            /**
+             * 
+            */
             void convert(string style, bool iso) { // if faster to use switch statement, come back and use enum+map to use on strings
                 // cout << name << "  " << type << "_" << isIso << " to " << style << "_" << iso<< endl;
                 if (style == "Native") {contains = nativeComps; type = native; 
@@ -377,6 +398,9 @@ class Database {
                 isIso = iso;
             }
             
+            /**
+             * 
+            */
             void getInputFormat(string code, string dataStyle, string calcType, string dbName) {
                 if (type != dataStyle || isIso != (calcType=="Isotopic")) {convert(dataStyle, calcType == "Isotopic");}
                 int aNum = 1;
@@ -473,6 +497,7 @@ class Database {
                 }
             }
 
+            // Head check method to ensure consistency among material components
             bool check() {
                 int cmax = contains.size();
                 if (cmax>0) {
@@ -489,6 +514,9 @@ class Database {
                         cout << "    " << name << "\t" << "no comp, no density" << endl;
                     } } return true;}
 
+            /** Helper function for countAtoms()
+             * 
+            */
             string countAtoms(string str) {
             // Using a LinkedHashmap to store elements in insertion order
             map<string, int> mp;
@@ -700,6 +728,8 @@ class Database {
                 }
                 return 1-sum;
             }
+
+            // Displays members of Material
             void display() {
                 cout << "\t" << "Material" << endl;
                 cout << "\t\t" << "Name:  " << name << endl;
@@ -981,7 +1011,8 @@ class Database {
 
             matVec.push_back(m);
             
-            
+            // Check Pu and U mixes for all; should these isos be combined or left separate?
+
             // Test 1: Diff WF- Success
             // m.convert("Weight Fractions", true); m.convert("Weight Fractions", false); m.checkFractions();
             // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Isotopic", dbName); m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName);
@@ -998,14 +1029,15 @@ class Database {
             // m.checkFractions(); m.convert("Native", false); cout << endl;
             
             // Test 3: Elem WF <-> Iso AF- Success
-            // if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", true); m.checkFractions(); m.convert("Native", false); cout << endl;}
-            // if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.checkFractions(); m.convert("Native", false); cout << endl;}
-            
+            // m.getInputFormat("MAVRIC/KENO", "Atom Fractions", "Isotopic", dbName); m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName);
+            // m.getInputFormat("ORIGEN", "Atom Fractions", "Isotopic", dbName); m.getInputFormat("ORIGEN", "Weight Fractions", "Elemental", dbName);
+            // m.getInputFormat("MCNP", "Atom Fractions", "Isotopic", dbName); m.getInputFormat("MCNP", "Weight Fractions", "Elemental", dbName);
+            // m.getInputFormat("Generic", "Atom Fractions", "Isotopic", dbName); m.getInputFormat("Generic", "Weight Fractions", "Elemental", dbName);
+            // m.checkFractions(); m.convert("Native", false); cout << endl;
 
             // Test 4: Elem WF <-> Elem AF- Success
             // if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", true); m.convert("Atom Fractions", false); m.convert("Weight Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
             // if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.convert("Weight Fractions", false); m.convert("Atom Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
-
 
 
             // Test 5: APM -> Elem WF [One-way conversion; Check precision]
@@ -1146,3 +1178,4 @@ const string Database::Component::ATOMFRACTION = "AtomFraction";
 const string Database::Contact::NAME = "Name";
 const string Database::Contact::PHONE = "Phone";
 const string Database::Contact::EMAIL = "Email";
+#endif // WASP_MASSDATABASE_H

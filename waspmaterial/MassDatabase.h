@@ -42,10 +42,11 @@ class Isotope {
 };
 
 /** The Masses class defines the various components found within a masses database.
- * It includes methods to build private members and the members of its subclasses.
+ * It includes methods to build private members and the members of its subclass (Element).
 */
 class Masses {
     /** The Element class decribes the components found within each element in a masses database.
+     * Each element provides basic atomic information as well as a list of isotopes.
     */
     class Element{
         int atomNum;
@@ -80,7 +81,9 @@ class Masses {
             double getMass() {return mass;}
             string getNotes() {return notes;}
             vector<Isotope> getIsotopes() {return isotopes;}
-
+            /** checkAbundances() checks whether the natural abundances (if any) of an element sums to 1.
+             * This method serves as an internal check to the masses databases.
+            */
             bool checkAbundances()
             {
                 int imax = isotopes.size();
@@ -89,6 +92,7 @@ class Masses {
                     Isotope c = isotopes.at(i);
                     sum += c.getAbundance();
                 }
+                // Indicates that natural abundances sum to 0 or 1
                 bool good = (0.99999 < sum < 1.00001 || sum == 0);
                 if(good) {
                     cout << "Natural abundances add to " << sum << endl;
