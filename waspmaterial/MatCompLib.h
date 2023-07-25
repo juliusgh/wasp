@@ -4,8 +4,6 @@
 #include <vector>
 #include <cstdlib>
 #include <sys/stat.h>
-#include "waspjson\JSONObjectParser.hpp"
-#include "waspcore\Object.h"
 #include "waspmaterial/MaterialDatabase.h"
 // #include "waspmaterial/MassDatabase.h"
 using namespace std;
