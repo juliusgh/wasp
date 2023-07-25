@@ -73,9 +73,8 @@ class MaterialCompositionLib {
                 // sprintf(buf, "%s/Out/%d.jpg", optfileName.c_str(),it->c_str());
                 // imwrite(buf,frame);
             }
-            std::cout <<"Data path is: " << massRelPath << std::endl;
             if (!nistMasses.build(massRelPath, cerr)) {return false;}
-            vector <string> paths = {
+            vector<string> paths = {
                 "C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials/NIST_126_table2.json",
                 "C:/Users/k12jsti/source/repos/materialsdatabase/wasp/waspmaterial/materials/PNNL-15870r2_eff.json"
             };
@@ -89,8 +88,7 @@ class MaterialCompositionLib {
             //     databases.push_back(db);
             // }
             Database db;
-            string matPath = wasp::dir_name(__FILE__) + matRelPath;
-            if (!db.build(matPath, cerr)) {return false;}
+            if (!db.build(matRelPath, cerr)) {return false;}
             
             // db.display(true);
             // Database::Material mat = db.getMats().at(0);

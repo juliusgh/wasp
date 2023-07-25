@@ -45,7 +45,7 @@ class Database {
                 elem = string();
                 amount = 0.0;
                 massNum = 0;
-                atom = true;
+                atom = false;
                 iso = false;
             }
 
@@ -165,7 +165,7 @@ class Database {
 
             // Set Methods:
             void setName (string a) {name = a;}
-            void setType (string a) {if (a=="Chemical Formula") {native = "Atoms Per Molecule";} else {type = a;}}
+            void setType (string a) {if (a=="Chemical Formula") {type = "Atoms Per Molecule";} else {type = a;}}
             void setNative (string a) {native = a;}
             void setFormula (string a) {formula = a;}
             void setDensity (double a) {density = a;}
@@ -816,7 +816,7 @@ class Database {
          */
         bool build(const std::string& path, std::ostream& cerr){
             mass.build("/materials/NISTmasses.json", cerr);
-            std::ifstream input(path);
+            std::ifstream input(wasp::dir_name(__FILE__) + path);
             DataObject::SP json_ptr;
             {
                 JSONObjectParser generator(json_ptr, input, std::cerr, nullptr);
@@ -932,7 +932,8 @@ class Database {
             else if (!itr->second.is_string()) {cerr << "Type is not a string." << endl;}
             else {m.setType(itr->second.to_string());
                 m.setNative(m.getType());
-                if (m.getType() != "Weight Fractions") {
+                // For some reason, not all "Chemical Formula" materials actually have a formula.
+                if (m.getType() != "Weight Fractions" && material->find("Formula") != material->end()) {
                     itr = material->find("Formula");
                     m.setFormula(itr->second.to_string());
                 }
@@ -1106,7 +1107,7 @@ class Database {
                 bool success = true;
                 if (!comp.is_object()) {
                     cerr << "Component is not an object and is in an unrecognized format." << endl;
-                    // success = false;
+                    return false;
                 }
                 else {
                     success &= build_component(comp.to_object(), m, cerr);
@@ -1134,18 +1135,16 @@ class Database {
             if (m.getType() == "Weight Fractions") {
                 itr = comp->find("Fraction");
                 c.setAmount((long double) itr->second.to_double());
-                c.setAtom(false);
             }
             
             // Type is Atom Fractions
             else if (m.getType() == "Atom Fractions") {
                 itr = comp->find("Fraction");
                 c.setAmount((long double) itr->second.to_double());
-                c.setAtom(false);
             }
             
-            // Type is Chemical Formula
-            else if (m.getType() == "Chemical Formula") {
+            // Type is a chemical formula given in Atoms Per Molecule
+            else if (m.getType() == "Atoms Per Molecule") {
                 itr = comp->find("Atoms");
                 c.setAmount((long double) itr->second.to_double());
                 c.setAtom(true);

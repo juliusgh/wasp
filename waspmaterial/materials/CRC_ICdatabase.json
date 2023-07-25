@@ -31787,15 +31787,6 @@
             {"Element": "Cl", "Atoms": 2.0 },
             {"Element": "Zr", "Atoms": 1.0 }
         ]
-      },
-      { "Name": "Test1", 
-        "Density": 0.00, 
-        "Type": "Chemical Formula", 
-        "Formula": "2CH<sub>3</sub>·(3CH(C<sub>6</sub>H<sub>5</sub>)<sub>2</sub>·CH<sub>2</sub>)<sub>7</sub>·CH<sub>4</sub>", 
-        "Contains": [
-            {"Element": "C",  "Atoms": 283.0 },
-            {"Element": "H",  "Atoms": 255.0 }
-        ]
       }
     ],
     "Comments" : [

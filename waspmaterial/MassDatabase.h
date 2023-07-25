@@ -156,7 +156,7 @@ class Masses {
          * @return          true if successfully built
          */
         bool build(const std::string& path, std::ostream& cerr){
-            string massPath = wasp::dir_name(__FILE__) + path;
+            string massPath = wasp::dir_name(__FILE__) + path;;
             std::ifstream input(massPath);
             DataObject::SP json_ptr;
             {
