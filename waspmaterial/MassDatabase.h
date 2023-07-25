@@ -93,7 +93,7 @@ class Masses {
                     sum += c.getAbundance();
                 }
                 // Indicates that natural abundances sum to 0 or 1
-                bool good = (0.99999 < sum < 1.00001 || sum == 0);
+                bool good = (0.99999 < sum < 1.00001) || sum == 0;
                 if(good) {
                     cout << "Natural abundances add to " << sum << endl;
                     return true;
@@ -327,6 +327,18 @@ class Masses {
             if (itr != iso->end() && itr->second.is_double()) {i.setAbundance(itr->second.to_double());}
 
             isoVec.push_back(i);
+            return true;
+        }
+
+        /** Check method for the Masses database
+         * This method calls an abundances check for each element.
+        */
+        bool check() {
+            int elemNum = getElems();
+            for (int e=0; e<elemNum; e++) {
+                Element elem = getElem(e);
+                if (!elem.checkAbundances()) {return false;}
+            }
             return true;
         }
 

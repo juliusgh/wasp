@@ -17,7 +17,6 @@
 #include "waspjson\JSONObjectParser.hpp"
 #include "waspcore\Object.h"
 #include "waspmaterial/MassDatabase.h"
-using namespace std;
 using namespace wasp;
 
 // Uses the mass information for conversions in Material
@@ -110,7 +109,7 @@ class Database {
     };
     /** The Material class defines a material with atomic and compositional information.
      * Certain fields are exclusive to specific database.
-     * The basic criteria for a Material object is a name, type, density, and "contains" (array of components).
+     * The basic criteria for a Material object is a name, type, density, and "contains" (mentioned before material build function).
     */
     class Material { 
         string name;
@@ -515,7 +514,7 @@ class Database {
                     } } return true;}
 
             /** Helper function for countAtoms()
-             * 
+             * Builds a map that links atom amounts to an elemental symbol from the given formula
             */
             string countAtoms(string str) {
             // Using a LinkedHashmap to store elements in insertion order
@@ -669,6 +668,7 @@ class Database {
             return f;
             }
             
+            // This method checks whether the atom amounts in "Contains" matches the amounts derived from the formula.
             bool checkAtoms() {
                 if (formula.length()>0) {
                     int imax = contains.size();
@@ -708,6 +708,10 @@ class Database {
                 }
                 return true;
             }
+
+            /** This method checks whether the fractional compositions sum to 1.
+             * @return    The difference between 1 and the sum of the compositional fractions
+            */
             double checkFractions() {
                 int imax = contains.size();
                 double sum = 0.0;
@@ -775,7 +779,6 @@ class Database {
     vector<Material> materials;
     string reference;
     vector<string> comments;
-
     vector<Material> matVec{};
     vector<Component> compVec{};
 
@@ -805,6 +808,12 @@ class Database {
             materials.push_back(material);
         }
 
+        /** Head build function
+         * A masses database is built for use in conversions.
+         * @param path    path to the database
+         * @param cerr    stream name for error messages
+         * @return        true if successfully built
+         */
         bool build(const std::string& path, std::ostream& cerr){
             mass.build("/materials/NISTmasses.json", cerr);
             std::ifstream input(path);
@@ -818,6 +827,13 @@ class Database {
             DataObject* json = (json_ptr.get());
             return build_database(json, cerr);
         }
+
+        /** Builds a materials composition database
+         * Crucial criteria for a successful build includes a name and a data array of materials.
+         * @param materialDB    data object representing a database
+         * @param cerr          stream name for error messages
+         * @return              true if successfully built
+         */
         bool build_database(DataObject* materialDB, std::ostream& cerr){
             wasp_require(materialDB != nullptr); // throws an exception if contract is violated
             auto itr = materialDB->find("MaterialDatabase");
@@ -859,6 +875,12 @@ class Database {
             DataArray* materials = itr->second.to_array();
             return build_materials(materials, cerr);
         }
+
+        /** Builds the Material data objects inside of the "Materials" data array
+         * @param materialsArray    data array of Material data objects
+         * @param cerr              stream name for error messages
+         * @return                  true if successfully built
+         */
         bool build_materials(DataArray* materialsArray, std::ostream& cerr){
             wasp_require(materialsArray != nullptr);
             matVec = {};
@@ -876,10 +898,16 @@ class Database {
             setMats(matVec);
             return success;
         }
+
+        /** Builds an individual material
+         * Crucial criteria for a successful build includes a material name, type, density, and array of components.
+         * @param material    data object representing a material
+         * @param cerr        stream name for error messages
+         * @return            true if successfully built
+         */
         bool build_material(DataObject* material, std::ostream& cerr){
             wasp_require(material != nullptr);
             Material m;
-            // Could we switch to a for loop and still have specific error messages to save runtime?
 
             auto itr = material->find("Name");
             if (itr == material->end()) {
@@ -910,6 +938,10 @@ class Database {
                 }
             }
 
+            /** The next few tokens are optional identifiers.
+             * These identifiers continue from "Aliases" to "Contact".
+             * All of these are found in the PNNL database.
+            */
             itr = material->find("Aliases");
             if (itr != material->end() && itr->second.is_string()) {m.setAlias(itr->second.to_string());}
             else if (itr != material->end() && itr->second.is_array()) {
@@ -980,7 +1012,7 @@ class Database {
                 m.setContact(con);
             }
             
-
+            // Finds the "Contains" token and builds a vector of components
             itr = material->find("Contains");
             if (itr == material->end()) {
                 cerr << "Unable to find material components!" << endl;
@@ -996,19 +1028,13 @@ class Database {
                 m.setNativeComps(compVec);
             }
 
-            // Building vector of element+amt
+            // Building vector of element symbols
             vector<string> symbols{};
-            int apm = 0;
             for (int i=0; i<m.getElements().size(); i++) {
                 Component c = m.getElements().at(i);
                 symbols.push_back(c.getElement());
-                // get numbers from formula
-                // if (c.getAmount()>1) {symbols.push_back(c.getElement()); apm += int(c.getAmount());}
-                // else {symbols.push_back(c.getElement()); apm += 1;}
             }
             m.setSymb(symbols);
-            // m.setAmtSum(apm);
-
             matVec.push_back(m);
             
             // Check Pu and U mixes for all; should these isos be combined or left separate?
@@ -1038,6 +1064,11 @@ class Database {
             // Test 4: Elem WF <-> Elem AF- Success
             // if (m.getType() == "Weight Fractions") {m.convert("Atom Fractions", true); m.convert("Atom Fractions", false); m.convert("Weight Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
             // if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.convert("Weight Fractions", false); m.convert("Atom Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
+            // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName); m.getInputFormat("MAVRIC/KENO", "Atom Fractions", "Elemental", dbName);
+            // m.getInputFormat("ORIGEN", "Weight Fractions", "Elemental", dbName); m.getInputFormat("ORIGEN", "Atom Fractions", "Elemental", dbName);
+            // m.getInputFormat("MCNP", "Weight Fractions", "Elemental", dbName); m.getInputFormat("MCNP", "Atom Fractions", "Elemental", dbName);
+            // m.getInputFormat("Generic", "Weight Fractions", "Elemental", dbName); m.getInputFormat("Generic", "Atom Fractions", "Elemental", dbName);
+            // m.checkFractions(); m.convert("Native", false); cout << endl;
 
 
             // Test 5: APM -> Elem WF [One-way conversion; Check precision]
@@ -1059,17 +1090,15 @@ class Database {
             // if (m.getType() == "Weight Fractions") {m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName); m.checkFractions(); cout << endl;}
             // if (m.getType() == "Weight Fractions") {m.convert("Weight Fractions", true); m.checkFractions(); m.convert("Weight Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
             // if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.convert("Atom Fractions", true); m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName); m.checkFractions(); cout << endl;}
-            
-            // if (m.getType() == "Chemical Formula") {m.checkAtoms();}
-            // if (m.getName() == "Acetone") {
-                // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName); m.convert("Native", false);
-                // m.getInputFormat("ORIGEN", "Weight Fractions", "Elemental", dbName); m.convert("Native", false);
-                // m.getInputFormat("MCNP", "Weight Fractions", "Elemental", dbName); m.convert("Native", false);
-                // m.getInputFormat("Generic", "Weight Fractions", "Elemental", dbName);
-            //}
             return true;
         }
         
+        /** Builds the Component data objects inside of the "Contains" data array
+         * @param components    data array of Component data objects
+         * @param m             material to which the components belong
+         * @param cerr          stream name for error messages
+         * @return              true if successfully built
+         */
         bool build_material_components(DataArray* components, Material m, std::ostream& cerr) {
             compVec = {};
             for (auto itr = components->begin(); itr != components->end(); itr++) {
@@ -1086,33 +1115,43 @@ class Database {
             return true;
         }
         
+        /** Builds an individual component
+         * Components appear in one of three forms: weight fracs, atom fracs, or a chemical formula
+         * @param comp    data object representing a component
+         * @param m       material to which the component belongs
+         * @param cerr    stream name for error messages
+         * @return        true if successfully built
+         */
         bool build_component(DataObject* comp, Material m, std::ostream& cerr) {
             wasp_require(comp != nullptr);
             Component c;
-            // Applies to all 3 formats (is there a reason we would need to differentiate between the two fraction types?)
-            
             auto itr = comp->find("Element");
             c.setElement(itr->second.to_string());
             itr = comp->find("MassNumber");
             if (itr != comp->end()) {c.setMassNum(itr->second.to_int()); c.setIso(true);}
-            // Weight Fractions
+            
+            // Type is Weight Fractions
             if (m.getType() == "Weight Fractions") {
                 itr = comp->find("Fraction");
                 c.setAmount((long double) itr->second.to_double());
                 c.setAtom(false);
             }
-            // Atom Fractions
+            
+            // Type is Atom Fractions
             else if (m.getType() == "Atom Fractions") {
                 itr = comp->find("Fraction");
                 c.setAmount((long double) itr->second.to_double());
                 c.setAtom(false);
             }
-            // Chemical Formula
+            
+            // Type is Chemical Formula
             else if (m.getType() == "Chemical Formula") {
                 itr = comp->find("Atoms");
                 c.setAmount((long double) itr->second.to_double());
                 c.setAtom(true);
             }
+
+            // Anything else pushes an error message into the error stream.
             else {
                 cerr << "Unable to find material composition in the form of fractions or a chemical formula!" << endl;
                 return false;
@@ -1121,16 +1160,20 @@ class Database {
             return true;
         }
 
-        void check() {
+        /** Check method for the database
+         * This method calls a composition check on each material.
+        */
+        bool check() {
             cout << endl << endl << "Checking..." << endl;
             int matNum = materials.size();
-
             for (int i=0;i<matNum;i++) {
                 Material material = materials[i];
-                material.check();
+                if (!material.check()) {return false;}
             }
+            return true;
         }
 
+        // Displays the members of the database and a display for each material
         void display(bool verbose) { // Displays the approved files
             // cout << "Database " << getDB() << endl;
             int matNum = getMats();

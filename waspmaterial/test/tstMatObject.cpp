@@ -21,7 +21,6 @@ Database db;
 MaterialCompositionLib mcl;
 
 // Change current mcl tests to db and have an mcl test with a folder directory
-// ASSERT_TRUE(db.build("../materials/ARH-600.json", std::cerr));
 
 // ASSERT_TRUE(mcl.build("/materials/ARH-600.json", massPath, std::cerr));
 // ASSERT_TRUE(mcl.build("/materials/CRC_ICdatabase.json", massPath, std::cerr));
@@ -39,6 +38,4 @@ ASSERT_TRUE(mcl.build("/materials/PNNL-15870r2_eff.json", massPath, std::cerr));
 // ASSERT_TRUE(mcl.build("/materials/scaleAlloyMixs.json", massPath, std::cerr));
 // ASSERT_TRUE(mcl.build("/materials/scaleCompounds.json", massPath, std::cerr));
 // ASSERT_TRUE(mcl.build("/materials/ShultisAndFaw1996.json", massPath, std::cerr));
-
-// ASSERT_TRUE(db.build("PNNL-15870r2_eff.json", std::cerr));
 }
