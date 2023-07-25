@@ -12,39 +12,39 @@
 using namespace std;
 using namespace wasp;
 
-/** The Isotope class defines the isotopes of a given element inside a material masses file.
- * It creates members to store an isotope's mass number, atomic mass, and abundance.
- * The class serves as a subclass to the later-defined Element class.
-*/
-
-class Isotope {
-    int massNum;
-    double mass;
-    double abundance;
-    static const string MASSNUMBER;
-    static const string MASS;
-    static const string ABUNDANCE;
-
-    public:
-        Isotope() {
-            massNum = 0;
-            mass = 0.0;
-            abundance = 0.0;
-        }
-
-        void setMassNum(int a) {massNum=a;}
-        void setMass(double a) {mass=a;}
-        void setAbundance(double a) {abundance=a;}
-
-        int getMassNum() {return massNum;}
-        double getMass() {return mass;}
-        double getAbundance() {return abundance;}
-};
-
 /** The Masses class defines the various components found within a masses database.
  * It includes methods to build private members and the members of its subclass (Element).
 */
 class Masses {
+    /** The Isotope class defines the isotopes of a given element inside a material masses file.
+     * It creates members to store an isotope's mass number, atomic mass, and abundance.
+     * The class serves as a subclass to the later-defined Element class.
+    */
+
+    class Isotope {
+        int massNum;
+        double mass;
+        double abundance;
+        static const string MASSNUMBER;
+        static const string MASS;
+        static const string ABUNDANCE;
+
+        public:
+            Isotope() {
+                massNum = 0;
+                mass = 0.0;
+                abundance = 0.0;
+            }
+
+            void setMassNum(int a) {massNum=a;}
+            void setMass(double a) {mass=a;}
+            void setAbundance(double a) {abundance=a;}
+
+            int getMassNum() {return massNum;}
+            double getMass() {return mass;}
+            double getAbundance() {return abundance;}
+    };
+    
     /** The Element class decribes the components found within each element in a masses database.
      * Each element provides basic atomic information as well as a list of isotopes.
     */
@@ -375,7 +375,7 @@ const string Masses::Element::MASS = "Mass";
 const string Masses::Element::NOTES = "Notes";
 const string Masses::Element::ISOTOPES = "Isotopes";
 
-const string Isotope::MASSNUMBER = "MassNumber";
-const string Isotope::MASS = "Mass";
-const string Isotope::ABUNDANCE = "Abundance";
+const string Masses::Isotope::MASSNUMBER = "MassNumber";
+const string Masses::Isotope::MASS = "Mass";
+const string Masses::Isotope::ABUNDANCE = "Abundance";
 #endif // WASP_MASSDATABASE_H
