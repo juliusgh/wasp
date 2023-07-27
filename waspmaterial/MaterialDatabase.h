@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <string>
 #include <vector>
 #include <map>
@@ -129,6 +130,7 @@ class Database {
         double density;
         Contact contact;
         vector<string> symb;
+        int idx;
         bool isIso;
 
         static const string NAME;
@@ -181,6 +183,7 @@ class Database {
             void setSource (string a) {source = a;}
             void setContact (Contact a) {contact = a;}
             void setSymb (vector<string> a) {symb = a;}
+            void setIdx (int a) {idx = a;}
             void setIso (bool a) {isIso = a;}
 
             // Get Methods:
@@ -200,6 +203,7 @@ class Database {
             string getSource() {return source;}
             Contact getContact() {return contact;}
             vector<string> getSymb() {return symb;}
+            int getIdx() {return idx;}
             bool getIso() {return isIso;}
 
             /**
@@ -400,36 +404,37 @@ class Database {
             /**
              * 
             */
-            void getInputFormat(string code, string dataStyle, string calcType, string dbName) {
+            string getInputFormat(string code, string dataStyle, string calcType, string dbName) {
+                stringstream s;
                 if (type != dataStyle || isIso != (calcType=="Isotopic")) {convert(dataStyle, calcType == "Isotopic");}
                 int aNum = 1;
                 if (code == "MAVRIC/KENO") {
-                    cout << "'  " << dbName << endl;
-                    cout << "'  " << name << ", "; if (formula != "") {cout << formula << ", ";} cout << density << " g/cm^3" << endl;
+                    s << "'  " << dbName << "\n";
+                    s << "'  " << name << ", "; if (formula != "") {s << formula << ", ";} s << density << " g/cm^3" << "\n";
                     for (int k=0; k<comments.size(); k++) {
-                        cout << "'  " << comments.at(k) << endl;
+                        s << "'  " << comments.at(k) << "\n";
                     }
-                    if (comment != "") {cout << "'  " << comment << endl;}
+                    if (comment != "") {s << "'  " << comment << "\n";}
 
 
                     // Find a way to add index in Materials vector here
-                    if (type == "Atoms Per Molecule") {cout << "     atom";}
-                    else if (type == "Weight Fractions") {cout << "     wtpt";}
-                    else {cout << "     atpt";}
-                    cout << name.substr(0, 12) << "  " << 1 << "  " << density << "  " << contains.size();
+                    if (type == "Atoms Per Molecule") {s << "     atom";}
+                    else if (type == "Weight Fractions") {s << "     wtpt";}
+                    else {s << "     atpt";}
+                    s << name.substr(0, 12) << "  " << 1 << "  " << density << "  " << contains.size() << "\\";
                     for (int i=0; i<contains.size(); i++) {
                         Component c = contains.at(i);
                         for (int m=0; m<mass.getElems(); m++) {
                             if (c.getElement() == mass.getElem(m).getSymbol()) {
                                 auto e = mass.getElem(m);
                                 aNum = e.getAtomNum();
-                                cout << endl << "         " << aNum*1000+c.getMassNum() << "   " << 100*c.getAmount();
+                                s << "\n" << "         " << aNum*1000+c.getMassNum() << "   " << 100*c.getAmount();
                                 // other 2 numbers stay constant (density && temp)?
                                 break;
                             }
                         }
                     }
-                    cout << "   " << "end" << endl << endl;
+                    s << "   " << "end" << "\n" << "\n";
 
                     // standard comp (mass density)
                     // standard comp (atom density)
@@ -438,62 +443,62 @@ class Database {
                     string unit;
                     if (type == "Weight Fractions") {unit="gram";}
                     else {unit="mole";}
-                    cout << "% 1 " << unit << " of " << name << " using " << calcType << " " << type << endl;
+                    s << "% 1 " << unit << " of " << name << " using " << calcType << " " << type << "\n";
 
                     unit += "s";
-                    cout << "mat {" << endl;
-                    cout << "\t" << "iso= [ ";
+                    s << "mat {" << "\n";
+                    s << "\t" << "iso= [ ";
                     
                     // Convert to atoms per molecule?
                     for (int i=0; i<contains.size(); i++) {
                         Component c = contains.at(i);
-                        if (i != 0) {cout << "\t       ";}
-                        cout << c.getElement() << "=" << c.getAmount() << " ";
-                        if (i != contains.size()-1) {cout << endl;}
+                        if (i != 0) {s << "\t       ";}
+                        s << c.getElement() << "=" << c.getAmount() << " ";
+                        if (i != contains.size()-1) {cout << "\n";}
                     }
-                    cout << "]" << endl << "\t" << "units=";
+                    s << "]" << "\n" << "\t" << "units=";
                     
-                    cout << unit << endl << "}" << endl << endl;
+                    s << unit << "\n" << "}" << "\n" << "\n";
                 }
                 else if (code == "MCNP") {
-                    int id;
+                    int id = idx; // Should this be index #, or is this determined by the user?
                     if (!isIso) {convert(type, true);}
-                    cout << "Enter an ID number: " << endl; cin >> id;  // Should this be index #, or is this determined by the user?
-                    cout << "c  " << dbName << endl;
-                    cout << "c  " << name << ", " << density << " g/cm^3" << endl;
+                    s << "c  " << dbName << "\n";
+                    s << "c  " << name << ", " << density << " g/cm^3" << "\n";
                     for (int k=0; k<comments.size(); k++) {
-                        cout << "c  " << comments.at(k) << endl;
+                        s << "c  " << comments.at(k) << "\n";
                     }
-                    if (comment != "") {cout << "c  " << comment << endl;}
+                    if (comment != "") {s << "c  " << comment << "\n";}
                     for (int i=0; i<contains.size(); i++) {
                         Component c = contains.at(i);
-                        if (i==0) {cout << "  m" << id << " ";}
+                        if (i==0) {s << "  m" << id << " ";}
                         else {
-                            cout << "     ";
+                            s << "     ";
                         }
                         for (int m=0; m<mass.getElems(); m++) {
                             if (c.getElement() == mass.getElem(m).getSymbol()) {aNum = mass.getElem(m).getAtomNum(); break;}
                         }
-                        cout << aNum*1000+c.getMassNum() << "  ";
-                        if (type == "Weight Fractions") {cout << '-';}
-                        cout << c.getAmount() << endl;
+                        s << aNum*1000+c.getMassNum() << "  ";
+                        if (type == "Weight Fractions") {s << '-';}
+                        s << c.getAmount() << "\n";
                     }
-                    // cout << "c "; check(); cout << endl << endl;
+                    // s << "c "; check(); s << "\n" << "\n";
                 }
                 else { // Generic
-                    cout << "#  " << dbName << endl;
-                    cout << "#  " << name << ", " << density << " g/cm^3" << endl;
+                    s << "#  " << dbName << "\n";
+                    s << "#  " << name << ", " << density << " g/cm^3" << "\m";
                     for (int i=0; i<contains.size(); i++) {
                         Component c = contains.at(i);
                         for (int m=0; m<mass.getElems(); m++) {
                             if (c.getElement() == mass.getElem(m).getSymbol()) {aNum = mass.getElem(m).getAtomNum(); break;}
                         }
-                        cout << "       " << aNum << "\t" << c.getElement() << "\t" << c.getMassNum() << "  \t";
-                        cout << c.getAmount() << endl;
+                        s << "       " << aNum << "\t" << c.getElement() << "\t" << c.getMassNum() << "  \t";
+                        s << c.getAmount() << "\n";
                     }
-                    // if (type == "Weight Fractions") {cout << "c "; check();}
-                    cout << "c  Generic " << type << endl << endl;
+                    // if (type != "Atoms Per Molecule") {s << "c "; check();}
+                    s << "c  Generic " << type << "\n" << "\n";
                 }
+                return s.str();
             }
 
             // Head check method to ensure consistency among material components
@@ -885,6 +890,7 @@ class Database {
             wasp_require(materialsArray != nullptr);
             matVec = {};
             bool success = true;
+            int count = 0;
             for (auto itr= materialsArray->begin(); itr != materialsArray->end(); itr++) {
                 Value& material = *itr;
                 if (!material.is_object()) {
@@ -892,7 +898,8 @@ class Database {
                     success = false;
                 }
                 else {
-                    success &= build_material(material.to_object(), cerr);
+                    success &= build_material(material.to_object(), count, cerr);
+                    count++;
                 }
             }
             setMats(matVec);
@@ -902,12 +909,14 @@ class Database {
         /** Builds an individual material
          * Crucial criteria for a successful build includes a material name, type, density, and array of components.
          * @param material    data object representing a material
+         * @param count       index of the material in the database
          * @param cerr        stream name for error messages
          * @return            true if successfully built
          */
-        bool build_material(DataObject* material, std::ostream& cerr){
+        bool build_material(DataObject* material, int count, std::ostream& cerr){
             wasp_require(material != nullptr);
             Material m;
+            m.setIdx(count);
 
             auto itr = material->find("Name");
             if (itr == material->end()) {
@@ -1037,12 +1046,21 @@ class Database {
             }
             m.setSymb(symbols);
             matVec.push_back(m);
-            
-            // Check Pu and U mixes for all; should these isos be combined or left separate?
+
+            /** Code generation for conersion and formatting tests
+             * These tests are not entirely generated, but the current tests exist in tstDBObject.
+            */
 
             // Test 1: Diff WF- Success
             // m.convert("Weight Fractions", true); m.convert("Weight Fractions", false); m.checkFractions();
-            // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Isotopic", dbName); m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName);
+            string code;
+            // code = m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Isotopic", dbName);
+            // code = m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName);
+            code = m.getInputFormat("MCNP", "Weight Fractions", "Isotopic", dbName);
+            // code = m.getInputFormat("Generic", "Weight Fractions", "Isotopic", dbName);
+            while (code.find("\n")!=-1) {code.replace(code.find("\n"), 1, "");}
+            if (matVec.size() < 0) {cout << "{\"" << m.getName() << "\"" << ", \"" << code << "\"}," << endl;}    // Take out comma for last entry
+            // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName);
             // m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName); m.getInputFormat("ORIGEN", "Weight Fractions", "Elemental", dbName);
             // m.getInputFormat("MCNP", "Weight Fractions", "Isotopic", dbName);
             // m.getInputFormat("Generic", "Weight Fractions", "Isotopic", dbName); m.getInputFormat("Generic", "Weight Fractions", "Elemental", dbName);

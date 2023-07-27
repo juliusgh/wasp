@@ -89,6 +89,7 @@ class MaterialCompositionLib {
             // }
             Database db;
             if (!db.build(matRelPath, cerr)) {return false;}
+            databases.push_back(db);
             
             // db.display(true);
             // Database::Material mat = db.getMats().at(0);
@@ -108,20 +109,20 @@ class MaterialCompositionLib {
 
 
         int main() {
-            cout << "Pick some databases: " << endl;
+            // cout << "Pick some databases: " << endl;
             char inpDB[50]; string val;
-            cin.getline(inpDB, 20, ',');
-            cout << inpDB << endl; // Split DB names into elements in an array and sort
+            // cin.getline(inpDB, 20, ',');
+            // cout << inpDB << endl; // Split DB names into elements in an array and sort
             Database db;
-            for(int d=0; d<databases.size(); d++){
-                Database dbtemp = databases.at(d); // Make accessible to use multiple databases simultaneously
-                if (d>0) {db.setDB(db.getDB()+", "+dbtemp.getDB());}
-                else {db.setDB(dbtemp.getDB());}
-                    // auto v = dbtemp.getMats();
-                    // for (auto &val: dbtemp.getMats()) {v.push_back(val);}
-                    // db.setMats(dbtemp.getMats());
-                cout << db.getDB() << endl;
-            }
+            // for(int d=0; d<databases.size(); d++){
+            //     Database dbtemp = databases.at(d); // Make accessible to use multiple databases simultaneously
+            //     if (d>0) {db.setDB(db.getDB()+", "+dbtemp.getDB());}
+            //     else {db.setDB(dbtemp.getDB());}
+            //         // auto v = dbtemp.getMats();
+            //         // for (auto &val: dbtemp.getMats()) {v.push_back(val);}
+            //         // db.setMats(dbtemp.getMats());
+            //     cout << db.getDB() << endl;
+            // }
             db = databases.at(0);
             
                 vector<string> commands = {"0: display masses", "1: display material", "2: search", "3: advanced search", "4: change material", "5: check fractional compositions", "6: create a nuclear code"};

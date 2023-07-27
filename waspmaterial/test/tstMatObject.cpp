@@ -8,8 +8,6 @@
 #include "waspjson/JSONObjectParser.hpp"
 #include "waspcore/Object.h"
 #include "googletest\googletest\include\gtest\gtest.h"
-// #include "waspmaterial/MaterialDatabase.h"
-// #include "waspmaterial/MassDatabase.h"
 #include "waspmaterial/MatCompLib.h"
 using namespace wasp;
 
@@ -33,9 +31,15 @@ MaterialCompositionLib mcl;
 // ASSERT_TRUE(mcl.build("/materials/NIST_124_mats.json", massPath, std::cerr));
 // ASSERT_TRUE(mcl.build("/materials/NIST_126_table2.json", massPath, std::cerr));
 ASSERT_TRUE(mcl.build("/materials/PNNL-15870r2_eff.json", massPath, std::cerr));
+
+
+
+
 // ASSERT_TRUE(mcl.build("/materials/RxHndbkVol1Ch19-Ch48.json", massPath, std::cerr));
 // ASSERT_TRUE(mcl.build("/materials/RxHndbkVol1Ch51.json", massPath, std::cerr));
 // ASSERT_TRUE(mcl.build("/materials/scaleAlloyMixs.json", massPath, std::cerr));
 // ASSERT_TRUE(mcl.build("/materials/scaleCompounds.json", massPath, std::cerr));
 // ASSERT_TRUE(mcl.build("/materials/ShultisAndFaw1996.json", massPath, std::cerr));
+
+
 }
