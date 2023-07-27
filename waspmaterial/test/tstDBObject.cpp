@@ -100,10 +100,10 @@ for (int i=0; i<db.getMats(); i++) {
     // #1)
     string code = mat.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Isotopic", db.getDB());
     while (code.find("\n")!=-1) {code.replace(code.find("\n"), 1, "");}
-    EXPECT_TRUE(scalePNNLMap[mat.getName()] == code); // Not running?
+    EXPECT_TRUE(scalePNNLWFIsoMap[mat.getName()] == code); // Not running?
     code = mat.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", db.getDB());
     while (code.find("\n")!=-1) {code.replace(code.find("\n"), 1, "");}
-    EXPECT_TRUE(origenPNNLMap[mat.getName()] == code); // Not running?
+    EXPECT_TRUE(origenPNNLWFIsoMap[mat.getName()] == code); // Not running?
 }
 
 db.build("/materials/RxHndbkVol1Ch19-Ch48.json", std::cerr);

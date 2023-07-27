@@ -486,7 +486,7 @@ class Database {
                 }
                 else { // Generic
                     s << "#  " << dbName << "\n";
-                    s << "#  " << name << ", " << density << " g/cm^3" << "\m";
+                    s << "#  " << name << ", " << density << " g/cm^3" << "\n";
                     for (int i=0; i<contains.size(); i++) {
                         Component c = contains.at(i);
                         for (int m=0; m<mass.getElems(); m++) {
@@ -1052,14 +1052,15 @@ class Database {
             */
 
             // Test 1: Diff WF- Success
-            // m.convert("Weight Fractions", true); m.convert("Weight Fractions", false); m.checkFractions();
+            // All diff conversions here
             string code;
             // code = m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Isotopic", dbName);
-            // code = m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName);
-            code = m.getInputFormat("MCNP", "Weight Fractions", "Isotopic", dbName);
+            code = m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName);
+            // code = m.getInputFormat("MCNP", "Weight Fractions", "Isotopic", dbName);
             // code = m.getInputFormat("Generic", "Weight Fractions", "Isotopic", dbName);
             while (code.find("\n")!=-1) {code.replace(code.find("\n"), 1, "");}
-            if (matVec.size() < 0) {cout << "{\"" << m.getName() << "\"" << ", \"" << code << "\"}," << endl;}    // Take out comma for last entry
+            if (matVec.size() < 201) {cout << "{\"" << m.getName() << "\"" << ", \"" << code << "\"}," << endl;}    // Take out comma for last entry
+            
             // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName);
             // m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName); m.getInputFormat("ORIGEN", "Weight Fractions", "Elemental", dbName);
             // m.getInputFormat("MCNP", "Weight Fractions", "Isotopic", dbName);
