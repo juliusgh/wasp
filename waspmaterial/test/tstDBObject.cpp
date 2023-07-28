@@ -22,72 +22,72 @@ ASSERT_TRUE(m.check());
 
     // Internal Checks
     // TODO: Add and verify testing for all code input formats and types
-// ASSERT_TRUE(db.build("/materials/ARH-600.json", std::cerr));
-// EXPECT_TRUE(db.check()); // Checks the entire database for compositional consistency but does not throw an exception
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check()); // Does the same check individually but throws an exception if found.
-// }
+ASSERT_TRUE(db.build("/materials/ARH-600.json", std::cerr));
+EXPECT_TRUE(db.check()); // Checks the entire database for compositional consistency but does not throw an exception
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check()); // Does the same check individually but throws an exception if found.
+}
 
 
-// db.build("/materials/CRC_ICdatabase.json", std::cerr);
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/CRC_ICdatabase.json", std::cerr);
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/CRC_OCdatabase.json", std::cerr);
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/CRC_OCdatabase.json", std::cerr);
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/doe-std-3013-2018.json", std::cerr);
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/doe-std-3013-2018.json", std::cerr);
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/ICRP89.json", std::cerr);
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/ICRP89.json", std::cerr);
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/ICRU44.json", std::cerr); //12 sets of fracs in db that don't sum to 1
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/ICRU44.json", std::cerr); //12 sets of fracs in db that don't sum to 1
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/ICRU46.json", std::cerr);
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/ICRU46.json", std::cerr);
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/MarksTable6.1.5.json", std::cerr);
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/MarksTable6.1.5.json", std::cerr);
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/MCNP5APrimer.json", std::cerr); //3 sets of fracs in db that don't sum to 1
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/MCNP5APrimer.json", std::cerr); //3 sets of fracs in db that don't sum to 1
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/NIST_124_mats.json", std::cerr);
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/NIST_124_mats.json", std::cerr);
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/NIST_126_table2.json", std::cerr);
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/NIST_126_table2.json", std::cerr);
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
 db.build("/materials/PNNL-15870r2_eff.json", std::cerr); //1 set of fracs in db that doesn't sum to 1
 EXPECT_TRUE(db.check());
@@ -118,34 +118,34 @@ for (int i=0; i<db.getMats(); i++) {
     EXPECT_TRUE(genPNNLWFIsoMap[mat.getName()] == code);
 }
 
-// db.build("/materials/RxHndbkVol1Ch19-Ch48.json", std::cerr);
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/RxHndbkVol1Ch19-Ch48.json", std::cerr);
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/RxHndbkVol1Ch51.json", std::cerr);
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/RxHndbkVol1Ch51.json", std::cerr);
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/scaleAlloyMixs.json", std::cerr); //1 set of fracs in db that doesn't sum to 1
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/scaleAlloyMixs.json", std::cerr); //1 set of fracs in db that doesn't sum to 1
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/scaleCompounds.json", std::cerr);
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/scaleCompounds.json", std::cerr);
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
-// db.build("/materials/ShultisAndFaw1996.json", std::cerr);
-// EXPECT_TRUE(db.check());
-// for (int i=0; i<db.getMats(); i++) {
-//     ASSERT_TRUE(db.getMat(i).check());
-// }
+db.build("/materials/ShultisAndFaw1996.json", std::cerr);
+EXPECT_TRUE(db.check());
+for (int i=0; i<db.getMats(); i++) {
+    ASSERT_TRUE(db.getMat(i).check());
+}
 
 }

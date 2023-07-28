@@ -32,6 +32,7 @@ Wasp Material, which contains the Materials Composition Database project, was de
 3. [Material Database] (#materialdatabase)- The package that defines objects for a material composition database
 4. [Stand-in GUI] (#fakegui)
 5. [Testing Framework] (#testingframework)
+6. Notes of Interest (#todos)- Notes that are significant to consider before this project is integrated
 
 # Materials
 Material contains 17 different JSON material composition files. Each file utilizes a universal format to store data in a series of data objects and data arrays. Refer to the JSON Object Parser in wasp JSON for further details.
@@ -39,10 +40,14 @@ Material contains 17 different JSON material composition files. Each file utiliz
 # Mass Database
 * The Masses class defines the various components found within a masses database. It includes methods to build private members and the members of its subclass (Element).
 
-*The Isotope class defines the isotopes of a given element inside a material masses file. It creates members to store an isotope's mass number, atomic mass, and abundance. The class serves as a subclass to the later-defined Element class.
+* The Isotope class defines the isotopes of a given element inside a material masses file. It creates members to store an isotope's mass number, atomic mass, and abundance. The class serves as a subclass to the later-defined Element class.
 
 # Material Database
 
 # FakeGUI
 
 # Testing Framework
+* tstMatObject tests the validity of each build within MatCompLib.h.
+* tstDBObject tests the validity of the individual database builds and the masses database build. The abundance and composition checks under their respective check methods are called and tested for each element or material. The code input formats, which incorporate conversions, began to be tested as well.
+
+# Todos
