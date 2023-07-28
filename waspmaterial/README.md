@@ -73,7 +73,7 @@ The materials folder inside Material contains 17 different JSON material composi
 * tstDBObject tests the validity of the individual database builds and the masses database build. The abundance and composition checks under their respective check methods are called and tested for each element or material. The code input formats, which incorporate conversions, began to be tested as well. The convert and getInputFormat methods still require non-void return types and several test cases before depoyment into a legimate GUI.
 
 # Todos
-* **Modify check atoms to identify stacked multipliers and handle nested parentheses.
-* **Change the initial voids methods, such as check, convert, and getInputFormat, to return non-void data types.
-* **Resolve any existing precision issue that may be present in conversions (check #5).
-* **Add initializer lists and additional tests for formatted code inputs.
+* **Modify check atoms to identify stacked multipliers and handle nested parentheses.**
+* **Change the initial voids methods, such as check, convert, and getInputFormat, to return non-void data types.**
+* **Resolve any existing precision issue that may be present in conversions (check #5).**
+* **Add initializer lists and additional tests for formatted code inputs.**
