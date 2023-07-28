@@ -206,8 +206,9 @@ class Database {
             int getIdx() {return idx;}
             bool getIso() {return isIso;}
 
-            /**
-             * 
+            /** The convert method changes the material compositions to a desired types.
+             * There are three compositional types and seven defined conversions between these types are defined.
+             * Note that the "Native" type merely calls a copy of the initial components.
             */
             void convert(string style, bool iso) { // if faster to use switch statement, come back and use enum+map to use on strings
                 // cout << name << "  " << type << "_" << isIso << " to " << style << "_" << iso<< endl;
@@ -310,41 +311,14 @@ class Database {
                         convert("Atom Fractions", false);
                         if (iso) {convert("Weight Fractions", true);}
                         else {convert("Weight Fractions", false);}
-                        
-                        // double total = 0;
-                        // for (int i=0; i<contains.size(); i++) {
-                        //     Component ci = contains.at(i);
-                        //     for (int m=0; m<mass.getElems(); m++) {
-                        //         auto e = mass.getElem(m);
-                        //         if (ci.getElement() == e.getSymbol()) {
-                        //             if (ci.getMassNum()>0){
-                        //                 for (int p=0; p<e.getIsotopes().size(); p++){
-                        //                     if (ci.getMassNum() == e.getIsotopes().at(p).getMassNum()) {total += ci.getAmount() * e.getIsotopes().at(p).getMass();}
-                        //                 }
-                        //             }
-                        //             else { // Expand elements into isotopes
-                        //                 total += ci.getAmount() * mass.getElem(m).getMass();
-                        //             }
-                        //             atomMasses.push_back(ci.getAmount() * mass.getElem(m).getMass());
-                        //             break;
-                        //         }
-                        //     }
-                        // }
-                        // for (int j=0; j<contains.size(); j++) {
-                        //     contains.at(j).setAmount(atomMasses.at(j) / total);
-                        //     Component c = contains.at(j);
-                        //     cout << c.getElement() << " " << c.getAmount() << endl;
-                        // }
                     }
                     
                     // 6) Atom Fractions to APM (Only for Elemental and clean numbers) [Works]
                     else if (type == "Atom Fractions" && style == "Atoms Per Molecule" && formula != "" && !isIso) {
-                        // cout << formula << endl;
                         double min = 1.0;
                         for (int i=0; i<contains.size(); i++) {
                             if (i != 0 && contains.at(i).getElement() == contains.at(i-1).getElement()) {
                                 contains.at(i-1).setAmount(contains.at(i-1).getAmount()+contains.at(i).getAmount());
-                                // cout << i << endl;
                                 contains.erase(contains.begin()+i);
                                 i--;
                             } 
@@ -354,7 +328,6 @@ class Database {
                             }
                         }
                         for (int j=0; j<contains.size(); j++) {
-                            // cout << contains.at(j).getAmount() << endl;
                             contains.at(j).setAmount(contains.at(j).getAmount()/min);
                         }
                         double mult = 1;
@@ -367,9 +340,7 @@ class Database {
                                         digit = 10*digit + stod(string(1, formula[start+len+1]));
                                         if (isdigit(formula[start+len+2])) {digit = 10*digit + stod(string(1, formula[start+len+2]));}
                                     }
-                                    // cout << digit << " " << contains.at(0).getAmount() << endl;
                                     mult = digit/contains.at(0).getAmount();
-                                    // cout << mult << endl;
                                 }
                         }
                         for (int k=0; k<contains.size(); k++) {
@@ -401,8 +372,8 @@ class Database {
                 isIso = iso;
             }
             
-            /**
-             * 
+            /** This method utilizes the convert method to transform compositional data into a formatted radiation transport code input.
+             * This method currently supports formats for SCALE (MAVRIC/Keno, ORIGEN), MCNP, and a generic standard.
             */
             string getInputFormat(string code, string dataStyle, string calcType, string dbName) {
                 stringstream s;
@@ -416,8 +387,6 @@ class Database {
                     }
                     if (comment != "") {s << "'  " << comment << "\n";}
 
-
-                    // Find a way to add index in Materials vector here
                     if (type == "Atoms Per Molecule") {s << "     atom";}
                     else if (type == "Weight Fractions") {s << "     wtpt";}
                     else {s << "     atpt";}
@@ -444,17 +413,15 @@ class Database {
                     if (type == "Weight Fractions") {unit="gram";}
                     else {unit="mole";}
                     s << "% 1 " << unit << " of " << name << " using " << calcType << " " << type << "\n";
-
                     unit += "s";
                     s << "mat {" << "\n";
                     s << "\t" << "iso= [ ";
                     
-                    // Convert to atoms per molecule?
                     for (int i=0; i<contains.size(); i++) {
                         Component c = contains.at(i);
                         if (i != 0) {s << "\t       ";}
                         s << c.getElement() << "=" << c.getAmount() << " ";
-                        if (i != contains.size()-1) {cout << "\n";}
+                        if (i != contains.size()-1) {s << "\n";}
                     }
                     s << "]" << "\n" << "\t" << "units=";
                     
@@ -520,6 +487,7 @@ class Database {
 
             /** Helper function for countAtoms()
              * Builds a map that links atom amounts to an elemental symbol from the given formula
+             * This function works with all materials in the project's 15 databases but currently isn't compatable with formulas containing nested parentheses and multiple coefficents.
             */
             string countAtoms(string str) {
             // Using a LinkedHashmap to store elements in insertion order
@@ -534,8 +502,6 @@ class Database {
                 if (str.find("</sub>") != string::npos) {str.replace(str.find("</sub>"), 6, " ");} // This can show the difference between a subscript number and a leading coefficient. 
                 if (str.find("·") != string::npos) {str.replace(str.find("·"), 1, "*");} // Could possible just need " " or "" if mult can still be set to 1
             }
-            // 2CH<sub>3</sub>·CH<sub>4</sub> works
-            //cout << str << endl;
             for (int i = 0; i < str.length(); i++) {
                 int count = 0;
                 if (str[i] == '*') {cut = false; i++;}
@@ -543,7 +509,8 @@ class Database {
                 string a = string(1, c);
                 if (!cut) {mult = 1;}
     
-                if (a.find_first_of("0123456789") != string::npos && stack.empty()) { //Leading coefficient
+                // Leading coefficient
+                if (a.find_first_of("0123456789") != string::npos && stack.empty()) {
                     cut = true;
                     int z = i;
                     mult = 0; float dec = 0;
@@ -649,7 +616,7 @@ class Database {
                             break;
                         }
                     }
-                    if (count == 0) {// No number after the element -->1*mult
+                    if (count == 0) {// No number after the element --> mult
                         if (a=="D") {a=" H";}
                         else if (a=="T") {a="H ";}
                         if (mp.find(a) == mp.end()) {if (dec) {mp[a] = mult+1; dec = false;} mp[a] = mult;}
@@ -694,7 +661,8 @@ class Database {
                     for (int j=0; j<imax; j++) {
                         lst += symbols.at(j);
                     }
-                    bool matches = f == lst;
+                    bool matches = f == lst; // Compares the two atom counts
+                    
                     // Weird case where D or T starts first in the formula
                     if (f.length()>1 && f[0] == 'H' && int(f[1])>=65 && int(f[1])<=71) {string specCase = f.substr(1, f.length()-1) + f[0]; matches = specCase == lst;}
 
@@ -1059,7 +1027,7 @@ class Database {
             // code = m.getInputFormat("MCNP", "Weight Fractions", "Isotopic", dbName);
             // code = m.getInputFormat("Generic", "Weight Fractions", "Isotopic", dbName);
             while (code.find("\n")!=-1) {code.replace(code.find("\n"), 1, "");}
-            if (matVec.size() < 201) {cout << "{\"" << m.getName() << "\"" << ", \"" << code << "\"}," << endl;}    // Take out comma for last entry
+            if (matVec.size() > 200) {cout << "{\"" << m.getName() << "\"" << ", \"" << code << "\"}," << endl;}    // Take out comma for last entry
             
             // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName);
             // m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName); m.getInputFormat("ORIGEN", "Weight Fractions", "Elemental", dbName);
