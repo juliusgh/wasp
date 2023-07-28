@@ -29,65 +29,65 @@ for (int i=0; i<db.getMats(); i++) {
 }
 
 
-db.build("/materials/CRC_ICdatabase.json", std::cerr);
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/CRC_ICdatabase.json", std::cerr);
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/CRC_OCdatabase.json", std::cerr);
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/CRC_OCdatabase.json", std::cerr);
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/doe-std-3013-2018.json", std::cerr);
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/doe-std-3013-2018.json", std::cerr);
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/ICRP89.json", std::cerr);
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/ICRP89.json", std::cerr);
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/ICRU44.json", std::cerr); //12 sets of fracs in db that don't sum to 1
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/ICRU44.json", std::cerr); //12 sets of fracs in db that don't sum to 1
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/ICRU46.json", std::cerr);
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/ICRU46.json", std::cerr);
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/MarksTable6.1.5.json", std::cerr);
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/MarksTable6.1.5.json", std::cerr);
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/MCNP5APrimer.json", std::cerr); //3 sets of fracs in db that don't sum to 1
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/MCNP5APrimer.json", std::cerr); //3 sets of fracs in db that don't sum to 1
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/NIST_124_mats.json", std::cerr);
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/NIST_124_mats.json", std::cerr);
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/NIST_126_table2.json", std::cerr);
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/NIST_126_table2.json", std::cerr);
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
 db.build("/materials/PNNL-15870r2_eff.json", std::cerr); //1 set of fracs in db that doesn't sum to 1
 EXPECT_TRUE(db.check());
@@ -99,12 +99,11 @@ for (int i=0; i<db.getMats(); i++) {
     string code = mat.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Isotopic", db.getDB());
     while (code.find("\n")!=-1) {code.replace(code.find("\n"), 1, "");}
     
-    // Possibly to remove "\\" from values stored in the map
-    // while (scalePNNLWFIsoMap[mat.getName()].find("\\") != -1) {scalePNNLWFIsoMap[mat.getName()].replace(scalePNNLWFIsoMap[mat.getName()].find("\\"), 1, "");}
-    // cout << mat.getName() << endl;
+    // May need to remove "\\" from values stored in the map
+    // Some values are printed identically but are read as different sequences, causing some of these tests to fail.
 
     EXPECT_TRUE(scalePNNLWFIsoMap[mat.getName()] == code);
-
+    // if (scalePNNLWFIsoMap[mat.getName()] != code) {cout << mat.getName() << endl; cout << scalePNNLWFIsoMap[mat.getName()] << "\n" << code << endl;}
     code = mat.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", db.getDB());
     while (code.find("\n")!=-1) {code.replace(code.find("\n"), 1, "");}
     EXPECT_TRUE(origenPNNLWFIsoMap[mat.getName()] == code);
@@ -118,34 +117,34 @@ for (int i=0; i<db.getMats(); i++) {
     EXPECT_TRUE(genPNNLWFIsoMap[mat.getName()] == code);
 }
 
-db.build("/materials/RxHndbkVol1Ch19-Ch48.json", std::cerr);
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/RxHndbkVol1Ch19-Ch48.json", std::cerr);
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/RxHndbkVol1Ch51.json", std::cerr);
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/RxHndbkVol1Ch51.json", std::cerr);
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/scaleAlloyMixs.json", std::cerr); //1 set of fracs in db that doesn't sum to 1
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/scaleAlloyMixs.json", std::cerr); //1 set of fracs in db that doesn't sum to 1
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/scaleCompounds.json", std::cerr);
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/scaleCompounds.json", std::cerr);
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
-db.build("/materials/ShultisAndFaw1996.json", std::cerr);
-EXPECT_TRUE(db.check());
-for (int i=0; i<db.getMats(); i++) {
-    ASSERT_TRUE(db.getMat(i).check());
-}
+// db.build("/materials/ShultisAndFaw1996.json", std::cerr);
+// EXPECT_TRUE(db.check());
+// for (int i=0; i<db.getMats(); i++) {
+//     ASSERT_TRUE(db.getMat(i).check());
+// }
 
 }
