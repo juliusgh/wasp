@@ -45,9 +45,18 @@ Material contains 17 different JSON material composition files. Each file utiliz
 # Material Database
 
 # FakeGUI
+* The fake GUI implementation uses the MatCompLib header, which builds the mass and composition databases for user interaction in the interface. Note that a future version of this project intends to identify compatable files within a folder directory and load the desired databases. The fake GUI is still in early stages of testing; as a result, the interface only accesses one composition database at a time.
+* The user is presented a list of materials in the selected database, similar to scroll-down menu, and asked for an index. The user is then prompted for one of seven commands represented by the numbers 0-7; -1 is treated as an escape sequence.
+0- Displays the masses as listed in the masses database file
+1- Displays the information provided for a given material
+2- Searches the database based on the name identifier
+3- Conducts an advanced search based several identifiers (currently compatable with name and density)
+4- Changes to a new material within the database based on the provided index
+5- Checks the fractional or atomic compositions of a given material
+6- Generates a radiation transport code input based on three user-provided parameters (code system, desired composition type, and calculation type)
 
 # Testing Framework
 * tstMatObject tests the validity of each build within MatCompLib.h.
-* tstDBObject tests the validity of the individual database builds and the masses database build. The abundance and composition checks under their respective check methods are called and tested for each element or material. The code input formats, which incorporate conversions, began to be tested as well.
+* tstDBObject tests the validity of the individual database builds and the masses database build. The abundance and composition checks under their respective check methods are called and tested for each element or material. The code input formats, which incorporate conversions, began to be tested as well. The convert and getInputFormat methods still require non-void return types and several test cases before depoyment into a legimate GUI.
 
 # Todos
