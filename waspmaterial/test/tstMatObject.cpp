@@ -18,28 +18,21 @@ string massPath = "/materials/NISTmasses.json";
 Database db;
 MaterialCompositionLib mcl;
 
-// Change current mcl tests to db and have an mcl test with a folder directory
-
-// ASSERT_TRUE(mcl.build("/materials/ARH-600.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/CRC_ICdatabase.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/CRC_OCdatabase.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/doe-std-3013-2018.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/ICRP89.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/ICRU44.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/ICRU46.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/MarksTable6.1.5.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/NIST_124_mats.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/NIST_126_table2.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/ARH-600.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/CRC_ICdatabase.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/CRC_OCdatabase.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/doe-std-3013-2018.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/ICRP89.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/ICRU44.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/ICRU46.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/MarksTable6.1.5.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/NIST_124_mats.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/NIST_126_table2.json", massPath, std::cerr));
 ASSERT_TRUE(mcl.build("/materials/PNNL-15870r2_eff.json", massPath, std::cerr));
-
-
-
-
-// ASSERT_TRUE(mcl.build("/materials/RxHndbkVol1Ch19-Ch48.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/RxHndbkVol1Ch51.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/scaleAlloyMixs.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/scaleCompounds.json", massPath, std::cerr));
-// ASSERT_TRUE(mcl.build("/materials/ShultisAndFaw1996.json", massPath, std::cerr));
-
+ASSERT_TRUE(mcl.build("/materials/RxHndbkVol1Ch19-Ch48.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/RxHndbkVol1Ch51.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/scaleAlloyMixs.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/scaleCompounds.json", massPath, std::cerr));
+ASSERT_TRUE(mcl.build("/materials/ShultisAndFaw1996.json", massPath, std::cerr));
 
 }

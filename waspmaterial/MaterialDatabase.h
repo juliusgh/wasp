@@ -18,6 +18,7 @@
 #include "waspjson\JSONObjectParser.hpp"
 #include "waspcore\Object.h"
 #include "waspmaterial/MassDatabase.h"
+#include "waspmaterial\test\PNNLmaps.h"
 using namespace wasp;
 
 // Uses the mass information for conversions in Material
@@ -390,7 +391,7 @@ class Database {
                     if (type == "Atoms Per Molecule") {s << "     atom";}
                     else if (type == "Weight Fractions") {s << "     wtpt";}
                     else {s << "     atpt";}
-                    s << name.substr(0, 12) << "  " << 1 << "  " << density << "  " << contains.size() << "\\";
+                    s << name.substr(0, 12) << "  " << 1 << "  " << density << "  " << contains.size();
                     for (int i=0; i<contains.size(); i++) {
                         Component c = contains.at(i);
                         for (int m=0; m<mass.getElems(); m++) {
@@ -1019,15 +1020,16 @@ class Database {
              * These tests are not entirely generated, but the current tests exist in tstDBObject.
             */
 
+            // Different Conversions
             // Test 1: Diff WF- Success
-            // All diff conversions here
-            string code;
+            // string code;
             // code = m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Isotopic", dbName);
-            code = m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName);
+            // code = m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName);
             // code = m.getInputFormat("MCNP", "Weight Fractions", "Isotopic", dbName);
             // code = m.getInputFormat("Generic", "Weight Fractions", "Isotopic", dbName);
-            while (code.find("\n")!=-1) {code.replace(code.find("\n"), 1, "");}
-            if (matVec.size() > 200) {cout << "{\"" << m.getName() << "\"" << ", \"" << code << "\"}," << endl;}    // Take out comma for last entry
+            // while (code.find("\n")!=-1) {code.replace(code.find("\n"), 1, "");}
+            // bool works = genPNNLWFIsoMap[m.getName()] == code; if (!works) {cout << works << endl;}
+            // if (matVec.size() > 200) {cout << "{\"" << m.getName() << "\"" << ", \"" << code << "\"}," << endl;}    // Take out comma for last entry
             
             // m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName);
             // m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName); m.getInputFormat("ORIGEN", "Weight Fractions", "Elemental", dbName);
@@ -1074,10 +1076,6 @@ class Database {
             // if (m.getType() == "Atom Fractions") {m.convert("Atoms Per Molecule", true); m.convert("Atom Fractions", false); m.convert("Atom Fractions", true); m.checkFractions(); m.convert("Native", false); cout << endl;}
             // if (m.getType() == "Atoms Per Molecule") {m.convert("Atom Fractions", false); m.convert("Atom Fractions", true);}
             
-
-            // if (m.getType() == "Weight Fractions") {m.getInputFormat("ORIGEN", "Weight Fractions", "Isotopic", dbName); m.checkFractions(); cout << endl;}
-            // if (m.getType() == "Weight Fractions") {m.convert("Weight Fractions", true); m.checkFractions(); m.convert("Weight Fractions", false); m.checkFractions(); m.convert("Native", false); cout << endl;}
-            // if (m.getType() == "Atom Fractions") {m.convert("Weight Fractions", true); m.convert("Atom Fractions", true); m.getInputFormat("MAVRIC/KENO", "Weight Fractions", "Elemental", dbName); m.checkFractions(); cout << endl;}
             return true;
         }
         

@@ -1,3 +1,4 @@
+Authored by Chance B. Loveday July 2023
 # Wasp Material Overview
 
 Wasp Material, which contains the Materials Composition Database project, was developed as a tool to handle radiation transport code input generation.
@@ -27,18 +28,21 @@ Wasp Material, which contains the Materials Composition Database project, was de
     * Isotope Class
     * Element Class
     * Builds
+    * Checks
 3. [Material Database] (#materialdatabase)- The package that defines objects for a material composition database
-4. [Material Composition Library]
-5. [Stand-in GUI]
+4. [Stand-in GUI] (#fakegui)
+5. [Testing Framework] (#testingframework)
 
 # Materials
-Material contains 18 different JSON files.
-
-|------------ | Materials Used ---------------------|
-| Description | Composition | Composition | Density |
-|------------ | and Density | Only -------| Only ---|
-| PNNL Compendium | 411 ----| ------------| --------|
+Material contains 17 different JSON material composition files. Each file utilizes a universal format to store data in a series of data objects and data arrays. Refer to the JSON Object Parser in wasp JSON for further details.
 
 # Mass Database
+* The Masses class defines the various components found within a masses database. It includes methods to build private members and the members of its subclass (Element).
+
+*The Isotope class defines the isotopes of a given element inside a material masses file. It creates members to store an isotope's mass number, atomic mass, and abundance. The class serves as a subclass to the later-defined Element class.
 
 # Material Database
+
+# FakeGUI
+
+# Testing Framework
