@@ -236,11 +236,10 @@ class Database {
                         for (int m=0; m<mass.getElems(); m++) {
                             if (ci.getElement() == mass.getElem(m).getSymbol()) {
                                 auto e = mass.getElem(m);
-                                if (iso) { // Do comps need to be AF to add/delete iso or can conversions be stacked?
+                                if (iso) {
                                     int count = -1;
                                     for (int n=0; n<e.getIsotopes().size(); n++) {
                                         if (e.getIsotopes().at(n).getMassNum() == ci.getMassNum()) { //Matching isotopes specified in JSON
-                                            // cout << "Specified Iso" << endl;
                                             ci.setAmount(ci.getAmount());
                                             if (type == style) {ci.setAmount(ci.getAmount());}
                                             else if (type == "Atom Fractions" && style == "Weight Fractions") {ci.setAmount(ci.getAmount() * e.getIsotopes().at(n).getMass());}
@@ -250,8 +249,6 @@ class Database {
                                         }
                                         else if (!ci.getIso() && e.getIsotopes().at(n).getAbundance() > 0) { //Splitting into isotopes
                                             if (ci.getMassNum() <= 0) {
-                                                // cout << "Renorm Iso " << ci.getElement() << endl;
-                                                // count ++;
                                                 Component ciso;
                                                 ciso.setElement(ci.getElement());
                                                 
@@ -259,7 +256,6 @@ class Database {
                                                 else if (type == "Atom Fractions" && style == "Weight Fractions") {ciso.setAmount(ci.getAmount() * e.getIsotopes().at(n).getAbundance() * e.getIsotopes().at(n).getMass());}
                                                 else if (type == "Weight Fractions" && style == "Atom Fractions") {ciso.setAmount(ci.getAmount() * e.getIsotopes().at(n).getAbundance() / e.getIsotopes().at(n).getMass());}
                                                 ciso.setMassNum(e.getIsotopes().at(n).getMassNum()); // Use negative MassNums for expanded isotopes?
-                                                // cout << ciso.getMassNum() << " " << ciso.getAmount() << endl;
                                                 newComps.push_back(ciso);
                                                 total += ciso.getAmount();
                                             }
@@ -267,29 +263,19 @@ class Database {
                                     }
                                 }
                                 
-                                else if (!iso) { //Renormalizing into elements or 
-                                    // cout << "Elemental" << endl;
+                                else if (!iso) { //Renormalizing into elements
                                     
                                     int n = i;
                                     if (!contains.at(i).getIso()) {contains.at(i).setMassNum(0);}
                                     while (n < contains.size()-1 && contains.at(n).getElement() == contains.at(n+1).getElement() && !contains.at(n).getIso()) {
-                                            // contains.at(n).setMassNum(0);
                                             contains.at(n).setAmount(contains.at(n).getAmount()+contains.at(n+1).getAmount());
-                                            // cout << contains.at(n+1).getElement() << contains.at(n+1).getAmount() << endl;
                                             contains.erase(contains.begin()+n+1);
                                     }
-                                    // cout << contains.at(n).getElement() << contains.at(n).getAmount()<< endl;
                                     if (type == "Atom Fractions" && style == "Weight Fractions") {contains.at(i).setAmount(contains.at(i).getAmount() * e.getMass());}
                                     if (type == "Weight Fractions" && style == "Atom Fractions") {contains.at(i).setAmount(contains.at(i).getAmount() / e.getMass());}
                                     
-                                    // for (auto comp: contains) {
-                                    //     // if (type == "Atom Fractions" && style == "Weight Fractions") {comp.setAmount(comp.getAmount()*e.getMass());}
-                                    //     // else if (type == "Weight Fractions" && style == "Atom Fractions") {comp.setAmount(comp.getAmount()/e.getMass());}
-                                    //     total += comp.getAmount();
-                                    //     newComps.push_back(comp);}
                                     total += contains.at(i).getAmount();
                                     newComps.push_back(contains.at(i));
-                                    // i = contains.size()-1;
                                 }
                                 break;
                             }
@@ -297,12 +283,10 @@ class Database {
                     }
                     contains.clear();
                     contains = newComps;
-                    // cout << contains.size() << " " << atomMasses.size() << endl;
                     for (int j=0; j<contains.size(); j++) {
                         Component c = contains.at(j);
                         if (type == "Atom Fractions" && style == "Atom Fractions") {}
                         else {contains.at(j).setAmount(c.getAmount()/total);}
-                        // cout << c.getElement() << " " << contains.at(j).getAmount() << endl;
                     }
                 }
 
@@ -486,9 +470,9 @@ class Database {
                         cout << "    " << name << "\t" << "no comp, no density" << endl;
                     } } return true;}
 
-            /** Helper function for countAtoms()
+            /** Helper function for checkAtoms()
              * Builds a map that links atom amounts to an elemental symbol from the given formula
-             * This function works with all materials in the project's 15 databases but currently isn't compatable with formulas containing nested parentheses and multiple coefficents.
+             * This function works with all materials in the project's 17 databases but currently isn't compatable with formulas containing nested parentheses and multiple coefficents.
             */
             string countAtoms(string str) {
             // Using a LinkedHashmap to store elements in insertion order

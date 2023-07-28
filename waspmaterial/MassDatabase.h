@@ -13,7 +13,7 @@ using namespace std;
 using namespace wasp;
 
 /** The Masses class defines the various components found within a masses database.
- * It includes methods to build private members and the members of its subclass (Element).
+ * It includes methods to build private members and the members of its subclasses.
 */
 class Masses {
     /** The Isotope class defines the isotopes of a given element inside a material masses file.
