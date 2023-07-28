@@ -1,4 +1,5 @@
-Authored by Chance B. Loveday July 2023
+Authored by Chance B. Loveday, Maryvile College July 2023
+Mentored by Douglas E. Peplow and Robert A. Lefebvre
 # Wasp Material Overview
 
 Wasp Material, which contains the Materials Composition Database project, was developed as a tool to handle radiation transport code input generation.
@@ -40,7 +41,7 @@ The materials folder inside Material contains 17 different JSON material composi
 # Mass Database
 * The Masses class defines the various components found within a masses database. It includes methods to build private members and the members of its subclasses. A series of build functions invoke the JSON object parser and assign values to members of the three classes defined in this header. The Masses class retains a check and a display method that call similar methods in the Element subclass.
 
-* The Element class decribes the components found within each element in a masses database. Each element provides basic atomic information as well as a list of isotopes. An element takes an atomic number, a symbol, a mass, a list of isotopes, and optional notes. The Check Abundances method checks whether the natural abundances (if any) of an element sums to 1. This method serves as an internal check to the masses databases and returns a boolean. A display method also exists for every element.
+* The Element class decribes the components found within each element in a masses database. Each element provides basic atomic information as well as a list of isotopes. An element takes an atomic number, a symbol, a mass, a list of isotopes, and optional notes. The Check Abundances method checks whether the natural abundances (if any) of an element sums to one. This method serves as an internal check to the masses databases and returns a boolean. A display method also exists for every element.
 
 * The Isotope class defines the isotopes of a given element inside a material masses file. It creates members to store an isotope's mass number, atomic mass, and abundance. The class serves as a subclass to the later-defined Element class. An isotope consists of a mass number, mass, and natural abundance.
 
@@ -55,7 +56,6 @@ The materials folder inside Material contains 17 different JSON material composi
 * The Component class defines a compositional component of a material. The three specified types of components are "Weight Fractions", "Atom Fractions", and "Chemical Formula"/"Atoms Per Molecule." A component contains a symbol, an amount, mass number, and two booleans representing the composition type.
 
 * The Contact class descibes the relevant contact information. Note that the Contact field is exclusive to the PNNL database.
-
 
 # FakeGUI
 * The fake GUI implementation uses the MatCompLib header, which builds the mass and composition databases for user interaction in the interface. Note that a future version of this project intends to identify compatable files within a folder directory and load the desired databases. The fake GUI is still in early stages of testing; as a result, the interface only accesses one composition database at a time.
@@ -73,3 +73,7 @@ The materials folder inside Material contains 17 different JSON material composi
 * tstDBObject tests the validity of the individual database builds and the masses database build. The abundance and composition checks under their respective check methods are called and tested for each element or material. The code input formats, which incorporate conversions, began to be tested as well. The convert and getInputFormat methods still require non-void return types and several test cases before depoyment into a legimate GUI.
 
 # Todos
+** Modify check atoms to identify stacked multipliers and handle nested parentheses.
+** Change the initial voids methods, such as check, convert, and getInputFormat, to return non-void data types.
+** Resolve any existing precision issue that may be present in conversions (check #5).
+** Add initializer lists and additional tests for formatted code inputs.
