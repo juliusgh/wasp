@@ -1,0 +1,1247 @@
+{"MaterialDatabase" : {
+  "Name": "ICRU44",
+  "Reference": "Tissue Substitutes in Radiation Dosimetry and Measurement, ICRU Report 44, International Commission on Radiation Units & Measurements, January 1989",
+  "Materials": [
+    { "Name": "Cortical Bone, 24 Adults (20-74 y)",
+      "Density": 1.92,
+      "Comment": "Table 4.1—The elemental compositions and mass densities of cortical bone (Woodard, 1984, Woodard and White, 1986)",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.034},
+          {"Element": "C" , "Fraction": 0.155},
+          {"Element": "N" , "Fraction": 0.042},
+          {"Element": "O" , "Fraction": 0.435},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "Mg", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.103},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Ca", "Fraction": 0.225}
+      ]
+    },
+    { "Name": "Cortical Bone, 10 Children (6-13 y)",
+      "Density": 1.83,
+      "Comment": "Table 4.1—The elemental compositions and mass densities of cortical bone (Woodard, 1984, Woodard and White, 1986)",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.039},
+          {"Element": "C" , "Fraction": 0.158},
+          {"Element": "N" , "Fraction": 0.044},
+          {"Element": "O" , "Fraction": 0.45},
+          {"Element": "Mg", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.098},
+          {"Element": "Ca", "Fraction": 0.209}
+      ]
+    },
+    { "Name": "Cortical Bone, 4 Children (2-5 y)",
+      "Density": 1.8,
+      "Comment": "Table 4.1—The elemental compositions and mass densities of cortical bone (Woodard, 1984, Woodard and White, 1986)",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.04},
+          {"Element": "C" , "Fraction": 0.157},
+          {"Element": "N" , "Fraction": 0.045},
+          {"Element": "O" , "Fraction": 0.454},
+          {"Element": "Mg", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.101},
+          {"Element": "Ca", "Fraction": 0.201}
+      ]
+    },
+    { "Name": "Cortical Bone, Perinatal monkey (rhesus)",
+      "Density": 1.4,
+      "Comment": "Table 4.1—The elemental compositions and mass densities of cortical bone (Woodard, 1984, Woodard and White, 1986)",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.067},
+          {"Element": "C" , "Fraction": 0.152},
+          {"Element": "N" , "Fraction": 0.049},
+          {"Element": "O" , "Fraction": 0.567},
+          {"Element": "Mg", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.05},
+          {"Element": "Ca", "Fraction": 0.114}
+      ]
+    },
+    { "Name": "Wet tissue",
+      "Density": 0,
+      "Comment": "Table 4.3—The published elemental compositions of 'Average Soft Tissues'. This material taken from ICRU Report 13 (ICRU, 1969a)",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.1},
+          {"Element": "C" , "Fraction": 0.12},
+          {"Element": "N" , "Fraction": 0.04},
+          {"Element": "O", "Fraction": 0.73}
+      ]
+    },
+    { "Name": "Tissue approximation",
+      "Density": 0,
+      "Comment": "Table 4.3—The published elemental compositions of 'Average Soft Tissues'. This material taken from ICRU Report 13 (ICRU, 1969a). Formula (C5H40NO18)n quoted in ICRU Report 13 (ICRU, 1969a) from Rossi and Failla (1956) .",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.1},
+          {"Element": "C" , "Fraction": 0.149},
+          {"Element": "N" , "Fraction": 0.035},
+          {"Element": "O", "Fraction": 0.716}
+      ]
+    },
+    { "Name": "Soft tissue",
+      "Density": 0,
+      "Comment": "Table 4.3—The published elemental compositions of 'Average Soft Tissues'. This material taken from ICRU Report 33 (ICRU, 1980)",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.101},
+          {"Element": "C" , "Fraction": 0.111},
+          {"Element": "N" , "Fraction": 0.026},
+          {"Element": "O", "Fraction": 0.762}
+      ]
+    },
+    { "Name": "Adipose tissue",
+      "Density": 0.95,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.114},
+          {"Element": "C" , "Fraction": 0.598},
+          {"Element": "N" , "Fraction": 0.007},
+          {"Element": "O" , "Fraction": 0.278},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Blood (whole) (erythrocytes/plasma 44:56 by mass)",
+      "Density": 1.06,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.11},
+          {"Element": "N" , "Fraction": 0.033},
+          {"Element": "O" , "Fraction": 0.745},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.002},
+          {"Element": "Fe", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Brain (grey/white matter 50:50, by mass)",
+      "Density": 1.04,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.107},
+          {"Element": "C" , "Fraction": 0.145},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.712},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.004},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Breast (mammary gland)",
+      "Density": 1.02,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.332},
+          {"Element": "N" , "Fraction": 0.03},
+          {"Element": "O" , "Fraction": 0.527},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Cell nucleus",
+      "Density": 1,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.09},
+          {"Element": "N" , "Fraction": 0.032},
+          {"Element": "O" , "Fraction": 0.742},
+          {"Element": "P" , "Fraction": 0.026},
+          {"Element": "S" , "Fraction": 0.004}
+      ]
+    },
+    { "Name": "Eye lens",
+      "Density": 1.07,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.096},
+          {"Element": "C" , "Fraction": 0.195},
+          {"Element": "N" , "Fraction": 0.057},
+          {"Element": "O" , "Fraction": 0.646},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "GI tract (intestine)",
+      "Density": 1.03,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.115},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.751},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Heart (blood filled)",
+      "Density": 1.06,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.121},
+          {"Element": "N" , "Fraction": 0.032},
+          {"Element": "O" , "Fraction": 0.734},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.002},
+          {"Element": "Fe", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Kidney",
+      "Density": 1.05,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.132},
+          {"Element": "N" , "Fraction": 0.03},
+          {"Element": "O" , "Fraction": 0.724},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002},
+          {"Element": "Ca", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Liver",
+      "Density": 1.06,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.139},
+          {"Element": "N" , "Fraction": 0.03},
+          {"Element": "O" , "Fraction": 0.716},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.003},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Lung (deflated)",
+      "Density": 1.05,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.105},
+          {"Element": "N" , "Fraction": 0.031},
+          {"Element": "O" , "Fraction": 0.749},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Lung (inflated)",
+      "Density": 0.26,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.105},
+          {"Element": "N" , "Fraction": 0.031},
+          {"Element": "O" , "Fraction": 0.749},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Lymph",
+      "Density": 1.03,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.108},
+          {"Element": "C" , "Fraction": 0.041},
+          {"Element": "N" , "Fraction": 0.011},
+          {"Element": "O" , "Fraction": 0.832},
+          {"Element": "Na", "Fraction": 0.003},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.004}
+      ]
+    },
+    { "Name": "Muscle (skeletal)",
+      "Density": 1.05,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.143},
+          {"Element": "N" , "Fraction": 0.034},
+          {"Element": "O" , "Fraction": 0.71},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.004}
+      ]
+    },
+    { "Name": "Ovary",
+      "Density": 1.05,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.105},
+          {"Element": "C" , "Fraction": 0.093},
+          {"Element": "N" , "Fraction": 0.024},
+          {"Element": "O" , "Fraction": 0.768},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Pancreas",
+      "Density": 1.04,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.169},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.694},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Skeleton—cartilage",
+      "Density": 1.1,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.096},
+          {"Element": "C" , "Fraction": 0.099},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.744},
+          {"Element": "Na", "Fraction": 0.005},
+          {"Element": "P" , "Fraction": 0.022},
+          {"Element": "S" , "Fraction": 0.009},
+          {"Element": "Cl", "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Skeleton—cortical bone",
+      "Density": 1.92,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.034},
+          {"Element": "C" , "Fraction": 0.155},
+          {"Element": "N" , "Fraction": 0.042},
+          {"Element": "O" , "Fraction": 0.435},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "Mg", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.103},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Ca", "Fraction": 0.225}
+      ]
+    },
+    { "Name": "Skeleton—red marrow",
+      "Density": 1.03,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.105},
+          {"Element": "C" , "Fraction": 0.414},
+          {"Element": "N" , "Fraction": 0.034},
+          {"Element": "O" , "Fraction": 0.439},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002},
+          {"Element": "Fe", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Skeleton—spongiosaa",
+      "Density": 1.18,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues. Comprises 33% cortical bone and 67% marrow (by mass). Marrow assumed to be 50% red marrow and 50% yellow marrow (by mass).",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.085},
+          {"Element": "C" , "Fraction": 0.404},
+          {"Element": "N" , "Fraction": 0.028},
+          {"Element": "O" , "Fraction": 0.367},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "Mg", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.034},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.074},
+          {"Element": "Fe", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Skeleton—yellow marrow",
+      "Density": 0.98,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.115},
+          {"Element": "C" , "Fraction": 0.644},
+          {"Element": "N" , "Fraction": 0.007},
+          {"Element": "O" , "Fraction": 0.231},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Skin",
+      "Density": 1.09,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.1},
+          {"Element": "C" , "Fraction": 0.204},
+          {"Element": "N" , "Fraction": 0.042},
+          {"Element": "O" , "Fraction": 0.645},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Spleen",
+      "Density": 1.06,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.113},
+          {"Element": "N" , "Fraction": 0.032},
+          {"Element": "O" , "Fraction": 0.741},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.003},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Testis",
+      "Density": 1.04,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.099},
+          {"Element": "N" , "Fraction": 0.02},
+          {"Element": "O" , "Fraction": 0.766},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Thyroid",
+      "Density": 1.05,
+      "Comment": "Table 4.4—The recommended elemental compositions, p and no of the selected body tissues.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.104},
+          {"Element": "C" , "Fraction": 0.119},
+          {"Element": "N" , "Fraction": 0.024},
+          {"Element": "O" , "Fraction": 0.745},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.001},
+          {"Element": "I" , "Fraction": 0.001}
+      ]
+    },
+    { "Name": "A150",
+      "Density": 1.12,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.101},
+          {"Element": "C" , "Fraction": 0.777},
+          {"Element": "N" , "Fraction": 0.035},
+          {"Element": "O" , "Fraction": 0.052},
+          {"Element": "F" , "Fraction": 0.017},
+          {"Element": "Ca", "Fraction": 0.018}
+      ]
+    },
+    { "Name": "Acrylic",
+      "Density": 1.17,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.08},
+          {"Element": "C" , "Fraction": 0.6},
+          {"Element": "O" , "Fraction": 0.32}
+      ]
+    },
+    { "Name": "Alderson lung",
+      "Density": 0.32,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.057},
+          {"Element": "C" , "Fraction": 0.74},
+          {"Element": "N" , "Fraction": 0.02},
+          {"Element": "O" , "Fraction": 0.181},
+          {"Element": "Sb", "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Alderson muscle A",
+      "Density": 1,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.089},
+          {"Element": "C" , "Fraction": 0.668},
+          {"Element": "N" , "Fraction": 0.031},
+          {"Element": "O" , "Fraction": 0.211},
+          {"Element": "Sb", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Alderson muscle B",
+      "Density": 1,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.088},
+          {"Element": "C" , "Fraction": 0.644},
+          {"Element": "N" , "Fraction": 0.041},
+          {"Element": "O" , "Fraction": 0.204},
+          {"Element": "Cl", "Fraction": 0.022},
+          {"Element": "Sb", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Aluminum",
+      "Density": 2.7,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "Al", "Fraction": 1}
+      ]
+    },
+    { "Name": "AP6",
+      "Density": 0.92,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.084},
+          {"Element": "C" , "Fraction": 0.691},
+          {"Element": "N" , "Fraction": 0.024},
+          {"Element": "O" , "Fraction": 0.169},
+          {"Element": "F" , "Fraction": 0.031},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "AP/L2",
+      "Density": 0.92,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.121},
+          {"Element": "C" , "Fraction": 0.293},
+          {"Element": "N" , "Fraction": 0.008},
+          {"Element": "O" , "Fraction": 0.574},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "Mg", "Fraction": 0.00002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.0003},
+          {"Element": "Ca", "Fraction": 0.00002}
+      ]
+    },
+    { "Name": "AP/SF1",
+      "Density": 0.92,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.12},
+          {"Element": "C" , "Fraction": 0.755},
+          {"Element": "N" , "Fraction": 0.008},
+          {"Element": "O" , "Fraction": 0.111},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.0001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.004},
+          {"Element": "K" , "Fraction": 0.0003},
+          {"Element": "Ca", "Fraction": 0.0002}
+      ]
+    },
+    { "Name": "B100",
+      "Density": 1.45,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.066},
+          {"Element": "C" , "Fraction": 0.537},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.032},
+          {"Element": "F" , "Fraction": 0.167},
+          {"Element": "Ca", "Fraction": 0.177}
+      ]
+    },
+    { "Name": "B110",
+      "Density": 1.79,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.037},
+          {"Element": "C" , "Fraction": 0.371},
+          {"Element": "N" , "Fraction": 0.032},
+          {"Element": "O" , "Fraction": 0.048},
+          {"Element": "F" , "Fraction": 0.249},
+          {"Element": "Ca", "Fraction": 0.263}
+      ]
+    },
+    { "Name": "BR12",
+      "Density": 0.97,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.087},
+          {"Element": "C" , "Fraction": 0.699},
+          {"Element": "N" , "Fraction": 0.024},
+          {"Element": "O" , "Fraction": 0.179},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.01}
+      ]
+    },
+    { "Name": "Ethoxyethanol",
+      "Density": 0.93,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.112},
+          {"Element": "C" , "Fraction": 0.533},
+          {"Element": "O" , "Fraction": 0.355}
+      ]
+    },
+    { "Name": "EVA-28",
+      "Density": 0.95,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.123},
+          {"Element": "C" , "Fraction": 0.773},
+          {"Element": "O" , "Fraction": 0.104}
+      ]
+    },
+    { "Name": "Frigerio gel",
+      "Density": 1.12,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.1},
+          {"Element": "C" , "Fraction": 0.12},
+          {"Element": "N" , "Fraction": 0.04},
+          {"Element": "O" , "Fraction": 0.733},
+          {"Element": "Na", "Fraction": 0.004},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Frigerio liquid",
+      "Density": 1.08,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.123},
+          {"Element": "N" , "Fraction": 0.035},
+          {"Element": "O" , "Fraction": 0.729},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "Mg", "Fraction": 0.0002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.004},
+          {"Element": "Ca", "Fraction": 0.0001}
+      ]
+    },
+    { "Name": "Glycerol trioleate",
+      "Density": 0.92,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.118},
+          {"Element": "C" , "Fraction": 0.773},
+          {"Element": "O" , "Fraction": 0.109}
+      ]
+    },
+    { "Name": "Goodman liquid",
+      "Density": 1.07,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.12},
+          {"Element": "N" , "Fraction": 0.036},
+          {"Element": "O" , "Fraction": 0.742}
+      ]
+    },
+    { "Name": "Griffith breast",
+      "Density": 1.1,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.094},
+          {"Element": "C" , "Fraction": 0.619},
+          {"Element": "N" , "Fraction": 0.036},
+          {"Element": "O" , "Fraction": 0.245},
+          {"Element": "Mg", "Fraction": 0.0001},
+          {"Element": "Ca", "Fraction": 0.006},
+          {"Element": "Sn", "Fraction": 0.0001}
+      ]
+    },
+    { "Name": "Griffith lung",
+      "Density": 0.26,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.08},
+          {"Element": "C" , "Fraction": 0.608},
+          {"Element": "N" , "Fraction": 0.042},
+          {"Element": "O" , "Fraction": 0.248},
+          {"Element": "Mg", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.021},
+          {"Element": "Sn", "Fraction": 0.0002}
+      ]
+    },
+    { "Name": "Griffith muscle",
+      "Density": 1.12,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.09},
+          {"Element": "C" , "Fraction": 0.602},
+          {"Element": "N" , "Fraction": 0.028},
+          {"Element": "O" , "Fraction": 0.266},
+          {"Element": "Ca", "Fraction": 0.014},
+          {"Element": "Sn", "Fraction": 0.0002}
+      ]
+    },
+    { "Name": "Lincolnshire bolus (bulk)",
+      "Density": 1.05,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.059},
+          {"Element": "C" , "Fraction": 0.379},
+          {"Element": "O" , "Fraction": 0.527},
+          {"Element": "Mg", "Fraction": 0.035}
+      ]
+    },
+    { "Name": "LN10/75",
+      "Density": 0.31,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.084},
+          {"Element": "C" , "Fraction": 0.604},
+          {"Element": "N" , "Fraction": 0.017},
+          {"Element": "O" , "Fraction": 0.173},
+          {"Element": "Mg", "Fraction": 0.114},
+          {"Element": "Si", "Fraction": 0.007},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "M3",
+      "Density": 1.05,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.114},
+          {"Element": "C" , "Fraction": 0.656},
+          {"Element": "O" , "Fraction": 0.092},
+          {"Element": "Mg", "Fraction": 0.135},
+          {"Element": "Ca", "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Magnesium",
+      "Density": 1.74,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "Mg", "Fraction": 1}
+      ]
+    },
+    { "Name": "Mix D",
+      "Density": 0.99,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.134},
+          {"Element": "C" , "Fraction": 0.778},
+          {"Element": "O" , "Fraction": 0.035},
+          {"Element": "Mg", "Fraction": 0.039},
+          {"Element": "Ti", "Fraction": 0.014}
+      ]
+    },
+    { "Name": "Mylar/Melmex",
+      "Density": 1.4,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.042},
+          {"Element": "C" , "Fraction": 0.625},
+          {"Element": "O" , "Fraction": 0.333}
+      ]
+    },
+    { "Name": "Nylon-6",
+      "Density": 1.13,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.098},
+          {"Element": "C" , "Fraction": 0.637},
+          {"Element": "N" , "Fraction": 0.124},
+          {"Element": "O" , "Fraction": 0.141}
+      ]
+    },
+    { "Name": "Paraffin wax",
+      "Density": 0.93,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.15},
+          {"Element": "C" , "Fraction": 0.85}
+      ]
+    },
+    { "Name": "Plaster of Paris",
+      "Density": 2.32,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.023},
+          {"Element": "O" , "Fraction": 0.558},
+          {"Element": "S" , "Fraction": 0.186},
+          {"Element": "Ca", "Fraction": 0.233}
+      ]
+    },
+    { "Name": "Polyethylene",
+      "Density": 0.92,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.144},
+          {"Element": "C" , "Fraction": 0.856}
+      ]
+    },
+    { "Name": "Polystyrene",
+      "Density": 1.05,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.077},
+          {"Element": "C" , "Fraction": 0.923}
+      ]
+    },
+    { "Name": "P.T.F.E.",
+      "Density": 2.1,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "C" , "Fraction": 0.24},
+          {"Element": "F" , "Fraction": 0.76}
+      ]
+    },
+    { "Name": "P.V.C.",
+      "Density": 1.35,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.048},
+          {"Element": "C" , "Fraction": 0.385},
+          {"Element": "Cl", "Fraction": 0.567}
+      ]
+    },
+    { "Name": "RF-1",
+      "Density": 0.93,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.141},
+          {"Element": "C" , "Fraction": 0.841},
+          {"Element": "O" , "Fraction": 0.009},
+          {"Element": "Mg", "Fraction": 0.003},
+          {"Element": "Ca", "Fraction": 0.006}
+      ]
+    },
+    { "Name": "Rice powder",
+      "Density": 0.84,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.062},
+          {"Element": "C" , "Fraction": 0.444},
+          {"Element": "O" , "Fraction": 0.494}
+      ]
+    },
+    { "Name": "RM-1",
+      "Density": 1.03,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.122},
+          {"Element": "C" , "Fraction": 0.734},
+          {"Element": "O" , "Fraction": 0.064},
+          {"Element": "Mg", "Fraction": 0.06},
+          {"Element": "Ca", "Fraction": 0.02}
+      ]
+    },
+    { "Name": "RM/G1",
+      "Density": 1.07,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.094},
+          {"Element": "N" , "Fraction": 0.024},
+          {"Element": "O" , "Fraction": 0.774},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.0003},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "RM/L3",
+      "Density": 1.04,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.128},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.741},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.0003},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "RM/SR4",
+      "Density": 1.03,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.101},
+          {"Element": "C" , "Fraction": 0.736},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.137},
+          {"Element": "Na", "Fraction": 0.0001},
+          {"Element": "Mg", "Fraction": 0.00003},
+          {"Element": "P" , "Fraction": 0.0003},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Rossi gel",
+      "Density": 1.1,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.098},
+          {"Element": "C" , "Fraction": 0.157},
+          {"Element": "N" , "Fraction": 0.036},
+          {"Element": "O" , "Fraction": 0.709}
+      ]
+    },
+    { "Name": "Rossi liquid",
+      "Density": 1.11,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.098},
+          {"Element": "C" , "Fraction": 0.156},
+          {"Element": "N" , "Fraction": 0.036},
+          {"Element": "O" , "Fraction": 0.71}
+      ]
+    },
+    { "Name": "RW-1",
+      "Density": 0.97,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.132},
+          {"Element": "C" , "Fraction": 0.794},
+          {"Element": "O" , "Fraction": 0.038},
+          {"Element": "Mg", "Fraction": 0.009},
+          {"Element": "Ca", "Fraction": 0.027}
+      ]
+    },
+    { "Name": "RW-2",
+      "Density": 1.11,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.07},
+          {"Element": "C" , "Fraction": 0.83},
+          {"Element": "O" , "Fraction": 0.04},
+          {"Element": "Ti", "Fraction": 0.06}
+      ]
+    },
+    { "Name": "SB5",
+      "Density": 1.87,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.026},
+          {"Element": "C" , "Fraction": 0.306},
+          {"Element": "N" , "Fraction": 0.01},
+          {"Element": "O" , "Fraction": 0.389},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.268}
+      ]
+    },
+    { "Name": "SK2, low density",
+      "Density": 1.09,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.097},
+          {"Element": "C" , "Fraction": 0.623},
+          {"Element": "O" , "Fraction": 0.186},
+          {"Element": "Mg", "Fraction": 0.094}
+      ]
+    },
+    { "Name": "SK2, high density",
+      "Density": 1.19,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.097},
+          {"Element": "C" , "Fraction": 0.623},
+          {"Element": "O" , "Fraction": 0.186},
+          {"Element": "Mg", "Fraction": 0.094}
+      ]
+    },
+    { "Name": "Sulfur, low density",
+      "Density": 1.92,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "S" , "Fraction": 1}
+      ]
+    },
+    { "Name": "Sulfur, high density",
+      "Density": 2.07,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "S" , "Fraction": 1}
+      ]
+    },
+    { "Name": "Temex",
+      "Density": 1.01,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.096},
+          {"Element": "C" , "Fraction": 0.875},
+          {"Element": "N" , "Fraction": 0.001},
+          {"Element": "O" , "Fraction": 0.005},
+          {"Element": "S" , "Fraction": 0.015},
+          {"Element": "Ti", "Fraction": 0.003},
+          {"Element": "Zn", "Fraction": 0.005}
+      ]
+    },
+    { "Name": "TH/L2",
+      "Density": 1.08,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.1},
+          {"Element": "C" , "Fraction": 0.136},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.735},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.002},
+          {"Element": "I" , "Fraction": 0.0006}
+      ]
+    },
+    { "Name": "Water",
+      "Density": 1,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.112},
+          {"Element": "O" , "Fraction": 0.888}
+      ]
+    },
+    { "Name": "Witt liquid",
+      "Density": 1.72,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.047},
+          {"Element": "O" , "Fraction": 0.568},
+          {"Element": "P" , "Fraction": 0.109},
+          {"Element": "K" , "Fraction": 0.276}
+      ]
+    },
+    { "Name": "WT1",
+      "Density": 1.02,
+      "Comment": "Table A.1—The elemental compositions, rho and n0, of the tissue substitutes.",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.081},
+          {"Element": "C" , "Fraction": 0.672},
+          {"Element": "N" , "Fraction": 0.024},
+          {"Element": "O" , "Fraction": 0.199},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.023}
+      ]
+    },
+    { "Name": "A150 Gas (Mixture 1)",
+      "Density": 0.00134,
+      "Comment": "Table A.2—The elemental compositions, rho and n0 of the gaseous tissue substitutes (Quoted densities are for a pressure of 1 atm and a temperature of 20°C.).",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.768},
+          {"Element": "N" , "Fraction": 0.036},
+          {"Element": "O" , "Fraction": 0.059},
+          {"Element": "F" , "Fraction": 0.017},
+          {"Element": "Ar", "Fraction": 0.018}
+      ]
+    },
+    { "Name": "Acetylene",
+      "Density": 0.00108,
+      "Comment": "Table A.2—The elemental compositions, rho and n0 of the gaseous tissue substitutes (Quoted densities are for a pressure of 1 atm and a temperature of 20°C.).",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.077},
+          {"Element": "C" , "Fraction": 0.923}
+      ]
+    },
+    { "Name": "Air",
+      "Density": 0.0012,
+      "Comment": "Table A.2—The elemental compositions, rho and n0 of the gaseous tissue substitutes (Quoted densities are for a pressure of 1 atm and a temperature of 20°C.).",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "N" , "Fraction": 0.755},
+          {"Element": "O" , "Fraction": 0.232},
+          {"Element": "Ar", "Fraction": 0.013}
+      ]
+    },
+    { "Name": "Argon",
+      "Density": 0.00166,
+      "Comment": "Table A.2—The elemental compositions, rho and n0 of the gaseous tissue substitutes (Quoted densities are for a pressure of 1 atm and a temperature of 20°C.).",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "Ar", "Fraction": 1}
+      ]
+    },
+    { "Name": "Carbon dioxide",
+      "Density": 0.00183,
+      "Comment": "Table A.2—The elemental compositions, rho and n0 of the gaseous tissue substitutes (Quoted densities are for a pressure of 1 atm and a temperature of 20°C.).",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "C" , "Fraction": 0.273},
+          {"Element": "O" , "Fraction": 0.727}
+      ]
+    },
+    { "Name": "Ethylene",
+      "Density": 0.00117,
+      "Comment": "Table A.2—The elemental compositions, rho and n0 of the gaseous tissue substitutes (Quoted densities are for a pressure of 1 atm and a temperature of 20°C.).",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.144},
+          {"Element": "C" , "Fraction": 0.856}
+      ]
+    },
+    { "Name": "Ethylene/ethane-based mixture",
+      "Density": 0.00105,
+      "Comment": "Table A.2—The elemental compositions, rho and n0 of the gaseous tissue substitutes (Quoted densities are for a pressure of 1 atm and a temperature of 20°C.).",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.533},
+          {"Element": "N" , "Fraction": 0.035},
+          {"Element": "Ne", "Fraction": 0.33}
+      ]
+    },
+    { "Name": "Hydrogen-based mixture",
+      "Density": 0.00071,
+      "Comment": "Table A.2—The elemental compositions, rho and n0 of the gaseous tissue substitutes (Quoted densities are for a pressure of 1 atm and a temperature of 20°C.).",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.098},
+          {"Element": "C" , "Fraction": 0.157},
+          {"Element": "N" , "Fraction": 0.035},
+          {"Element": "O" , "Fraction": 0.71}
+      ]
+    },
+    { "Name": "Methane-based mixture",
+      "Density": 0.00106,
+      "Comment": "Table A.2—The elemental compositions, rho and n0 of the gaseous tissue substitutes (Quoted densities are for a pressure of 1 atm and a temperature of 20°C.).",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.456},
+          {"Element": "N" , "Fraction": 0.035},
+          {"Element": "O" , "Fraction": 0.407}
+      ]
+    },
+    { "Name": "Propane-based mixture",
+      "Density": 0.0018,
+      "Comment": "Table A.2—The elemental compositions, rho and n0 of the gaseous tissue substitutes (Quoted densities are for a pressure of 1 atm and a temperature of 20°C.).",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.569},
+          {"Element": "N" , "Fraction": 0.035},
+          {"Element": "O" , "Fraction": 0.293}
+      ]
+    }
+  ],
+  "Comments" : [
+      "International Commission on Radiation Units & Measurements",
+      "ICRU Report 44",
+      "Tissue Substitutes in Radiation Dosimetry and Measurement",
+      "January 1989"
+  ]
+}
+}
+

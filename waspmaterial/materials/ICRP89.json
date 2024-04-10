@@ -1,0 +1,656 @@
+{"MaterialDatabase" : {
+    "Name": "ICRP89",
+    "Reference": "Basic Anatomical and Physiological Data for Use in Radiological Protection: Reference Values, ICRP Publication 89",
+    "Materials": [
+      { "Name": "Adrenals", 
+        "Comment": "Section 11.2:  The specific gravity of the adrenal glands is approximately 1.02.",
+        "Density": 1.02, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.256 },
+            {"Element": "N",  "Fraction": 0.027 },
+            {"Element": "O",  "Fraction": 0.602 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Tongue", 
+        "Comment": "Section 6.3.2: The specific gravity of the salivary glands is approximately 1.045 (1.04-1.05).  Approximately the same value has been determined for all soft tissues of the alimentary tract.",
+        "Density": 1.045, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.102 },
+            {"Element": "C",  "Fraction": 0.143 },
+            {"Element": "N",  "Fraction": 0.034 },
+            {"Element": "O",  "Fraction": 0.71 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.001 },
+            {"Element": "K",  "Fraction": 0.004 }
+        ]
+      },
+      { "Name": "Oesophagus", 
+        "Comment": "Section 6.3.2: The specific gravity of the salivary glands is approximately 1.045 (1.04-1.05).  Approximately the same value has been determined for all soft tissues of the alimentary tract.",
+        "Density": 1.045, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.256 },
+            {"Element": "N",  "Fraction": 0.027 },
+            {"Element": "O",  "Fraction": 0.602 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Stomach", 
+        "Comment": "Section 6.3.2: The specific gravity of the salivary glands is approximately 1.045 (1.04-1.05).  Approximately the same value has been determined for all soft tissues of the alimentary tract.",
+        "Density": 1.045, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.106 },
+            {"Element": "C",  "Fraction": 0.115 },
+            {"Element": "N",  "Fraction": 0.022 },
+            {"Element": "O",  "Fraction": 0.751 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.001 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Small intestine", 
+        "Comment": "Section 6.3.2: The specific gravity of the salivary glands is approximately 1.045 (1.04-1.05).  Approximately the same value has been determined for all soft tissues of the alimentary tract.",
+        "Density": 1.045, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.106 },
+            {"Element": "C",  "Fraction": 0.115 },
+            {"Element": "N",  "Fraction": 0.022 },
+            {"Element": "O",  "Fraction": 0.751 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.001 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Large intestine", 
+        "Comment": "Section 6.3.2: The specific gravity of the salivary glands is approximately 1.045 (1.04-1.05).  Approximately the same value has been determined for all soft tissues of the alimentary tract.",
+        "Density": 1.045, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.106 },
+            {"Element": "C",  "Fraction": 0.115 },
+            {"Element": "N",  "Fraction": 0.022 },
+            {"Element": "O",  "Fraction": 0.751 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.001 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Liver", 
+        "Comment": "Section 6.3.2: The specific gravity of the salivary glands is approximately 1.045 (1.04-1.05).  Approximately the same value has been determined for all soft tissues of the alimentary tract.",
+        "Density": 1.045, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.103 },
+            {"Element": "C",  "Fraction": 0.186 },
+            {"Element": "N",  "Fraction": 0.028 },
+            {"Element": "O",  "Fraction": 0.671 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.003 }
+        ]
+      },
+      { "Name": "Gallbladder", 
+        "Comment": "Section 6.3.2: The specific gravity of the salivary glands is approximately 1.045 (1.04-1.05).  Approximately the same value has been determined for all soft tissues of the alimentary tract.",
+        "Density": 1.045, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.256 },
+            {"Element": "N",  "Fraction": 0.027 },
+            {"Element": "O",  "Fraction": 0.602 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Pancreas", 
+        "Comment": "Section 6.3.2: The specific gravity of the salivary glands is approximately 1.045 (1.04-1.05).  Approximately the same value has been determined for all soft tissues of the alimentary tract.",
+        "Density": 1.045, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.106 },
+            {"Element": "C",  "Fraction": 0.169 },
+            {"Element": "N",  "Fraction": 0.022 },
+            {"Element": "O",  "Fraction": 0.694 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.001 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Blood", 
+        "Comment": "Section 7.2.1: whole blood specfic gravity is 1.06.",
+        "Density": 1.06, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.102 },
+            {"Element": "C",  "Fraction": 0.11 },
+            {"Element": "N",  "Fraction": 0.033 },
+            {"Element": "O",  "Fraction": 0.745 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.003 },
+            {"Element": "K",  "Fraction": 0.002 },
+            {"Element": "Fe", "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Brain", 
+        "Comment": "Section 11.3.2: The specific gravity of the brain is approximately 1.04.",
+        "Density": 1.04, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.107 },
+            {"Element": "C",  "Fraction": 0.145 },
+            {"Element": "N",  "Fraction": 0.022 },
+            {"Element": "O",  "Fraction": 0.712 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.004 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.003 },
+            {"Element": "K",  "Fraction": 0.003 }
+        ]
+      },
+      { "Name": "Heart", 
+        "Comment": "Section 7.2.1:  specific gravity of heart is 1.03.",
+        "Density": 1.03, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.104 },
+            {"Element": "C",  "Fraction": 0.139 },
+            {"Element": "N",  "Fraction": 0.029 },
+            {"Element": "O",  "Fraction": 0.718 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.003 }
+        ]
+      },
+      { "Name": "Eyes", 
+        "Comment": "Section 11.7.1:  The specific gravity of the eyeball varies between 1.022 and 1.030.",
+        "Density": 1.026, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.096 },
+            {"Element": "C",  "Fraction": 0.195 },
+            {"Element": "N",  "Fraction": 0.057 },
+            {"Element": "O",  "Fraction": 0.646 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Fat", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.114 },
+            {"Element": "C",  "Fraction": 0.598 },
+            {"Element": "N",  "Fraction": 0.007 },
+            {"Element": "O",  "Fraction": 0.278 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Skin", 
+        "Comment": "Section 10.6: The specific gravity of the dermis, epidermis, or total skin in most regions of the body is approximately 1.1 at all ages and in both genders.",
+        "Density": 1.1, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.1 },
+            {"Element": "C",  "Fraction": 0.204 },
+            {"Element": "N",  "Fraction": 0.042 },
+            {"Element": "O",  "Fraction": 0.645 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.003 },
+            {"Element": "K",  "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Muscle", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.102 },
+            {"Element": "C",  "Fraction": 0.143 },
+            {"Element": "N",  "Fraction": 0.034 },
+            {"Element": "O",  "Fraction": 0.71 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.001 },
+            {"Element": "K",  "Fraction": 0.004 }
+        ]
+      },
+      { "Name": "Pituitary gland", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.256 },
+            {"Element": "N",  "Fraction": 0.027 },
+            {"Element": "O",  "Fraction": 0.602 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Trachea", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.256 },
+            {"Element": "N",  "Fraction": 0.027 },
+            {"Element": "O",  "Fraction": 0.602 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Larynx", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.096 },
+            {"Element": "C",  "Fraction": 0.099 },
+            {"Element": "N",  "Fraction": 0.022 },
+            {"Element": "O",  "Fraction": 0.744 },
+            {"Element": "Na", "Fraction": 0.005 },
+            {"Element": "P",  "Fraction": 0.022 },
+            {"Element": "S",  "Fraction": 0.009 },
+            {"Element": "Cl", "Fraction": 0.003 }
+        ]
+      },
+      { "Name": "Lung", 
+        "Comment": "Section 5.3.6:  The specific gravity of adult lungs free of air but with the blood vessels completely filled is approximately 1.05.   The specific gravity of adult lungs containing air is approximately 0.25. The specific gravity of blood- and air-free human lung parenchyma is approximately 1.0.",
+        "Density": 0.25, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.103 },
+            {"Element": "C",  "Fraction": 0.105 },
+            {"Element": "N",  "Fraction": 0.031 },
+            {"Element": "O",  "Fraction": 0.749 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.003 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Spleen", 
+        "Comment": "Section 11.10.2:  The specific gravity of the spleen is approximately 1.06.",
+        "Density": 1.06, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.103 },
+            {"Element": "C",  "Fraction": 0.113 },
+            {"Element": "N",  "Fraction": 0.032 },
+            {"Element": "O",  "Fraction": 0.741 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.003 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.003 }
+        ]
+      },
+      { "Name": "Thymus", 
+        "Comment": "Section 11.11.2:  The specific gravity of the thymus is approximately 1.07 in the newborn and 1.025 in the adult.",
+        "Density": 1.07, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.256 },
+            {"Element": "N",  "Fraction": 0.027 },
+            {"Element": "O",  "Fraction": 0.602 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Thyroid", 
+        "Comment": "Section 11.12.1:  The specific gravity of the thyroid gland is approximately 1.05.",
+        "Density": 1.05, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.104 },
+            {"Element": "C",  "Fraction": 0.119 },
+            {"Element": "N",  "Fraction": 0.024 },
+            {"Element": "O",  "Fraction": 0.745 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.001 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.001 },
+            {"Element": "I",  "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Tonsils", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.256 },
+            {"Element": "N",  "Fraction": 0.027 },
+            {"Element": "O",  "Fraction": 0.602 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Kidneys", 
+        "Comment": "Section 8.2.1: The specific gravity of the kidney is approximately 1.035 in the newborn and 1.05 in the adult.",
+        "Density": 1.05, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.103 },
+            {"Element": "C",  "Fraction": 0.132 },
+            {"Element": "N",  "Fraction": 0.03 },
+            {"Element": "O",  "Fraction": 0.724 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 },
+            {"Element": "Ca", "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Ureters", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.256 },
+            {"Element": "N",  "Fraction": 0.027 },
+            {"Element": "O",  "Fraction": 0.602 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Urinary bladder", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.096 },
+            {"Element": "N",  "Fraction": 0.026 },
+            {"Element": "O",  "Fraction": 0.761 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.003 },
+            {"Element": "K",  "Fraction": 0.003 }
+        ]
+      },
+      { "Name": "Urethra", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.256 },
+            {"Element": "N",  "Fraction": 0.027 },
+            {"Element": "O",  "Fraction": 0.602 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Epididymes", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.256 },
+            {"Element": "N",  "Fraction": 0.027 },
+            {"Element": "O",  "Fraction": 0.602 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Male Breast", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.114 },
+            {"Element": "C",  "Fraction": 0.598 },
+            {"Element": "N",  "Fraction": 0.007 },
+            {"Element": "O",  "Fraction": 0.278 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.001 },
+            {"Element": "Cl", "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Male Testes", 
+        "Comment": "Section 8.2.5:  The specific gravity of the testes is approximately 1.04.",
+        "Density": 1.04, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.106 },
+            {"Element": "C",  "Fraction": 0.099 },
+            {"Element": "N",  "Fraction": 0.02 },
+            {"Element": "O",  "Fraction": 0.766 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Male Prostate", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.256 },
+            {"Element": "N",  "Fraction": 0.027 },
+            {"Element": "O",  "Fraction": 0.602 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Female Breast", 
+        "Comment": "Section 11.4.3: The specific gravity of female breast tissue is approximately 1.05.",
+        "Density": 1.05, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.116 },
+            {"Element": "C",  "Fraction": 0.519 },
+            {"Element": "O",  "Fraction": 0.365 }
+        ]
+      },
+      { "Name": "Female Ovaries", 
+        "Comment": "Section 8.2.7: The specific gravity of the ovaries is approximately 1.05.",
+        "Density": 1.05, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.093 },
+            {"Element": "N",  "Fraction": 0.024 },
+            {"Element": "O",  "Fraction": 0.768 },
+            {"Element": "Na", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.002 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Female Fallopian tubes", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.106 },
+            {"Element": "C",  "Fraction": 0.315 },
+            {"Element": "N",  "Fraction": 0.024 },
+            {"Element": "O",  "Fraction": 0.547 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.001 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Female Uterus", 
+        "Comment": "Section 8.2.8:  The specific gravity of the uterus is approximately 1.05.",
+        "Density": 1.05, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.106 },
+            {"Element": "C",  "Fraction": 0.315 },
+            {"Element": "N",  "Fraction": 0.024 },
+            {"Element": "O",  "Fraction": 0.547 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Cl", "Fraction": 0.001 },
+            {"Element": "K",  "Fraction": 0.002 }
+        ]
+      },
+      { "Name": "Active marrow", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.105 },
+            {"Element": "C",  "Fraction": 0.414 },
+            {"Element": "N",  "Fraction": 0.034 },
+            {"Element": "O",  "Fraction": 0.439 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "Mg", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.002 },
+            {"Element": "S",  "Fraction": 0.002 },
+            {"Element": "Fe", "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Inactive marrow", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.115 },
+            {"Element": "C",  "Fraction": 0.644 },
+            {"Element": "N",  "Fraction": 0.007 },
+            {"Element": "O",  "Fraction": 0.231 },
+            {"Element": "Na", "Fraction": 0.001 },
+            {"Element": "P",  "Fraction": 0.001 },
+            {"Element": "S",  "Fraction": 0.001 }
+        ]
+      },
+      { "Name": "Cartilage", 
+        "Comment": "Section 9.2.12: The specific gravity of fresh cartilage is about 1.1.",
+        "Density": 1.1, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.096 },
+            {"Element": "C",  "Fraction": 0.099 },
+            {"Element": "N",  "Fraction": 0.022 },
+            {"Element": "O",  "Fraction": 0.744 },
+            {"Element": "Na", "Fraction": 0.005 },
+            {"Element": "P",  "Fraction": 0.022 },
+            {"Element": "S",  "Fraction": 0.009 },
+            {"Element": "Cl", "Fraction": 0.003 }
+        ]
+      },
+      { "Name": "Teeth", 
+        "Comment": "Density not specified.",
+        "Density": 1.0, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.022 },
+            {"Element": "C",  "Fraction": 0.095 },
+            {"Element": "N",  "Fraction": 0.029 },
+            {"Element": "O",  "Fraction": 0.421 },
+            {"Element": "Mg", "Fraction": 0.007 },
+            {"Element": "P",  "Fraction": 0.137 },
+            {"Element": "Ca", "Fraction": 0.289 }
+        ]
+      },
+      { "Name": "Adult skeleton", 
+        "Comment": "Table 2.20: skeletal densities (g/cm3) are: adult whole skeleton 1.3; hydrated cortical bone density 1.9; adult dry mineralized collagenous bone matrix density 2.3.",
+        "Density": 1.3, 
+        "Type": "Weight Fractions", 
+        "Contains": [
+            {"Element": "H",  "Fraction": 0.035 },
+            {"Element": "C",  "Fraction": 0.16 },
+            {"Element": "N",  "Fraction": 0.042 },
+            {"Element": "O",  "Fraction": 0.445 },
+            {"Element": "Na", "Fraction": 0.003 },
+            {"Element": "Mg", "Fraction": 0.002 },
+            {"Element": "P",  "Fraction": 0.095 },
+            {"Element": "S",  "Fraction": 0.003 },
+            {"Element": "Ca", "Fraction": 0.215 }
+        ]
+      }
+    ],
+    "Comments" : [
+        "The International Commission on Radiological Protection",
+        "ICRP PUBLICATION 89",
+        "Basic Anatomical and Physiological Data for Use in Radiological Protection: Reference Values",
+        "J. Valentin, Editor",
+        "2003 ICRP   Published by Elsevier Science Ltd."
+    ]
+  }
+}

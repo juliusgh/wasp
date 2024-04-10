@@ -1,0 +1,392 @@
+{"MaterialDatabase" : {
+  "Name": "MCNP5APrimer",
+  "Reference": "Roger Brewer, Criticality Calculations with MCNP5: A Primer, LA-UR-09-00380, January 2009",
+  "Materials": [
+    { "Name": "Boral, B4C-Al", 
+      "Comment": "(without Al Clad, 65 wt% Al, 35 wt% B4C)",
+      "Density": 2.53, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "B",  "Fraction": 0.274 },
+          {"Element": "C",  "Fraction": 0.076 },
+          {"Element": "Al", "Fraction": 0.65 }
+      ]
+    },
+    { "Name": "Borax", 
+      "Density": 1.73, 
+      "Type": "Chemical Formula", 
+      "Formula": "Na2B4O7 · 10H2O", 
+      "Contains": [
+          {"Element": "Na", "Atoms": 2.0 },
+          {"Element": "B",  "Atoms": 4.0 },
+          {"Element": "O",  "Atoms": 17.0 },
+          {"Element": "H",  "Atoms": 20.0 }
+      ]
+    },
+    { "Name": "Boric acid", 
+      "Density": 1.435, 
+      "Type": "Chemical Formula", 
+      "Formula": "H3BO3", 
+      "Contains": [
+          {"Element": "H",  "Atoms": 3.0 },
+          {"Element": "B",  "Atoms": 1.0 },
+          {"Element": "O",  "Atoms": 3.0 }
+      ]
+    },
+    { "Name": "Boron carbide (Natural Boron)", 
+      "Density": 2.51, 
+      "Type": "Chemical Formula", 
+      "Formula": "B4C", 
+      "Contains": [
+          {"Element": "B",  "Atoms": 4.0 },
+          {"Element": "C",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Brick, common", 
+      "Density": 1.8, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Al", "Fraction": 0.005 },
+          {"Element": "Ca", "Fraction": 0.014 },
+          {"Element": "Fe", "Fraction": 0.007 },
+          {"Element": "O",  "Fraction": 0.525 },
+          {"Element": "Si", "Fraction": 0.449 }
+      ]
+    },
+    { "Name": "Brick, fire", 
+      "Density": 2.1, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Al", "Fraction": 0.212 },
+          {"Element": "Ca", "Fraction": 0.007 },
+          {"Element": "Fe", "Fraction": 0.014 },
+          {"Element": "O",  "Fraction": 0.497 },
+          {"Element": "Mg", "Fraction": 0.006 },
+          {"Element": "Si", "Fraction": 0.252 },
+          {"Element": "Ti", "Fraction": 0.012 }
+      ]
+    },
+    { "Name": "Celotex® (Lignocellulosic Fiberboard)*", 
+      "Comment": "Celotex ~ C6H10O5 (cellulose)   Range of density: 0.18 g/cm3 (11.23 lb/ft3) to 0.31 g/cm3 (19.34 lb/ft3)",
+      "Density": 0.25, 
+      "Type": "Chemical Formula", 
+      "Formula": "C6H10O5", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 6.0 },
+          {"Element": "H",  "Atoms": 10.0 },
+          {"Element": "O",  "Atoms": 5.0 }
+      ]
+    },
+    { "Name": "Concrete (KENO Regular Concrete Standard Mix)", 
+      "Density": 2.3, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.01 },
+          {"Element": "O",  "Fraction": 0.532 },
+          {"Element": "Si", "Fraction": 0.337 },
+          {"Element": "Al", "Fraction": 0.034 },
+          {"Element": "Na", "Fraction": 0.029 },
+          {"Element": "Ca", "Fraction": 0.044 },
+          {"Element": "Fe", "Fraction": 0.014 }
+      ]
+    },
+    { "Name": "Concrete [Los Alamos (MCNP) Mix]", 
+      "Density": 2.25, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.00453 },
+          {"Element": "O",  "Fraction": 0.5126 },
+          {"Element": "Si", "Fraction": 0.36036 },
+          {"Element": "Al", "Fraction": 0.03555 },
+          {"Element": "Na", "Fraction": 0.01527 },
+          {"Element": "Ca", "Fraction": 0.05791 },
+          {"Element": "Fe", "Fraction": 0.01378 }
+      ]
+    },
+    { "Name": "Concrete (NBS Ordinary)", 
+      "Density": 2.35, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.0056 },
+          {"Element": "O",  "Fraction": 0.4956 },
+          {"Element": "Si", "Fraction": 0.3135 },
+          {"Element": "Al", "Fraction": 0.0456 },
+          {"Element": "Na", "Fraction": 0.0171 },
+          {"Element": "Ca", "Fraction": 0.0826 },
+          {"Element": "Fe", "Fraction": 0.0122 },
+          {"Element": "K",  "Fraction": 0.0192 },
+          {"Element": "Mg", "Fraction": 0.0024 },
+          {"Element": "S",  "Fraction": 0.0012 }
+      ]
+    },
+    { "Name": "Concrete (NBS Ordinary)*", 
+      "Comment": "* adjusted to sum to unity without minor trace elements (Mg, S)",
+      "Density": 2.35, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.006 },
+          {"Element": "O",  "Fraction": 0.5 },
+          {"Element": "Si", "Fraction": 0.315 },
+          {"Element": "Al", "Fraction": 0.048 },
+          {"Element": "Na", "Fraction": 0.017 },
+          {"Element": "Ca", "Fraction": 0.083 },
+          {"Element": "Fe", "Fraction": 0.012 },
+          {"Element": "K",  "Fraction": 0.019 }
+      ]
+    },
+    { "Name": "Dirt, typical western US", 
+      "Comment": "(63.5% SiO2, 15.2% Al2O3, 21.3% H2O)",
+      "Density": 5.5, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.0238 },
+          {"Element": "O",  "Fraction": 0.5989 },
+          {"Element": "Al", "Fraction": 0.0804 },
+          {"Element": "Si", "Fraction": 0.2968 }
+      ]
+    },
+    { "Name": "Fiberglass", 
+      "Comment": "(65% SiO2, 10% CaO, 25% Al2O3",
+      "Density": 2.49, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Ca", "Fraction": 0.0715 },
+          {"Element": "O",  "Fraction": 0.4924 },
+          {"Element": "Al", "Fraction": 0.1323 },
+          {"Element": "Si", "Fraction": 0.3038 }
+      ]
+    },
+    { "Name": "Glass, common", 
+      "Density": 2.4, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Ca", "Fraction": 0.107 },
+          {"Element": "O",  "Fraction": 0.46 },
+          {"Element": "Na", "Fraction": 0.096 },
+          {"Element": "Si", "Fraction": 0.337 }
+      ]
+    },
+    { "Name": "Gypsum (calcium sulfate)", 
+      "Density": 2.32, 
+      "Type": "Chemical Formula", 
+      "Formula": "CaSO4 · 2H2O", 
+      "Contains": [
+          {"Element": "Ca", "Atoms": 1.0 },
+          {"Element": "S",  "Atoms": 1.0 },
+          {"Element": "O",  "Atoms": 6.0 },
+          {"Element": "H",  "Atoms": 4.0 }
+      ]
+    },
+    { "Name": "Inconel (KENO standard mix)", 
+      "Density": 8.3, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Si", "Fraction": 0.025 },
+          {"Element": "Ti", "Fraction": 0.025 },
+          {"Element": "Cr", "Fraction": 0.15 },
+          {"Element": "Fe", "Fraction": 0.07 },
+          {"Element": "Ni", "Fraction": 0.73 }
+      ]
+    },
+    { "Name": "Inconel X (simplified)", 
+      "Density": 8.5, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Ni", "Fraction": 0.78 },
+          {"Element": "Cr", "Fraction": 0.15 },
+          {"Element": "Fe", "Fraction": 0.07 }
+      ]
+    },
+    { "Name": "Kynar®", 
+      "Density": 1.76, 
+      "Type": "Chemical Formula", 
+      "Formula": "C2H2F2", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 2.0 },
+          {"Element": "H",  "Atoms": 2.0 },
+          {"Element": "F",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Kennertium", 
+      "Density": 16.8, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Ni", "Fraction": 0.09 },
+          {"Element": "Cu", "Fraction": 0.15 },
+          {"Element": "W",  "Fraction": 0.76 }
+      ]
+    },
+    { "Name": "Lexan®", 
+      "Comment": "Los Alamos National Laboratory Analysis",
+      "Density": 1.2, 
+      "Type": "Chemical Formula", 
+      "Formula": "C16H14O3", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 16.0 },
+          {"Element": "H",  "Atoms": 14.0 },
+          {"Element": "O",  "Atoms": 3.0 }
+      ]
+    },
+    { "Name": "Magnesium oxide", 
+      "Density": 3.22, 
+      "Type": "Chemical Formula", 
+      "Formula": "MgO", 
+      "Contains": [
+          {"Element": "Mg", "Atoms": 1.0 },
+          {"Element": "O",  "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Nylon®", 
+      "Density": 1.14, 
+      "Type": "Chemical Formula", 
+      "Formula": "C12H22N2O2", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 12.0 },
+          {"Element": "H",  "Atoms": 22.0 },
+          {"Element": "N",  "Atoms": 2.0 },
+          {"Element": "O",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Paraffin", 
+      "Density": 0.93, 
+      "Type": "Chemical Formula", 
+      "Formula": "C25H52", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 25.0 },
+          {"Element": "H",  "Atoms": 52.0 }
+      ]
+    },
+    { "Name": "Plexiglas® & Lucite®", 
+      "Density": 1.18, 
+      "Type": "Chemical Formula", 
+      "Formula": "C5H8O2", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 5.0 },
+          {"Element": "H",  "Atoms": 8.0 },
+          {"Element": "O",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Polyethylene", 
+      "Density": 0.92, 
+      "Type": "Chemical Formula", 
+      "Formula": "CH2", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 1.0 },
+          {"Element": "H",  "Atoms": 2.0 }
+      ]
+    },
+    { "Name": "Polyuraethane foam", 
+      "Density": 0.021, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "H",  "Fraction": 0.041 },
+          {"Element": "C",  "Fraction": 0.544 },
+          {"Element": "N",  "Fraction": 0.121 },
+          {"Element": "O",  "Fraction": 0.294 }
+      ]
+    },
+    { "Name": "Polyvinyl choloride (PVC)", 
+      "Density": 1.65, 
+      "Type": "Chemical Formula", 
+      "Formula": "C2H3Cl", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 2.0 },
+          {"Element": "H",  "Atoms": 3.0 },
+          {"Element": "Cl", "Atoms": 1.0 }
+      ]
+    },
+    { "Name": "Pyrex® [borated glass], (KENO standard mix)", 
+      "Density": 2.23, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "B",  "Fraction": 0.037 },
+          {"Element": "Al", "Fraction": 0.01 },
+          {"Element": "Na", "Fraction": 0.041 },
+          {"Element": "O",  "Fraction": 0.535 },
+          {"Element": "Si", "Fraction": 0.377 }
+      ]
+    },
+    { "Name": "Silicon rubber (G.E. RTV12A)", 
+      "Comment": "(Weight fractions below provided by G.E. Silicone Products Div.)",
+      "Density": 1.0185, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.3211 },
+          {"Element": "Si", "Fraction": 0.3745 },
+          {"Element": "O",  "Fraction": 0.2235 },
+          {"Element": "H",  "Fraction": 0.0807 }
+      ]
+    },
+    { "Name": "Steel, carbon", 
+      "Density": 7.82, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "C",  "Fraction": 0.005 },
+          {"Element": "Fe", "Fraction": 0.995 }
+      ]
+    },
+    { "Name": "Staniless steel 304", 
+      "Density": 7.92, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.695 },
+          {"Element": "Cr", "Fraction": 0.19 },
+          {"Element": "Ni", "Fraction": 0.095 },
+          {"Element": "Mn", "Fraction": 0.02 }
+      ]
+    },
+    { "Name": "Staniless steel 316", 
+      "Density": 7.92, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.655 },
+          {"Element": "Cr", "Fraction": 0.17 },
+          {"Element": "Ni", "Fraction": 0.12 },
+          {"Element": "Mo", "Fraction": 0.025 },
+          {"Element": "Mn", "Fraction": 0.02 },
+          {"Element": "Si", "Fraction": 0.01 }
+      ]
+    },
+    { "Name": "Staniless steel 347", 
+      "Density": 7.92, 
+      "Type": "Weight Fractions", 
+      "Contains": [
+          {"Element": "Fe", "Fraction": 0.685 },
+          {"Element": "Cr", "Fraction": 0.18 },
+          {"Element": "Ni", "Fraction": 0.105 },
+          {"Element": "Mn", "Fraction": 0.02 },
+          {"Element": "Si", "Fraction": 0.01 }
+      ]
+    },
+    { "Name": "Teflon®", 
+      "Comment": "Density = 2.15-2.20 g/cc",
+      "Density": 2.2, 
+      "Type": "Chemical Formula", 
+      "Formula": "CF2", 
+      "Contains": [
+          {"Element": "C",  "Atoms": 1.0 },
+          {"Element": "F",  "Atoms": 2.0 }
+      ]
+    }
+  ],
+  "Comments" : [
+      "LA-UR-09-00380",
+      "Criticality Calculations with MCNP5: A Primer",
+      "Roger Brewer",
+      "X-1 TA",
+      "Los Alamos National Laboratory",
+      "January 2009",
+      "APPENDIX B: Specifications & Atom Densities of Selected Materials",
+      "Problem - Boral: the atom densities give an overall density of 2.645 g/cc",
+      "Problem - Brick, common: weight fractions and atom densities are not consistent (perhaps lack of digits in weight fractions)",
+      "Problem - Concrete (NBS Ordinary): weight fractions add to 0.995",
+      "Problem - Dirt: density of 5.5 g/cc seems high",
+      "Problem - Fiberglass: weight fractions do not add to one (oxygen should be 0.4924) (fixed)",
+      "Problem - Magnesium oxide: oxygen should be listed instead of carbon (fixed)",
+      "Problem - Polyurethane foam: atom density of nitrogen should be 1.0925E-04",
+      "Problem - Polyvinyl chloride: Chlorine should be listed instead of nitrogen (fixed)",
+      "Problem - Stainless steel 316: Nitrogen should be listed instead of N1 (fixed)",
+      "Problem - Teflon: density has a range but atom densities give an overall density of 2.20 g/cc"
+  ]
+}
+}

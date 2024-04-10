@@ -1,0 +1,1641 @@
+{"MaterialDatabase" : {
+  "Name": "ICRU46",
+  "Reference": "Photon, Electron, Proton and Neuron Interaction Data for Body Tissues, ICRU Report 46, International Commission on Radiation Units & Measurements, February 1992",
+  "Materials": [
+    { "Name": "Adipose tissue, Newborn #1",
+      "Density": 1.000,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.111},
+          {"Element": "C" , "Fraction": 0.205},
+          {"Element": "N" , "Fraction": 0.009},
+          {"Element": "O" , "Fraction": 0.672},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Adipose tissue, Newborn #2",
+      "Density": 0.990,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.111},
+          {"Element": "C" , "Fraction": 0.297},
+          {"Element": "N" , "Fraction": 0.009},
+          {"Element": "O" , "Fraction": 0.580},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Adipose tissue, Newborn #3",
+      "Density": 0.980,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.112},
+          {"Element": "C" , "Fraction": 0.390},
+          {"Element": "N" , "Fraction": 0.009},
+          {"Element": "O" , "Fraction": 0.486},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Adipose tissue, Infant (2 days-10 months) #1",
+      "Density": 0.990,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.111},
+          {"Element": "C" , "Fraction": 0.310},
+          {"Element": "N" , "Fraction": 0.011},
+          {"Element": "O" , "Fraction": 0.565},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Adipose tissue, Infant (2 days-10 months) #2",
+      "Density": 0.970,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.112},
+          {"Element": "C" , "Fraction": 0.392},
+          {"Element": "N" , "Fraction": 0.009},
+          {"Element": "O" , "Fraction": 0.484},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Adipose tissue, Infant (2 days-10 months) #3",
+      "Density": 0.960,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.114},
+          {"Element": "C" , "Fraction": 0.473},
+          {"Element": "N" , "Fraction": 0.006},
+          {"Element": "O" , "Fraction": 0.404},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Adipose tissue, Child (1-18 years) #1",
+      "Density": 0.980,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.112},
+          {"Element": "C" , "Fraction": 0.347},
+          {"Element": "N" , "Fraction": 0.008},
+          {"Element": "O" , "Fraction": 0.530},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Adipose tissue, Child (1-18 years) #2",
+      "Density": 0.960,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.113},
+          {"Element": "C" , "Fraction": 0.445},
+          {"Element": "N" , "Fraction": 0.006},
+          {"Element": "O" , "Fraction": 0.433},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Adipose tissue, Child (1-18 years) #3",
+      "Density": 0.950,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.115},
+          {"Element": "C" , "Fraction": 0.543},
+          {"Element": "N" , "Fraction": 0.005},
+          {"Element": "O" , "Fraction": 0.334},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Adipose tissue, Adult #1",
+      "Density": 0.970,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.112},
+          {"Element": "C" , "Fraction": 0.517},
+          {"Element": "N" , "Fraction": 0.013},
+          {"Element": "O" , "Fraction": 0.355},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Adipose tissue, Adult #2 (from ICRU Report 44)",
+      "Density": 0.950,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.114},
+          {"Element": "C" , "Fraction": 0.598},
+          {"Element": "N" , "Fraction": 0.007},
+          {"Element": "O" , "Fraction": 0.278},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Adipose tissue, Adult #3",
+      "Density": 0.930,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.116},
+          {"Element": "C" , "Fraction": 0.681},
+          {"Element": "N" , "Fraction": 0.002},
+          {"Element": "O" , "Fraction": 0.198},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Adipose tissue, Lipoma",
+      "Density": 0.980,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.109},
+          {"Element": "C" , "Fraction": 0.719},
+          {"Element": "N" , "Fraction": 0.030},
+          {"Element": "O" , "Fraction": 0.138},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Average Soft Tissue, Adult ICRU-33 (ICRU, 1980)",
+      "Density": 1.000,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.101},
+          {"Element": "C" , "Fraction": 0.111},
+          {"Element": "N" , "Fraction": 0.026},
+          {"Element": "O" , "Fraction": 0.762}
+      ]
+    },
+    { "Name": "Average Soft Tissue, Adult ICRU-44 (male) (ICRU, 1989)",
+      "Density": 1.030,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.105},
+          {"Element": "C" , "Fraction": 0.256},
+          {"Element": "N" , "Fraction": 0.027},
+          {"Element": "O" , "Fraction": 0.602},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Average Soft Tissue, Adult ICRU-44 (female) (ICRU, 1989)",
+      "Density": 1.020,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.315},
+          {"Element": "N" , "Fraction": 0.024},
+          {"Element": "O" , "Fraction": 0.547},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Blood (whole), Fetus (20 weeks)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.105},
+          {"Element": "C" , "Fraction": 0.073},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.792},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002},
+          {"Element": "Fe", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Blood (whole), Newborn",
+      "Density": 1.070,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.100},
+          {"Element": "C" , "Fraction": 0.131},
+          {"Element": "N" , "Fraction": 0.040},
+          {"Element": "O" , "Fraction": 0.720},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002},
+          {"Element": "Fe", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Blood (whole), Adult (from ICRU Report 44)",
+      "Density": 1.060,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.110},
+          {"Element": "N" , "Fraction": 0.033},
+          {"Element": "O" , "Fraction": 0.745},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.002},
+          {"Element": "Fe", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Bone mineral-hydroxyapatite",
+      "Density": 3.225,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.002},
+          {"Element": "O" , "Fraction": 0.414},
+          {"Element": "P" , "Fraction": 0.185},
+          {"Element": "Ca", "Fraction": 0.399}
+      ]
+    },
+    { "Name": "Brain (whole), Fetus (14 weeks)",
+      "Density": 1.020,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.109},
+          {"Element": "C" , "Fraction": 0.033},
+          {"Element": "N" , "Fraction": 0.007},
+          {"Element": "O" , "Fraction": 0.842},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Brain (whole), Newborn",
+      "Density": 1.030,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.108},
+          {"Element": "C" , "Fraction": 0.055},
+          {"Element": "N" , "Fraction": 0.011},
+          {"Element": "O" , "Fraction": 0.816},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.003},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Brain (whole), Infant (18 months)",
+      "Density": 1.030,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.107},
+          {"Element": "C" , "Fraction": 0.091},
+          {"Element": "N" , "Fraction": 0.016},
+          {"Element": "O" , "Fraction": 0.776},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.003},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Brain (whole), Adult (from ICRU Report 44)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.107},
+          {"Element": "C" , "Fraction": 0.145},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.712},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.004},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Breast-calcifications",
+      "Density": 3.060,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.003},
+          {"Element": "C" , "Fraction": 0.016},
+          {"Element": "N" , "Fraction": 0.005},
+          {"Element": "O" , "Fraction": 0.407},
+          {"Element": "P" , "Fraction": 0.187},
+          {"Element": "Ca", "Fraction": 0.382}
+      ]
+    },
+    { "Name": "Breast-mammary gland, Adult #1",
+      "Density": 0.990,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.109},
+          {"Element": "C" , "Fraction": 0.506},
+          {"Element": "N" , "Fraction": 0.023},
+          {"Element": "O" , "Fraction": 0.358},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Breast-mammary gland, Adult #2 (from ICRU Report 44)",
+      "Density": 1.020,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.332},
+          {"Element": "N" , "Fraction": 0.030},
+          {"Element": "O" , "Fraction": 0.527},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Breast-mammary gland, Adult #3",
+      "Density": 1.060,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.158},
+          {"Element": "N" , "Fraction": 0.037},
+          {"Element": "O" , "Fraction": 0.698},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Breast-mammary gland, Breast (whole)-50/50 (water/lipid)",
+      "Density": 0.960,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.115},
+          {"Element": "C" , "Fraction": 0.387},
+          {"Element": "O" , "Fraction": 0.498}
+      ]
+    },
+    { "Name": "Breast-mammary gland, Breast (whole)-33/67 (water/lipid)",
+      "Density": 0.940,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.116},
+          {"Element": "C" , "Fraction": 0.519},
+          {"Element": "O" , "Fraction": 0.365}
+      ]
+    },
+    { "Name": "Breast-mammary gland, Carbohydrate",
+      "Density": 1.560,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.062},
+          {"Element": "C" , "Fraction": 0.445},
+          {"Element": "O" , "Fraction": 0.493}
+      ]
+    },
+    { "Name": "Breast-mammary gland, Cell nucleus (from ICRU Report 44)",
+      "Density": 1.000,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.090},
+          {"Element": "N" , "Fraction": 0.032},
+          {"Element": "O" , "Fraction": 0.742},
+          {"Element": "P" , "Fraction": 0.026},
+          {"Element": "S" , "Fraction": 0.004}
+      ]
+    },
+    { "Name": "Eye lens, Adult (from ICRU Report 44)",
+      "Density": 1.070,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.096},
+          {"Element": "C" , "Fraction": 0.195},
+          {"Element": "N" , "Fraction": 0.057},
+          {"Element": "O" , "Fraction": 0.646},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Gallstone-cholesterol",
+      "Density": 1.075,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.118},
+          {"Element": "C" , "Fraction": 0.794},
+          {"Element": "N" , "Fraction": 0.005},
+          {"Element": "O" , "Fraction": 0.083}
+      ]
+    },
+    { "Name": "GI tract (intestine), Adult (from ICRU Report 44)",
+      "Density": 1.030,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.115},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.751},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Heart, Fetus (17 to 40 weeks)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.075},
+          {"Element": "N" , "Fraction": 0.018},
+          {"Element": "O" , "Fraction": 0.793},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Heart, Child (2 years)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.105},
+          {"Element": "C" , "Fraction": 0.088},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.777},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Heart, Child (4 to 18 years)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.105},
+          {"Element": "C" , "Fraction": 0.104},
+          {"Element": "N" , "Fraction": 0.025},
+          {"Element": "O" , "Fraction": 0.757},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Heart, Adult (healthy)",
+      "Density": 1.050,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.104},
+          {"Element": "C" , "Fraction": 0.139},
+          {"Element": "N" , "Fraction": 0.029},
+          {"Element": "O" , "Fraction": 0.718},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Heart, Adult (fatty)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.182},
+          {"Element": "N" , "Fraction": 0.031},
+          {"Element": "O" , "Fraction": 0.674},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Heart (blood-filled), Adult (from ICRU Report 44)",
+      "Density": 1.060,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.121},
+          {"Element": "N" , "Fraction": 0.032},
+          {"Element": "O" , "Fraction": 0.734},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.002},
+          {"Element": "Fe", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Kidney, Fetus (17 to 40 weeks)",
+      "Density": 1.030,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.107},
+          {"Element": "C" , "Fraction": 0.064},
+          {"Element": "N" , "Fraction": 0.016},
+          {"Element": "O" , "Fraction": 0.804},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Kidney, Child (2 years)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.094},
+          {"Element": "N" , "Fraction": 0.021},
+          {"Element": "O" , "Fraction": 0.770},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Kidney, Adult (from ICRU Report 44)",
+      "Density": 1.050,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.132},
+          {"Element": "N" , "Fraction": 0.030},
+          {"Element": "O" , "Fraction": 0.724},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002},
+          {"Element": "Ca", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Lipid (from ICRU Report 44)",
+      "Density": 0.920,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.118},
+          {"Element": "C" , "Fraction": 0.773},
+          {"Element": "O" , "Fraction": 0.109}
+      ]
+    },
+    { "Name": "Liver, Fetus (17 to 40 weeks)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.105},
+          {"Element": "C" , "Fraction": 0.091},
+          {"Element": "N" , "Fraction": 0.021},
+          {"Element": "O" , "Fraction": 0.774},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Liver, Child (1 year)",
+      "Density": 1.050,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.126},
+          {"Element": "N" , "Fraction": 0.027},
+          {"Element": "O" , "Fraction": 0.733},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.003},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Liver, Adult (healthy)",
+      "Density": 1.060,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.139},
+          {"Element": "N" , "Fraction": 0.030},
+          {"Element": "O" , "Fraction": 0.716},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.003},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Liver, Adult (cirrhotic)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.104},
+          {"Element": "C" , "Fraction": 0.230},
+          {"Element": "N" , "Fraction": 0.024},
+          {"Element": "O" , "Fraction": 0.630},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.003},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Liver, Adult (fatty)",
+      "Density": 1.050,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.186},
+          {"Element": "N" , "Fraction": 0.028},
+          {"Element": "O" , "Fraction": 0.671},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Lung, Fetus (17 to 40 weeks)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.076},
+          {"Element": "N" , "Fraction": 0.018},
+          {"Element": "O" , "Fraction": 0.792},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Lung, Adult (healthy) (inflated)",
+      "Density": 0.260,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.105},
+          {"Element": "N" , "Fraction": 0.031},
+          {"Element": "O" , "Fraction": 0.749},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Lung, Adult (congested)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.105},
+          {"Element": "C" , "Fraction": 0.083},
+          {"Element": "N" , "Fraction": 0.023},
+          {"Element": "O" , "Fraction": 0.779},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Lymph, Adult (from ICRU Report 44)",
+      "Density": 1.030,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.108},
+          {"Element": "C" , "Fraction": 0.041},
+          {"Element": "N" , "Fraction": 0.011},
+          {"Element": "O" , "Fraction": 0.832},
+          {"Element": "Na", "Fraction": 0.003},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.004}
+      ]
+    },
+    { "Name": "Muscle (skeletal), Fetus (15 weeks)",
+      "Density": 1.030,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.108},
+          {"Element": "C" , "Fraction": 0.049},
+          {"Element": "N" , "Fraction": 0.013},
+          {"Element": "O" , "Fraction": 0.821},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Muscle (skeletal), Newborn",
+      "Density": 1.050,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.104},
+          {"Element": "C" , "Fraction": 0.103},
+          {"Element": "N" , "Fraction": 0.024},
+          {"Element": "O" , "Fraction": 0.762},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Muscle (skeletal), Infant (3 months)",
+      "Density": 1.050,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.112},
+          {"Element": "N" , "Fraction": 0.029},
+          {"Element": "O" , "Fraction": 0.748},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Muscle (skeletal), Adult (from ICRU Report 44)",
+      "Density": 1.050,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.102},
+          {"Element": "C" , "Fraction": 0.143},
+          {"Element": "N" , "Fraction": 0.034},
+          {"Element": "O" , "Fraction": 0.710},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.004}
+      ]
+    },
+    { "Name": "Ovary, Adult (from ICRU Report 44)",
+      "Density": 1.050,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.105},
+          {"Element": "C" , "Fraction": 0.093},
+          {"Element": "N" , "Fraction": 0.024},
+          {"Element": "O" , "Fraction": 0.768},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Pancreas, Adult (from ICRU Report 44)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.169},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.694},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Placenta, 17–26 weeks",
+      "Density": 1.030,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.107},
+          {"Element": "C" , "Fraction": 0.064},
+          {"Element": "N" , "Fraction": 0.017},
+          {"Element": "O" , "Fraction": 0.805},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Placenta, Above 26 weeks",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.104},
+          {"Element": "C" , "Fraction": 0.090},
+          {"Element": "N" , "Fraction": 0.026},
+          {"Element": "O" , "Fraction": 0.772},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Protein",
+      "Density": 1.350,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.066},
+          {"Element": "C" , "Fraction": 0.534},
+          {"Element": "N" , "Fraction": 0.170},
+          {"Element": "O" , "Fraction": 0.220},
+          {"Element": "S" , "Fraction": 0.010}
+      ]
+    },
+    { "Name": "Skeleton-cartilage, Adult (from ICRU Report 44)",
+      "Density": 1.100,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.096},
+          {"Element": "C" , "Fraction": 0.099},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.744},
+          {"Element": "Na", "Fraction": 0.005},
+          {"Element": "P" , "Fraction": 0.022},
+          {"Element": "S" , "Fraction": 0.009},
+          {"Element": "Cl", "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Skeleton-cortical bone, Fetus (20 weeks)",
+      "Density": 1.430,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.064},
+          {"Element": "C" , "Fraction": 0.128},
+          {"Element": "N" , "Fraction": 0.035},
+          {"Element": "O" , "Fraction": 0.571},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.061},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "Ca", "Fraction": 0.135}
+      ]
+    },
+    { "Name": "Skeleton-cortical bone, Fetus (23 weeks)",
+      "Density": 1.580,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.052},
+          {"Element": "C" , "Fraction": 0.143},
+          {"Element": "N" , "Fraction": 0.039},
+          {"Element": "O" , "Fraction": 0.517},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.077},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.167}
+      ]
+    },
+    { "Name": "Skeleton-cortical bone, Newborn",
+      "Density": 1.720,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.044},
+          {"Element": "C" , "Fraction": 0.153},
+          {"Element": "N" , "Fraction": 0.041},
+          {"Element": "O" , "Fraction": 0.477},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.085},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.194}
+      ]
+    },
+    { "Name": "Skeleton-cortical bone, Infant (3 months)",
+      "Density": 1.680,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.047},
+          {"Element": "C" , "Fraction": 0.154},
+          {"Element": "N" , "Fraction": 0.042},
+          {"Element": "O" , "Fraction": 0.485},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.082},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.184}
+      ]
+    },
+    { "Name": "Skeleton-cortical bone, Child (1 year)",
+      "Density": 1.710,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.045},
+          {"Element": "C" , "Fraction": 0.159},
+          {"Element": "N" , "Fraction": 0.044},
+          {"Element": "O" , "Fraction": 0.467},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.087},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.191}
+      ]
+    },
+    { "Name": "Skeleton-cortical bone, Child (5 years)",
+      "Density": 1.750,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.043},
+          {"Element": "C" , "Fraction": 0.158},
+          {"Element": "N" , "Fraction": 0.044},
+          {"Element": "O" , "Fraction": 0.457},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.093},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.198}
+      ]
+    },
+    { "Name": "Skeleton-cortical bone, Child (10 years)",
+      "Density": 1.790,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.040},
+          {"Element": "C" , "Fraction": 0.159},
+          {"Element": "N" , "Fraction": 0.044},
+          {"Element": "O" , "Fraction": 0.450},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.096},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.204}
+      ]
+    },
+    { "Name": "Skeleton-cortical bone, Child (15 years)",
+      "Density": 1.830,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.038},
+          {"Element": "C" , "Fraction": 0.160},
+          {"Element": "N" , "Fraction": 0.044},
+          {"Element": "O" , "Fraction": 0.443},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.099},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Ca", "Fraction": 0.210}
+      ]
+    },
+    { "Name": "Skeleton-cortical bone, Adult (from ICRU Report 44)",
+      "Density": 1.920,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.034},
+          {"Element": "C" , "Fraction": 0.155},
+          {"Element": "N" , "Fraction": 0.042},
+          {"Element": "O" , "Fraction": 0.435},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.103},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Ca", "Fraction": 0.225}
+      ]
+    },
+    { "Name": "Skeleton-cranium (whole), Adult",
+      "Density": 1.610,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.050},
+          {"Element": "C" , "Fraction": 0.212},
+          {"Element": "N" , "Fraction": 0.040},
+          {"Element": "O" , "Fraction": 0.435},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.081},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Ca", "Fraction": 0.176}
+      ]
+    },
+    { "Name": "Skeleton-femur (whole), Fetus (20 weeks)",
+      "Density": 1.120,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.095},
+          {"Element": "C" , "Fraction": 0.075},
+          {"Element": "N" , "Fraction": 0.020},
+          {"Element": "O" , "Fraction": 0.754},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.016},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "Ca", "Fraction": 0.034}
+      ]
+    },
+    { "Name": "Skeleton-femur (whole), Newborn",
+      "Density": 1.180,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.087},
+          {"Element": "C" , "Fraction": 0.105},
+          {"Element": "N" , "Fraction": 0.025},
+          {"Element": "O" , "Fraction": 0.691},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.026},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "Ca", "Fraction": 0.059}
+      ]
+    },
+    { "Name": "Skeleton-femur (whole), Infant (6 months)",
+      "Density": 1.190,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.086},
+          {"Element": "C" , "Fraction": 0.125},
+          {"Element": "N" , "Fraction": 0.032},
+          {"Element": "O" , "Fraction": 0.668},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.026},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "Ca", "Fraction": 0.056}
+      ]
+    },
+    { "Name": "Skeleton-femur (whole), Child (2 years)",
+      "Density": 1.210,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.082},
+          {"Element": "C" , "Fraction": 0.201},
+          {"Element": "N" , "Fraction": 0.033},
+          {"Element": "O" , "Fraction": 0.575},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.032},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "Ca", "Fraction": 0.069}
+      ]
+    },
+    { "Name": "Skeleton-femur (whole), Child (10 years)",
+      "Density": 1.270,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.076},
+          {"Element": "C" , "Fraction": 0.294},
+          {"Element": "N" , "Fraction": 0.039},
+          {"Element": "O" , "Fraction": 0.454},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.042},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.090}
+      ]
+    },
+    { "Name": "Skeleton-femur (whole), Child (15 years)",
+      "Density": 1.320,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.070},
+          {"Element": "C" , "Fraction": 0.332},
+          {"Element": "N" , "Fraction": 0.038},
+          {"Element": "O" , "Fraction": 0.394},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.051},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.110}
+      ]
+    },
+    { "Name": "Skeleton-femur (whole), Adult (30 years)",
+      "Density": 1.330,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.070},
+          {"Element": "C" , "Fraction": 0.345},
+          {"Element": "N" , "Fraction": 0.028},
+          {"Element": "O" , "Fraction": 0.368},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.055},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.129}
+      ]
+    },
+    { "Name": "Skeleton-femur (whole), Adult (90 years)",
+      "Density": 1.220,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.079},
+          {"Element": "C" , "Fraction": 0.385},
+          {"Element": "N" , "Fraction": 0.022},
+          {"Element": "O" , "Fraction": 0.362},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.044},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.104}
+      ]
+    },
+    { "Name": "Skeleton-humerus (whole), Adult",
+      "Density": 1.460,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.060},
+          {"Element": "C" , "Fraction": 0.314},
+          {"Element": "N" , "Fraction": 0.031},
+          {"Element": "O" , "Fraction": 0.369},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.070},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Ca", "Fraction": 0.152}
+      ]
+    },
+    { "Name": "Skeleton-mandible (whole), Adult",
+      "Density": 1.680,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.046},
+          {"Element": "C" , "Fraction": 0.199},
+          {"Element": "N" , "Fraction": 0.041},
+          {"Element": "O" , "Fraction": 0.435},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.086},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Ca", "Fraction": 0.187}
+      ]
+    },
+    { "Name": "Skeleton-red marrow, Adult (from ICRU Report 44)",
+      "Density": 1.030,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.105},
+          {"Element": "C" , "Fraction": 0.414},
+          {"Element": "N" , "Fraction": 0.034},
+          {"Element": "O" , "Fraction": 0.439},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002},
+          {"Element": "Fe", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Skeleton-ribs (2nd, 6th) (whole), Adult",
+      "Density": 1.410,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.064},
+          {"Element": "C" , "Fraction": 0.263},
+          {"Element": "N" , "Fraction": 0.039},
+          {"Element": "O" , "Fraction": 0.436},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.060},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.131}
+      ]
+    },
+    { "Name": "Skeleton-ribs (10th) (whole), Adult",
+      "Density": 1.520,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.056},
+          {"Element": "C" , "Fraction": 0.235},
+          {"Element": "N" , "Fraction": 0.040},
+          {"Element": "O" , "Fraction": 0.434},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.072},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.156}
+      ]
+    },
+    { "Name": "Skeleton-sacrum (whole), Adult-male",
+      "Density": 1.290,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.074},
+          {"Element": "C" , "Fraction": 0.302},
+          {"Element": "N" , "Fraction": 0.037},
+          {"Element": "O" , "Fraction": 0.438},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.045},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.098},
+          {"Element": "Fe", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Skeleton-sacrum (whole), Adult-female",
+      "Density": 1.390,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.066},
+          {"Element": "C" , "Fraction": 0.271},
+          {"Element": "N" , "Fraction": 0.038},
+          {"Element": "O" , "Fraction": 0.435},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.058},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.125}
+      ]
+    },
+    { "Name": "Skeleton-spongiosa, Adult (from ICRU Report 44)",
+      "Density": 1.180,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.085},
+          {"Element": "C" , "Fraction": 0.404},
+          {"Element": "N" , "Fraction": 0.028},
+          {"Element": "O" , "Fraction": 0.367},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.034},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.074},
+          {"Element": "Fe", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Skeleton-vertebral column (C4) (whole), Adult",
+      "Density": 1.420,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.063},
+          {"Element": "C" , "Fraction": 0.261},
+          {"Element": "N" , "Fraction": 0.039},
+          {"Element": "O" , "Fraction": 0.436},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.061},
+          {"Element": "S" , "Fraction": 0.003},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.133}
+      ]
+    },
+    { "Name": "Skeleton-vertebral column (D6,L3) (whole), Adult",
+      "Density": 1.330,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.070},
+          {"Element": "C" , "Fraction": 0.287},
+          {"Element": "N" , "Fraction": 0.038},
+          {"Element": "O" , "Fraction": 0.437},
+          {"Element": "MG", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.051},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.001},
+          {"Element": "K" , "Fraction": 0.001},
+          {"Element": "Ca", "Fraction": 0.111},
+          {"Element": "Fe", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Skeleton-yellow marrow, Adult (from ICRU Report 44)",
+      "Density": 0.980,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.115},
+          {"Element": "C" , "Fraction": 0.644},
+          {"Element": "N" , "Fraction": 0.007},
+          {"Element": "O" , "Fraction": 0.231},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Skin, Fetus (14 weeks)",
+      "Density": 1.020,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.108},
+          {"Element": "C" , "Fraction": 0.051},
+          {"Element": "N" , "Fraction": 0.012},
+          {"Element": "O" , "Fraction": 0.821},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Skin, Newborn",
+      "Density": 1.050,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.104},
+          {"Element": "C" , "Fraction": 0.104},
+          {"Element": "N" , "Fraction": 0.028},
+          {"Element": "O" , "Fraction": 0.755},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Skin, Adult (from ICRU Report 44)",
+      "Density": 1.090,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.100},
+          {"Element": "C" , "Fraction": 0.204},
+          {"Element": "N" , "Fraction": 0.042},
+          {"Element": "O" , "Fraction": 0.645},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Spleen, Fetus (26–40 weeks)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.105},
+          {"Element": "C" , "Fraction": 0.086},
+          {"Element": "N" , "Fraction": 0.024},
+          {"Element": "O" , "Fraction": 0.776},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Spleen, Adult (from ICRU Report 44)",
+      "Density": 1.060,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.103},
+          {"Element": "C" , "Fraction": 0.113},
+          {"Element": "N" , "Fraction": 0.032},
+          {"Element": "O" , "Fraction": 0.741},
+          {"Element": "Na", "Fraction": 0.001},
+          {"Element": "P" , "Fraction": 0.003},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Testis, Adult (from ICRU Report 44)",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.106},
+          {"Element": "C" , "Fraction": 0.099},
+          {"Element": "N" , "Fraction": 0.020},
+          {"Element": "O" , "Fraction": 0.766},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Thyroid, Adult (from ICRU Report 44)",
+      "Density": 1.050,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.104},
+          {"Element": "C" , "Fraction": 0.119},
+          {"Element": "N" , "Fraction": 0.024},
+          {"Element": "O" , "Fraction": 0.745},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.002},
+          {"Element": "K" , "Fraction": 0.001},
+          {"Element": "I" , "Fraction": 0.001}
+      ]
+    },
+    { "Name": "Urinary bladder (empty), Adult",
+      "Density": 1.040,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.105},
+          {"Element": "C" , "Fraction": 0.096},
+          {"Element": "N" , "Fraction": 0.026},
+          {"Element": "O" , "Fraction": 0.761},
+          {"Element": "Na", "Fraction": 0.002},
+          {"Element": "P" , "Fraction": 0.002},
+          {"Element": "S" , "Fraction": 0.002},
+          {"Element": "Cl", "Fraction": 0.003},
+          {"Element": "K" , "Fraction": 0.003}
+      ]
+    },
+    { "Name": "Urinary bladder (filled), Adult",
+      "Density": 1.030,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.108},
+          {"Element": "C" , "Fraction": 0.035},
+          {"Element": "N" , "Fraction": 0.015},
+          {"Element": "O" , "Fraction": 0.830},
+          {"Element": "Na", "Fraction": 0.003},
+          {"Element": "P" , "Fraction": 0.001},
+          {"Element": "S" , "Fraction": 0.001},
+          {"Element": "Cl", "Fraction": 0.005},
+          {"Element": "K" , "Fraction": 0.002}
+      ]
+    },
+    { "Name": "Urinary (renal) stones-cystine",
+      "Density": 1.660,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.050},
+          {"Element": "C" , "Fraction": 0.307},
+          {"Element": "N" , "Fraction": 0.119},
+          {"Element": "O" , "Fraction": 0.265},
+          {"Element": "S" , "Fraction": 0.259}
+      ]
+    },
+    { "Name": "Urinary (renal) stones-oxalate",
+      "Density": 2.300,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.015},
+          {"Element": "C" , "Fraction": 0.117},
+          {"Element": "N" , "Fraction": 0.005},
+          {"Element": "O" , "Fraction": 0.507},
+          {"Element": "P" , "Fraction": 0.060},
+          {"Element": "Ca", "Fraction": 0.296}
+      ]
+    },
+    { "Name": "Urinary (renal), stones-uric acid",
+      "Density": 1.745,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.033},
+          {"Element": "C" , "Fraction": 0.332},
+          {"Element": "N" , "Fraction": 0.299},
+          {"Element": "O" , "Fraction": 0.336}
+      ]
+    },
+    { "Name": "Water (from ICRU Report 44)",
+      "Density": 1.000,
+      "Comment": "Table A1—The elemental compositions, mass densities, rho, and electron density, n0, of the body tissues",
+      "Type": "Weight Fractions",
+      "Contains": [
+          {"Element": "H" , "Fraction": 0.112},
+          {"Element": "O" , "Fraction": 0.888}
+      ]
+    }
+  ],
+  "Comments" : [
+      "Photon, Electron, Proton and Neuron Interaction Data for Body Tissues",
+      "ICRU Report 46",
+      "International Commission on Radiation Units & Measurements",
+      "February 1992"
+  ]
+}
+}
+
